@@ -1,0 +1,12 @@
+{
+  "_fv": 39,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "R",
+    "keyBindingName": "Gunsmith Congitis: Reload",
+    "keyBindingCategoryKey": "gameplay",
+    "onKeyPressed": {
+      "name": "AmmoReloadOnKeyPressed"
+    }
+  }
+}

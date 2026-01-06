@@ -1,0 +1,36 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:MatchlockArquebus"
+      },
+      {
+        "value": "CUSTOM:MatchlockBlunderbuss"
+      },
+      {
+        "value": "CUSTOM:Flintlockmusket"
+      },
+      {
+        "value": "CUSTOM:Flintlockmusketgold"
+      },
+      {
+        "value": "CUSTOM:WheellockMusket"
+      },
+      {
+        "value": "CUSTOM:FlintlockDoubleBarrelMusket"
+      },
+      {
+        "value": "CUSTOM:Tanegashima"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "rifle",
+    "namespace": "mod"
+  }
+}

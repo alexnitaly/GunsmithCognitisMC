@@ -1,0 +1,47 @@
+{
+  "_fv": 39,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "tanegashima",
+    "customModelName": "Normal",
+    "name": "Tanegashima-teppō",
+    "specialInfo": [
+      "Matchlock Tier: Requires a string",
+      "two gunpowder and musket balls to load",
+      "requires flint n' steel to fire."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:GunsmithCognitisTab"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 108,
+    "actionSound": {
+      "value": "CUSTOM:musket_shot"
+    },
+    "hasGlow": false,
+    "animation": "none",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "TanegashimaRangedItemUsed"
+    },
+    "useCondition": {
+      "name": "TanegashimaCanUseRangedItem"
+    },
+    "bulletPower": 4.0,
+    "bulletDamage": 2.1999999999999997,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:MusketBallProjectile"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": ""
+  }
+}

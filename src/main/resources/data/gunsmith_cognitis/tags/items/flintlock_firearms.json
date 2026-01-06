@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "gunsmith_cognitis:flintlock_pistol_gold",
+    "gunsmith_cognitis:flintlock_double_barrel_musket",
+    "gunsmith_cognitis:flintlockmusketbayonet",
+    "gunsmith_cognitis:flintlockmusketgold",
+    "gunsmith_cognitis:flintlock_pepperbox",
+    "gunsmith_cognitis:flintlock_pistol",
+    "gunsmith_cognitis:flintlockmusket"
+  ]
+}

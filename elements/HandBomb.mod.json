@@ -1,0 +1,54 @@
+{
+  "_fv": 39,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "horokubya_hand_bomb",
+    "customModelName": "Normal",
+    "name": "Hand Bomb",
+    "specialInfo": [
+      "Requires Flint n' Steel in offhand to throw."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:GunsmithCognitisTab"
+    },
+    "stackSize": 8,
+    "ammoItem": {
+      "value": "CUSTOM:HandBomb"
+    },
+    "shootConstantly": false,
+    "usageCount": 0,
+    "actionSound": {
+      "value": "entity.firework.launch"
+    },
+    "hasGlow": false,
+    "animation": "block",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "HandBombRangedItemUsed"
+    },
+    "useCondition": {
+      "name": "HandBombCanUseRangedItem"
+    },
+    "bulletPower": 1.0,
+    "bulletDamage": 5.0,
+    "bulletKnockback": 3,
+    "bulletParticles": true,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:HandBomb"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "HandBombProjectileHitsBlock"
+    },
+    "onBulletHitsEntity": {
+      "name": "HandBombProjectileHitsBlock"
+    },
+    "onBulletFlyingTick": {
+      "name": "HandBombWhileProjectileFlyingTick"
+    }
+  }
+}

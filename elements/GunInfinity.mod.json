@@ -1,0 +1,80 @@
+{
+  "_fv": 39,
+  "_type": "enchantment",
+  "definition": {
+    "name": "Infinity",
+    "type": "BOW",
+    "rarity": "RARE",
+    "minLevel": 1,
+    "maxLevel": 1,
+    "damageModifier": 1,
+    "compatibleEnchantments": [
+      {
+        "value": "CUSTOM:GunInfinity"
+      },
+      {
+        "value": "LOOTING"
+      },
+      {
+        "value": "POWER"
+      },
+      {
+        "value": "PUNCH"
+      },
+      {
+        "value": "FLAME"
+      },
+      {
+        "value": "MENDING"
+      }
+    ],
+    "excludeEnchantments": false,
+    "compatibleItems": [
+      {
+        "value": "CUSTOM:MatchlockArquebus"
+      },
+      {
+        "value": "CUSTOM:Flintlockmusket"
+      },
+      {
+        "value": "CUSTOM:Flintlockmusketbayonet"
+      },
+      {
+        "value": "CUSTOM:Flintlockmusketgold"
+      },
+      {
+        "value": "CUSTOM:FlintlockPistol"
+      },
+      {
+        "value": "CUSTOM:FlintlockPistolGold"
+      },
+      {
+        "value": "CUSTOM:WheellockPistol"
+      },
+      {
+        "value": "CUSTOM:WheellockMusket"
+      },
+      {
+        "value": "CUSTOM:FlintlockDoubleBarrelMusket"
+      },
+      {
+        "value": "CUSTOM:FlintlockPepperbox"
+      },
+      {
+        "value": "CUSTOM:Handgunne"
+      },
+      {
+        "value": "CUSTOM:Threeeyegun"
+      },
+      {
+        "value": "CUSTOM:MatchlockBlunderbuss"
+      }
+    ],
+    "excludeItems": false,
+    "isTreasureEnchantment": false,
+    "isCurse": false,
+    "isAllowedOnBooks": true,
+    "canGenerateInLootTables": true,
+    "canVillagerTrade": true
+  }
+}

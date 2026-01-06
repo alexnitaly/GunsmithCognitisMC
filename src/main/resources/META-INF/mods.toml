@@ -1,0 +1,26 @@
+modLoader="javafml"
+loaderVersion="[40,)"
+license="Academic Free License v3.0"
+
+[[mods]]
+modId="gunsmith_cognitis"
+version="1.0.0"
+displayName="Gunsmith_Cognitis"
+credits="Created using mod maker MCreator - https://mcreator.net/about"
+displayURL="https://mcreator.net"
+logoFile="logo.png"
+authors="Alex n' Italy"
+description='''
+Gunsmith Cognitis is a mod who tries to add realistic old firearms to minecraft
+'''
+
+[[dependencies.gunsmith_cognitis]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18.2]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+

@@ -1,0 +1,29 @@
+{
+  "_fv": 39,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Matchlock Mastery",
+    "achievementDescription": "Ok, so we can use it to shoot things! Let's try and improve upon our designs this time.",
+    "achievementIcon": {
+      "value": "CUSTOM:Handgunne"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [
+      "MatchlockArquebusRecipe",
+      "ThreeEyeGunRecipe",
+      "MatchlockBlunderbussRecipe"
+    ],
+    "rewardFunction": "No function",
+    "rewardXP": 3,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:Gunpowdercognitisstart"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"item_in_inventory\" x=\"39\" y=\"115\"><value name=\"amount_l\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"amount_h\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:Handgunne</field></block></value><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+  }
+}

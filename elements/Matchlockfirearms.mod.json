@@ -1,0 +1,24 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:MatchlockArquebus"
+      },
+      {
+        "value": "CUSTOM:Threeeyegun"
+      },
+      {
+        "value": "CUSTOM:Handgunne"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "matchlock_firearms",
+    "namespace": "mod"
+  }
+}

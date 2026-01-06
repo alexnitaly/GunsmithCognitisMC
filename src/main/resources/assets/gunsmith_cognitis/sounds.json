@@ -1,0 +1,12 @@
+{
+  "musket_shot": {
+    "category": "neutral",
+    "subtitle": "subtitles.musket_shot",
+    "sounds": [
+      {
+        "name": "gunsmith_cognitis:musket_revamp",
+        "stream": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "_fv": 39,
+  "_type": "enchantment",
+  "definition": {
+    "name": "Explosive",
+    "type": "BOW",
+    "rarity": "VERY_RARE",
+    "minLevel": 1,
+    "maxLevel": 2,
+    "damageModifier": 0,
+    "compatibleEnchantments": [
+      {
+        "value": "BINDING_CURSE"
+      },
+      {
+        "value": "SHARPNESS"
+      },
+      {
+        "value": "LOOTING"
+      },
+      {
+        "value": "UNBREAKING"
+      },
+      {
+        "value": "POWER"
+      },
+      {
+        "value": "PUNCH"
+      },
+      {
+        "value": "INFINITY"
+      },
+      {
+        "value": "MULTISHOT"
+      },
+      {
+        "value": "QUICK_CHARGE"
+      },
+      {
+        "value": "PIERCING"
+      },
+      {
+        "value": "MENDING"
+      },
+      {
+        "value": "VANISHING_CURSE"
+      },
+      {
+        "value": "CUSTOM:GunInfinity"
+      }
+    ],
+    "excludeEnchantments": false,
+    "compatibleItems": [
+      {
+        "value": "CUSTOM:MatchlockArquebus"
+      },
+      {
+        "value": "CUSTOM:Handgunne"
+      },
+      {
+        "value": "CUSTOM:Threeeyegun"
+      },
+      {
+        "value": "CUSTOM:MatchlockBlunderbuss"
+      },
+      {
+        "value": "CUSTOM:Flintlockmusket"
+      },
+      {
+        "value": "CUSTOM:Flintlockmusketbayonet"
+      },
+      {
+        "value": "CUSTOM:Flintlockmusketgold"
+      },
+      {
+        "value": "CUSTOM:FlintlockPistol"
+      },
+      {
+        "value": "CUSTOM:FlintlockPistolGold"
+      },
+      {
+        "value": "CUSTOM:WheellockPistol"
+      },
+      {
+        "value": "CUSTOM:WheellockMusket"
+      },
+      {
+        "value": "CUSTOM:HandBomb"
+      },
+      {
+        "value": "CUSTOM:FlintlockDoubleBarrelMusket"
+      },
+      {
+        "value": "CUSTOM:FlintlockPepperbox"
+      },
+      {
+        "value": "Items.BOW"
+      },
+      {
+        "value": "Items.CROSSBOW"
+      }
+    ],
+    "excludeItems": false,
+    "isTreasureEnchantment": false,
+    "isCurse": false,
+    "isAllowedOnBooks": true,
+    "canGenerateInLootTables": true,
+    "canVillagerTrade": true
+  }
+}

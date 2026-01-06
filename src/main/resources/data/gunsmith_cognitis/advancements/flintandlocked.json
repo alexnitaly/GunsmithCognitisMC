@@ -1,0 +1,44 @@
+{
+  "display": {
+    "icon": {
+      "item": "gunsmith_cognitis:flintlockmusket"
+    },
+    "title": {
+      "translate": "advancements.flintandlocked.title"
+    },
+    "description": {
+      "translate": "advancements.flintandlocked.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "flintandlocked": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "gunsmith_cognitis:flintlock_blueprint"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 8,
+    "recipes": [
+      "gunsmith_cognitis:flintlockgunkitrecipe",
+      "gunsmith_cognitis:flintlock_musket_recipe",
+      "gunsmith_cognitis:flintlock_pistol_recipe"
+    ]
+  },
+  "parent": "gunsmith_cognitis:betterfirearmtheory"
+}

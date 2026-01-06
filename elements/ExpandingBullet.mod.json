@@ -1,0 +1,92 @@
+{
+  "_fv": 39,
+  "_type": "enchantment",
+  "definition": {
+    "name": "Expanding Bullet",
+    "type": "BOW",
+    "rarity": "COMMON",
+    "minLevel": 1,
+    "maxLevel": 2,
+    "damageModifier": 0,
+    "compatibleEnchantments": [
+      {
+        "value": "CUSTOM:Explosiveround"
+      },
+      {
+        "value": "CUSTOM:GunInfinity"
+      },
+      {
+        "value": "CUSTOM:PoisonedBullets"
+      },
+      {
+        "value": "POWER"
+      },
+      {
+        "value": "PUNCH"
+      },
+      {
+        "value": "FLAME"
+      },
+      {
+        "value": "MULTISHOT"
+      },
+      {
+        "value": "QUICK_CHARGE"
+      },
+      {
+        "value": "PIERCING"
+      },
+      {
+        "value": "MENDING"
+      }
+    ],
+    "excludeEnchantments": false,
+    "compatibleItems": [
+      {
+        "value": "CUSTOM:MatchlockArquebus"
+      },
+      {
+        "value": "CUSTOM:Handgunne"
+      },
+      {
+        "value": "CUSTOM:Threeeyegun"
+      },
+      {
+        "value": "CUSTOM:MatchlockBlunderbuss"
+      },
+      {
+        "value": "CUSTOM:Flintlockmusket"
+      },
+      {
+        "value": "CUSTOM:Flintlockmusketbayonet"
+      },
+      {
+        "value": "CUSTOM:Flintlockmusketgold"
+      },
+      {
+        "value": "CUSTOM:FlintlockPistol"
+      },
+      {
+        "value": "CUSTOM:FlintlockPistolGold"
+      },
+      {
+        "value": "CUSTOM:WheellockPistol"
+      },
+      {
+        "value": "CUSTOM:WheellockMusket"
+      },
+      {
+        "value": "CUSTOM:FlintlockDoubleBarrelMusket"
+      },
+      {
+        "value": "CUSTOM:FlintlockPepperbox"
+      }
+    ],
+    "excludeItems": false,
+    "isTreasureEnchantment": false,
+    "isCurse": false,
+    "isAllowedOnBooks": true,
+    "canGenerateInLootTables": true,
+    "canVillagerTrade": true
+  }
+}

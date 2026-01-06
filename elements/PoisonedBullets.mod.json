@@ -1,0 +1,95 @@
+{
+  "_fv": 39,
+  "_type": "enchantment",
+  "definition": {
+    "name": "Poison Bullet",
+    "type": "BOW",
+    "rarity": "RARE",
+    "minLevel": 1,
+    "maxLevel": 3,
+    "damageModifier": 2,
+    "compatibleEnchantments": [
+      {
+        "value": "CUSTOM:Explosiveround"
+      },
+      {
+        "value": "CUSTOM:GunInfinity"
+      },
+      {
+        "value": "POWER"
+      },
+      {
+        "value": "PUNCH"
+      },
+      {
+        "value": "FLAME"
+      },
+      {
+        "value": "INFINITY"
+      },
+      {
+        "value": "QUICK_CHARGE"
+      },
+      {
+        "value": "PIERCING"
+      },
+      {
+        "value": "MENDING"
+      },
+      {
+        "value": "VANISHING_CURSE"
+      },
+      {
+        "value": "MULTISHOT"
+      }
+    ],
+    "excludeEnchantments": false,
+    "compatibleItems": [
+      {
+        "value": "CUSTOM:Handgunne"
+      },
+      {
+        "value": "CUSTOM:Threeeyegun"
+      },
+      {
+        "value": "CUSTOM:MatchlockBlunderbuss"
+      },
+      {
+        "value": "CUSTOM:Flintlockmusket"
+      },
+      {
+        "value": "CUSTOM:Flintlockmusketbayonet"
+      },
+      {
+        "value": "CUSTOM:Flintlockmusketgold"
+      },
+      {
+        "value": "CUSTOM:FlintlockPistol"
+      },
+      {
+        "value": "CUSTOM:FlintlockPistolGold"
+      },
+      {
+        "value": "CUSTOM:WheellockPistol"
+      },
+      {
+        "value": "CUSTOM:WheellockMusket"
+      },
+      {
+        "value": "CUSTOM:FlintlockDoubleBarrelMusket"
+      },
+      {
+        "value": "CUSTOM:FlintlockPepperbox"
+      },
+      {
+        "value": "CUSTOM:MatchlockArquebus"
+      }
+    ],
+    "excludeItems": false,
+    "isTreasureEnchantment": false,
+    "isCurse": false,
+    "isAllowedOnBooks": true,
+    "canGenerateInLootTables": true,
+    "canVillagerTrade": true
+  }
+}

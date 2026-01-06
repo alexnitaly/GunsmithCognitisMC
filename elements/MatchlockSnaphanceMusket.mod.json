@@ -1,0 +1,45 @@
+{
+  "_fv": 39,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "matchlock_snaphance_musket",
+    "customModelName": "Normal",
+    "name": "Matchlock Snaphance Musket",
+    "specialInfo": [
+      "Matchlock Tier: Three gunpowder and musket balls to load."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:GunsmithCognitisTab"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 91,
+    "actionSound": {
+      "value": "CUSTOM:musket_shot"
+    },
+    "hasGlow": false,
+    "animation": "none",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "MatchlockSnaphanceMusketRangedItemUsed"
+    },
+    "useCondition": {
+      "name": "MatchlockSnaphanceMusketCanUseRangedItem"
+    },
+    "bulletPower": 3.1999999999999997,
+    "bulletDamage": 2.8000000000000003,
+    "bulletKnockback": 1,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:MusketBallProjectile"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": ""
+  }
+}

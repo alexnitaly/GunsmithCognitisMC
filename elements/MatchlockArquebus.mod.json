@@ -1,0 +1,47 @@
+{
+  "_fv": 39,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "matchlock_arquebus",
+    "customModelName": "Normal",
+    "name": "Matchlock Arquebus",
+    "specialInfo": [
+      "Matchlock Tier: Requires a string",
+      "two gunpowder and musket balls to load",
+      "requires flint n' steel to fire."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:GunsmithCognitisTab"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 72,
+    "actionSound": {
+      "value": "CUSTOM:musket_shot"
+    },
+    "hasGlow": false,
+    "animation": "none",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "MatchlockArquebusRangedItemUsed"
+    },
+    "useCondition": {
+      "name": "MatchlockArquebusCanUseRangedItem"
+    },
+    "bulletPower": 3.0,
+    "bulletDamage": 3.5,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:MusketBallProjectile"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": ""
+  }
+}

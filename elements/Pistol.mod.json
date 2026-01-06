@@ -1,0 +1,24 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:FlintlockPistol"
+      },
+      {
+        "value": "CUSTOM:FlintlockPistolGold"
+      },
+      {
+        "value": "CUSTOM:WheellockPistol"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "pistol",
+    "namespace": "mod"
+  }
+}

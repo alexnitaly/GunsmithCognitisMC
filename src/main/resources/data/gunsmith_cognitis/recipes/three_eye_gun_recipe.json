@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "gunsmith_cognitis:handgunne"
+    },
+    "1": {
+      "item": "gunsmith_cognitis:handgunne"
+    },
+    "2": {
+      "item": "gunsmith_cognitis:handgunne"
+    },
+    "3": {
+      "item": "minecraft:string"
+    }
+  },
+  "result": {
+    "item": "gunsmith_cognitis:threeeyegun",
+    "count": 1
+  }
+}

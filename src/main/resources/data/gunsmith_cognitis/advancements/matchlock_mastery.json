@@ -1,0 +1,44 @@
+{
+  "display": {
+    "icon": {
+      "item": "gunsmith_cognitis:handgunne"
+    },
+    "title": {
+      "translate": "advancements.matchlock_mastery.title"
+    },
+    "description": {
+      "translate": "advancements.matchlock_mastery.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "matchlock_mastery": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "gunsmith_cognitis:handgunne"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 3,
+    "recipes": [
+      "gunsmith_cognitis:matchlock_arquebus_recipe",
+      "gunsmith_cognitis:three_eye_gun_recipe",
+      "gunsmith_cognitis:matchlock_blunderbuss_recipe"
+    ]
+  },
+  "parent": "gunsmith_cognitis:gunpowdercognitisstart"
+}

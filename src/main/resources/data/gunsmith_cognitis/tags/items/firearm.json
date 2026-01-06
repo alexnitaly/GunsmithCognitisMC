@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "gunsmith_cognitis:matchlock_arquebus",
+    "gunsmith_cognitis:tanegashima",
+    "gunsmith_cognitis:flintlock_double_barrel_musket",
+    "gunsmith_cognitis:jezailmusket",
+    "gunsmith_cognitis:flintlock_pistol",
+    "gunsmith_cognitis:handgunne",
+    "gunsmith_cognitis:wheellock_pistol",
+    "gunsmith_cognitis:flintlockmusket",
+    "gunsmith_cognitis:wheellock_musket",
+    "gunsmith_cognitis:flintlock_pistol_gold",
+    "gunsmith_cognitis:matchlock_snaphance_musket",
+    "gunsmith_cognitis:threeeyegun",
+    "gunsmith_cognitis:flintlockmusketbayonet",
+    "gunsmith_cognitis:flintlockmusketgold",
+    "gunsmith_cognitis:flintlock_pepperbox",
+    "gunsmith_cognitis:matchlock_blunderbuss"
+  ]
+}

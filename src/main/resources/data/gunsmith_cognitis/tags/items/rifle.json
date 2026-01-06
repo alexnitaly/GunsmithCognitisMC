@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "gunsmith_cognitis:matchlock_arquebus",
+    "gunsmith_cognitis:tanegashima",
+    "gunsmith_cognitis:flintlock_double_barrel_musket",
+    "gunsmith_cognitis:flintlockmusketgold",
+    "gunsmith_cognitis:matchlock_blunderbuss",
+    "gunsmith_cognitis:flintlockmusket",
+    "gunsmith_cognitis:wheellock_musket"
+  ]
+}

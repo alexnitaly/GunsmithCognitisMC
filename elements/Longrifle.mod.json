@@ -1,0 +1,24 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Flintlockmusketbayonet"
+      },
+      {
+        "value": "CUSTOM:MatchlockSnaphanceMusket"
+      },
+      {
+        "value": "CUSTOM:Jezailmusket"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "long_rifle",
+    "namespace": "mod"
+  }
+}
