@@ -80,7 +80,7 @@ public class FlintlockmusketbayonetItem extends Item {
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 
-				MusketRangedItemUsedProcedure.execute(world, x, y, z, entity, itemstack);
+				MusketRangedItemUsedProcedure.execute(world, x, y, z, entity);
 			}
 		}
 	}

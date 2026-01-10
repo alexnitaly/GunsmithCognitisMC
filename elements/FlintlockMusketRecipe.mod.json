@@ -10,7 +10,7 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Items.IRON_INGOT"
+        "value": "CUSTOM:Smoothborebarrel"
       },
       {
         "value": ""
@@ -22,7 +22,7 @@
         "value": "Items.GUNPOWDER"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "CUSTOM:Smoothborebarrel"
       },
       {
         "value": "Items.FLINT_AND_STEEL"

@@ -7,7 +7,7 @@
   ],
   "key": {
     "0": {
-      "item": "minecraft:copper_ingot"
+      "item": "gunsmith_cognitis:crude_smoothborebarrel"
     },
     "1": {
       "item": "minecraft:gunpowder"
@@ -16,7 +16,7 @@
       "item": "minecraft:copper_ingot"
     },
     "4": {
-      "item": "minecraft:copper_ingot"
+      "item": "gunsmith_cognitis:crude_smoothborebarrel"
     },
     "5": {
       "item": "minecraft:string"

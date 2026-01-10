@@ -18,10 +18,11 @@
       "WheellockPistolRecipe",
       "WheellockMusketRecipe",
       "TanegashimaRecipe",
-      "MatchlockSnaphanceMusketRecipe"
+      "MatchlockSnaphanceMusketRecipe",
+      "MatchlockAxePistolRecipe"
     ],
     "rewardFunction": "No function",
-    "rewardXP": 0,
+    "rewardXP": 5,
     "achievementType": "task",
     "parent": {
       "value": "CUSTOM:MatchlockMastery"

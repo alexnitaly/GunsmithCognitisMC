@@ -1,13 +1,17 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "01"
+    "0 ",
+    "23"
   ],
   "key": {
     "0": {
+      "item": "minecraft:flint"
+    },
+    "2": {
       "item": "minecraft:iron_ingot"
     },
-    "1": {
+    "3": {
       "item": "gunsmith_cognitis:flintlockmusket"
     }
   },

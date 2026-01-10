@@ -1,0 +1,45 @@
+{
+  "_fv": 39,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "flintlock_double_barrel_pistol",
+    "customModelName": "Normal",
+    "name": "Flintlock DB Pistol",
+    "specialInfo": [
+      "Flintlock tier: Requires gunpowder and musket ball OR Small Paper Cartidges to load."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:GunsmithCognitisTab"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 147,
+    "actionSound": {
+      "value": "CUSTOM:musket_shot"
+    },
+    "hasGlow": false,
+    "animation": "none",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "FlintlockDoubleBarrelPistolRangedItemUsed"
+    },
+    "useCondition": {
+      "name": "FlintlockDoubleBarrelPistolCanUseRangedItem"
+    },
+    "bulletPower": 2.5,
+    "bulletDamage": 2.5,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:MusketBallProjectile"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": ""
+  }
+}

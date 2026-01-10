@@ -4,9 +4,16 @@
     "gunsmith_cognitis:matchlock_arquebus",
     "gunsmith_cognitis:tanegashima",
     "gunsmith_cognitis:flintlock_double_barrel_musket",
-    "gunsmith_cognitis:flintlockmusketgold",
-    "gunsmith_cognitis:matchlock_blunderbuss",
+    "gunsmith_cognitis:flintlock_rifled_carbine",
     "gunsmith_cognitis:flintlockmusket",
-    "gunsmith_cognitis:wheellock_musket"
+    "gunsmith_cognitis:wheellock_musket",
+    "gunsmith_cognitis:matchlock_snaphance_musket",
+    "gunsmith_cognitis:flintlockmusketgold",
+    "gunsmith_cognitis:flintlockmusketbayonet",
+    "gunsmith_cognitis:wheellock_carbine",
+    "gunsmith_cognitis:matchlock_blunderbuss",
+    "gunsmith_cognitis:wheellock_kalthoff_repeater",
+    "gunsmith_cognitis:wheellock_sporting_rifle",
+    "gunsmith_cognitis:flintlock_pepperbox_carbine"
   ]
 }

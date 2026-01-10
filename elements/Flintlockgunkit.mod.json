@@ -30,10 +30,10 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onRightClickedInAir": {
-      "name": "MatchlockrepairRightclicked"
+      "name": "FlintlockgunkitRightclickedOnBlock"
     },
     "onRightClickedOnBlock": {
-      "name": "MatchlockrepairRightclicked"
+      "name": "FlintlockgunkitRightclickedOnBlock"
     },
     "isFood": false,
     "nutritionalValue": 4,

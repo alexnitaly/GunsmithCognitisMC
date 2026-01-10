@@ -11,7 +11,7 @@ import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 
-import net.mcreator.gunsmithcognitis.procedures.MatchlockrepairRightclickedProcedure;
+import net.mcreator.gunsmithcognitis.procedures.FlintlockgunkitRightclickedOnBlockProcedure;
 import net.mcreator.gunsmithcognitis.init.GunsmithCognitisModTabs;
 
 public class FlintlockgunkitItem extends Item {
@@ -27,14 +27,14 @@ public class FlintlockgunkitItem extends Item {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		MatchlockrepairRightclickedProcedure.execute(entity);
+		FlintlockgunkitRightclickedOnBlockProcedure.execute(entity);
 		return ar;
 	}
 
 	@Override
 	public InteractionResult useOn(UseOnContext context) {
 		super.useOn(context);
-		MatchlockrepairRightclickedProcedure.execute(context.getPlayer());
+		FlintlockgunkitRightclickedOnBlockProcedure.execute(context.getPlayer());
 		return InteractionResult.SUCCESS;
 	}
 }

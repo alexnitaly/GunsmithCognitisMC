@@ -24,6 +24,27 @@
       },
       {
         "value": "CUSTOM:Tanegashima"
+      },
+      {
+        "value": "CUSTOM:MatchlockSnaphanceMusket"
+      },
+      {
+        "value": "CUSTOM:WheellockSportingRifle"
+      },
+      {
+        "value": "CUSTOM:WheellockCarbine"
+      },
+      {
+        "value": "CUSTOM:FlintlockRifledCarbine"
+      },
+      {
+        "value": "CUSTOM:Flintlockmusketbayonet"
+      },
+      {
+        "value": "CUSTOM:FlintlockPepperboxCarbine"
+      },
+      {
+        "value": "CUSTOM:WheellockKalthoffRepeater"
       }
     ],
     "blocks": [],

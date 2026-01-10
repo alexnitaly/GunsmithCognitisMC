@@ -1,0 +1,45 @@
+{
+  "_fv": 39,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "flintlock_asumette_rifled_wall_gun",
+    "customModelName": "Normal",
+    "name": "Flintlock Asumette Wall Gun",
+    "specialInfo": [
+      "Flintlock tier: Requires gunpowder and musket ball to load."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:GunsmithCognitisTab"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 225,
+    "actionSound": {
+      "value": "CUSTOM:musket_shot"
+    },
+    "hasGlow": false,
+    "animation": "none",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "MusketRangedItemUsed"
+    },
+    "useCondition": {
+      "name": "FlintlockAsumetteRifledWallGunCanUseRangedItem"
+    },
+    "bulletPower": 5.0,
+    "bulletDamage": 3.25,
+    "bulletKnockback": 1,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:MusketBallProjectile"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": ""
+  }
+}

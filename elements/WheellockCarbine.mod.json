@@ -1,0 +1,49 @@
+{
+  "_fv": 39,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "wheellock_carbine",
+    "customModelName": "Normal",
+    "name": "Wheellock Carbine",
+    "specialInfo": [
+      "Wheellock tier: Wheel must be spun",
+      "then requires gunpowder and musket ball to load."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:GunsmithCognitisTab"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 99,
+    "actionSound": {
+      "value": "CUSTOM:musket_shot"
+    },
+    "hasGlow": false,
+    "animation": "none",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "WheellockMusketRangedItemUsed"
+    },
+    "onEntitySwing": {
+      "name": "WheellockCarbineEntitySwingsItem"
+    },
+    "useCondition": {
+      "name": "WheellockCarbineCanUseRangedItem"
+    },
+    "bulletPower": 2.8,
+    "bulletDamage": 3.0,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:MusketBallProjectile"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": ""
+  }
+}

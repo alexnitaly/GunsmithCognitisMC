@@ -25,7 +25,7 @@ import java.util.List;
 
 public class FlintlockPepperboxItem extends Item {
 	public FlintlockPepperboxItem() {
-		super(new Item.Properties().tab(GunsmithCognitisModTabs.TAB_GUNSMITH_COGNITIS_TAB).durability(181));
+		super(new Item.Properties().tab(GunsmithCognitisModTabs.TAB_GUNSMITH_COGNITIS_TAB).durability(121));
 	}
 
 	@Override
@@ -37,7 +37,7 @@ public class FlintlockPepperboxItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("Flintlock tier: Requires gunpowder and musket ball  to load."));
+		list.add(new TextComponent("Flintlock tier: Requires gunpowder and musket ball to load."));
 	}
 
 	@Override
@@ -57,7 +57,7 @@ public class FlintlockPepperboxItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (FlintlockPepperboxCanUseRangedItemProcedure.execute(world, x, y, z, entity)) {
-				FlintlockPepperboxEntity entityarrow = FlintlockPepperboxEntity.shoot(world, entity, world.getRandom(), 2.3000000000000003f, 2.5, 0);
+				FlintlockPepperboxEntity entityarrow = FlintlockPepperboxEntity.shoot(world, entity, world.getRandom(), 2.5f, 2, 0);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 

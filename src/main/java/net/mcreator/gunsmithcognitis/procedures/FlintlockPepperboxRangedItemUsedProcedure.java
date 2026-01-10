@@ -56,7 +56,7 @@ public class FlintlockPepperboxRangedItemUsedProcedure {
 					itemstack.getOrCreateTag().putBoolean("cooldown", (true));
 					MinecraftForge.EVENT_BUS.unregister(this);
 				}
-			}.start(world, 29);
+			}.start(world, 27);
 		} else {
 			if (!(itemstack.getOrCreateTag().getDouble("ammo") < 1)) {
 				if (world instanceof ServerLevel _level)
@@ -88,7 +88,7 @@ public class FlintlockPepperboxRangedItemUsedProcedure {
 						itemstack.getOrCreateTag().putBoolean("cooldown", (false));
 						MinecraftForge.EVENT_BUS.unregister(this);
 					}
-				}.start(world, 18);
+				}.start(world, 12);
 				if (itemstack.getOrCreateTag().getDouble("ammo") == 0) {
 					itemstack.getOrCreateTag().putDouble("gunpowder", 0);
 					itemstack.getOrCreateTag().putBoolean("ramrod loaded", (false));

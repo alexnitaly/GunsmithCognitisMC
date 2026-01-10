@@ -1,0 +1,47 @@
+{
+  "_fv": 39,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "matchlock_axe_pistol",
+    "customModelName": "Normal",
+    "name": "Matchlock Axe Pistol",
+    "specialInfo": [
+      "Matchlock Tier: Requires a string",
+      "two gunpowder and musket balls to load",
+      "requires flint n' steel to fire."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:GunsmithCognitisTab"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 90,
+    "actionSound": {
+      "value": "CUSTOM:musket_shot"
+    },
+    "hasGlow": false,
+    "animation": "none",
+    "enableMeleeDamage": true,
+    "damageVsEntity": 8.5,
+    "onRangedItemUsed": {
+      "name": "MatchlockAxePistolRangedItemUsed"
+    },
+    "useCondition": {
+      "name": "MatchlockAxePistolCanUseRangedItem"
+    },
+    "bulletPower": 2.5,
+    "bulletDamage": 2.0,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:MusketBallProjectile"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": ""
+  }
+}

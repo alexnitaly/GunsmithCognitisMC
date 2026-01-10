@@ -1,19 +1,22 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " 1 ",
+    "01 ",
     "345",
     "678"
   ],
   "key": {
+    "0": {
+      "item": "gunsmith_cognitis:smoothborebarrel"
+    },
     "1": {
-      "item": "minecraft:iron_ingot"
+      "item": "gunsmith_cognitis:smoothborebarrel"
     },
     "3": {
-      "item": "minecraft:iron_ingot"
+      "item": "gunsmith_cognitis:smoothborebarrel"
     },
     "4": {
-      "item": "minecraft:iron_ingot"
+      "item": "gunsmith_cognitis:smoothborebarrel"
     },
     "5": {
       "item": "gunsmith_cognitis:flintlockgunkit"

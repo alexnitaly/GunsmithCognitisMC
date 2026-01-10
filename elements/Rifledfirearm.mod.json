@@ -1,0 +1,27 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Jezailmusket"
+      },
+      {
+        "value": "CUSTOM:WheellockSportingRifle"
+      },
+      {
+        "value": "CUSTOM:FlintlockRifledCarbine"
+      },
+      {
+        "value": "CUSTOM:FlintlockAsumetteRifledWallGun"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "rifled_firearm",
+    "namespace": "mod"
+  }
+}

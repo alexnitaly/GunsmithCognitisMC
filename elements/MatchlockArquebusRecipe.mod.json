@@ -10,7 +10,7 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Items.COPPER_INGOT"
+        "value": "CUSTOM:CrudeSmoothborebarrel"
       },
       {
         "value": ""
@@ -22,7 +22,7 @@
         "value": "Items.GUNPOWDER"
       },
       {
-        "value": "Items.COPPER_INGOT"
+        "value": "CUSTOM:CrudeSmoothborebarrel"
       },
       {
         "value": "Items.STRING"

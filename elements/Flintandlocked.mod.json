@@ -20,7 +20,7 @@
     ],
     "rewardFunction": "No function",
     "rewardXP": 8,
-    "achievementType": "challenge",
+    "achievementType": "goal",
     "parent": {
       "value": "CUSTOM:Betterfirearmtheory"
     },

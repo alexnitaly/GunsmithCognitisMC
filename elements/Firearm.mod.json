@@ -51,6 +51,36 @@
       },
       {
         "value": "CUSTOM:Jezailmusket"
+      },
+      {
+        "value": "CUSTOM:MatchlockAxePistol"
+      },
+      {
+        "value": "CUSTOM:MatchlockWallGun"
+      },
+      {
+        "value": "CUSTOM:WheellockCarbine"
+      },
+      {
+        "value": "CUSTOM:WheellockSportingRifle"
+      },
+      {
+        "value": "CUSTOM:FlintlockRifledCarbine"
+      },
+      {
+        "value": "CUSTOM:FlintlockAsumetteRifledWallGun"
+      },
+      {
+        "value": "CUSTOM:FlintlockDoubleBarrelPistol"
+      },
+      {
+        "value": "CUSTOM:FlintlockLorenzoniRepeater"
+      },
+      {
+        "value": "CUSTOM:FlintlockPepperboxCarbine"
+      },
+      {
+        "value": "CUSTOM:WheellockKalthoffRepeater"
       }
     ],
     "blocks": [],

@@ -9,6 +9,12 @@
       },
       {
         "value": "CUSTOM:Threeeyegun"
+      },
+      {
+        "value": "CUSTOM:MatchlockWallGun"
+      },
+      {
+        "value": "CUSTOM:FlintlockAsumetteRifledWallGun"
       }
     ],
     "blocks": [],

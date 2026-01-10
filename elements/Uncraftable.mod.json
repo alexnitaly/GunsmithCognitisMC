@@ -1,0 +1,30 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Flintlockmusketgold"
+      },
+      {
+        "value": "CUSTOM:FlintlockPistolGold"
+      },
+      {
+        "value": "CUSTOM:Jezailmusket"
+      },
+      {
+        "value": "CUSTOM:FlintlockLorenzoniRepeater"
+      },
+      {
+        "value": "CUSTOM:WheellockKalthoffRepeater"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "uncraftable",
+    "namespace": "mod"
+  }
+}

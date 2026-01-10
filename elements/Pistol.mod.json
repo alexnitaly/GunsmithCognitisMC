@@ -12,6 +12,18 @@
       },
       {
         "value": "CUSTOM:WheellockPistol"
+      },
+      {
+        "value": "CUSTOM:MatchlockAxePistol"
+      },
+      {
+        "value": "CUSTOM:FlintlockPepperbox"
+      },
+      {
+        "value": "CUSTOM:FlintlockDoubleBarrelPistol"
+      },
+      {
+        "value": "CUSTOM:FlintlockLorenzoniRepeater"
       }
     ],
     "blocks": [],

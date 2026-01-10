@@ -1,0 +1,49 @@
+{
+  "_fv": 39,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "wheellock_sporting_rifle",
+    "customModelName": "Normal",
+    "name": "Wheellock Sporting Rifle",
+    "specialInfo": [
+      "Wheellock tier: Wheel must be spun",
+      "then requires gunpowder and musket ball to load."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:GunsmithCognitisTab"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 127,
+    "actionSound": {
+      "value": "CUSTOM:musket_shot"
+    },
+    "hasGlow": false,
+    "animation": "none",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "WheellockMusketRangedItemUsed"
+    },
+    "onEntitySwing": {
+      "name": "WheellockSportingRifleEntitySwingsItem"
+    },
+    "useCondition": {
+      "name": "WheellockSportingRifleCanUseRangedItem"
+    },
+    "bulletPower": 3.0,
+    "bulletDamage": 3.0,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:MusketBallProjectile"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": ""
+  }
+}

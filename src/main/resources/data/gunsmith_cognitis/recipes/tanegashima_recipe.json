@@ -7,7 +7,7 @@
   ],
   "key": {
     "0": {
-      "item": "minecraft:iron_ingot"
+      "item": "gunsmith_cognitis:smoothborebarrel"
     },
     "1": {
       "item": "minecraft:gold_nugget"
@@ -16,7 +16,7 @@
       "item": "minecraft:gunpowder"
     },
     "4": {
-      "item": "minecraft:iron_ingot"
+      "item": "gunsmith_cognitis:smoothborebarrel"
     },
     "5": {
       "item": "minecraft:string"
@@ -32,7 +32,7 @@
     }
   },
   "result": {
-    "item": "gunsmith_cognitis:matchlock_arquebus",
+    "item": "gunsmith_cognitis:tanegashima",
     "count": 1
   }
 }

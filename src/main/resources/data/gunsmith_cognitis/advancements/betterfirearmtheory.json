@@ -33,13 +33,14 @@
     }
   },
   "rewards": {
-    "experience": 0,
+    "experience": 5,
     "recipes": [
       "gunsmith_cognitis:wheellockgunkitrecipe",
       "gunsmith_cognitis:wheellock_pistol_recipe",
       "gunsmith_cognitis:wheellock_musket_recipe",
       "gunsmith_cognitis:tanegashima_recipe",
-      "gunsmith_cognitis:matchlock_snaphance_musket_recipe"
+      "gunsmith_cognitis:matchlock_snaphance_musket_recipe",
+      "gunsmith_cognitis:matchlock_axe_pistol_recipe"
     ]
   },
   "parent": "gunsmith_cognitis:matchlock_mastery"

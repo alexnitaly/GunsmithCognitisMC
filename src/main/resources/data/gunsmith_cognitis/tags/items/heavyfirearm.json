@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "gunsmith_cognitis:matchlock_wall_gun",
+    "gunsmith_cognitis:flintlock_asumette_rifled_wall_gun",
     "gunsmith_cognitis:threeeyegun",
     "gunsmith_cognitis:handgunne"
   ]

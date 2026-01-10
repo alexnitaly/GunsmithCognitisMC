@@ -7,13 +7,13 @@
   ],
   "key": {
     "0": {
-      "item": "minecraft:iron_ingot"
+      "item": "gunsmith_cognitis:smoothborebarrel"
     },
     "3": {
       "item": "minecraft:gunpowder"
     },
     "4": {
-      "item": "minecraft:iron_ingot"
+      "item": "gunsmith_cognitis:smoothborebarrel"
     },
     "5": {
       "item": "minecraft:flint_and_steel"

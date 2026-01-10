@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "gunsmith_cognitis:wheellock_carbine",
+    "gunsmith_cognitis:wheellock_kalthoff_repeater",
+    "gunsmith_cognitis:wheellock_pistol",
+    "gunsmith_cognitis:wheellock_musket",
+    "gunsmith_cognitis:wheellock_sporting_rifle"
+  ]
+}
