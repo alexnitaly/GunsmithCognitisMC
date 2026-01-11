@@ -130,6 +130,10 @@ public class LootInjectionHandler {
             event.getTable().addPool(LootPool.lootPool().setRolls(UniformGenerator.between(1, 1))
                 .add(LootItem.lootTableItem(GunsmithCognitisModItems.TANEGASHIMA.get()).setWeight(1))
                 .add(LootItem.lootTableItem(Items.AIR).setWeight(2)).build());
+
+            event.getTable().addPool(LootPool.lootPool().setRolls(UniformGenerator.between(1, 1))
+                .add(LootItem.lootTableItem(GunsmithCognitisModItems.DIVINE_FIVE_THUNDER_MACHINE.get()).setWeight(1))
+                .add(LootItem.lootTableItem(Items.AIR).setWeight(5)).build());
         }
 
         // SHIPWRECKS

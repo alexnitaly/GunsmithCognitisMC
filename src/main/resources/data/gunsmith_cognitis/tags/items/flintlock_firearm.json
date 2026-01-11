@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "gunsmith_cognitis:flintlock_asumette_rifled_wall_gun",
+    "gunsmith_cognitis:nock_volley_gun",
     "gunsmith_cognitis:flintlock_double_barrel_musket",
     "gunsmith_cognitis:jezailmusket",
     "gunsmith_cognitis:flintlock_pistol",
@@ -11,8 +12,11 @@
     "gunsmith_cognitis:flintlock_double_barrel_pistol",
     "gunsmith_cognitis:flintlockmusketbayonet",
     "gunsmith_cognitis:flintlockmusketgold",
+    "gunsmith_cognitis:flintlock_heavy_dragoon_pistol",
     "gunsmith_cognitis:flintlock_pepperbox",
     "gunsmith_cognitis:flintlock_lorenzoni_repeater",
+    "gunsmith_cognitis:ferguson_rifle",
+    "gunsmith_cognitis:flintlock_hand_mortar",
     "gunsmith_cognitis:flintlock_pepperbox_carbine"
   ]
 }

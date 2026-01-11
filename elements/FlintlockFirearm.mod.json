@@ -42,6 +42,18 @@
       },
       {
         "value": "CUSTOM:Jezailmusket"
+      },
+      {
+        "value": "CUSTOM:FlintlockHeavyDragoonPistol"
+      },
+      {
+        "value": "CUSTOM:NockVolleyGun"
+      },
+      {
+        "value": "CUSTOM:FergusonRifle"
+      },
+      {
+        "value": "CUSTOM:FlintlockHandMortar"
       }
     ],
     "blocks": [],

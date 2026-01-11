@@ -1,0 +1,55 @@
+{
+  "_fv": 39,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "flintlock_hand_mortar",
+    "customModelName": "Normal",
+    "name": "Flintlock Hand Mortar",
+    "specialInfo": [
+      "Flintlock tier: Requires three Gunpowder to prepare",
+      "accepts Mortar ammo",
+      "Hand Bombs",
+      "Fire Charge",
+      "Stone or Cobblestone as ammunition."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:GunsmithCognitisTab"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 196,
+    "actionSound": {
+      "value": "CUSTOM:musket_shot"
+    },
+    "hasGlow": false,
+    "animation": "none",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "FlintlockHandMortarRangedItemUsed"
+    },
+    "useCondition": {
+      "name": "FlintlockHandMortarCanUseRangedItem"
+    },
+    "bulletPower": 2.5,
+    "bulletDamage": 4.0,
+    "bulletKnockback": 2,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:Mortarball"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "FlintlockHandMortarProjectileHitsBlock"
+    },
+    "onBulletHitsPlayer": {
+      "name": "FlintlockHandMortarProjectileHitsBlock"
+    }
+  }
+}

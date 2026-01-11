@@ -23,6 +23,8 @@ import net.mcreator.gunsmithcognitis.entity.WheellockKalthoffRepeaterEntity;
 import net.mcreator.gunsmithcognitis.entity.WheellockCarbineEntity;
 import net.mcreator.gunsmithcognitis.entity.ThreeeyegunEntity;
 import net.mcreator.gunsmithcognitis.entity.TanegashimaEntity;
+import net.mcreator.gunsmithcognitis.entity.RockEntity;
+import net.mcreator.gunsmithcognitis.entity.NockVolleyGunEntity;
 import net.mcreator.gunsmithcognitis.entity.MatchlockWallGunEntity;
 import net.mcreator.gunsmithcognitis.entity.MatchlockSnaphanceMusketEntity;
 import net.mcreator.gunsmithcognitis.entity.MatchlockBlunderbussEntity;
@@ -40,9 +42,14 @@ import net.mcreator.gunsmithcognitis.entity.FlintlockPistolEntity;
 import net.mcreator.gunsmithcognitis.entity.FlintlockPepperboxEntity;
 import net.mcreator.gunsmithcognitis.entity.FlintlockPepperboxCarbineEntity;
 import net.mcreator.gunsmithcognitis.entity.FlintlockLorenzoniRepeaterEntity;
+import net.mcreator.gunsmithcognitis.entity.FlintlockHeavyDragoonPistolEntity;
+import net.mcreator.gunsmithcognitis.entity.FlintlockHandMortarEntity;
 import net.mcreator.gunsmithcognitis.entity.FlintlockDoubleBarrelPistolEntity;
 import net.mcreator.gunsmithcognitis.entity.FlintlockDoubleBarrelMusketEntity;
+import net.mcreator.gunsmithcognitis.entity.FlintlockCollierRevolverEntity;
 import net.mcreator.gunsmithcognitis.entity.FlintlockAsumetteRifledWallGunEntity;
+import net.mcreator.gunsmithcognitis.entity.FergusonRifleEntity;
+import net.mcreator.gunsmithcognitis.entity.DivineFiveThunderMachineEntity;
 import net.mcreator.gunsmithcognitis.GunsmithCognitisMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -111,6 +118,23 @@ public class GunsmithCognitisModEntities {
 					.setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<WheellockKalthoffRepeaterEntity>> WHEELLOCK_KALTHOFF_REPEATER = register("projectile_wheellock_kalthoff_repeater",
 			EntityType.Builder.<WheellockKalthoffRepeaterEntity>of(WheellockKalthoffRepeaterEntity::new, MobCategory.MISC).setCustomClientFactory(WheellockKalthoffRepeaterEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<DivineFiveThunderMachineEntity>> DIVINE_FIVE_THUNDER_MACHINE = register("projectile_divine_five_thunder_machine",
+			EntityType.Builder.<DivineFiveThunderMachineEntity>of(DivineFiveThunderMachineEntity::new, MobCategory.MISC).setCustomClientFactory(DivineFiveThunderMachineEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<FlintlockHeavyDragoonPistolEntity>> FLINTLOCK_HEAVY_DRAGOON_PISTOL = register("projectile_flintlock_heavy_dragoon_pistol",
+			EntityType.Builder.<FlintlockHeavyDragoonPistolEntity>of(FlintlockHeavyDragoonPistolEntity::new, MobCategory.MISC).setCustomClientFactory(FlintlockHeavyDragoonPistolEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<NockVolleyGunEntity>> NOCK_VOLLEY_GUN = register("projectile_nock_volley_gun",
+			EntityType.Builder.<NockVolleyGunEntity>of(NockVolleyGunEntity::new, MobCategory.MISC).setCustomClientFactory(NockVolleyGunEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<FergusonRifleEntity>> FERGUSON_RIFLE = register("projectile_ferguson_rifle",
+			EntityType.Builder.<FergusonRifleEntity>of(FergusonRifleEntity::new, MobCategory.MISC).setCustomClientFactory(FergusonRifleEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<FlintlockHandMortarEntity>> FLINTLOCK_HAND_MORTAR = register("projectile_flintlock_hand_mortar", EntityType.Builder.<FlintlockHandMortarEntity>of(FlintlockHandMortarEntity::new, MobCategory.MISC)
+			.setCustomClientFactory(FlintlockHandMortarEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<RockEntity>> ROCK = register("projectile_rock",
+			EntityType.Builder.<RockEntity>of(RockEntity::new, MobCategory.MISC).setCustomClientFactory(RockEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<FlintlockCollierRevolverEntity>> FLINTLOCK_COLLIER_REVOLVER = register("projectile_flintlock_collier_revolver",
+			EntityType.Builder.<FlintlockCollierRevolverEntity>of(FlintlockCollierRevolverEntity::new, MobCategory.MISC).setCustomClientFactory(FlintlockCollierRevolverEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {

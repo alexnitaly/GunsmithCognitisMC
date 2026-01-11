@@ -69,6 +69,18 @@
       },
       {
         "value": "CUSTOM:WheellockKalthoffRepeater"
+      },
+      {
+        "value": "CUSTOM:DivineFiveThunderMachine"
+      },
+      {
+        "value": "CUSTOM:FlintlockHeavyDragoonPistol"
+      },
+      {
+        "value": "CUSTOM:NockVolleyGun"
+      },
+      {
+        "value": "CUSTOM:FlintlockHandMortar"
       }
     ],
     "blocks": [],

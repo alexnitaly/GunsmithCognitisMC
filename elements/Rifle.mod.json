@@ -45,6 +45,12 @@
       },
       {
         "value": "CUSTOM:WheellockKalthoffRepeater"
+      },
+      {
+        "value": "CUSTOM:FergusonRifle"
+      },
+      {
+        "value": "CUSTOM:FlintlockHandMortar"
       }
     ],
     "blocks": [],

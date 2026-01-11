@@ -4925,6 +4925,1187 @@
         ]
       },
       "path": "~/AmmoOverlays"
+    },
+    {
+      "name": "DivineFiveThunderMachine",
+      "type": "rangeditem",
+      "sortid": 222,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "divine_five_thunder_machine",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gunsmith_cognitis/models/item/divine_five_thunder_machine.json",
+          "src/main/java/net/mcreator/gunsmithcognitis/entity/DivineFiveThunderMachineEntity.java",
+          "src/main/java/net/mcreator/gunsmithcognitis/item/DivineFiveThunderMachineItem.java"
+        ]
+      },
+      "path": "~/Matchlocks"
+    },
+    {
+      "name": "IsProtective",
+      "type": "tag",
+      "sortid": 223,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_protective",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gunsmith_cognitis/tags/items/is_protective.json"
+        ]
+      }
+    },
+    {
+      "name": "DivineFiveThunderMachineCanUseRangedItem",
+      "type": "procedure",
+      "sortid": 224,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "divine_five_thunder_machine_can_use_ranged_item",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/DivineFiveThunderMachineCanUseRangedItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Matchlocks"
+    },
+    {
+      "name": "DivineFiveThunderMachineReload",
+      "type": "procedure",
+      "sortid": 225,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "divine_five_thunder_machine_reload",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/DivineFiveThunderMachineReloadProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Matchlocks"
+    },
+    {
+      "name": "DivineFiveThunderMachineProjectileHitsPlayer",
+      "type": "procedure",
+      "sortid": 226,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "divine_five_thunder_machine_projectile_hits_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/DivineFiveThunderMachineProjectileHitsPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Matchlocks"
+    },
+    {
+      "name": "DivineFiveThunderMachineOverlay",
+      "type": "procedure",
+      "sortid": 227,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "divine_five_thunder_machine_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/DivineFiveThunderMachineOverlayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/AmmoOverlays"
+    },
+    {
+      "name": "FlintlockHeavyDragoonPistol",
+      "type": "rangeditem",
+      "sortid": 228,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock_heavy_dragoon_pistol",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/entity/FlintlockHeavyDragoonPistolEntity.java",
+          "src/main/java/net/mcreator/gunsmithcognitis/item/FlintlockHeavyDragoonPistolItem.java",
+          "src/main/resources/assets/gunsmith_cognitis/models/item/flintlock_heavy_dragoon_pistol.json"
+        ]
+      },
+      "path": "~/Flintlock"
+    },
+    {
+      "name": "FlintlockHeavyDragoonPistolCanUseRangedItem",
+      "type": "procedure",
+      "sortid": 229,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock_heavy_dragoon_pistol_can_use_ranged_item",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/FlintlockHeavyDragoonPistolCanUseRangedItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Flintlock"
+    },
+    {
+      "name": "FlintlockHeavyDragoonPistolRangedItemUsed",
+      "type": "procedure",
+      "sortid": 230,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock_heavy_dragoon_pistol_ranged_item_used",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/FlintlockHeavyDragoonPistolRangedItemUsedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Flintlock"
+    },
+    {
+      "name": "FlintlockHeavyDragoonPistolReload",
+      "type": "procedure",
+      "sortid": 231,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock_heavy_dragoon_pistol_reload",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/FlintlockHeavyDragoonPistolReloadProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Flintlock"
+    },
+    {
+      "name": "FlintlockHeavyDragoonPistolOffhandReload",
+      "type": "procedure",
+      "sortid": 232,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock_heavy_dragoon_pistol_offhand_reload",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/FlintlockHeavyDragoonPistolOffhandReloadProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Flintlock"
+    },
+    {
+      "name": "FlintlockHeavyDragoonPistolOverlay",
+      "type": "procedure",
+      "sortid": 233,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock_heavy_dragoon_pistol_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/FlintlockHeavyDragoonPistolOverlayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/AmmoOverlays"
+    },
+    {
+      "name": "FlintlockPepperboxCarbineRecipe",
+      "type": "recipe",
+      "sortid": 234,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock_pepperbox_carbine_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gunsmith_cognitis/recipes/flintlock_pepperbox_carbine_recipe.json"
+        ]
+      },
+      "path": "~/Flintlock"
+    },
+    {
+      "name": "FlintlockHeavyDragoonPistolRecipe",
+      "type": "recipe",
+      "sortid": 235,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock_heavy_dragoon_pistol_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gunsmith_cognitis/recipes/flintlock_heavy_dragoon_pistol_recipe.json"
+        ]
+      },
+      "path": "~/Flintlock"
+    },
+    {
+      "name": "NockVolleyGunFrontComponent",
+      "type": "item",
+      "sortid": 236,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nock_volley_gun_front_component",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gunsmith_cognitis/models/item/nock_volley_gun_front_component.json",
+          "src/main/java/net/mcreator/gunsmithcognitis/item/NockVolleyGunFrontComponentItem.java"
+        ]
+      },
+      "path": "~/Misc. Items"
+    },
+    {
+      "name": "NockVolleyGun",
+      "type": "rangeditem",
+      "sortid": 237,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nock_volley_gun",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gunsmith_cognitis/models/item/nock_volley_gun.json",
+          "src/main/java/net/mcreator/gunsmithcognitis/item/NockVolleyGunItem.java",
+          "src/main/java/net/mcreator/gunsmithcognitis/entity/NockVolleyGunEntity.java"
+        ]
+      },
+      "path": "~/Flintlock"
+    },
+    {
+      "name": "NockVolleyGunCanUseRangedItem",
+      "type": "procedure",
+      "sortid": 238,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nock_volley_gun_can_use_ranged_item",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/NockVolleyGunCanUseRangedItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Flintlock"
+    },
+    {
+      "name": "NockVolleyGunRangedItemUsed",
+      "type": "procedure",
+      "sortid": 239,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nock_volley_gun_ranged_item_used",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/NockVolleyGunRangedItemUsedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Flintlock"
+    },
+    {
+      "name": "NockVolleyGunReload",
+      "type": "procedure",
+      "sortid": 240,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nock_volley_gun_reload",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/NockVolleyGunReloadProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Flintlock"
+    },
+    {
+      "name": "NockVolleyGunOverlay",
+      "type": "procedure",
+      "sortid": 241,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nock_volley_gun_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/NockVolleyGunOverlayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/AmmoOverlays"
+    },
+    {
+      "name": "NockVolleyGunFrontComponentRecipe",
+      "type": "recipe",
+      "sortid": 242,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nock_volley_gun_front_component_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gunsmith_cognitis/recipes/nock_volley_gun_front_component_recipe.json"
+        ]
+      },
+      "path": "~/Flintlock"
+    },
+    {
+      "name": "NockVolleyGunRecipe",
+      "type": "recipe",
+      "sortid": 243,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nock_volley_gun_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gunsmith_cognitis/recipes/nock_volley_gun_recipe.json"
+        ]
+      },
+      "path": "~/Flintlock"
+    },
+    {
+      "name": "FergusonRifle",
+      "type": "rangeditem",
+      "sortid": 244,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ferguson_rifle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/entity/FergusonRifleEntity.java",
+          "src/main/resources/assets/gunsmith_cognitis/models/item/ferguson_rifle.json",
+          "src/main/java/net/mcreator/gunsmithcognitis/item/FergusonRifleItem.java"
+        ]
+      },
+      "path": "~/Flintlock"
+    },
+    {
+      "name": "FergusonRifleCanUseRangedItem",
+      "type": "procedure",
+      "sortid": 245,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ferguson_rifle_can_use_ranged_item",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/FergusonRifleCanUseRangedItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Flintlock"
+    },
+    {
+      "name": "FergusonRifleRangedItemUsed",
+      "type": "procedure",
+      "sortid": 246,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ferguson_rifle_ranged_item_used",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/FergusonRifleRangedItemUsedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Flintlock"
+    },
+    {
+      "name": "FergusonRifleReload",
+      "type": "procedure",
+      "sortid": 247,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ferguson_rifle_reload",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/FergusonRifleReloadProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Flintlock"
+    },
+    {
+      "name": "FergusonRifleOverlay",
+      "type": "procedure",
+      "sortid": 248,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ferguson_rifle_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/FergusonRifleOverlayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/AmmoOverlays"
+    },
+    {
+      "name": "FlintlockRifledCarbineRecipe",
+      "type": "recipe",
+      "sortid": 249,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock_rifled_carbine_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gunsmith_cognitis/recipes/flintlock_rifled_carbine_recipe.json"
+        ]
+      },
+      "path": "~/Flintlock"
+    },
+    {
+      "name": "FergusonRifleRecipe",
+      "type": "recipe",
+      "sortid": 250,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ferguson_rifle_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gunsmith_cognitis/recipes/ferguson_rifle_recipe.json"
+        ]
+      },
+      "path": "~/Flintlock"
+    },
+    {
+      "name": "FlintlockAsumetteWallGunRecipe",
+      "type": "recipe",
+      "sortid": 251,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock_asumette_wall_gun_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gunsmith_cognitis/recipes/flintlock_asumette_wall_gun_recipe.json"
+        ]
+      },
+      "path": "~/Flintlock"
+    },
+    {
+      "name": "FlintlockHandMortar",
+      "type": "rangeditem",
+      "sortid": 252,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock_hand_mortar",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gunsmith_cognitis/models/item/flintlock_hand_mortar.json",
+          "src/main/java/net/mcreator/gunsmithcognitis/item/FlintlockHandMortarItem.java",
+          "src/main/java/net/mcreator/gunsmithcognitis/entity/FlintlockHandMortarEntity.java"
+        ]
+      },
+      "path": "~/Flintlock"
+    },
+    {
+      "name": "FlintlockHandMortarCanUseRangedItem",
+      "type": "procedure",
+      "sortid": 253,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock_hand_mortar_can_use_ranged_item",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/FlintlockHandMortarCanUseRangedItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Flintlock"
+    },
+    {
+      "name": "FlintlockHandMortarRangedItemUsed",
+      "type": "procedure",
+      "sortid": 254,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock_hand_mortar_ranged_item_used",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/FlintlockHandMortarRangedItemUsedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Flintlock"
+    },
+    {
+      "name": "FlintlockHandMortarReload",
+      "type": "procedure",
+      "sortid": 255,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock_hand_mortar_reload",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/FlintlockHandMortarReloadProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Flintlock"
+    },
+    {
+      "name": "Rock",
+      "type": "rangeditem",
+      "sortid": 256,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rock",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gunsmith_cognitis/models/item/rock.json",
+          "src/main/java/net/mcreator/gunsmithcognitis/item/RockItem.java",
+          "src/main/java/net/mcreator/gunsmithcognitis/entity/RockEntity.java"
+        ]
+      },
+      "path": "~/Misc. Items"
+    },
+    {
+      "name": "FlintlockHandMortarFireCheck",
+      "type": "procedure",
+      "sortid": 257,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock_hand_mortar_fire_check",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/FlintlockHandMortarFireCheckProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Flintlock"
+    },
+    {
+      "name": "FlintlockHandMortarOverlay",
+      "type": "procedure",
+      "sortid": 258,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock_hand_mortar_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/FlintlockHandMortarOverlayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/AmmoOverlays"
+    },
+    {
+      "name": "Mortarball",
+      "type": "item",
+      "sortid": 259,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mortarball",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gunsmith_cognitis/models/item/mortarball.json",
+          "src/main/java/net/mcreator/gunsmithcognitis/item/MortarballItem.java"
+        ]
+      },
+      "path": "~/Misc. Items"
+    },
+    {
+      "name": "MortarballRecipe",
+      "type": "recipe",
+      "sortid": 260,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mortarball_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gunsmith_cognitis/recipes/mortarball_recipe.json"
+        ]
+      },
+      "path": "~/Misc. Items"
+    },
+    {
+      "name": "FlintlockHandMortarProjectileHitsBlock",
+      "type": "procedure",
+      "sortid": 261,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock_hand_mortar_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/FlintlockHandMortarProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Flintlock"
+    },
+    {
+      "name": "FlintlockCollierRevolver",
+      "type": "rangeditem",
+      "sortid": 262,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock_collier_revolver",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gunsmith_cognitis/models/item/flintlock_collier_revolver.json",
+          "src/main/java/net/mcreator/gunsmithcognitis/item/FlintlockCollierRevolverItem.java",
+          "src/main/java/net/mcreator/gunsmithcognitis/entity/FlintlockCollierRevolverEntity.java"
+        ]
+      },
+      "path": "~/Flintlock"
+    },
+    {
+      "name": "FlintlockCollierRevolverCanUseRangedItem",
+      "type": "procedure",
+      "sortid": 263,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock_collier_revolver_can_use_ranged_item",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/FlintlockCollierRevolverCanUseRangedItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Flintlock"
+    },
+    {
+      "name": "FlintlockCollierRevolverRangedItemUsed",
+      "type": "procedure",
+      "sortid": 264,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock_collier_revolver_ranged_item_used",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/FlintlockCollierRevolverRangedItemUsedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Flintlock"
+    },
+    {
+      "name": "FlintlockCollierRevolverEntitySwingsItem",
+      "type": "procedure",
+      "sortid": 265,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock_collier_revolver_entity_swings_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/FlintlockCollierRevolverEntitySwingsItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Flintlock"
+    },
+    {
+      "name": "FlintlockCollierRevolverReload",
+      "type": "procedure",
+      "sortid": 266,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock_collier_revolver_reload",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/FlintlockCollierRevolverReloadProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Flintlock"
+    },
+    {
+      "name": "FlintlockCollierRevolverOffhandReload",
+      "type": "procedure",
+      "sortid": 267,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock_collier_revolver_offhand_reload",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/FlintlockCollierRevolverOffhandReloadProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Flintlock"
+    },
+    {
+      "name": "FlintlockCollierRevolverOverlay",
+      "type": "procedure",
+      "sortid": 268,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock_collier_revolver_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/FlintlockCollierRevolverOverlayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/AmmoOverlays"
     }
   ],
   "variable_elements": [
@@ -4957,19 +6138,23 @@
       "item.gunsmith_cognitis.flintlock_blueprint": "Flintlock Blueprint",
       "item.gunsmith_cognitis.jezailmusket": "Jezail Musket",
       "enchantment.gunsmith_cognitis.expanding_bullet": "Expanding Bullet",
-      "item.gunsmith_cognitis.flintlock_pepperbox_carbine": "Flintlock Pepperbox Carbine",
       "advancements.betterfirearmtheory.descr": "The Arquebus design as a firearm seems to be the most optimal, i could probably improve on this...",
+      "item.gunsmith_cognitis.flintlock_pepperbox_carbine": "Flintlock Pepperbox Carbine",
       "advancements.gunpowdercognitisstart.descr": "Gunpowder, something always used to make things blow up, but what if we use it to shoot things?",
-      "item.gunsmith_cognitis.flintlock_lorenzoni_repeater": "Flintlock Lorenzoni Repeater",
       "advancements.gunpowdercognitisstart.title": "The persue of firepower",
+      "item.gunsmith_cognitis.flintlock_lorenzoni_repeater": "Flintlock Lorenzoni Repeater",
+      "item.gunsmith_cognitis.nock_volley_gun_front_component": "Nock Volley Gun Barrels",
       "item.gunsmith_cognitis.wheellock_carbine": "Wheellock Carbine",
       "advancements.flintandlocked.title": "Flint and locked",
       "item.gunsmith_cognitis.matchlock_snaphance_musket": "Matchlock Snaphance Musket",
       "item.gunsmith_cognitis.flintlockgunkit": "Flintlock Gun Kit",
       "item.gunsmith_cognitis.paper_cartidge_small_ammo": "Paper cartidge small ammo",
       "item.gunsmith_cognitis.matchlock_blunderbuss": "Matchlock Blunderbuss",
+      "item.gunsmith_cognitis.flintlock_heavy_dragoon_pistol": "Flintlock Heavy Dragoon Pistol",
+      "item.gunsmith_cognitis.rock": "Rock",
       "item.gunsmith_cognitis.wheellock_pistol": "Wheellock Pistol",
       "item.gunsmith_cognitis.rifledbarrel": "Rifled barrel",
+      "item.gunsmith_cognitis.flintlock_hand_mortar": "Flintlock Hand Mortar",
       "item.gunsmith_cognitis.flintlock_rifled_carbine": "Flintlock Rifled Carbine",
       "item.gunsmith_cognitis.flintlock_double_barrel_pistol": "Flintlock DB Pistol",
       "advancements.flintlock_mastery.descr": "Create your first flintlock musket, unlocking access to further Flintlock weapons.",
@@ -4978,6 +6163,8 @@
       "item.gunsmith_cognitis.wheellock_sporting_rifle": "Wheellock Sporting Rifle",
       "item.gunsmith_cognitis.riflingtool": "Rifling tool",
       "gamerule.doGunsJam": "Do Firearms jam?",
+      "item.gunsmith_cognitis.divine_five_thunder_machine": "Divine Five Thunder Machine",
+      "item.gunsmith_cognitis.mortarball": "Mortar ball",
       "advancements.thewheelkeepsspinning.descr": "Improve upon the matchlock design by switching to a wheellock system instead!",
       "enchantment.gunsmith_cognitis.explosiveround": "Explosive",
       "item.gunsmith_cognitis.tanegashima": "Tanegashima-teppō",
@@ -4992,11 +6179,13 @@
       "item.gunsmith_cognitis.musket_ball_projectile": "Musket ball",
       "item.gunsmith_cognitis.handgunne": "Handgunne",
       "advancements.flintandlocked.descr": "Find the Flintlock blueprint, unlocking access to Flintlock weapons.",
+      "item.gunsmith_cognitis.flintlock_collier_revolver": "Flintlock Collier Revolver",
       "advancements.matchlock_mastery.title": "Matchlock Mastery",
       "item.gunsmith_cognitis.matchlock_arquebus": "Matchlock Arquebus",
       "item.gunsmith_cognitis.crude_smoothborebarrel": "Crude Smoothbore Barrel",
       "enchantment.gunsmith_cognitis.gun_infinity": "Infinity",
       "item.gunsmith_cognitis.matchlock_axe_pistol": "Matchlock Axe Pistol",
+      "item.gunsmith_cognitis.ferguson_rifle": "Ferguson Rifle",
       "item.gunsmith_cognitis.smoothborebarrel": "Smoothbore Barrel",
       "key.gunsmith_cognitis.ammo_reload": "Gunsmith Congitis: Reload",
       "item.gunsmith_cognitis.hand_bomb": "Hand Bomb",
@@ -5006,6 +6195,7 @@
       "item.gunsmith_cognitis.flintlock_double_barrel_musket": "Flintlock Double Barrel Musket",
       "advancements.thewheelkeepsspinning.title": "The wheel keeps spinning",
       "item.gunsmith_cognitis.flintlock_asumette_rifled_wall_gun": "Flintlock Asumette Wall Gun",
+      "item.gunsmith_cognitis.nock_volley_gun": "Nock Volley Gun",
       "item.gunsmith_cognitis.flintlockmusket": "Flintlock Musket",
       "enchantment.gunsmith_cognitis.poisoned_bullets": "Poison Bullet"
     }
@@ -5046,11 +6236,11 @@
   "workspaceSettings": {
     "modid": "gunsmith_cognitis",
     "modName": "Gunsmith_Cognitis",
-    "version": "1.0.0",
+    "version": "2.0.0_Preview1",
     "description": "Gunsmith Cognitis is a mod who tries to add realistic old firearms to minecraft",
     "author": "Alex n\u0027 Italy",
     "websiteURL": "https://mcreator.net",
-    "license": "Academic Free License v3.0",
+    "license": "MIT License",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
     "modPicture": "gunsmith_book_icon",

@@ -19,7 +19,8 @@
       "WheellockMusketRecipe",
       "TanegashimaRecipe",
       "MatchlockSnaphanceMusketRecipe",
-      "MatchlockAxePistolRecipe"
+      "MatchlockAxePistolRecipe",
+      "SmoothborebarrelRecipe"
     ],
     "rewardFunction": "No function",
     "rewardXP": 5,

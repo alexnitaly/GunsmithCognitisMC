@@ -1,0 +1,46 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.GOLD_NUGGET"
+      },
+      {
+        "value": "CUSTOM:Smoothborebarrel"
+      },
+      {
+        "value": "CUSTOM:Smoothborebarrel"
+      },
+      {
+        "value": "CUSTOM:Smoothborebarrel"
+      },
+      {
+        "value": "CUSTOM:Smoothborebarrel"
+      },
+      {
+        "value": "CUSTOM:Smoothborebarrel"
+      },
+      {
+        "value": "CUSTOM:Smoothborebarrel"
+      },
+      {
+        "value": "CUSTOM:Smoothborebarrel"
+      },
+      {
+        "value": "Items.GOLD_NUGGET"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:NockVolleyGunFrontComponent"
+    },
+    "name": "nock_volley_gun_front_component_recipe",
+    "namespace": "mod"
+  }
+}

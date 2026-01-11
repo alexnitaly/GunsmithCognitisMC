@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "name": "Flintlock Pepperbox Carbine",
     "specialInfo": [
-      "Flintlock tier: Requires gunpowder and musket ball to load."
+      "Flintlock tier: Requires two gunpowder and musket ball to load."
     ],
     "creativeTab": {
       "value": "CUSTOM:GunsmithCognitisTab"

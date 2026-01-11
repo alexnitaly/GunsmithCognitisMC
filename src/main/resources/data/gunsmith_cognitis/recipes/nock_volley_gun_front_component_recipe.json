@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:gold_nugget"
+    },
+    "1": {
+      "item": "gunsmith_cognitis:smoothborebarrel"
+    },
+    "2": {
+      "item": "gunsmith_cognitis:smoothborebarrel"
+    },
+    "3": {
+      "item": "gunsmith_cognitis:smoothborebarrel"
+    },
+    "4": {
+      "item": "gunsmith_cognitis:smoothborebarrel"
+    },
+    "5": {
+      "item": "gunsmith_cognitis:smoothborebarrel"
+    },
+    "6": {
+      "item": "gunsmith_cognitis:smoothborebarrel"
+    },
+    "7": {
+      "item": "gunsmith_cognitis:smoothborebarrel"
+    },
+    "8": {
+      "item": "minecraft:gold_nugget"
+    }
+  },
+  "result": {
+    "item": "gunsmith_cognitis:nock_volley_gun_front_component",
+    "count": 1
+  }
+}

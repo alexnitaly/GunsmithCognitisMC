@@ -43,6 +43,7 @@ public class HeavyFirearmSlownessCheck  {
             Player player = event.player;
             
             TagKey<Item> HEAVY = TagKey.create(Registry.ITEM_REGISTRY, new ResourceLocation("gunsmith_cognitis", "heavyfirearm"));
+            TagKey<Item> DEFENSIVE = TagKey.create(Registry.ITEM_REGISTRY, new ResourceLocation("gunsmith_cognitis", "is_protective"));
 
             // Check both Main Hand and Offhand
             ItemStack mainHand = player.getMainHandItem();
@@ -50,7 +51,7 @@ public class HeavyFirearmSlownessCheck  {
 
             if (mainHand.is(HEAVY) || offHand.is(HEAVY)) {
                 /* 
-                   3. Apply Slowness II (Amplifier 1)
+                   Apply Slowness II (Amplifier 1)
                    Parameters: (Effect, Duration, Amplifier, Ambient, Visible, ShowIcon)
                    - Duration: 20 ticks (1 second) to keep it refreshed
                    - Amplifier: 1 (This is Slowness II, as 0 is Slowness I)
@@ -60,6 +61,19 @@ public class HeavyFirearmSlownessCheck  {
                 */
                 player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 20, 1, false, false, true));
             }
+            if (mainHand.is(DEFENSIVE) || offHand.is(DEFENSIVE)) {
+                /* 
+                   Apply Resistance I
+                   Parameters: (Effect, Duration, Amplifier, Ambient, Visible, ShowIcon)
+                   - Duration: 20 ticks (1 second) to keep it refreshed
+                   - Amplifier: 0
+                   - Ambient: false
+                   - Visible: false
+                   - ShowIcon: true
+                */
+                player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 20, 0, false, false, true));
+            }
+            
         }
     }
 }

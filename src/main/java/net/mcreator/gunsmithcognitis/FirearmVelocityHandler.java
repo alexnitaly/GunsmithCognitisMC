@@ -17,6 +17,7 @@ import net.minecraft.resources.ResourceLocation;
 public class FirearmVelocityHandler {
 
     public static float getModifiedVelocity(ItemStack stack, float baseVelocity) {
+        TagKey<Item> MATCHLOCK = TagKey.create(Registry.ITEM_REGISTRY, new ResourceLocation("gunsmith_cognitis", "matchlock_firearm"));
         TagKey<Item> PISTOL = TagKey.create(Registry.ITEM_REGISTRY, new ResourceLocation("gunsmith_cognitis", "pistol"));
         TagKey<Item> RIFLE = TagKey.create(Registry.ITEM_REGISTRY, new ResourceLocation("gunsmith_cognitis", "rifle"));
         TagKey<Item> LONG_RIFLE = TagKey.create(Registry.ITEM_REGISTRY, new ResourceLocation("gunsmith_cognitis", "long_rifle"));
@@ -32,7 +33,10 @@ public class FirearmVelocityHandler {
             multiplier = 1.5F;
         }
 
+         if (stack.is(MATCHLOCK)) {
+            multiplier = 0.75F;
+         }
+         
         return baseVelocity * multiplier;
     }
 }
-

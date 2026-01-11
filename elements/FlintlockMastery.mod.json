@@ -21,7 +21,13 @@
       "FlintlockPistolRecipe",
       "Flintlockgunkitrecipe",
       "PaperCartidgeAmmoRecipe",
-      "PaperCartidgeSmallAmmoRecipe"
+      "PaperCartidgeSmallAmmoRecipe",
+      "RifledbarrelRecipe",
+      "RiflingtoolRecipe",
+      "FlintlockPepperboxCarbineRecipe",
+      "FlintlockHeavyDragoonPistolRecipe",
+      "NockVolleyGunFrontComponentRecipe",
+      "NockVolleyGunRecipe"
     ],
     "rewardFunction": "No function",
     "rewardXP": 12,

@@ -16,7 +16,8 @@
     "rewardRecipes": [
       "MatchlockArquebusRecipe",
       "ThreeEyeGunRecipe",
-      "MatchlockBlunderbussRecipe"
+      "MatchlockBlunderbussRecipe",
+      "CrudeSmoothborebarrelRecipe"
     ],
     "rewardFunction": "No function",
     "rewardXP": 3,
