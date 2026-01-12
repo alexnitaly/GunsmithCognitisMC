@@ -6106,6 +6106,232 @@
         ]
       },
       "path": "~/AmmoOverlays"
+    },
+    {
+      "name": "FlintlockCollierRevolvingCarbine",
+      "type": "rangeditem",
+      "sortid": 269,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock_collier_revolving_carbine",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/entity/FlintlockCollierRevolvingCarbineEntity.java",
+          "src/main/resources/assets/gunsmith_cognitis/models/item/flintlock_collier_revolving_carbine.json",
+          "src/main/java/net/mcreator/gunsmithcognitis/item/FlintlockCollierRevolvingCarbineItem.java"
+        ]
+      },
+      "path": "~/Flintlock"
+    },
+    {
+      "name": "FlintlockCollierRevolvingCarbineCanUseRangedItem",
+      "type": "procedure",
+      "sortid": 270,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock_collier_revolving_carbine_can_use_ranged_item",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/FlintlockCollierRevolvingCarbineCanUseRangedItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Flintlock"
+    },
+    {
+      "name": "FlintlockCollierRevolvingCarbineRangedItemUsed",
+      "type": "procedure",
+      "sortid": 271,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock_collier_revolving_carbine_ranged_item_used",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/FlintlockCollierRevolvingCarbineRangedItemUsedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Flintlock"
+    },
+    {
+      "name": "FlintlockCollierRevolvingCarbineItemSwung",
+      "type": "procedure",
+      "sortid": 272,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock_collier_revolving_carbine_item_swung",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/FlintlockCollierRevolvingCarbineItemSwungProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Flintlock"
+    },
+    {
+      "name": "FlintlockCollierRevolvingCarbineReload",
+      "type": "procedure",
+      "sortid": 273,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock_collier_revolving_carbine_reload",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/FlintlockCollierRevolvingCarbineReloadProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Flintlock"
+    },
+    {
+      "name": "FlintlockCollierRevolvingCarbineOverlay",
+      "type": "procedure",
+      "sortid": 274,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock_collier_revolving_carbine_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/FlintlockCollierRevolvingCarbineOverlayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/AmmoOverlays"
+    },
+    {
+      "name": "RevolverDrum",
+      "type": "item",
+      "sortid": 275,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "revolver_drum",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gunsmith_cognitis/models/item/revolver_drum.json",
+          "src/main/java/net/mcreator/gunsmithcognitis/item/RevolverDrumItem.java"
+        ]
+      },
+      "path": "~/Misc. Items"
+    },
+    {
+      "name": "RevolverDrumRecipe",
+      "type": "recipe",
+      "sortid": 276,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "revolver_drum_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gunsmith_cognitis/recipes/revolver_drum_recipe.json"
+        ]
+      },
+      "path": "~/Misc. Items"
+    },
+    {
+      "name": "FlintlockCollierRevolverRecipe",
+      "type": "recipe",
+      "sortid": 277,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock_collier_revolver_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gunsmith_cognitis/recipes/flintlock_collier_revolver_recipe.json"
+        ]
+      },
+      "path": "~/Flintlock"
+    },
+    {
+      "name": "FlintlockCollierRevolvingCarbineRecipe",
+      "type": "recipe",
+      "sortid": 278,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock_collier_revolving_carbine_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gunsmith_cognitis/recipes/flintlock_collier_revolving_carbine_recipe.json"
+        ]
+      },
+      "path": "~/Flintlock"
     }
   ],
   "variable_elements": [
@@ -6138,8 +6364,8 @@
       "item.gunsmith_cognitis.flintlock_blueprint": "Flintlock Blueprint",
       "item.gunsmith_cognitis.jezailmusket": "Jezail Musket",
       "enchantment.gunsmith_cognitis.expanding_bullet": "Expanding Bullet",
-      "advancements.betterfirearmtheory.descr": "The Arquebus design as a firearm seems to be the most optimal, i could probably improve on this...",
       "item.gunsmith_cognitis.flintlock_pepperbox_carbine": "Flintlock Pepperbox Carbine",
+      "advancements.betterfirearmtheory.descr": "The Arquebus design as a firearm seems to be the most optimal, i could probably improve on this...",
       "advancements.gunpowdercognitisstart.descr": "Gunpowder, something always used to make things blow up, but what if we use it to shoot things?",
       "advancements.gunpowdercognitisstart.title": "The persue of firepower",
       "item.gunsmith_cognitis.flintlock_lorenzoni_repeater": "Flintlock Lorenzoni Repeater",
@@ -6166,6 +6392,7 @@
       "item.gunsmith_cognitis.divine_five_thunder_machine": "Divine Five Thunder Machine",
       "item.gunsmith_cognitis.mortarball": "Mortar ball",
       "advancements.thewheelkeepsspinning.descr": "Improve upon the matchlock design by switching to a wheellock system instead!",
+      "item.gunsmith_cognitis.revolver_drum": "Revolver Drum",
       "enchantment.gunsmith_cognitis.explosiveround": "Explosive",
       "item.gunsmith_cognitis.tanegashima": "Tanegashima-teppō",
       "item.gunsmith_cognitis.musketball": "Musket ball",
@@ -6195,6 +6422,7 @@
       "item.gunsmith_cognitis.flintlock_double_barrel_musket": "Flintlock Double Barrel Musket",
       "advancements.thewheelkeepsspinning.title": "The wheel keeps spinning",
       "item.gunsmith_cognitis.flintlock_asumette_rifled_wall_gun": "Flintlock Asumette Wall Gun",
+      "item.gunsmith_cognitis.flintlock_collier_revolving_carbine": "Flintlock Collier Revolving Carbine",
       "item.gunsmith_cognitis.nock_volley_gun": "Nock Volley Gun",
       "item.gunsmith_cognitis.flintlockmusket": "Flintlock Musket",
       "enchantment.gunsmith_cognitis.poisoned_bullets": "Poison Bullet"

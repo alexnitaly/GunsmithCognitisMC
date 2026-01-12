@@ -115,5 +115,8 @@ public class AmmoReloadOnKeyPressedProcedure {
 		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.FLINTLOCK_COLLIER_REVOLVER.get()) {
 			FlintlockCollierRevolverOffhandReloadProcedure.execute(entity);
 		}
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.FLINTLOCK_COLLIER_REVOLVING_CARBINE.get()) {
+			FlintlockCollierRevolvingCarbineReloadProcedure.execute(entity);
+		}
 	}
 }

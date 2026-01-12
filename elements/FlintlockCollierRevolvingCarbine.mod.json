@@ -1,0 +1,48 @@
+{
+  "_fv": 39,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "flintlock_collier_revolver_carbine",
+    "customModelName": "Normal",
+    "name": "Flintlock Collier Revolving Carbine",
+    "specialInfo": [
+      "Flintlock tier: Requires gunpowder and musket ball OR Small Paper Cartidges to load."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:GunsmithCognitisTab"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 201,
+    "actionSound": {
+      "value": "CUSTOM:musket_shot"
+    },
+    "hasGlow": false,
+    "animation": "none",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "FlintlockCollierRevolvingCarbineRangedItemUsed"
+    },
+    "onEntitySwing": {
+      "name": "FlintlockCollierRevolvingCarbineItemSwung"
+    },
+    "useCondition": {
+      "name": "FlintlockCollierRevolvingCarbineCanUseRangedItem"
+    },
+    "bulletPower": 3.0,
+    "bulletDamage": 2.8,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:MusketBallProjectile"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": ""
+  }
+}

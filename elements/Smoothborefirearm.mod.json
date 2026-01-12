@@ -81,6 +81,12 @@
       },
       {
         "value": "CUSTOM:FlintlockHandMortar"
+      },
+      {
+        "value": "CUSTOM:FlintlockCollierRevolver"
+      },
+      {
+        "value": "CUSTOM:FlintlockCollierRevolvingCarbine"
       }
     ],
     "blocks": [],

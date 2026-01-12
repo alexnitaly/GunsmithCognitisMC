@@ -49,5 +49,6 @@ public class GunsmithCognitisModEntityRenderers {
 		event.registerEntityRenderer(GunsmithCognitisModEntities.FLINTLOCK_HAND_MORTAR.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(GunsmithCognitisModEntities.ROCK.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(GunsmithCognitisModEntities.FLINTLOCK_COLLIER_REVOLVER.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(GunsmithCognitisModEntities.FLINTLOCK_COLLIER_REVOLVING_CARBINE.get(), ThrownItemRenderer::new);
 	}
 }

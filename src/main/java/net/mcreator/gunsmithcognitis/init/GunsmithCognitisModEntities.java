@@ -46,6 +46,7 @@ import net.mcreator.gunsmithcognitis.entity.FlintlockHeavyDragoonPistolEntity;
 import net.mcreator.gunsmithcognitis.entity.FlintlockHandMortarEntity;
 import net.mcreator.gunsmithcognitis.entity.FlintlockDoubleBarrelPistolEntity;
 import net.mcreator.gunsmithcognitis.entity.FlintlockDoubleBarrelMusketEntity;
+import net.mcreator.gunsmithcognitis.entity.FlintlockCollierRevolvingCarbineEntity;
 import net.mcreator.gunsmithcognitis.entity.FlintlockCollierRevolverEntity;
 import net.mcreator.gunsmithcognitis.entity.FlintlockAsumetteRifledWallGunEntity;
 import net.mcreator.gunsmithcognitis.entity.FergusonRifleEntity;
@@ -136,6 +137,9 @@ public class GunsmithCognitisModEntities {
 	public static final RegistryObject<EntityType<FlintlockCollierRevolverEntity>> FLINTLOCK_COLLIER_REVOLVER = register("projectile_flintlock_collier_revolver",
 			EntityType.Builder.<FlintlockCollierRevolverEntity>of(FlintlockCollierRevolverEntity::new, MobCategory.MISC).setCustomClientFactory(FlintlockCollierRevolverEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<FlintlockCollierRevolvingCarbineEntity>> FLINTLOCK_COLLIER_REVOLVING_CARBINE = register("projectile_flintlock_collier_revolving_carbine",
+			EntityType.Builder.<FlintlockCollierRevolvingCarbineEntity>of(FlintlockCollierRevolvingCarbineEntity::new, MobCategory.MISC).setCustomClientFactory(FlintlockCollierRevolvingCarbineEntity::new).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

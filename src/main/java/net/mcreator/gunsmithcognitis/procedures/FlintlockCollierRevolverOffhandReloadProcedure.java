@@ -32,7 +32,7 @@ public class FlintlockCollierRevolverOffhandReloadProcedure {
 				(entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getOrCreateTag().putDouble("ammo",
 						((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("ammo") - 1));
 			} else {
-				for (int index0 = 0; index0 < (int) (6); index0++) {
+				for (int index0 = 0; index0 < (int) (5); index0++) {
 					if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.PAPER_CARTIDGE_SMALL_AMMO.get()) {
 						if (entity instanceof Player _player) {
 							ItemStack _stktoremove = new ItemStack(GunsmithCognitisModItems.PAPER_CARTIDGE_SMALL_AMMO.get());
@@ -46,11 +46,11 @@ public class FlintlockCollierRevolverOffhandReloadProcedure {
 				}
 				(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putBoolean("cocked", (false));
 			}
-		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("gunpowder") < 1) {
+		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("gunpowder") < 5) {
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.GUNPOWDER) {
-				for (int index1 = 0; index1 < (int) (6); index1++) {
+				for (int index1 = 0; index1 < (int) (5); index1++) {
 					if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.GUNPOWDER) {
-						if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("gunpowder") < 6) {
+						if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("gunpowder") < 5) {
 							if (entity instanceof Player _player) {
 								ItemStack _stktoremove = new ItemStack(Items.GUNPOWDER);
 								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
@@ -62,9 +62,9 @@ public class FlintlockCollierRevolverOffhandReloadProcedure {
 				}
 			}
 		} else {
-			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("ammo") < 6) {
-				for (int index2 = 0; index2 < (int) (6); index2++) {
-					if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("ammo") < 6) {
+			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("ammo") < 5) {
+				for (int index2 = 0; index2 < (int) (5); index2++) {
+					if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("ammo") < 5) {
 						if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.MUSKETBALL.get()) {
 							if (entity instanceof Player _player) {
 								ItemStack _stktoremove = new ItemStack(GunsmithCognitisModItems.MUSKETBALL.get());

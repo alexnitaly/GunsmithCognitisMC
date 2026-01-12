@@ -124,5 +124,12 @@ public class AmmoOverlayProcedure {
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.NOCK_VOLLEY_GUN.get()) {
 			NockVolleyGunOverlayProcedure.execute(world, x, y, z, entity);
 		}
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.FLINTLOCK_COLLIER_REVOLVER.get()
+				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.FLINTLOCK_COLLIER_REVOLVER.get()) {
+			FlintlockCollierRevolverOverlayProcedure.execute(world, x, y, z, entity);
+		}
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.FLINTLOCK_COLLIER_REVOLVER.get()) {
+			FlintlockCollierRevolvingCarbineOverlayProcedure.execute(world, x, y, z, entity);
+		}
 	}
 }

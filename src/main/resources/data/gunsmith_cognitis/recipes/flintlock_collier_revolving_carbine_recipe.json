@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    " 4 ",
+    " 78"
+  ],
+  "key": {
+    "0": {
+      "item": "gunsmith_cognitis:smoothborebarrel"
+    },
+    "4": {
+      "item": "gunsmith_cognitis:flintlock_collier_revolver"
+    },
+    "7": {
+      "item": "gunsmith_cognitis:flintlockgunkit"
+    },
+    "8": {
+      "item": "minecraft:oak_log"
+    }
+  },
+  "result": {
+    "item": "gunsmith_cognitis:flintlock_collier_revolving_carbine",
+    "count": 1
+  }
+}

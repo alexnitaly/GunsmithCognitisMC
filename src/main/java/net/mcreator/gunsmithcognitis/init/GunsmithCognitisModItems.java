@@ -22,6 +22,7 @@ import net.mcreator.gunsmithcognitis.item.SmoothborebarrelItem;
 import net.mcreator.gunsmithcognitis.item.RockItem;
 import net.mcreator.gunsmithcognitis.item.RiflingtoolItem;
 import net.mcreator.gunsmithcognitis.item.RifledbarrelItem;
+import net.mcreator.gunsmithcognitis.item.RevolverDrumItem;
 import net.mcreator.gunsmithcognitis.item.RamrodItem;
 import net.mcreator.gunsmithcognitis.item.PaperCartidgeSmallAmmoItem;
 import net.mcreator.gunsmithcognitis.item.PaperCartidgeAmmoItem;
@@ -53,6 +54,7 @@ import net.mcreator.gunsmithcognitis.item.FlintlockHeavyDragoonPistolItem;
 import net.mcreator.gunsmithcognitis.item.FlintlockHandMortarItem;
 import net.mcreator.gunsmithcognitis.item.FlintlockDoubleBarrelPistolItem;
 import net.mcreator.gunsmithcognitis.item.FlintlockDoubleBarrelMusketItem;
+import net.mcreator.gunsmithcognitis.item.FlintlockCollierRevolvingCarbineItem;
 import net.mcreator.gunsmithcognitis.item.FlintlockCollierRevolverItem;
 import net.mcreator.gunsmithcognitis.item.FlintlockBlueprintItem;
 import net.mcreator.gunsmithcognitis.item.FlintlockAsumetteRifledWallGunItem;
@@ -112,4 +114,6 @@ public class GunsmithCognitisModItems {
 	public static final RegistryObject<Item> ROCK = REGISTRY.register("rock", () -> new RockItem());
 	public static final RegistryObject<Item> MORTARBALL = REGISTRY.register("mortarball", () -> new MortarballItem());
 	public static final RegistryObject<Item> FLINTLOCK_COLLIER_REVOLVER = REGISTRY.register("flintlock_collier_revolver", () -> new FlintlockCollierRevolverItem());
+	public static final RegistryObject<Item> FLINTLOCK_COLLIER_REVOLVING_CARBINE = REGISTRY.register("flintlock_collier_revolving_carbine", () -> new FlintlockCollierRevolvingCarbineItem());
+	public static final RegistryObject<Item> REVOLVER_DRUM = REGISTRY.register("revolver_drum", () -> new RevolverDrumItem());
 }
