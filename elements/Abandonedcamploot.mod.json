@@ -183,7 +183,7 @@
       },
       {
         "minrolls": 0,
-        "maxrolls": 1,
+        "maxrolls": 2,
         "minbonusrolls": 0,
         "maxbonusrolls": 1,
         "hasbonusrolls": true,

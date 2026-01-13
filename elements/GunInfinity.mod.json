@@ -3,15 +3,12 @@
   "_type": "enchantment",
   "definition": {
     "name": "Infinity",
-    "type": "BOW",
+    "type": "CROSSBOW",
     "rarity": "RARE",
     "minLevel": 1,
     "maxLevel": 1,
     "damageModifier": 1,
     "compatibleEnchantments": [
-      {
-        "value": "CUSTOM:GunInfinity"
-      },
       {
         "value": "LOOTING"
       },
@@ -26,6 +23,15 @@
       },
       {
         "value": "MENDING"
+      },
+      {
+        "value": "CUSTOM:Explosiveround"
+      },
+      {
+        "value": "CUSTOM:PoisonedBullets"
+      },
+      {
+        "value": "CUSTOM:ExpandingBullet"
       }
     ],
     "excludeEnchantments": false,
@@ -68,6 +74,66 @@
       },
       {
         "value": "CUSTOM:MatchlockBlunderbuss"
+      },
+      {
+        "value": "CUSTOM:Tanegashima"
+      },
+      {
+        "value": "CUSTOM:MatchlockSnaphanceMusket"
+      },
+      {
+        "value": "CUSTOM:Jezailmusket"
+      },
+      {
+        "value": "CUSTOM:MatchlockAxePistol"
+      },
+      {
+        "value": "CUSTOM:MatchlockWallGun"
+      },
+      {
+        "value": "CUSTOM:WheellockCarbine"
+      },
+      {
+        "value": "CUSTOM:WheellockSportingRifle"
+      },
+      {
+        "value": "CUSTOM:FlintlockRifledCarbine"
+      },
+      {
+        "value": "CUSTOM:FlintlockAsumetteRifledWallGun"
+      },
+      {
+        "value": "CUSTOM:FlintlockDoubleBarrelPistol"
+      },
+      {
+        "value": "CUSTOM:FlintlockLorenzoniRepeater"
+      },
+      {
+        "value": "CUSTOM:FlintlockPepperboxCarbine"
+      },
+      {
+        "value": "CUSTOM:WheellockKalthoffRepeater"
+      },
+      {
+        "value": "CUSTOM:DivineFiveThunderMachine"
+      },
+      {
+        "value": "CUSTOM:FlintlockHeavyDragoonPistol"
+      },
+      {
+        "value": "CUSTOM:NockVolleyGun"
+      },
+      {
+        "value": "CUSTOM:FergusonRifle"
+      },
+      {
+        "value": "CUSTOM:FlintlockHandMortar"
+      },
+      {
+        "value": "CUSTOM:FlintlockCollierRevolver"
+      },
+      {
+        "value": "CUSTOM:FlintlockCollierRevolvingCarbine"
       }
     ],
     "excludeItems": false,

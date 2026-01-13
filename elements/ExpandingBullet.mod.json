@@ -3,15 +3,12 @@
   "_type": "enchantment",
   "definition": {
     "name": "Expanding Bullet",
-    "type": "BOW",
+    "type": "CROSSBOW",
     "rarity": "COMMON",
     "minLevel": 1,
-    "maxLevel": 2,
+    "maxLevel": 5,
     "damageModifier": 0,
     "compatibleEnchantments": [
-      {
-        "value": "CUSTOM:Explosiveround"
-      },
       {
         "value": "CUSTOM:GunInfinity"
       },
@@ -80,6 +77,66 @@
       },
       {
         "value": "CUSTOM:FlintlockPepperbox"
+      },
+      {
+        "value": "CUSTOM:Tanegashima"
+      },
+      {
+        "value": "CUSTOM:MatchlockSnaphanceMusket"
+      },
+      {
+        "value": "CUSTOM:Jezailmusket"
+      },
+      {
+        "value": "CUSTOM:MatchlockAxePistol"
+      },
+      {
+        "value": "CUSTOM:MatchlockWallGun"
+      },
+      {
+        "value": "CUSTOM:WheellockCarbine"
+      },
+      {
+        "value": "CUSTOM:WheellockSportingRifle"
+      },
+      {
+        "value": "CUSTOM:FlintlockRifledCarbine"
+      },
+      {
+        "value": "CUSTOM:FlintlockAsumetteRifledWallGun"
+      },
+      {
+        "value": "CUSTOM:FlintlockDoubleBarrelPistol"
+      },
+      {
+        "value": "CUSTOM:FlintlockLorenzoniRepeater"
+      },
+      {
+        "value": "CUSTOM:FlintlockPepperboxCarbine"
+      },
+      {
+        "value": "CUSTOM:WheellockKalthoffRepeater"
+      },
+      {
+        "value": "CUSTOM:DivineFiveThunderMachine"
+      },
+      {
+        "value": "CUSTOM:FlintlockHeavyDragoonPistol"
+      },
+      {
+        "value": "CUSTOM:NockVolleyGun"
+      },
+      {
+        "value": "CUSTOM:FergusonRifle"
+      },
+      {
+        "value": "CUSTOM:FlintlockHandMortar"
+      },
+      {
+        "value": "CUSTOM:FlintlockCollierRevolver"
+      },
+      {
+        "value": "CUSTOM:FlintlockCollierRevolvingCarbine"
       }
     ],
     "excludeItems": false,
