@@ -1,0 +1,54 @@
+{
+  "_fv": 39,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "dynamite_pack",
+    "customModelName": "Normal",
+    "name": "Dynamite Pack",
+    "specialInfo": [
+      "Requires Flint n' Steel in offhand to throw."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:GunsmithCognitisPercussioncapTab"
+    },
+    "stackSize": 8,
+    "ammoItem": {
+      "value": "CUSTOM:DynamitePack"
+    },
+    "shootConstantly": false,
+    "usageCount": 0,
+    "actionSound": {
+      "value": "entity.tnt.primed"
+    },
+    "hasGlow": false,
+    "animation": "block",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "HandBombRangedItemUsed"
+    },
+    "useCondition": {
+      "name": "HandBombCanUseRangedItem"
+    },
+    "bulletPower": 1.0,
+    "bulletDamage": 8.0,
+    "bulletKnockback": 3,
+    "bulletParticles": true,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:DynamitePack"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "DynamitePackProjectileHitsBlock"
+    },
+    "onBulletHitsEntity": {
+      "name": "DynamitePackProjectileHitsBlock"
+    },
+    "onBulletFlyingTick": {
+      "name": "DynamitePackWhileProjectileFlyingTick"
+    }
+  }
+}

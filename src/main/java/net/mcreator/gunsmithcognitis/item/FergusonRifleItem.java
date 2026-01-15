@@ -25,7 +25,7 @@ import java.util.List;
 
 public class FergusonRifleItem extends Item {
 	public FergusonRifleItem() {
-		super(new Item.Properties().tab(GunsmithCognitisModTabs.TAB_GUNSMITH_COGNITIS_TAB).durability(217));
+		super(new Item.Properties().tab(GunsmithCognitisModTabs.TAB_GUNSMITH_COGNITIS_FLINTLOCK_TAB).durability(217));
 	}
 
 	@Override

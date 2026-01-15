@@ -8,6 +8,6 @@ import net.mcreator.gunsmithcognitis.init.GunsmithCognitisModTabs;
 
 public class RiflingtoolItem extends Item {
 	public RiflingtoolItem() {
-		super(new Item.Properties().tab(GunsmithCognitisModTabs.TAB_GUNSMITH_COGNITIS_TAB).durability(64).rarity(Rarity.COMMON));
+		super(new Item.Properties().tab(GunsmithCognitisModTabs.TAB_GUNSMITH_COGNITIS_MISC_TAB).durability(64).rarity(Rarity.COMMON));
 	}
 }

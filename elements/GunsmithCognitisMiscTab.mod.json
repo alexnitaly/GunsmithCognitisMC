@@ -1,0 +1,11 @@
+{
+  "_fv": 39,
+  "_type": "tab",
+  "definition": {
+    "name": "Gunsmith Cognitis Misc Tab",
+    "icon": {
+      "value": "CUSTOM:Fulminatepowder"
+    },
+    "showSearch": false
+  }
+}

@@ -8,7 +8,7 @@
     "name": "Nock Volley Gun Barrels",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:GunsmithCognitisTab"
+      "value": "CUSTOM:GunsmithCognitisMiscTab"
     },
     "stackSize": 8,
     "enchantability": 0,

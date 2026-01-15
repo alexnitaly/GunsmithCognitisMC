@@ -12,7 +12,7 @@
     "creativeTab": {
       "value": "CUSTOM:GunsmithCognitisTab"
     },
-    "stackSize": 16,
+    "stackSize": 12,
     "ammoItem": {
       "value": "CUSTOM:HandBomb"
     },

@@ -25,7 +25,7 @@ import java.util.List;
 
 public class FlintlockPistolGoldItem extends Item {
 	public FlintlockPistolGoldItem() {
-		super(new Item.Properties().tab(GunsmithCognitisModTabs.TAB_GUNSMITH_COGNITIS_TAB).durability(179));
+		super(new Item.Properties().tab(GunsmithCognitisModTabs.TAB_GUNSMITH_COGNITIS_FLINTLOCK_TAB).durability(179));
 	}
 
 	@Override

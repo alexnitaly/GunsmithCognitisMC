@@ -1,0 +1,11 @@
+{
+  "_fv": 39,
+  "_type": "tab",
+  "definition": {
+    "name": "Gunsmith Cognitis Melee",
+    "icon": {
+      "value": "CUSTOM:CavalrySabre"
+    },
+    "showSearch": false
+  }
+}

@@ -26,7 +26,7 @@ import java.util.List;
 
 public class WheellockKalthoffRepeaterItem extends Item {
 	public WheellockKalthoffRepeaterItem() {
-		super(new Item.Properties().tab(GunsmithCognitisModTabs.TAB_GUNSMITH_COGNITIS_TAB).durability(155));
+		super(new Item.Properties().tab(GunsmithCognitisModTabs.TAB_GUNSMITH_COGNITIS_WHEELLOCK_TAB).durability(155));
 	}
 
 	@Override

@@ -32,7 +32,7 @@ import com.google.common.collect.ImmutableMultimap;
 
 public class FlintlockmusketbayonetItem extends Item {
 	public FlintlockmusketbayonetItem() {
-		super(new Item.Properties().tab(GunsmithCognitisModTabs.TAB_GUNSMITH_COGNITIS_TAB).durability(179));
+		super(new Item.Properties().tab(GunsmithCognitisModTabs.TAB_GUNSMITH_COGNITIS_FLINTLOCK_TAB).durability(179));
 	}
 
 	@Override

@@ -25,7 +25,7 @@ import java.util.List;
 
 public class FlintlockHandMortarItem extends Item {
 	public FlintlockHandMortarItem() {
-		super(new Item.Properties().tab(GunsmithCognitisModTabs.TAB_GUNSMITH_COGNITIS_TAB).durability(196));
+		super(new Item.Properties().tab(GunsmithCognitisModTabs.TAB_GUNSMITH_COGNITIS_FLINTLOCK_TAB).durability(196));
 	}
 
 	@Override

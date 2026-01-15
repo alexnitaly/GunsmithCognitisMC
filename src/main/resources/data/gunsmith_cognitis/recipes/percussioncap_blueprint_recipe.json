@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "gunsmith_cognitis:flintlock_blueprint"
+  },
+  "addition": {
+    "item": "gunsmith_cognitis:percussionnipple"
+  },
+  "result": {
+    "item": "gunsmith_cognitis:percussioncap_blueprint"
+  }
+}

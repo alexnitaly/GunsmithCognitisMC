@@ -14,7 +14,7 @@
       "Stone or Cobblestone as ammunition."
     ],
     "creativeTab": {
-      "value": "CUSTOM:GunsmithCognitisTab"
+      "value": "CUSTOM:GunsmithCognitisFlintlockTab"
     },
     "stackSize": 1,
     "ammoItem": {

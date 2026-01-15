@@ -8,7 +8,7 @@
     "name": "Crude Smoothbore Barrel",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:GunsmithCognitisTab"
+      "value": "CUSTOM:GunsmithCognitisMiscTab"
     },
     "stackSize": 64,
     "enchantability": 0,

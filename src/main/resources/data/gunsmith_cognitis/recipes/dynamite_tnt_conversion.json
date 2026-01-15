@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "gunsmith_cognitis:dynamite"
+    },
+    "1": {
+      "item": "gunsmith_cognitis:dynamite"
+    },
+    "2": {
+      "item": "gunsmith_cognitis:dynamite"
+    },
+    "3": {
+      "item": "gunsmith_cognitis:dynamite"
+    },
+    "4": {
+      "item": "gunsmith_cognitis:dynamite"
+    },
+    "5": {
+      "item": "gunsmith_cognitis:dynamite"
+    },
+    "6": {
+      "item": "gunsmith_cognitis:dynamite"
+    },
+    "7": {
+      "item": "gunsmith_cognitis:dynamite"
+    },
+    "8": {
+      "item": "gunsmith_cognitis:dynamite"
+    }
+  },
+  "result": {
+    "item": "minecraft:tnt",
+    "count": 1
+  }
+}

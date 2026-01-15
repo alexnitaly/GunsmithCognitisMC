@@ -1,0 +1,11 @@
+{
+  "_fv": 39,
+  "_type": "tab",
+  "definition": {
+    "name": "Gunsmith Cognitis Percussioncap Tab",
+    "icon": {
+      "value": "CUSTOM:PercussioncapBlueprint"
+    },
+    "showSearch": false
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:gunpowder"
+    },
+    "1": {
+      "item": "gunsmith_cognitis:flintlock_mechanism"
+    },
+    "2": {
+      "item": "gunsmith_cognitis:smoothborebarrel"
+    },
+    "3": {
+      "item": "gunsmith_cognitis:flintlock_pistol"
+    }
+  },
+  "result": {
+    "item": "gunsmith_cognitis:flintlock_double_barrel_pistol",
+    "count": 1
+  }
+}

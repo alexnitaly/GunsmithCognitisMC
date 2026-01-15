@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 ",
+    "23",
+    "45"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:string"
+    },
+    "2": {
+      "item": "gunsmith_cognitis:fulminatepowder"
+    },
+    "3": {
+      "item": "minecraft:paper"
+    },
+    "4": {
+      "item": "gunsmith_cognitis:fulminatepowder"
+    },
+    "5": {
+      "item": "minecraft:paper"
+    }
+  },
+  "result": {
+    "item": "gunsmith_cognitis:dynamite",
+    "count": 1
+  }
+}

@@ -8,7 +8,7 @@
     "name": "Revolver Drum",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:GunsmithCognitisTab"
+      "value": "CUSTOM:GunsmithCognitisMiscTab"
     },
     "stackSize": 64,
     "enchantability": 0,

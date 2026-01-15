@@ -8,7 +8,7 @@
     "name": "Cavalry Sabre",
     "specialInfo": [],
     "creativeTab": {
-      "value": "CUSTOM:GunsmithCognitisTab"
+      "value": "CUSTOM:GunsmithCognitisMelee"
     },
     "toolType": "Sword",
     "harvestLevel": 2,

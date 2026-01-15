@@ -19,13 +19,13 @@
         "value": ""
       },
       {
-        "value": "Items.GUNPOWDER"
+        "value": "CUSTOM:Flintlockgunkit"
       },
       {
         "value": "Items.IRON_INGOT"
       },
       {
-        "value": "Items.FLINT_AND_STEEL"
+        "value": "CUSTOM:FlintlockMechanism"
       },
       {
         "value": ""

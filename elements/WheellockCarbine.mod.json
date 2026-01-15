@@ -11,7 +11,7 @@
       "then requires gunpowder and musket ball to load."
     ],
     "creativeTab": {
-      "value": "CUSTOM:GunsmithCognitisTab"
+      "value": "CUSTOM:GunsmithCognitisWheellockTab"
     },
     "stackSize": 1,
     "ammoItem": {

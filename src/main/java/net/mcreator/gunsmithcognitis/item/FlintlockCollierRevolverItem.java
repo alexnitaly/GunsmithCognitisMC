@@ -26,7 +26,7 @@ import java.util.List;
 
 public class FlintlockCollierRevolverItem extends Item {
 	public FlintlockCollierRevolverItem() {
-		super(new Item.Properties().tab(GunsmithCognitisModTabs.TAB_GUNSMITH_COGNITIS_TAB).durability(176));
+		super(new Item.Properties().tab(GunsmithCognitisModTabs.TAB_GUNSMITH_COGNITIS_FLINTLOCK_TAB).durability(176));
 	}
 
 	@Override

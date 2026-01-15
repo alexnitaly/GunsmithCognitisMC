@@ -25,7 +25,7 @@ import java.util.List;
 
 public class FlintlockPepperboxCarbineItem extends Item {
 	public FlintlockPepperboxCarbineItem() {
-		super(new Item.Properties().tab(GunsmithCognitisModTabs.TAB_GUNSMITH_COGNITIS_TAB).durability(151));
+		super(new Item.Properties().tab(GunsmithCognitisModTabs.TAB_GUNSMITH_COGNITIS_FLINTLOCK_TAB).durability(151));
 	}
 
 	@Override

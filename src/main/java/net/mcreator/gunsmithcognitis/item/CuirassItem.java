@@ -63,7 +63,7 @@ public abstract class CuirassItem extends ArmorItem {
 
 	public static class Chestplate extends CuirassItem {
 		public Chestplate() {
-			super(EquipmentSlot.CHEST, new Item.Properties().tab(GunsmithCognitisModTabs.TAB_GUNSMITH_COGNITIS_TAB));
+			super(EquipmentSlot.CHEST, new Item.Properties().tab(GunsmithCognitisModTabs.TAB_GUNSMITH_COGNITIS_MISC_TAB));
 		}
 
 		@Override

@@ -36,6 +36,6 @@ public class StonepikeItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(Blocks.COBBLESTONE), new ItemStack(Blocks.STONE));
 			}
-		}, 3, -3.4f, new Item.Properties().tab(GunsmithCognitisModTabs.TAB_GUNSMITH_COGNITIS_TAB));
+		}, 3, -3.4f, new Item.Properties().tab(GunsmithCognitisModTabs.TAB_GUNSMITH_COGNITIS_MELEE));
 	}
 }

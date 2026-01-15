@@ -27,7 +27,7 @@ import java.util.List;
 
 public class HandBombItem extends Item {
 	public HandBombItem() {
-		super(new Item.Properties().tab(GunsmithCognitisModTabs.TAB_GUNSMITH_COGNITIS_TAB).stacksTo(16));
+		super(new Item.Properties().tab(GunsmithCognitisModTabs.TAB_GUNSMITH_COGNITIS_TAB).stacksTo(12));
 	}
 
 	@Override

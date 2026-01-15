@@ -10,7 +10,7 @@
       "Flintlock tier: Requires gunpowder and musket ball OR a small paper cartidge to load."
     ],
     "creativeTab": {
-      "value": "CUSTOM:GunsmithCognitisTab"
+      "value": "CUSTOM:GunsmithCognitisFlintlockTab"
     },
     "stackSize": 1,
     "ammoItem": {

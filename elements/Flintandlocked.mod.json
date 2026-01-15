@@ -16,7 +16,8 @@
     "rewardRecipes": [
       "Flintlockgunkitrecipe",
       "FlintlockMusketRecipe",
-      "FlintlockPistolRecipe"
+      "FlintlockPistolRecipe",
+      "FlintlockMechanismRecipe"
     ],
     "rewardFunction": "No function",
     "rewardXP": 8,

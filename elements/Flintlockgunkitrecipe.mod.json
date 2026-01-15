@@ -13,10 +13,10 @@
         "value": ""
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "CUSTOM:FlintlockMechanism"
       },
       {
-        "value": ""
+        "value": "Items.IRON_INGOT"
       },
       {
         "value": "Items.GUNPOWDER"
@@ -28,10 +28,10 @@
         "value": "Items.GUNPOWDER"
       },
       {
-        "value": ""
+        "value": "Items.IRON_INGOT"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "Blocks.LEVER"
       },
       {
         "value": ""

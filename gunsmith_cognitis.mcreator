@@ -3,7 +3,7 @@
     {
       "name": "Musketball",
       "type": "item",
-      "sortid": 1,
+      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "registry_name": "musketball",
@@ -18,7 +18,7 @@
     {
       "name": "GunsmithCognitisTab",
       "type": "tab",
-      "sortid": 51,
+      "sortid": 68,
       "compiles": true,
       "locked_code": false,
       "registry_name": "gunsmith_cognitis_tab",
@@ -82,7 +82,7 @@
     {
       "name": "MatchlockArquebus",
       "type": "rangeditem",
-      "sortid": 17,
+      "sortid": 27,
       "compiles": true,
       "locked_code": false,
       "registry_name": "matchlock_arquebus",
@@ -171,7 +171,7 @@
     {
       "name": "PaperCartidgeAmmo",
       "type": "item",
-      "sortid": 3,
+      "sortid": 4,
       "compiles": true,
       "locked_code": false,
       "registry_name": "paper_cartidge_ammo",
@@ -199,7 +199,7 @@
     {
       "name": "Ramrod",
       "type": "item",
-      "sortid": 5,
+      "sortid": 7,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ramrod",
@@ -661,7 +661,7 @@
     {
       "name": "Matchlockrepair",
       "type": "item",
-      "sortid": 11,
+      "sortid": 14,
       "compiles": true,
       "locked_code": false,
       "registry_name": "matchlockgunkit",
@@ -855,7 +855,7 @@
     {
       "name": "FlintlockBlueprint",
       "type": "item",
-      "sortid": 27,
+      "sortid": 18,
       "compiles": true,
       "locked_code": false,
       "registry_name": "flintlock_blueprint",
@@ -870,7 +870,7 @@
     {
       "name": "Flintlockmusket",
       "type": "rangeditem",
-      "sortid": 29,
+      "sortid": 41,
       "compiles": true,
       "locked_code": false,
       "registry_name": "flintlockmusket",
@@ -959,7 +959,7 @@
     {
       "name": "Flintlockmusketbayonet",
       "type": "rangeditem",
-      "sortid": 30,
+      "sortid": 42,
       "compiles": true,
       "locked_code": false,
       "registry_name": "flintlockmusketbayonet",
@@ -975,7 +975,7 @@
     {
       "name": "Flintlockmusketgold",
       "type": "rangeditem",
-      "sortid": 31,
+      "sortid": 43,
       "compiles": true,
       "locked_code": false,
       "registry_name": "flintlockmusketgold",
@@ -1011,7 +1011,7 @@
     {
       "name": "PaperCartidgeSmallAmmo",
       "type": "item",
-      "sortid": 2,
+      "sortid": 3,
       "compiles": true,
       "locked_code": false,
       "registry_name": "paper_cartidge_small_ammo",
@@ -1132,7 +1132,7 @@
     {
       "name": "Flintlockgunkit",
       "type": "item",
-      "sortid": 13,
+      "sortid": 16,
       "compiles": true,
       "locked_code": false,
       "registry_name": "flintlockgunkit",
@@ -1147,7 +1147,7 @@
     {
       "name": "FlintlockPistol",
       "type": "rangeditem",
-      "sortid": 32,
+      "sortid": 38,
       "compiles": true,
       "locked_code": false,
       "registry_name": "flintlock_pistol",
@@ -1200,7 +1200,7 @@
     {
       "name": "FlintlockPistolGold",
       "type": "rangeditem",
-      "sortid": 33,
+      "sortid": 39,
       "compiles": true,
       "locked_code": false,
       "registry_name": "flintlock_pistol_gold",
@@ -1292,7 +1292,7 @@
     {
       "name": "WheellockPistol",
       "type": "rangeditem",
-      "sortid": 23,
+      "sortid": 33,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wheellock_pistol",
@@ -1308,7 +1308,7 @@
     {
       "name": "Wheellockgunkit",
       "type": "item",
-      "sortid": 12,
+      "sortid": 15,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wheellockgunkit",
@@ -1438,7 +1438,7 @@
     {
       "name": "Flintlockgunkitrecipe",
       "type": "recipe",
-      "sortid": 99,
+      "sortid": 116,
       "compiles": true,
       "locked_code": false,
       "registry_name": "flintlockgunkitrecipe",
@@ -1452,7 +1452,7 @@
     {
       "name": "Wheellockgunkitrecipe",
       "type": "recipe",
-      "sortid": 100,
+      "sortid": 117,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wheellockgunkitrecipe",
@@ -1480,7 +1480,7 @@
     {
       "name": "WheellockMusket",
       "type": "rangeditem",
-      "sortid": 25,
+      "sortid": 35,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wheellock_musket",
@@ -1719,7 +1719,7 @@
     {
       "name": "FlintlockDoubleBarrelMusket",
       "type": "rangeditem",
-      "sortid": 38,
+      "sortid": 46,
       "compiles": true,
       "locked_code": false,
       "registry_name": "flintlock_double_barrel_musket",
@@ -1882,7 +1882,7 @@
     {
       "name": "FlintlockPepperbox",
       "type": "rangeditem",
-      "sortid": 39,
+      "sortid": 53,
       "compiles": true,
       "locked_code": false,
       "registry_name": "flintlock_pepperbox",
@@ -2306,7 +2306,7 @@
     {
       "name": "Flintandlocked",
       "type": "achievement",
-      "sortid": 136,
+      "sortid": 153,
       "compiles": true,
       "locked_code": false,
       "registry_name": "flintandlocked",
@@ -2504,7 +2504,7 @@
     {
       "name": "ThirdPersonTagFix",
       "type": "code",
-      "sortid": 142,
+      "sortid": 159,
       "compiles": true,
       "locked_code": true,
       "registry_name": "third_person_tag_fix",
@@ -2591,7 +2591,7 @@
     {
       "name": "ThirdPersonFiringPosition",
       "type": "code",
-      "sortid": 147,
+      "sortid": 164,
       "compiles": true,
       "locked_code": true,
       "registry_name": "third_person_firing_position",
@@ -2972,7 +2972,7 @@
     {
       "name": "Jezailmusket",
       "type": "rangeditem",
-      "sortid": 36,
+      "sortid": 48,
       "compiles": true,
       "locked_code": false,
       "registry_name": "jezailmusket",
@@ -3453,7 +3453,7 @@
     {
       "name": "WheellockCarbine",
       "type": "rangeditem",
-      "sortid": 24,
+      "sortid": 34,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wheellock_carbine",
@@ -3600,7 +3600,7 @@
     {
       "name": "WheellockSportingRifle",
       "type": "rangeditem",
-      "sortid": 26,
+      "sortid": 36,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wheellock_sporting_rifle",
@@ -3616,7 +3616,7 @@
     {
       "name": "Rifledbarrel",
       "type": "item",
-      "sortid": 9,
+      "sortid": 12,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rifledbarrel",
@@ -3644,7 +3644,7 @@
     {
       "name": "Riflingtool",
       "type": "item",
-      "sortid": 6,
+      "sortid": 5,
       "compiles": true,
       "locked_code": false,
       "registry_name": "riflingtool",
@@ -3659,7 +3659,7 @@
     {
       "name": "Smoothborebarrel",
       "type": "item",
-      "sortid": 8,
+      "sortid": 11,
       "compiles": true,
       "locked_code": false,
       "registry_name": "smoothborebarrel",
@@ -3674,7 +3674,7 @@
     {
       "name": "CrudeSmoothborebarrel",
       "type": "item",
-      "sortid": 7,
+      "sortid": 10,
       "compiles": true,
       "locked_code": false,
       "registry_name": "crude_smoothborebarrel",
@@ -3758,7 +3758,7 @@
     {
       "name": "FirearmAccuracyTagCheck",
       "type": "code",
-      "sortid": 187,
+      "sortid": 204,
       "compiles": true,
       "locked_code": true,
       "registry_name": "firearm_accuracy_tag_check",
@@ -3864,7 +3864,7 @@
     {
       "name": "HeavyFirearmSlownessCheck",
       "type": "code",
-      "sortid": 191,
+      "sortid": 208,
       "compiles": true,
       "locked_code": true,
       "registry_name": "heavy_firearm_slowness_check",
@@ -3915,7 +3915,7 @@
     {
       "name": "FlintlockRifledCarbine",
       "type": "rangeditem",
-      "sortid": 35,
+      "sortid": 49,
       "compiles": true,
       "locked_code": false,
       "registry_name": "flintlock_rifled_carbine",
@@ -4024,7 +4024,7 @@
     {
       "name": "FlintlockAsumetteRifledWallGun",
       "type": "rangeditem",
-      "sortid": 34,
+      "sortid": 50,
       "compiles": true,
       "locked_code": false,
       "registry_name": "flintlock_asumette_rifled_wall_gun",
@@ -4133,7 +4133,7 @@
     {
       "name": "FlintlockDoubleBarrelPistol",
       "type": "rangeditem",
-      "sortid": 37,
+      "sortid": 45,
       "compiles": true,
       "locked_code": false,
       "registry_name": "flintlock_double_barrel_pistol",
@@ -4302,7 +4302,7 @@
     {
       "name": "FlintlockLorenzoniRepeater",
       "type": "rangeditem",
-      "sortid": 41,
+      "sortid": 51,
       "compiles": true,
       "locked_code": false,
       "registry_name": "flintlock_lorenzoni_repeater",
@@ -4507,7 +4507,7 @@
     {
       "name": "LootInjectionHandler",
       "type": "code",
-      "sortid": 211,
+      "sortid": 228,
       "compiles": true,
       "locked_code": true,
       "registry_name": "loot_injection_handler",
@@ -4520,7 +4520,7 @@
     {
       "name": "FirearmVelocityHandler",
       "type": "code",
-      "sortid": 212,
+      "sortid": 229,
       "compiles": true,
       "locked_code": true,
       "registry_name": "firearm_velocity_handler",
@@ -4533,7 +4533,7 @@
     {
       "name": "FlintlockPepperboxCarbine",
       "type": "rangeditem",
-      "sortid": 42,
+      "sortid": 54,
       "compiles": true,
       "locked_code": false,
       "registry_name": "flintlock_pepperbox_carbine",
@@ -4655,7 +4655,7 @@
     {
       "name": "FirearmRarityHandler",
       "type": "code",
-      "sortid": 217,
+      "sortid": 234,
       "compiles": true,
       "locked_code": true,
       "registry_name": "firearm_rarity_handler",
@@ -4720,7 +4720,7 @@
     {
       "name": "FirearmRepairHandler",
       "type": "code",
-      "sortid": 221,
+      "sortid": 238,
       "compiles": true,
       "locked_code": true,
       "registry_name": "firearm_repair_handler",
@@ -4747,7 +4747,7 @@
     {
       "name": "WheellockFirearm",
       "type": "tag",
-      "sortid": 223,
+      "sortid": 240,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wheellock_firearm",
@@ -4761,7 +4761,7 @@
     {
       "name": "WheellockKalthoffRepeater",
       "type": "rangeditem",
-      "sortid": 43,
+      "sortid": 37,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wheellock_kalthoff_repeater",
@@ -5084,7 +5084,7 @@
     {
       "name": "FlintlockHeavyDragoonPistol",
       "type": "rangeditem",
-      "sortid": 45,
+      "sortid": 40,
       "compiles": true,
       "locked_code": false,
       "registry_name": "flintlock_heavy_dragoon_pistol",
@@ -5281,7 +5281,7 @@
     {
       "name": "NockVolleyGunFrontComponent",
       "type": "item",
-      "sortid": 46,
+      "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "registry_name": "nock_volley_gun_front_component",
@@ -5473,7 +5473,7 @@
     {
       "name": "FergusonRifle",
       "type": "rangeditem",
-      "sortid": 50,
+      "sortid": 52,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ferguson_rifle",
@@ -5660,7 +5660,7 @@
     {
       "name": "FlintlockHandMortar",
       "type": "rangeditem",
-      "sortid": 40,
+      "sortid": 44,
       "compiles": true,
       "locked_code": false,
       "registry_name": "flintlock_hand_mortar",
@@ -5857,7 +5857,7 @@
     {
       "name": "Mortarball",
       "type": "item",
-      "sortid": 4,
+      "sortid": 6,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mortarball",
@@ -5922,7 +5922,7 @@
     {
       "name": "FlintlockCollierRevolver",
       "type": "rangeditem",
-      "sortid": 48,
+      "sortid": 55,
       "compiles": true,
       "locked_code": false,
       "registry_name": "flintlock_collier_revolver",
@@ -6111,7 +6111,7 @@
     {
       "name": "FlintlockCollierRevolvingCarbine",
       "type": "rangeditem",
-      "sortid": 49,
+      "sortid": 56,
       "compiles": true,
       "locked_code": false,
       "registry_name": "flintlock_collier_revolving_carbine",
@@ -6280,7 +6280,7 @@
     {
       "name": "RevolverDrum",
       "type": "item",
-      "sortid": 10,
+      "sortid": 9,
       "compiles": true,
       "locked_code": false,
       "registry_name": "revolver_drum",
@@ -6337,7 +6337,7 @@
     {
       "name": "CavalrySabre",
       "type": "tool",
-      "sortid": 28,
+      "sortid": 57,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cavalry_sabre",
@@ -6366,7 +6366,7 @@
     {
       "name": "MeleeAttributeHandler",
       "type": "code",
-      "sortid": 278,
+      "sortid": 294,
       "compiles": true,
       "locked_code": true,
       "registry_name": "melee_attribute_handler",
@@ -6408,7 +6408,7 @@
     {
       "name": "Stonepike",
       "type": "tool",
-      "sortid": 281,
+      "sortid": 58,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stonepike",
@@ -6423,7 +6423,7 @@
     {
       "name": "Ironpike",
       "type": "tool",
-      "sortid": 282,
+      "sortid": 59,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ironpike",
@@ -6438,7 +6438,7 @@
     {
       "name": "Goldpike",
       "type": "tool",
-      "sortid": 283,
+      "sortid": 60,
       "compiles": true,
       "locked_code": false,
       "registry_name": "goldpike",
@@ -6453,7 +6453,7 @@
     {
       "name": "DiamondPike",
       "type": "tool",
-      "sortid": 284,
+      "sortid": 61,
       "compiles": true,
       "locked_code": false,
       "registry_name": "diamondpike",
@@ -6468,7 +6468,7 @@
     {
       "name": "NetheritePike",
       "type": "tool",
-      "sortid": 285,
+      "sortid": 62,
       "compiles": true,
       "locked_code": false,
       "registry_name": "netheritepike",
@@ -6567,7 +6567,7 @@
     {
       "name": "Stonehalberd",
       "type": "tool",
-      "sortid": 292,
+      "sortid": 63,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stonehalberd",
@@ -6582,7 +6582,7 @@
     {
       "name": "Ironhalberd",
       "type": "tool",
-      "sortid": 293,
+      "sortid": 64,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ironhalberd",
@@ -6597,7 +6597,7 @@
     {
       "name": "Goldhalberd",
       "type": "tool",
-      "sortid": 294,
+      "sortid": 65,
       "compiles": true,
       "locked_code": false,
       "registry_name": "goldhalberd",
@@ -6612,7 +6612,7 @@
     {
       "name": "Diamondhalberd",
       "type": "tool",
-      "sortid": 295,
+      "sortid": 66,
       "compiles": true,
       "locked_code": false,
       "registry_name": "diamondhalberd",
@@ -6627,7 +6627,7 @@
     {
       "name": "Netheritehalberd",
       "type": "tool",
-      "sortid": 296,
+      "sortid": 67,
       "compiles": true,
       "locked_code": false,
       "registry_name": "netheritehalberd",
@@ -6712,7 +6712,7 @@
     {
       "name": "Cuirass",
       "type": "armor",
-      "sortid": 302,
+      "sortid": 22,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cuirass",
@@ -6723,6 +6723,482 @@
         ]
       },
       "path": "~/Misc. Items"
+    },
+    {
+      "name": "GunsmithCognitisMelee",
+      "type": "tab",
+      "sortid": 308,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gunsmith_cognitis_melee",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Melee"
+    },
+    {
+      "name": "Percussioncapgunkit",
+      "type": "item",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "percussioncapgunkit",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gunsmith_cognitis/models/item/percussioncapgunkit.json",
+          "src/main/java/net/mcreator/gunsmithcognitis/item/PercussioncapgunkitItem.java"
+        ]
+      },
+      "path": "~/Percussion Cap"
+    },
+    {
+      "name": "PrecussioncapFirearm",
+      "type": "tag",
+      "sortid": 309,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "precussioncap_firearm",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gunsmith_cognitis/tags/items/precussioncap_firearm.json"
+        ]
+      },
+      "path": "~/Percussion Cap"
+    },
+    {
+      "name": "PercussioncapBlueprint",
+      "type": "item",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "percussioncap_blueprint",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gunsmith_cognitis/models/item/percussioncap_blueprint.json",
+          "src/main/java/net/mcreator/gunsmithcognitis/item/PercussioncapBlueprintItem.java"
+        ]
+      },
+      "path": "~/Percussion Cap"
+    },
+    {
+      "name": "PercussioncapBlueprintRecipe",
+      "type": "recipe",
+      "sortid": 310,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "percussioncap_blueprint_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gunsmith_cognitis/recipes/percussioncap_blueprint_recipe.json"
+        ]
+      },
+      "path": "~/Percussion Cap"
+    },
+    {
+      "name": "Fulminatepowder",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fulminatepowder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/item/FulminatepowderItem.java",
+          "src/main/resources/assets/gunsmith_cognitis/models/item/fulminatepowder.json"
+        ]
+      },
+      "path": "~/Misc. Items"
+    },
+    {
+      "name": "FulminatepowderRecipe",
+      "type": "recipe",
+      "sortid": 311,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fulminatepowder_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gunsmith_cognitis/recipes/fulminatepowder_recipe.json"
+        ]
+      },
+      "path": "~/Misc. Items"
+    },
+    {
+      "name": "Percussionnipple",
+      "type": "item",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "percussionnipple",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gunsmith_cognitis/models/item/percussionnipple.json",
+          "src/main/java/net/mcreator/gunsmithcognitis/item/PercussionnippleItem.java"
+        ]
+      },
+      "path": "~/Misc. Items"
+    },
+    {
+      "name": "PercussionnippleRecipe",
+      "type": "recipe",
+      "sortid": 312,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "percussionnipple_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gunsmith_cognitis/recipes/percussionnipple_recipe.json"
+        ]
+      },
+      "path": "~/Misc. Items"
+    },
+    {
+      "name": "FlintlockMechanism",
+      "type": "item",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock_mechanism",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/item/FlintlockMechanismItem.java",
+          "src/main/resources/assets/gunsmith_cognitis/models/item/flintlock_mechanism.json"
+        ]
+      },
+      "path": "~/Flintlock"
+    },
+    {
+      "name": "PercussioncapMechanism",
+      "type": "item",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "percussioncap_mechanism",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gunsmith_cognitis/models/item/percussioncap_mechanism.json",
+          "src/main/java/net/mcreator/gunsmithcognitis/item/PercussioncapMechanismItem.java"
+        ]
+      },
+      "path": "~/Percussion Cap"
+    },
+    {
+      "name": "FlintlockMechanismRecipe",
+      "type": "recipe",
+      "sortid": 313,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock_mechanism_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gunsmith_cognitis/recipes/flintlock_mechanism_recipe.json"
+        ]
+      },
+      "path": "~/Flintlock"
+    },
+    {
+      "name": "PercussioncapMechanismRecipe",
+      "type": "recipe",
+      "sortid": 314,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "percussioncap_mechanism_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gunsmith_cognitis/recipes/percussioncap_mechanism_recipe.json"
+        ]
+      },
+      "path": "~/Percussion Cap"
+    },
+    {
+      "name": "GunsmithCognitisWheellockTab",
+      "type": "tab",
+      "sortid": 315,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gunsmith_cognitis_wheellock_tab",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "GunsmithCognitisFlintlockTab",
+      "type": "tab",
+      "sortid": 316,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gunsmith_cognitis_flintlock_tab",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "GunsmithCognitisPercussioncapTab",
+      "type": "tab",
+      "sortid": 317,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gunsmith_cognitis_percussioncap_tab",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "GunsmithCognitisMiscTab",
+      "type": "tab",
+      "sortid": 318,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gunsmith_cognitis_misc_tab",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "FlintlockDoubleBarrelPistolrecipe",
+      "type": "recipe",
+      "sortid": 319,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock_double_barrel_pistolrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gunsmith_cognitis/recipes/flintlock_double_barrel_pistolrecipe.json"
+        ]
+      },
+      "path": "~/Flintlock"
+    },
+    {
+      "name": "PercussioncapGunKitRecipe",
+      "type": "recipe",
+      "sortid": 320,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "percussioncap_gun_kit_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gunsmith_cognitis/recipes/percussioncap_gun_kit_recipe.json"
+        ]
+      },
+      "path": "~/Flintlock"
+    },
+    {
+      "name": "Dynamite",
+      "type": "rangeditem",
+      "sortid": 321,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dynamite",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/entity/DynamiteEntity.java",
+          "src/main/java/net/mcreator/gunsmithcognitis/item/DynamiteItem.java",
+          "src/main/resources/assets/gunsmith_cognitis/models/item/dynamite.json"
+        ]
+      },
+      "path": "~/Percussion Cap"
+    },
+    {
+      "name": "DynamiteProjectileHitsBlock",
+      "type": "procedure",
+      "sortid": 322,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dynamite_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/DynamiteProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Percussion Cap"
+    },
+    {
+      "name": "DynamitePack",
+      "type": "rangeditem",
+      "sortid": 323,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dynamite_pack",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/entity/DynamitePackEntity.java",
+          "src/main/java/net/mcreator/gunsmithcognitis/item/DynamitePackItem.java",
+          "src/main/resources/assets/gunsmith_cognitis/models/item/dynamite_pack.json"
+        ]
+      },
+      "path": "~/Percussion Cap"
+    },
+    {
+      "name": "DynamitePackProjectileHitsBlock",
+      "type": "procedure",
+      "sortid": 324,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dynamite_pack_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/DynamitePackProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Percussion Cap"
+    },
+    {
+      "name": "DynamiteRecipe",
+      "type": "recipe",
+      "sortid": 325,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dynamite_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gunsmith_cognitis/recipes/dynamite_recipe.json"
+        ]
+      },
+      "path": "~/Percussion Cap"
+    },
+    {
+      "name": "DynamitePackRecipe",
+      "type": "recipe",
+      "sortid": 326,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dynamite_pack_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gunsmith_cognitis/recipes/dynamite_pack_recipe.json"
+        ]
+      },
+      "path": "~/Percussion Cap"
+    },
+    {
+      "name": "DynamiteTNTConversion",
+      "type": "recipe",
+      "sortid": 327,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dynamite_tnt_conversion",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gunsmith_cognitis/recipes/dynamite_tnt_conversion.json"
+        ]
+      },
+      "path": "~/Percussion Cap"
+    },
+    {
+      "name": "DynamitePackWhileProjectileFlyingTick",
+      "type": "procedure",
+      "sortid": 328,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dynamite_pack_while_projectile_flying_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/DynamitePackWhileProjectileFlyingTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Percussion Cap"
+    },
+    {
+      "name": "DynamiteWhileProjectileFlyingTick",
+      "type": "procedure",
+      "sortid": 329,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dynamite_while_projectile_flying_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/DynamiteWhileProjectileFlyingTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Percussion Cap"
     }
   ],
   "variable_elements": [
@@ -6745,93 +7221,106 @@
   ],
   "language_map": {
     "en_us": {
-      "item.gunsmith_cognitis.flintlock_pepperbox": "Flintlock Pepperbox",
-      "advancements.betterfirearmtheory.title": "Better Firearm Theory",
       "item.gunsmith_cognitis.matchlockgunkit": "Matchlock Gun Kit",
-      "itemGroup.tabgunsmith_cognitis_tab": "Gunsmith Cognitis Tab",
+      "itemGroup.tabgunsmith_cognitis_tab": "Matchlock",
       "item.gunsmith_cognitis.wheellock_musket": "Wheellock Musket",
-      "advancements.flintlock_mastery.title": "Flintlock Mastery",
       "item.gunsmith_cognitis.flintlock_pistol_gold": "Refined Flintlock Pistol",
       "item.gunsmith_cognitis.flintlock_blueprint": "Flintlock Blueprint",
-      "item.gunsmith_cognitis.jezailmusket": "Jezail Musket",
-      "enchantment.gunsmith_cognitis.expanding_bullet": "Expanding Bullet",
-      "item.gunsmith_cognitis.flintlock_pepperbox_carbine": "Flintlock Pepperbox Carbine",
+      "item.gunsmith_cognitis.percussioncapgunkit": "Percussion Cap Gun Kit",
       "advancements.betterfirearmtheory.descr": "The Arquebus design as a firearm seems to be the most optimal, i could probably improve on this...",
       "advancements.gunpowdercognitisstart.descr": "Gunpowder, something always used to make things blow up, but what if we use it to shoot things?",
-      "advancements.gunpowdercognitisstart.title": "The persue of firepower",
       "item.gunsmith_cognitis.flintlock_lorenzoni_repeater": "Flintlock Lorenzoni Repeater",
       "item.gunsmith_cognitis.nock_volley_gun_front_component": "Nock Volley Gun Barrels",
-      "item.gunsmith_cognitis.goldpike": "Gold pike",
-      "item.gunsmith_cognitis.wheellock_carbine": "Wheellock Carbine",
       "advancements.flintandlocked.title": "Flint and locked",
-      "item.gunsmith_cognitis.goldhalberd": "Gold halberd",
       "item.gunsmith_cognitis.matchlock_snaphance_musket": "Matchlock Snaphance Musket",
-      "item.gunsmith_cognitis.flintlockgunkit": "Flintlock Gun Kit",
       "item.gunsmith_cognitis.paper_cartidge_small_ammo": "Paper cartidge small ammo",
       "item.gunsmith_cognitis.matchlock_blunderbuss": "Matchlock Blunderbuss",
-      "item.gunsmith_cognitis.flintlock_heavy_dragoon_pistol": "Flintlock Heavy Dragoon Pistol",
-      "item.gunsmith_cognitis.rock": "Rock",
-      "item.gunsmith_cognitis.wheellock_pistol": "Wheellock Pistol",
       "item.gunsmith_cognitis.rifledbarrel": "Rifled barrel",
+      "item.gunsmith_cognitis.flintlock_mechanism": "Flintlock Mechanism",
       "item.gunsmith_cognitis.flintlock_hand_mortar": "Flintlock Hand Mortar",
       "item.gunsmith_cognitis.netheritepike": "Netherite pike",
       "item.gunsmith_cognitis.flintlock_rifled_carbine": "Flintlock Rifled Carbine",
       "item.gunsmith_cognitis.flintlock_double_barrel_pistol": "Flintlock DB Pistol",
       "advancements.flintlock_mastery.descr": "Create your first flintlock musket, unlocking access to further Flintlock weapons.",
       "item.gunsmith_cognitis.cuirass_chestplate": "Cuirass",
-      "item.gunsmith_cognitis.threeeyegun": "Three Eye Gun",
       "item.gunsmith_cognitis.wheellockgunkit": "Wheellock Gun Kit",
       "item.gunsmith_cognitis.cuirass_helmet": "Cuirass Helmet",
       "item.gunsmith_cognitis.wheellock_sporting_rifle": "Wheellock Sporting Rifle",
       "item.gunsmith_cognitis.riflingtool": "Rifling tool",
       "gamerule.doGunsJam": "Do Firearms jam?",
-      "item.gunsmith_cognitis.divine_five_thunder_machine": "Divine Five Thunder Machine",
       "item.gunsmith_cognitis.mortarball": "Mortar ball",
       "advancements.thewheelkeepsspinning.descr": "Improve upon the matchlock design by switching to a wheellock system instead!",
-      "item.gunsmith_cognitis.revolver_drum": "Revolver Drum",
       "enchantment.gunsmith_cognitis.explosiveround": "Explosive",
-      "item.gunsmith_cognitis.ironhalberd": "Iron halberd",
       "item.gunsmith_cognitis.tanegashima": "Tanegashima-teppō",
-      "item.gunsmith_cognitis.diamondpike": "Diamond pike",
-      "item.gunsmith_cognitis.musketball": "Musket ball",
       "item.gunsmith_cognitis.netheritehalberd": "Netherite halberd",
       "item.gunsmith_cognitis.stonehalberd": "Stone halberd",
       "item.gunsmith_cognitis.stonepike": "Stone pike",
-      "item.gunsmith_cognitis.cuirass_leggings": "Cuirass Leggings",
       "advancements.matchlock_mastery.descr": "Ok, so we can use it to shoot things! Let\u0027s try and improve upon our designs this time.",
       "item.gunsmith_cognitis.matchlock_wall_gun": "Matchlock Wall Gun",
+      "item.gunsmith_cognitis.paper_cartidge_ammo": "Paper cartidge ammo",
+      "item.gunsmith_cognitis.percussioncap_blueprint": "Percussion Cap Blueprint",
+      "item.gunsmith_cognitis.diamondhalberd": "Diamond halberd",
+      "itemGroup.tabgunsmith_cognitis_misc_tab": "Gunsmith Cognitis Misc Tab",
+      "itemGroup.tabgunsmith_cognitis_wheellock_tab": "Gunsmith Cognitis Wheellock Tab",
+      "advancements.matchlock_mastery.title": "Matchlock Mastery",
+      "item.gunsmith_cognitis.crude_smoothborebarrel": "Crude Smoothbore Barrel",
+      "item.gunsmith_cognitis.matchlock_axe_pistol": "Matchlock Axe Pistol",
+      "item.gunsmith_cognitis.wheellock_kalthoff_repeater": "Kalthoff Repeater",
+      "gamerule.doGunsJam.description": "Are firearms from Gunsmith Cognitis allowed to jam at low durability or in bad (but not unfit) envirorments?",
+      "item.gunsmith_cognitis.cuirass_boots": "Cuirass Boots",
+      "item.gunsmith_cognitis.flintlock_double_barrel_musket": "Flintlock Double Barrel Musket",
+      "item.gunsmith_cognitis.nock_volley_gun": "Nock Volley Gun",
+      "enchantment.gunsmith_cognitis.poisoned_bullets": "Poison Tipped",
+      "item.gunsmith_cognitis.flintlock_pepperbox": "Flintlock Pepperbox",
+      "advancements.betterfirearmtheory.title": "Better Firearm Theory",
+      "advancements.flintlock_mastery.title": "Flintlock Mastery",
+      "item.gunsmith_cognitis.jezailmusket": "Jezail Musket",
+      "enchantment.gunsmith_cognitis.expanding_bullet": "Expanding Bullet",
+      "item.gunsmith_cognitis.flintlock_pepperbox_carbine": "Flintlock Pepperbox Carbine",
+      "item.gunsmith_cognitis.dynamite": "Dynamite",
+      "advancements.gunpowdercognitisstart.title": "The persue of firepower",
+      "item.gunsmith_cognitis.goldpike": "Gold pike",
+      "item.gunsmith_cognitis.wheellock_carbine": "Wheellock Carbine",
+      "item.gunsmith_cognitis.goldhalberd": "Gold halberd",
+      "item.gunsmith_cognitis.flintlockgunkit": "Flintlock Gun Kit",
+      "item.gunsmith_cognitis.flintlock_heavy_dragoon_pistol": "Flintlock Heavy Dragoon Pistol",
+      "item.gunsmith_cognitis.rock": "Rock",
+      "item.gunsmith_cognitis.wheellock_pistol": "Wheellock Pistol",
+      "item.gunsmith_cognitis.percussionnipple": "Percussion cap",
+      "item.gunsmith_cognitis.percussioncap_mechanism": "Percussioncap Mechanism",
+      "item.gunsmith_cognitis.threeeyegun": "Three Eye Gun",
+      "item.gunsmith_cognitis.divine_five_thunder_machine": "Divine Five Thunder Machine",
+      "item.gunsmith_cognitis.revolver_drum": "Revolver Drum",
+      "item.gunsmith_cognitis.ironhalberd": "Iron halberd",
+      "item.gunsmith_cognitis.diamondpike": "Diamond pike",
+      "item.gunsmith_cognitis.dynamite_pack": "Dynamite Pack",
+      "item.gunsmith_cognitis.musketball": "Musket ball",
+      "itemGroup.tabgunsmith_cognitis_melee": "Gunsmith Cognitis Melee",
+      "item.gunsmith_cognitis.cuirass_leggings": "Cuirass Leggings",
+      "itemGroup.tabgunsmith_cognitis_flintlock_tab": "Gunsmith Cognitis Flintlock Tab",
       "item.gunsmith_cognitis.ramrod": "Ramrod",
       "subtitles.musket_shot": "Musket Shot",
-      "item.gunsmith_cognitis.paper_cartidge_ammo": "Paper cartidge ammo",
       "item.gunsmith_cognitis.flintlockmusketbayonet": "Flintlock Musket (Bayonet)",
       "item.gunsmith_cognitis.flintlock_pistol": "Flintlock Pistol",
       "item.gunsmith_cognitis.musket_ball_projectile": "Musket ball",
-      "item.gunsmith_cognitis.diamondhalberd": "Diamond halberd",
       "item.gunsmith_cognitis.handgunne": "Handgunne",
       "advancements.flintandlocked.descr": "Find the Flintlock blueprint, unlocking access to Flintlock weapons.",
       "item.gunsmith_cognitis.flintlock_collier_revolver": "Flintlock Collier Revolver",
-      "advancements.matchlock_mastery.title": "Matchlock Mastery",
       "item.gunsmith_cognitis.matchlock_arquebus": "Matchlock Arquebus",
       "item.gunsmith_cognitis.cavalry_sabre": "Cavalry Sabre",
-      "item.gunsmith_cognitis.crude_smoothborebarrel": "Crude Smoothbore Barrel",
       "enchantment.gunsmith_cognitis.gun_infinity": "Infinity",
-      "item.gunsmith_cognitis.matchlock_axe_pistol": "Matchlock Axe Pistol",
       "item.gunsmith_cognitis.ironpike": "Iron pike",
       "item.gunsmith_cognitis.ferguson_rifle": "Ferguson Rifle",
       "item.gunsmith_cognitis.smoothborebarrel": "Smoothbore Barrel",
       "key.gunsmith_cognitis.ammo_reload": "Gunsmith Congitis: Reload",
       "item.gunsmith_cognitis.hand_bomb": "Hand Bomb",
-      "item.gunsmith_cognitis.wheellock_kalthoff_repeater": "Kalthoff Repeater",
-      "gamerule.doGunsJam.description": "Are firearms from Gunsmith Cognitis allowed to jam at low durability or in bad (but not unfit) envirorments?",
+      "itemGroup.tabgunsmith_cognitis_percussioncap_tab": "Gunsmith Cognitis Percussioncap Tab",
       "item.gunsmith_cognitis.flintlockmusketgold": "Refined Flintlock Musket",
-      "item.gunsmith_cognitis.cuirass_boots": "Cuirass Boots",
-      "item.gunsmith_cognitis.flintlock_double_barrel_musket": "Flintlock Double Barrel Musket",
+      "item.gunsmith_cognitis.fulminatepowder": "Fulminate powder",
       "advancements.thewheelkeepsspinning.title": "The wheel keeps spinning",
       "item.gunsmith_cognitis.flintlock_asumette_rifled_wall_gun": "Flintlock Asumette Wall Gun",
       "item.gunsmith_cognitis.flintlock_collier_revolving_carbine": "Flintlock Collier Revolving Carbine",
-      "item.gunsmith_cognitis.nock_volley_gun": "Nock Volley Gun",
-      "item.gunsmith_cognitis.flintlockmusket": "Flintlock Musket",
-      "enchantment.gunsmith_cognitis.poisoned_bullets": "Poison Tipped"
+      "item.gunsmith_cognitis.flintlockmusket": "Flintlock Musket"
     }
   },
   "foldersRoot": {

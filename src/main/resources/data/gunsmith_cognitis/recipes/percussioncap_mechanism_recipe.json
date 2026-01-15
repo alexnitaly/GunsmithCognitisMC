@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "gunsmith_cognitis:percussioncap_blueprint"
+    },
+    "1": {
+      "item": "minecraft:flint_and_steel"
+    },
+    "2": {
+      "item": "gunsmith_cognitis:percussionnipple"
+    },
+    "3": {
+      "item": "minecraft:lever"
+    },
+    "4": {
+      "item": "minecraft:iron_ingot"
+    },
+    "5": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "gunsmith_cognitis:percussioncap_mechanism",
+    "count": 1
+  }
+}

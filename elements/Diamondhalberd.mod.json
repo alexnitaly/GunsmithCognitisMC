@@ -8,7 +8,7 @@
     "name": "Diamond halberd",
     "specialInfo": [],
     "creativeTab": {
-      "value": "CUSTOM:GunsmithCognitisTab"
+      "value": "CUSTOM:GunsmithCognitisMelee"
     },
     "toolType": "Axe",
     "harvestLevel": 3,

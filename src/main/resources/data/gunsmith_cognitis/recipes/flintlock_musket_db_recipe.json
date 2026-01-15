@@ -12,7 +12,7 @@
       "item": "minecraft:gunpowder"
     },
     "2": {
-      "item": "minecraft:flint"
+      "item": "gunsmith_cognitis:flintlock_mechanism"
     },
     "4": {
       "item": "gunsmith_cognitis:smoothborebarrel"

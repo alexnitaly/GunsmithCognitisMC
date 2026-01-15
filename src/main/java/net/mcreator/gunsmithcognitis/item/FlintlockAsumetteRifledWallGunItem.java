@@ -25,7 +25,7 @@ import java.util.List;
 
 public class FlintlockAsumetteRifledWallGunItem extends Item {
 	public FlintlockAsumetteRifledWallGunItem() {
-		super(new Item.Properties().tab(GunsmithCognitisModTabs.TAB_GUNSMITH_COGNITIS_TAB).durability(225));
+		super(new Item.Properties().tab(GunsmithCognitisModTabs.TAB_GUNSMITH_COGNITIS_FLINTLOCK_TAB).durability(225));
 	}
 
 	@Override

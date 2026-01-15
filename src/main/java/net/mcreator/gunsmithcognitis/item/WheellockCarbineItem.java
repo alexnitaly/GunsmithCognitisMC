@@ -26,7 +26,7 @@ import java.util.List;
 
 public class WheellockCarbineItem extends Item {
 	public WheellockCarbineItem() {
-		super(new Item.Properties().tab(GunsmithCognitisModTabs.TAB_GUNSMITH_COGNITIS_TAB).durability(99));
+		super(new Item.Properties().tab(GunsmithCognitisModTabs.TAB_GUNSMITH_COGNITIS_WHEELLOCK_TAB).durability(99));
 	}
 
 	@Override

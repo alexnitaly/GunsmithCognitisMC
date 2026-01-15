@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:iron_ingot"
+    },
+    "1": {
+      "item": "gunsmith_cognitis:percussioncap_mechanism"
+    },
+    "2": {
+      "item": "minecraft:iron_ingot"
+    },
+    "3": {
+      "item": "minecraft:gold_nugget"
+    },
+    "4": {
+      "item": "gunsmith_cognitis:percussioncap_blueprint"
+    },
+    "5": {
+      "item": "minecraft:gold_nugget"
+    },
+    "6": {
+      "item": "gunsmith_cognitis:percussionnipple"
+    },
+    "7": {
+      "item": "minecraft:iron_ingot"
+    },
+    "8": {
+      "item": "gunsmith_cognitis:percussionnipple"
+    }
+  },
+  "result": {
+    "item": "gunsmith_cognitis:percussioncapgunkit",
+    "count": 1
+  }
+}
