@@ -1,0 +1,45 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Stonepike"
+      },
+      {
+        "value": "CUSTOM:Ironpike"
+      },
+      {
+        "value": "CUSTOM:Goldpike"
+      },
+      {
+        "value": "CUSTOM:DiamondPike"
+      },
+      {
+        "value": "CUSTOM:NetheritePike"
+      },
+      {
+        "value": "CUSTOM:Stonehalberd"
+      },
+      {
+        "value": "CUSTOM:Ironhalberd"
+      },
+      {
+        "value": "CUSTOM:Goldhalberd"
+      },
+      {
+        "value": "CUSTOM:Diamondhalberd"
+      },
+      {
+        "value": "CUSTOM:Netheritehalberd"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "huge_melee",
+    "namespace": "mod"
+  }
+}

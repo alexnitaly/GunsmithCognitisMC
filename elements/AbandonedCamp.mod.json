@@ -5,7 +5,7 @@
     "structure": "gc_abandoned_camp",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
-    "spawnProbability": 256,
+    "spawnProbability": 512,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Ground",

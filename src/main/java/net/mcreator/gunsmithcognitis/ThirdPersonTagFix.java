@@ -28,6 +28,8 @@ public class ThirdPersonTagFix {
     public static final TagKey<Item> PISTOL_TAG = ItemTags.create(new ResourceLocation("gunsmith_cognitis", "pistol"));
     public static final TagKey<Item> RIFLE_TAG = ItemTags.create(new ResourceLocation("gunsmith_cognitis", "rifle"));
     public static final TagKey<Item> LONGRIFLE_TAG = ItemTags.create(new ResourceLocation("gunsmith_cognitis", "long_rifle"));
+    public static final TagKey<Item> BIGMELEE_TAG = ItemTags.create(new ResourceLocation("gunsmith_cognitis", "big_melee"));
+    public static final TagKey<Item> HUGEMELEE_TAG = ItemTags.create(new ResourceLocation("gunsmith_cognitis", "huge_melee"));
 
     @SubscribeEvent
     public static void onModelBake(ModelBakeEvent event) {
@@ -94,6 +96,16 @@ public class ThirdPersonTagFix {
                 else if (stack.is(LONGRIFLE_TAG)) {
                     poseStack.translate(0.0D, 0.13D, -0.42D); 
                     poseStack.scale(1.25F, 1.25F, 1.25F);
+                }
+                
+                else if (stack.is(BIGMELEE_TAG)) {
+                    poseStack.translate(0.0D, 0.1D, -0.1D); 
+                    poseStack.scale(1.2F, 1.2F, 1.2F);
+                }
+                
+                else if (stack.is(HUGEMELEE_TAG)) {
+                    poseStack.translate(0.0D, 0.15D, -0.1D); 
+                    poseStack.scale(1.5F, 1.5F, 1.5F);
                 }
             }
             

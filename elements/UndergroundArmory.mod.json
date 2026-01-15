@@ -5,7 +5,7 @@
     "structure": "gc_undergroundarmory",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
-    "spawnProbability": 512,
+    "spawnProbability": 796,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Underground",

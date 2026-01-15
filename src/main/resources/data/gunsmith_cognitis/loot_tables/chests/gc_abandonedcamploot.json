@@ -239,6 +239,39 @@
               "formula": "minecraft:ore_drops"
             }
           ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:air",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gunsmith_cognitis:smoothborebarrel",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            },
+            {
+              "function": "minecraft:apply_bonus",
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops"
+            }
+          ]
         }
       ]
     },
@@ -255,12 +288,12 @@
         {
           "type": "minecraft:item",
           "name": "gunsmith_cognitis:flintlockmusketgold",
-          "weight": 1,
+          "weight": 2,
           "functions": [
             {
               "function": "set_count",
               "count": {
-                "min": 0,
+                "min": 1,
                 "max": 1
               }
             },
@@ -282,7 +315,7 @@
             {
               "function": "set_count",
               "count": {
-                "min": 0,
+                "min": 1,
                 "max": 1
               }
             },
@@ -299,12 +332,12 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:iron_sword",
-          "weight": 5,
+          "weight": 7,
           "functions": [
             {
               "function": "set_count",
               "count": {
-                "min": 0,
+                "min": 1,
                 "max": 1
               }
             },
@@ -321,12 +354,12 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:iron_helmet",
-          "weight": 3,
+          "weight": 5,
           "functions": [
             {
               "function": "set_count",
               "count": {
-                "min": 0,
+                "min": 1,
                 "max": 1
               }
             },
@@ -343,12 +376,12 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:iron_chestplate",
-          "weight": 3,
+          "weight": 5,
           "functions": [
             {
               "function": "set_count",
               "count": {
-                "min": 0,
+                "min": 1,
                 "max": 1
               }
             },
@@ -365,12 +398,12 @@
         {
           "type": "minecraft:item",
           "name": "gunsmith_cognitis:wheellock_pistol",
-          "weight": 3,
+          "weight": 4,
           "functions": [
             {
               "function": "set_count",
               "count": {
-                "min": 0,
+                "min": 1,
                 "max": 1
               }
             },
@@ -392,7 +425,7 @@
             {
               "function": "set_count",
               "count": {
-                "min": 0,
+                "min": 1,
                 "max": 1
               }
             },
@@ -409,12 +442,12 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:chainmail_helmet",
-          "weight": 3,
+          "weight": 7,
           "functions": [
             {
               "function": "set_count",
               "count": {
-                "min": 0,
+                "min": 1,
                 "max": 1
               }
             },
@@ -431,12 +464,12 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:chainmail_chestplate",
-          "weight": 3,
+          "weight": 7,
           "functions": [
             {
               "function": "set_count",
               "count": {
-                "min": 0,
+                "min": 1,
                 "max": 1
               }
             },
@@ -445,6 +478,78 @@
               "treasure": true,
               "levels": {
                 "min": 0,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gunsmith_cognitis:cavalry_sabre",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "treasure": true,
+              "levels": {
+                "min": 0,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gunsmith_cognitis:wheellock_carbine",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "treasure": true,
+              "levels": {
+                "min": 0,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:air",
+          "weight": 9,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gunsmith_cognitis:flintlock_hand_mortar",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
                 "max": 1
               }
             }

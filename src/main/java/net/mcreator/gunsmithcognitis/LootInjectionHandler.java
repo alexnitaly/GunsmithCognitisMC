@@ -108,6 +108,11 @@ public class LootInjectionHandler {
             event.getTable().addPool(LootPool.lootPool().setRolls(UniformGenerator.between(1, 1))
                 .add(LootItem.lootTableItem(GunsmithCognitisModItems.FLINTLOCK_BLUEPRINT.get()).setWeight(1))
                 .add(LootItem.lootTableItem(Items.AIR).setWeight(7)).build());
+
+            // Cavalry Sabre
+            event.getTable().addPool(LootPool.lootPool().setRolls(UniformGenerator.between(1, 1))
+                .add(LootItem.lootTableItem(GunsmithCognitisModItems.CAVALRY_SABRE.get()).setWeight(1))
+                .add(LootItem.lootTableItem(Items.AIR).setWeight(5)).build());
         }
 
         
@@ -143,6 +148,11 @@ public class LootInjectionHandler {
                 .add(TagEntry.expandTag(MATCHLOCKS).setWeight(1))
                 .add(LootItem.lootTableItem(Items.AIR).setWeight(4)).build());
 
+			// Cavalry Sabre
+            event.getTable().addPool(LootPool.lootPool().setRolls(UniformGenerator.between(1, 1))
+                .add(LootItem.lootTableItem(GunsmithCognitisModItems.CAVALRY_SABRE.get()).setWeight(1))
+                .add(LootItem.lootTableItem(Items.AIR).setWeight(5)).build());
+           
             // Flintlocks
             event.getTable().addPool(LootPool.lootPool().setRolls(UniformGenerator.between(1, 1))
                 .add(TagEntry.expandTag(FLINTLOCKS).setWeight(1))

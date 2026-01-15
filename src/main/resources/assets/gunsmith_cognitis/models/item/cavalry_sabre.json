@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "gunsmith_cognitis:items/1796_sabre"
+  }
+}

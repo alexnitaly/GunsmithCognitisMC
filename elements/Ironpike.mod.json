@@ -1,0 +1,31 @@
+{
+  "_fv": 39,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "iron_pike",
+    "customModelName": "Normal",
+    "name": "Iron pike",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:GunsmithCognitisTab"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 6.0,
+    "attackSpeed": 0.7,
+    "enchantability": 14,
+    "damageVsEntity": 4.5,
+    "usageCount": 250,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "Items.IRON_INGOT"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

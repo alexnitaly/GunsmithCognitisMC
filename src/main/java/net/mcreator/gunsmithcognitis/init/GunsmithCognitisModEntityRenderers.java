@@ -39,16 +39,16 @@ public class GunsmithCognitisModEntityRenderers {
 		event.registerEntityRenderer(GunsmithCognitisModEntities.FLINTLOCK_DOUBLE_BARREL_PISTOL.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(GunsmithCognitisModEntities.FLINTLOCK_DOUBLE_BARREL_MUSKET.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(GunsmithCognitisModEntities.FLINTLOCK_PEPPERBOX.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(GunsmithCognitisModEntities.FLINTLOCK_HAND_MORTAR.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(GunsmithCognitisModEntities.FLINTLOCK_LORENZONI_REPEATER.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(GunsmithCognitisModEntities.FLINTLOCK_PEPPERBOX_CARBINE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(GunsmithCognitisModEntities.WHEELLOCK_KALTHOFF_REPEATER.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(GunsmithCognitisModEntities.DIVINE_FIVE_THUNDER_MACHINE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(GunsmithCognitisModEntities.FLINTLOCK_HEAVY_DRAGOON_PISTOL.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(GunsmithCognitisModEntities.NOCK_VOLLEY_GUN.get(), ThrownItemRenderer::new);
-		event.registerEntityRenderer(GunsmithCognitisModEntities.FERGUSON_RIFLE.get(), ThrownItemRenderer::new);
-		event.registerEntityRenderer(GunsmithCognitisModEntities.FLINTLOCK_HAND_MORTAR.get(), ThrownItemRenderer::new);
-		event.registerEntityRenderer(GunsmithCognitisModEntities.ROCK.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(GunsmithCognitisModEntities.FLINTLOCK_COLLIER_REVOLVER.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(GunsmithCognitisModEntities.FLINTLOCK_COLLIER_REVOLVING_CARBINE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(GunsmithCognitisModEntities.FERGUSON_RIFLE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(GunsmithCognitisModEntities.ROCK.get(), ThrownItemRenderer::new);
 	}
 }

@@ -111,6 +111,8 @@ public class GunsmithCognitisModEntities {
 					.setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<FlintlockPepperboxEntity>> FLINTLOCK_PEPPERBOX = register("projectile_flintlock_pepperbox", EntityType.Builder.<FlintlockPepperboxEntity>of(FlintlockPepperboxEntity::new, MobCategory.MISC)
 			.setCustomClientFactory(FlintlockPepperboxEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<FlintlockHandMortarEntity>> FLINTLOCK_HAND_MORTAR = register("projectile_flintlock_hand_mortar", EntityType.Builder.<FlintlockHandMortarEntity>of(FlintlockHandMortarEntity::new, MobCategory.MISC)
+			.setCustomClientFactory(FlintlockHandMortarEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<FlintlockLorenzoniRepeaterEntity>> FLINTLOCK_LORENZONI_REPEATER = register("projectile_flintlock_lorenzoni_repeater",
 			EntityType.Builder.<FlintlockLorenzoniRepeaterEntity>of(FlintlockLorenzoniRepeaterEntity::new, MobCategory.MISC).setCustomClientFactory(FlintlockLorenzoniRepeaterEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(1).sized(0.5f, 0.5f));
@@ -128,18 +130,16 @@ public class GunsmithCognitisModEntities {
 					.setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<NockVolleyGunEntity>> NOCK_VOLLEY_GUN = register("projectile_nock_volley_gun",
 			EntityType.Builder.<NockVolleyGunEntity>of(NockVolleyGunEntity::new, MobCategory.MISC).setCustomClientFactory(NockVolleyGunEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<FergusonRifleEntity>> FERGUSON_RIFLE = register("projectile_ferguson_rifle",
-			EntityType.Builder.<FergusonRifleEntity>of(FergusonRifleEntity::new, MobCategory.MISC).setCustomClientFactory(FergusonRifleEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<FlintlockHandMortarEntity>> FLINTLOCK_HAND_MORTAR = register("projectile_flintlock_hand_mortar", EntityType.Builder.<FlintlockHandMortarEntity>of(FlintlockHandMortarEntity::new, MobCategory.MISC)
-			.setCustomClientFactory(FlintlockHandMortarEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<RockEntity>> ROCK = register("projectile_rock",
-			EntityType.Builder.<RockEntity>of(RockEntity::new, MobCategory.MISC).setCustomClientFactory(RockEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<FlintlockCollierRevolverEntity>> FLINTLOCK_COLLIER_REVOLVER = register("projectile_flintlock_collier_revolver",
 			EntityType.Builder.<FlintlockCollierRevolverEntity>of(FlintlockCollierRevolverEntity::new, MobCategory.MISC).setCustomClientFactory(FlintlockCollierRevolverEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<FlintlockCollierRevolvingCarbineEntity>> FLINTLOCK_COLLIER_REVOLVING_CARBINE = register("projectile_flintlock_collier_revolving_carbine",
 			EntityType.Builder.<FlintlockCollierRevolvingCarbineEntity>of(FlintlockCollierRevolvingCarbineEntity::new, MobCategory.MISC).setCustomClientFactory(FlintlockCollierRevolvingCarbineEntity::new).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<FergusonRifleEntity>> FERGUSON_RIFLE = register("projectile_ferguson_rifle",
+			EntityType.Builder.<FergusonRifleEntity>of(FergusonRifleEntity::new, MobCategory.MISC).setCustomClientFactory(FergusonRifleEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<RockEntity>> ROCK = register("projectile_rock",
+			EntityType.Builder.<RockEntity>of(RockEntity::new, MobCategory.MISC).setCustomClientFactory(RockEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

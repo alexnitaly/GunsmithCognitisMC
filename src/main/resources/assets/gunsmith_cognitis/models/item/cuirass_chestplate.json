@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "gunsmith_cognitis:items/cuirass_item"
+  }
+}

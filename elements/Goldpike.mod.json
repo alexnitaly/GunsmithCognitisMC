@@ -1,0 +1,31 @@
+{
+  "_fv": 39,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "gold_pike",
+    "customModelName": "Normal",
+    "name": "Gold pike",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:GunsmithCognitisTab"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 12.0,
+    "attackSpeed": 1.1,
+    "enchantability": 22,
+    "damageVsEntity": 3.5,
+    "usageCount": 59,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "Items.GOLD_INGOT"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}
