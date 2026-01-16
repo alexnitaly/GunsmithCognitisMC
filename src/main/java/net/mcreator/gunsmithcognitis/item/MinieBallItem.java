@@ -6,8 +6,8 @@ import net.minecraft.world.item.Item;
 
 import net.mcreator.gunsmithcognitis.init.GunsmithCognitisModTabs;
 
-public class MortarballItem extends Item {
-	public MortarballItem() {
-		super(new Item.Properties().tab(GunsmithCognitisModTabs.TAB_GUNSMITH_COGNITIS_TAB).stacksTo(32).rarity(Rarity.COMMON));
+public class MinieBallItem extends Item {
+	public MinieBallItem() {
+		super(new Item.Properties().tab(GunsmithCognitisModTabs.TAB_GUNSMITH_COGNITIS_TAB).stacksTo(64).rarity(Rarity.COMMON));
 	}
 }

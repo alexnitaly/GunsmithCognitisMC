@@ -8,7 +8,7 @@
     "name": "Flintlock Blueprint",
     "rarity": "UNCOMMON",
     "creativeTab": {
-      "value": "CUSTOM:GunsmithCognitisMiscTab"
+      "value": "CUSTOM:GunsmithCognitisTab"
     },
     "stackSize": 1,
     "enchantability": 0,

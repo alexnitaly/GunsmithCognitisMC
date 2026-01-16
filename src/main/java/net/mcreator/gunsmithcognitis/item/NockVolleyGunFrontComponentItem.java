@@ -8,6 +8,6 @@ import net.mcreator.gunsmithcognitis.init.GunsmithCognitisModTabs;
 
 public class NockVolleyGunFrontComponentItem extends Item {
 	public NockVolleyGunFrontComponentItem() {
-		super(new Item.Properties().tab(GunsmithCognitisModTabs.TAB_GUNSMITH_COGNITIS_MISC_TAB).stacksTo(8).rarity(Rarity.COMMON));
+		super(new Item.Properties().tab(GunsmithCognitisModTabs.TAB_GUNSMITH_COGNITIS_TAB).stacksTo(8).rarity(Rarity.COMMON));
 	}
 }

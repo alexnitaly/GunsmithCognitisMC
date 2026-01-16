@@ -6,8 +6,8 @@ import net.minecraft.world.item.Item;
 
 import net.mcreator.gunsmithcognitis.init.GunsmithCognitisModTabs;
 
-public class RifledbarrelItem extends Item {
-	public RifledbarrelItem() {
+public class MiniePaperCartidgeAmmoItem extends Item {
+	public MiniePaperCartidgeAmmoItem() {
 		super(new Item.Properties().tab(GunsmithCognitisModTabs.TAB_GUNSMITH_COGNITIS_TAB).stacksTo(64).rarity(Rarity.COMMON));
 	}
 }

@@ -24,12 +24,14 @@ import net.mcreator.gunsmithcognitis.entity.WheellockCarbineEntity;
 import net.mcreator.gunsmithcognitis.entity.ThreeeyegunEntity;
 import net.mcreator.gunsmithcognitis.entity.TanegashimaEntity;
 import net.mcreator.gunsmithcognitis.entity.RockEntity;
+import net.mcreator.gunsmithcognitis.entity.Pattern1851minierifleEntity;
 import net.mcreator.gunsmithcognitis.entity.NockVolleyGunEntity;
 import net.mcreator.gunsmithcognitis.entity.MatchlockWallGunEntity;
 import net.mcreator.gunsmithcognitis.entity.MatchlockSnaphanceMusketEntity;
 import net.mcreator.gunsmithcognitis.entity.MatchlockBlunderbussEntity;
 import net.mcreator.gunsmithcognitis.entity.MatchlockAxePistolEntity;
 import net.mcreator.gunsmithcognitis.entity.MatchlockArquebusEntity;
+import net.mcreator.gunsmithcognitis.entity.LorenzPistolEntity;
 import net.mcreator.gunsmithcognitis.entity.JezailmusketEntity;
 import net.mcreator.gunsmithcognitis.entity.HandgunneEntity;
 import net.mcreator.gunsmithcognitis.entity.HandBombEntity;
@@ -146,6 +148,11 @@ public class GunsmithCognitisModEntities {
 			EntityType.Builder.<DynamiteEntity>of(DynamiteEntity::new, MobCategory.MISC).setCustomClientFactory(DynamiteEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<DynamitePackEntity>> DYNAMITE_PACK = register("projectile_dynamite_pack",
 			EntityType.Builder.<DynamitePackEntity>of(DynamitePackEntity::new, MobCategory.MISC).setCustomClientFactory(DynamitePackEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<Pattern1851minierifleEntity>> PATTERN_1851MINIERIFLE = register("projectile_pattern_1851minierifle",
+			EntityType.Builder.<Pattern1851minierifleEntity>of(Pattern1851minierifleEntity::new, MobCategory.MISC).setCustomClientFactory(Pattern1851minierifleEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<LorenzPistolEntity>> LORENZ_PISTOL = register("projectile_lorenz_pistol",
+			EntityType.Builder.<LorenzPistolEntity>of(LorenzPistolEntity::new, MobCategory.MISC).setCustomClientFactory(LorenzPistolEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "paper_cartidge_small",
+    "texture": "minie_ball",
     "customModelName": "Normal",
-    "name": "Paper cartidge small ammo",
+    "name": "Minie ball",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:GunsmithCognitisTab"

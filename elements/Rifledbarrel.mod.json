@@ -8,7 +8,7 @@
     "name": "Rifled barrel",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:GunsmithCognitisMiscTab"
+      "value": "CUSTOM:GunsmithCognitisTab"
     },
     "stackSize": 64,
     "enchantability": 0,
