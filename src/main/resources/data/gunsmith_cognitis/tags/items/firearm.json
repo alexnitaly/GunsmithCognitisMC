@@ -1,12 +1,14 @@
 {
   "replace": false,
   "values": [
+    "gunsmith_cognitis:kentucky_pistol",
     "gunsmith_cognitis:flintlock_asumette_rifled_wall_gun",
     "gunsmith_cognitis:matchlock_arquebus",
     "gunsmith_cognitis:flintlock_double_barrel_musket",
     "gunsmith_cognitis:matchlock_axe_pistol",
     "gunsmith_cognitis:divine_five_thunder_machine",
     "gunsmith_cognitis:jezailmusket",
+    "gunsmith_cognitis:lorenz_pistol",
     "gunsmith_cognitis:flintlock_pistol",
     "gunsmith_cognitis:handgunne",
     "gunsmith_cognitis:wheellock_pistol",
@@ -15,6 +17,7 @@
     "gunsmith_cognitis:flintlock_double_barrel_pistol",
     "gunsmith_cognitis:threeeyegun",
     "gunsmith_cognitis:flintlock_heavy_dragoon_pistol",
+    "gunsmith_cognitis:pattern_1851minierifle",
     "gunsmith_cognitis:matchlock_blunderbuss",
     "gunsmith_cognitis:ferguson_rifle",
     "gunsmith_cognitis:flintlock_hand_mortar",

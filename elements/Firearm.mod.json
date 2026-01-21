@@ -102,6 +102,15 @@
       },
       {
         "value": "CUSTOM:FlintlockCollierRevolvingCarbine"
+      },
+      {
+        "value": "CUSTOM:Pattern1851minierifle"
+      },
+      {
+        "value": "CUSTOM:LorenzPistol"
+      },
+      {
+        "value": "CUSTOM:KentuckyPistol"
       }
     ],
     "blocks": [],

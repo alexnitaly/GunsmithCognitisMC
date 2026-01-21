@@ -18,6 +18,12 @@
       },
       {
         "value": "CUSTOM:FergusonRifle"
+      },
+      {
+        "value": "CUSTOM:Pattern1851minierifle"
+      },
+      {
+        "value": "CUSTOM:LorenzPistol"
       }
     ],
     "blocks": [],

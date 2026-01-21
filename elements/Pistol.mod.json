@@ -30,6 +30,12 @@
       },
       {
         "value": "CUSTOM:FlintlockCollierRevolver"
+      },
+      {
+        "value": "CUSTOM:LorenzPistol"
+      },
+      {
+        "value": "CUSTOM:KentuckyPistol"
       }
     ],
     "blocks": [],

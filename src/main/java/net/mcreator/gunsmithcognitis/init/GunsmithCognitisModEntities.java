@@ -32,6 +32,7 @@ import net.mcreator.gunsmithcognitis.entity.MatchlockBlunderbussEntity;
 import net.mcreator.gunsmithcognitis.entity.MatchlockAxePistolEntity;
 import net.mcreator.gunsmithcognitis.entity.MatchlockArquebusEntity;
 import net.mcreator.gunsmithcognitis.entity.LorenzPistolEntity;
+import net.mcreator.gunsmithcognitis.entity.KentuckyPistolEntity;
 import net.mcreator.gunsmithcognitis.entity.JezailmusketEntity;
 import net.mcreator.gunsmithcognitis.entity.HandgunneEntity;
 import net.mcreator.gunsmithcognitis.entity.HandBombEntity;
@@ -153,6 +154,8 @@ public class GunsmithCognitisModEntities {
 					.setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<LorenzPistolEntity>> LORENZ_PISTOL = register("projectile_lorenz_pistol",
 			EntityType.Builder.<LorenzPistolEntity>of(LorenzPistolEntity::new, MobCategory.MISC).setCustomClientFactory(LorenzPistolEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<KentuckyPistolEntity>> KENTUCKY_PISTOL = register("projectile_kentucky_pistol",
+			EntityType.Builder.<KentuckyPistolEntity>of(KentuckyPistolEntity::new, MobCategory.MISC).setCustomClientFactory(KentuckyPistolEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

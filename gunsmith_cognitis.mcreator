@@ -7522,6 +7522,163 @@
         ]
       },
       "path": "~/AmmoOverlays"
+    },
+    {
+      "name": "KentuckyPistol",
+      "type": "rangeditem",
+      "sortid": 347,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kentucky_pistol",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/entity/KentuckyPistolEntity.java",
+          "src/main/resources/assets/gunsmith_cognitis/models/item/kentucky_pistol.json",
+          "src/main/java/net/mcreator/gunsmithcognitis/item/KentuckyPistolItem.java"
+        ]
+      },
+      "path": "~/Percussion Cap"
+    },
+    {
+      "name": "KentuckyPistolCanUseRangedItem",
+      "type": "procedure",
+      "sortid": 348,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kentucky_pistol_can_use_ranged_item",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/KentuckyPistolCanUseRangedItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Percussion Cap"
+    },
+    {
+      "name": "KentuckyPistolRangedItemUsed",
+      "type": "procedure",
+      "sortid": 349,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kentucky_pistol_ranged_item_used",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/KentuckyPistolRangedItemUsedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Percussion Cap"
+    },
+    {
+      "name": "KentuckyPistolReload",
+      "type": "procedure",
+      "sortid": 350,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kentucky_pistol_reload",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/KentuckyPistolReloadProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Percussion Cap"
+    },
+    {
+      "name": "KentuckyPistolOffhandReload",
+      "type": "procedure",
+      "sortid": 351,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kentucky_pistol_offhand_reload",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/KentuckyPistolOffhandReloadProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Percussion Cap"
+    },
+    {
+      "name": "KentuckyPistolOverlay",
+      "type": "procedure",
+      "sortid": 352,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kentucky_pistol_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/KentuckyPistolOverlayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/AmmoOverlays"
     }
   ],
   "variable_elements": [
@@ -7557,8 +7714,8 @@
       "item.gunsmith_cognitis.nock_volley_gun_front_component": "Nock Volley Gun Barrels",
       "advancements.flintandlocked.title": "Flint and locked",
       "item.gunsmith_cognitis.matchlock_snaphance_musket": "Matchlock Snaphance Musket",
-      "item.gunsmith_cognitis.matchlock_blunderbuss": "Matchlock Blunderbuss",
       "item.gunsmith_cognitis.paper_cartidge_small_ammo": "Paper cartidge small ammo",
+      "item.gunsmith_cognitis.matchlock_blunderbuss": "Matchlock Blunderbuss",
       "item.gunsmith_cognitis.rifledbarrel": "Rifled barrel",
       "item.gunsmith_cognitis.flintlock_mechanism": "Flintlock Mechanism",
       "item.gunsmith_cognitis.flintlock_hand_mortar": "Flintlock Hand Mortar",
@@ -7567,14 +7724,15 @@
       "item.gunsmith_cognitis.flintlock_double_barrel_pistol": "Flintlock DB Pistol",
       "advancements.flintlock_mastery.descr": "Create your first flintlock musket, unlocking access to further Flintlock weapons.",
       "item.gunsmith_cognitis.cuirass_chestplate": "Cuirass",
-      "item.gunsmith_cognitis.cuirass_helmet": "Cuirass Helmet",
       "item.gunsmith_cognitis.wheellockgunkit": "Wheellock Gun Kit",
+      "item.gunsmith_cognitis.cuirass_helmet": "Cuirass Helmet",
       "item.gunsmith_cognitis.wheellock_sporting_rifle": "Wheellock Sporting Rifle",
       "item.gunsmith_cognitis.riflingtool": "Rifling tool",
       "gamerule.doGunsJam": "Do Firearms jam?",
       "item.gunsmith_cognitis.mortarball": "Iron Grenado",
       "advancements.thewheelkeepsspinning.descr": "Improve upon the matchlock design by switching to a wheellock system instead!",
       "enchantment.gunsmith_cognitis.explosiveround": "Explosive",
+      "item.gunsmith_cognitis.kentucky_pistol": "Kentucky Pistol",
       "item.gunsmith_cognitis.tanegashima": "Tanegashima-teppō",
       "item.gunsmith_cognitis.netheritehalberd": "Netherite halberd",
       "item.gunsmith_cognitis.stonehalberd": "Stone halberd",
@@ -7663,8 +7821,8 @@
       "item.gunsmith_cognitis.nock_volley_gun_front_component": "Seven Sisters Component",
       "advancements.flintandlocked.title": "Secret o\u0027 the Flint-Knappers",
       "item.gunsmith_cognitis.matchlock_snaphance_musket": "Early Match-Biter",
-      "item.gunsmith_cognitis.paper_cartidge_small_ammo": "Wee Pre-Wrapped Powder",
       "item.gunsmith_cognitis.matchlock_blunderbuss": "Deck-Sweeper",
+      "item.gunsmith_cognitis.paper_cartidge_small_ammo": "Wee Pre-Wrapped Powder",
       "item.gunsmith_cognitis.rifledbarrel": "Rifled barrel",
       "item.gunsmith_cognitis.flintlock_mechanism": "Flint-n-Steel Guts",
       "item.gunsmith_cognitis.flintlock_hand_mortar": "Hand-Held Hull-Breaker",
@@ -7673,14 +7831,15 @@
       "item.gunsmith_cognitis.flintlock_double_barrel_pistol": "Twin-Sting Barker",
       "advancements.flintlock_mastery.descr": "Create your first flintlock musket, unlocking access to further Flintlock weapons.",
       "item.gunsmith_cognitis.cuirass_chestplate": "Cuirass",
-      "item.gunsmith_cognitis.wheellockgunkit": "Wheellock Gun Kit",
       "item.gunsmith_cognitis.cuirass_helmet": "Cuirass Helmet",
+      "item.gunsmith_cognitis.wheellockgunkit": "Wheellock Gun Kit",
       "item.gunsmith_cognitis.wheellock_sporting_rifle": "Fancy-Fluted Clock Snapper",
       "item.gunsmith_cognitis.riflingtool": "Rifling tool",
       "gamerule.doGunsJam": "Can Iron Barkers jam?",
       "item.gunsmith_cognitis.mortarball": "Heavy Sinker",
       "advancements.thewheelkeepsspinning.descr": "Improve upon the matchlock design by switching to a wheellock system instead!",
       "enchantment.gunsmith_cognitis.explosiveround": "Explosive",
+      "item.gunsmith_cognitis.kentucky_pistol": "Lorenz 1854 Pistol",
       "item.gunsmith_cognitis.tanegashima": "Eastern Match-Pipe",
       "item.gunsmith_cognitis.netheritehalberd": "Blackbeard\u0027s Guard-Pole",
       "item.gunsmith_cognitis.stonehalberd": "Rock Board-Pole",

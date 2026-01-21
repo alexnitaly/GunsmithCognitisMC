@@ -49,6 +49,7 @@ import net.mcreator.gunsmithcognitis.item.MatchlockBlunderbussItem;
 import net.mcreator.gunsmithcognitis.item.MatchlockAxePistolItem;
 import net.mcreator.gunsmithcognitis.item.MatchlockArquebusItem;
 import net.mcreator.gunsmithcognitis.item.LorenzPistolItem;
+import net.mcreator.gunsmithcognitis.item.KentuckyPistolItem;
 import net.mcreator.gunsmithcognitis.item.JezailmusketItem;
 import net.mcreator.gunsmithcognitis.item.IronpikeItem;
 import net.mcreator.gunsmithcognitis.item.IronhalberdItem;
@@ -164,4 +165,5 @@ public class GunsmithCognitisModItems {
 	public static final RegistryObject<Item> MINIE_BALL = REGISTRY.register("minie_ball", () -> new MinieBallItem());
 	public static final RegistryObject<Item> MINIE_PAPER_CARTIDGE_AMMO = REGISTRY.register("minie_paper_cartidge_ammo", () -> new MiniePaperCartidgeAmmoItem());
 	public static final RegistryObject<Item> LORENZ_PISTOL = REGISTRY.register("lorenz_pistol", () -> new LorenzPistolItem());
+	public static final RegistryObject<Item> KENTUCKY_PISTOL = REGISTRY.register("kentucky_pistol", () -> new KentuckyPistolItem());
 }

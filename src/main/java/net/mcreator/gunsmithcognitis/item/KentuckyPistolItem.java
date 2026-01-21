@@ -16,16 +16,16 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.gunsmithcognitis.procedures.LorenzPistolRangedItemUsedProcedure;
-import net.mcreator.gunsmithcognitis.procedures.LorenzPistolCanUseRangedItemProcedure;
+import net.mcreator.gunsmithcognitis.procedures.KentuckyPistolRangedItemUsedProcedure;
+import net.mcreator.gunsmithcognitis.procedures.KentuckyPistolCanUseRangedItemProcedure;
 import net.mcreator.gunsmithcognitis.init.GunsmithCognitisModTabs;
-import net.mcreator.gunsmithcognitis.entity.LorenzPistolEntity;
+import net.mcreator.gunsmithcognitis.entity.KentuckyPistolEntity;
 
 import java.util.List;
 
-public class LorenzPistolItem extends Item {
-	public LorenzPistolItem() {
-		super(new Item.Properties().tab(GunsmithCognitisModTabs.TAB_GUNSMITH_COGNITIS_PERCUSSIONCAP_TAB).durability(779));
+public class KentuckyPistolItem extends Item {
+	public KentuckyPistolItem() {
+		super(new Item.Properties().tab(GunsmithCognitisModTabs.TAB_GUNSMITH_COGNITIS_PERCUSSIONCAP_TAB).durability(875));
 	}
 
 	@Override
@@ -37,7 +37,7 @@ public class LorenzPistolItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("Percussion Cap tier: Requires 1 Gunpowder and a minie ball to load."));
+		list.add(new TextComponent("Percussion Cap tier: Requires two gunpowder and a musket ball or a paper cartidge to load."));
 	}
 
 	@Override
@@ -56,12 +56,12 @@ public class LorenzPistolItem extends Item {
 			double x = entity.getX();
 			double y = entity.getY();
 			double z = entity.getZ();
-			if (LorenzPistolCanUseRangedItemProcedure.execute(world, x, y, z, entity)) {
-				LorenzPistolEntity entityarrow = LorenzPistolEntity.shoot(world, entity, world.getRandom(), 3.5f, 2.5, 0);
+			if (KentuckyPistolCanUseRangedItemProcedure.execute(world, x, y, z, entity)) {
+				KentuckyPistolEntity entityarrow = KentuckyPistolEntity.shoot(world, entity, world.getRandom(), 4f, 3, 0);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 
-				LorenzPistolRangedItemUsedProcedure.execute(world, x, y, z, entity, itemstack);
+				KentuckyPistolRangedItemUsedProcedure.execute(world, x, y, z, entity, itemstack);
 			}
 		}
 	}

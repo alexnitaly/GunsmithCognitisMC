@@ -3,11 +3,11 @@
   "_type": "rangeditem",
   "definition": {
     "renderType": 0,
-    "texture": "caplock_lorenz_pistol",
+    "texture": "caplock_kentucky_pistol",
     "customModelName": "Normal",
-    "name": "Lorenz 1854 Pistol",
+    "name": "Kentucky Pistol",
     "specialInfo": [
-      "Percussion Cap tier: Requires 1 Gunpowder and a minie ball to load."
+      "Percussion Cap tier: Requires two gunpowder and a musket ball or a paper cartidge to load."
     ],
     "creativeTab": {
       "value": "CUSTOM:GunsmithCognitisPercussioncapTab"
@@ -17,7 +17,7 @@
       "value": ""
     },
     "shootConstantly": false,
-    "usageCount": 779,
+    "usageCount": 875,
     "actionSound": {
       "value": "CUSTOM:musket_shot"
     },
@@ -26,13 +26,13 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "onRangedItemUsed": {
-      "name": "LorenzPistolRangedItemUsed"
+      "name": "KentuckyPistolRangedItemUsed"
     },
     "useCondition": {
-      "name": "LorenzPistolCanUseRangedItem"
+      "name": "KentuckyPistolCanUseRangedItem"
     },
-    "bulletPower": 3.5,
-    "bulletDamage": 2.5,
+    "bulletPower": 4.0,
+    "bulletDamage": 3.0,
     "bulletKnockback": 0,
     "bulletParticles": false,
     "bulletIgnitesFire": false,
