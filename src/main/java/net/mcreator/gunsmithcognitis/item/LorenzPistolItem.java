@@ -16,8 +16,8 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.gunsmithcognitis.procedures.FlintlockPistolRangedItemUsedProcedure;
-import net.mcreator.gunsmithcognitis.procedures.FlintlockPistolCanUseRangedItemProcedure;
+import net.mcreator.gunsmithcognitis.procedures.LorenzPistolRangedItemUsedProcedure;
+import net.mcreator.gunsmithcognitis.procedures.LorenzPistolCanUseRangedItemProcedure;
 import net.mcreator.gunsmithcognitis.init.GunsmithCognitisModTabs;
 import net.mcreator.gunsmithcognitis.entity.LorenzPistolEntity;
 
@@ -25,7 +25,7 @@ import java.util.List;
 
 public class LorenzPistolItem extends Item {
 	public LorenzPistolItem() {
-		super(new Item.Properties().tab(GunsmithCognitisModTabs.TAB_GUNSMITH_COGNITIS_PERCUSSIONCAP_TAB).durability(179));
+		super(new Item.Properties().tab(GunsmithCognitisModTabs.TAB_GUNSMITH_COGNITIS_PERCUSSIONCAP_TAB).durability(779));
 	}
 
 	@Override
@@ -56,12 +56,12 @@ public class LorenzPistolItem extends Item {
 			double x = entity.getX();
 			double y = entity.getY();
 			double z = entity.getZ();
-			if (FlintlockPistolCanUseRangedItemProcedure.execute(world, x, y, z, entity)) {
-				LorenzPistolEntity entityarrow = LorenzPistolEntity.shoot(world, entity, world.getRandom(), 2.5f, 3, 0);
+			if (LorenzPistolCanUseRangedItemProcedure.execute(world, x, y, z, entity)) {
+				LorenzPistolEntity entityarrow = LorenzPistolEntity.shoot(world, entity, world.getRandom(), 3.5f, 2.5, 0);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 
-				FlintlockPistolRangedItemUsedProcedure.execute(world, x, y, z, entity, itemstack);
+				LorenzPistolRangedItemUsedProcedure.execute(world, x, y, z, entity, itemstack);
 			}
 		}
 	}

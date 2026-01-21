@@ -16,8 +16,8 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.gunsmithcognitis.procedures.MusketRangedItemUsedProcedure;
-import net.mcreator.gunsmithcognitis.procedures.FlintlockmusketCanUseRangedItemProcedure;
+import net.mcreator.gunsmithcognitis.procedures.Pattern1851minierifleRangedItemUsedProcedure;
+import net.mcreator.gunsmithcognitis.procedures.Pattern1851minierifleCanUseRangedItemProcedure;
 import net.mcreator.gunsmithcognitis.init.GunsmithCognitisModTabs;
 import net.mcreator.gunsmithcognitis.entity.Pattern1851minierifleEntity;
 
@@ -56,12 +56,12 @@ public class Pattern1851minierifleItem extends Item {
 			double x = entity.getX();
 			double y = entity.getY();
 			double z = entity.getZ();
-			if (FlintlockmusketCanUseRangedItemProcedure.execute(world, x, y, z, entity)) {
-				Pattern1851minierifleEntity entityarrow = Pattern1851minierifleEntity.shoot(world, entity, world.getRandom(), 4f, 3, 0);
+			if (Pattern1851minierifleCanUseRangedItemProcedure.execute(world, x, y, z, entity)) {
+				Pattern1851minierifleEntity entityarrow = Pattern1851minierifleEntity.shoot(world, entity, world.getRandom(), 5f, 2, 0);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 
-				MusketRangedItemUsedProcedure.execute(world, x, y, z, entity);
+				Pattern1851minierifleRangedItemUsedProcedure.execute(world, x, y, z, entity);
 			}
 		}
 	}

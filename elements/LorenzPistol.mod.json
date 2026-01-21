@@ -17,7 +17,7 @@
       "value": ""
     },
     "shootConstantly": false,
-    "usageCount": 179,
+    "usageCount": 779,
     "actionSound": {
       "value": "CUSTOM:musket_shot"
     },
@@ -26,13 +26,13 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "onRangedItemUsed": {
-      "name": "FlintlockPistolRangedItemUsed"
+      "name": "LorenzPistolRangedItemUsed"
     },
     "useCondition": {
-      "name": "FlintlockPistolCanUseRangedItem"
+      "name": "LorenzPistolCanUseRangedItem"
     },
-    "bulletPower": 2.5,
-    "bulletDamage": 3.0,
+    "bulletPower": 3.5,
+    "bulletDamage": 2.5,
     "bulletKnockback": 0,
     "bulletParticles": false,
     "bulletIgnitesFire": false,
