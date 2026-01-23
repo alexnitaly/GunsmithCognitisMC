@@ -1,0 +1,12 @@
+{
+  "_fv": 39,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Number",
+    "displayName": "Shotgun Backblast Multiplier",
+    "description": "REQUIRES SHOTGUN COP STEVE TO WORK! Controls the strength of the recoil with a multiplier (Default: x1.0 (10))",
+    "category": "PLAYER",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 10
+  }
+}

@@ -11,4 +11,6 @@ import net.minecraft.world.level.GameRules;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class GunsmithCognitisModGameRules {
 	public static final GameRules.Key<GameRules.BooleanValue> DOGUNSJAM = GameRules.register("doGunsJam", GameRules.Category.MISC, GameRules.BooleanValue.create(true));
+	public static final GameRules.Key<GameRules.BooleanValue> SHOTGUNBACKBLAST = GameRules.register("shotgunBackBlast", GameRules.Category.PLAYER, GameRules.BooleanValue.create(false));
+	public static final GameRules.Key<GameRules.IntegerValue> SHOTGUNBACKBLASTMULTIPLIER = GameRules.register("shotgunBackBlastMultiplier", GameRules.Category.PLAYER, GameRules.IntegerValue.create(10));
 }

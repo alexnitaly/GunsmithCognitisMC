@@ -1,0 +1,12 @@
+{
+  "_fv": 39,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Logic",
+    "displayName": "Shotgun Cop Steve",
+    "description": "All shotgun-type weapons, including blunderbusses, will cause knockback to the player when shot.",
+    "category": "PLAYER",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 0
+  }
+}

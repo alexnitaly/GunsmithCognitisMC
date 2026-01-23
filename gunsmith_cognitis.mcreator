@@ -7679,6 +7679,43 @@
         ]
       },
       "path": "~/AmmoOverlays"
+    },
+    {
+      "name": "ShotgunRecoilHandler",
+      "type": "code",
+      "sortid": 353,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "shotgun_recoil_handler",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/ShotgunRecoilHandler.java"
+        ]
+      }
+    },
+    {
+      "name": "ShotgunBackBlast",
+      "type": "gamerule",
+      "sortid": 354,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shotgunBackBlast",
+      "metadata": {
+        "files": [],
+        "type": "logic"
+      }
+    },
+    {
+      "name": "ShotgunBackBlastMultiplier",
+      "type": "gamerule",
+      "sortid": 355,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shotgunBackBlastMultiplier",
+      "metadata": {
+        "files": [],
+        "type": "number"
+      }
     }
   ],
   "variable_elements": [
@@ -7723,6 +7760,7 @@
       "item.gunsmith_cognitis.flintlock_rifled_carbine": "Flintlock Rifled Carbine",
       "item.gunsmith_cognitis.flintlock_double_barrel_pistol": "Flintlock DB Pistol",
       "advancements.flintlock_mastery.descr": "Create your first flintlock musket, unlocking access to further Flintlock weapons.",
+      "gamerule.shotgunBackBlastMultiplier.description": "REQUIRES SHOTGUN COP STEVE TO WORK! Controls the strength of the recoil with a multiplier (Default: x1.0 (10))",
       "item.gunsmith_cognitis.cuirass_chestplate": "Cuirass",
       "item.gunsmith_cognitis.wheellockgunkit": "Wheellock Gun Kit",
       "item.gunsmith_cognitis.cuirass_helmet": "Cuirass Helmet",
@@ -7748,7 +7786,9 @@
       "advancements.matchlock_mastery.title": "Matchlock Mastery",
       "item.gunsmith_cognitis.crude_smoothborebarrel": "Crude Smoothbore Barrel",
       "item.gunsmith_cognitis.matchlock_axe_pistol": "Matchlock Axe Pistol",
+      "gamerule.shotgunBackBlastMultiplier": "Shotgun Backblast Multiplier",
       "item.gunsmith_cognitis.wheellock_kalthoff_repeater": "Kalthoff Repeater",
+      "gamerule.shotgunBackBlast.description": "All shotgun-type weapons, including blunderbusses, will cause knockback to the player when shot.",
       "gamerule.doGunsJam.description": "Are firearms from Gunsmith Cognitis allowed to jam at low durability or in bad (but not unfit) envirorments?",
       "item.gunsmith_cognitis.cuirass_boots": "Cuirass Boots",
       "item.gunsmith_cognitis.flintlock_double_barrel_musket": "Flintlock Double Barrel Musket",
@@ -7802,6 +7842,7 @@
       "itemGroup.tabgunsmith_cognitis_percussioncap_tab": "Gunsmith Cognitis Percussioncap",
       "item.gunsmith_cognitis.flintlockmusketgold": "Refined Flintlock Musket",
       "item.gunsmith_cognitis.fulminatepowder": "Fulminate powder",
+      "gamerule.shotgunBackBlast": "Shotgun Cop Steve",
       "advancements.thewheelkeepsspinning.title": "The wheel keeps spinning",
       "item.gunsmith_cognitis.flintlock_asumette_rifled_wall_gun": "Asumette Rifled Wall Gun",
       "item.gunsmith_cognitis.flintlock_collier_revolving_carbine": "Flintlock Collier Revolving Carbine",
@@ -7830,6 +7871,7 @@
       "item.gunsmith_cognitis.flintlock_rifled_carbine": "Fluted Flint-Barking Carbine",
       "item.gunsmith_cognitis.flintlock_double_barrel_pistol": "Twin-Sting Barker",
       "advancements.flintlock_mastery.descr": "Create your first flintlock musket, unlocking access to further Flintlock weapons.",
+      "gamerule.shotgunBackBlastMultiplier.description": "REQUIRES SHOTGUN COP STEVE TO WORK! Controls the strength of the recoil with a multiplier (Default: x1)",
       "item.gunsmith_cognitis.cuirass_chestplate": "Cuirass",
       "item.gunsmith_cognitis.cuirass_helmet": "Cuirass Helmet",
       "item.gunsmith_cognitis.wheellockgunkit": "Wheellock Gun Kit",
@@ -7855,7 +7897,9 @@
       "advancements.matchlock_mastery.title": "Matchlock Mastery",
       "item.gunsmith_cognitis.crude_smoothborebarrel": "Rough Pipe",
       "item.gunsmith_cognitis.matchlock_axe_pistol": "\tBoarding Hanger-Gun",
+      "gamerule.shotgunBackBlastMultiplier": "Shotgun Backblast Multiplier",
       "item.gunsmith_cognitis.wheellock_kalthoff_repeater": "Many-Shot Clock Snapper",
+      "gamerule.shotgunBackBlast.description": "All shotgun-type weapons, including blunderbusses, will cause knockback to the player when shot.",
       "gamerule.doGunsJam.description": "Are the barkers from Gunsmith Cognitis allowed to jam at scarce durability or in cursed (but not impossible) envirorments?",
       "item.gunsmith_cognitis.cuirass_boots": "Cuirass Boots",
       "item.gunsmith_cognitis.flintlock_double_barrel_musket": "Long Twin-Sting Barker",
@@ -7909,6 +7953,7 @@
       "itemGroup.tabgunsmith_cognitis_percussioncap_tab": "Gunsmith Cognitis Percussion",
       "item.gunsmith_cognitis.flintlockmusketgold": "Admiral\u0027s Gilded Long-Iron",
       "item.gunsmith_cognitis.fulminatepowder": "Devil’s Fire-Salt",
+      "gamerule.shotgunBackBlast": "Shotgun Cop Steve",
       "advancements.thewheelkeepsspinning.title": "The wheel keeps spinning",
       "item.gunsmith_cognitis.flintlock_asumette_rifled_wall_gun": "Swivel-Mount Beast",
       "item.gunsmith_cognitis.flintlock_collier_revolving_carbine": "Long Spinnin\u0027 Barker",

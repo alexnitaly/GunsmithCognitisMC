@@ -103,6 +103,7 @@ public class FlintlockHandMortarFireCheckProcedure {
 					}
 				}
 				(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putBoolean("cobblestoneAmmo", (false));
+				(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putBoolean("backblast", (true));
 				FlintlockHandMortarRangedItemUsedProcedure.execute(world, x, y, z, entity);
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getBoolean("bombAmmo")) {
 				{
