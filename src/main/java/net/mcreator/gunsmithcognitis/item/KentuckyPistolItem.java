@@ -37,7 +37,8 @@ public class KentuckyPistolItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("Percussion Cap tier: Requires two gunpowder and a musket ball or a paper cartidge to load."));
+		list.add(new TextComponent("Percussion Cap tier: Requires two gunpowder and a musket ball or a paper cartidge to load"));
+		list.add(new TextComponent("needs a percussion cap from inventory in order to fire."));
 	}
 
 	@Override

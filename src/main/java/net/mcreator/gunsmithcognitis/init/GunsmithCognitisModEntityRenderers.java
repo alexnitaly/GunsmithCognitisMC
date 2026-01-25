@@ -55,5 +55,6 @@ public class GunsmithCognitisModEntityRenderers {
 		event.registerEntityRenderer(GunsmithCognitisModEntities.PATTERN_1851MINIERIFLE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(GunsmithCognitisModEntities.LORENZ_PISTOL.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(GunsmithCognitisModEntities.KENTUCKY_PISTOL.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(GunsmithCognitisModEntities.BROWNING_HARMONICA_RIFLE.get(), ThrownItemRenderer::new);
 	}
 }

@@ -56,6 +56,7 @@ import net.mcreator.gunsmithcognitis.entity.FergusonRifleEntity;
 import net.mcreator.gunsmithcognitis.entity.DynamitePackEntity;
 import net.mcreator.gunsmithcognitis.entity.DynamiteEntity;
 import net.mcreator.gunsmithcognitis.entity.DivineFiveThunderMachineEntity;
+import net.mcreator.gunsmithcognitis.entity.BrowningHarmonicaRifleEntity;
 import net.mcreator.gunsmithcognitis.GunsmithCognitisMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -156,6 +157,9 @@ public class GunsmithCognitisModEntities {
 			EntityType.Builder.<LorenzPistolEntity>of(LorenzPistolEntity::new, MobCategory.MISC).setCustomClientFactory(LorenzPistolEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<KentuckyPistolEntity>> KENTUCKY_PISTOL = register("projectile_kentucky_pistol",
 			EntityType.Builder.<KentuckyPistolEntity>of(KentuckyPistolEntity::new, MobCategory.MISC).setCustomClientFactory(KentuckyPistolEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<BrowningHarmonicaRifleEntity>> BROWNING_HARMONICA_RIFLE = register("projectile_browning_harmonica_rifle",
+			EntityType.Builder.<BrowningHarmonicaRifleEntity>of(BrowningHarmonicaRifleEntity::new, MobCategory.MISC).setCustomClientFactory(BrowningHarmonicaRifleEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

@@ -7,7 +7,8 @@
     "customModelName": "Normal",
     "name": "Pattern 1851 Minié Rifle",
     "specialInfo": [
-      "Percussion Cap tier: Requires 2 gunpowder and minie ball OR a minie paper cartidge to load."
+      "Percussion Cap tier: Requires 2 gunpowder and minie ball in inventory OR a minie paper cartidge in inventory to load",
+      "needs a percussion cap from inventory in order to fire."
     ],
     "creativeTab": {
       "value": "CUSTOM:GunsmithCognitisPercussioncapTab"

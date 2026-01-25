@@ -142,5 +142,11 @@ public class AmmoOverlayProcedure {
 				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.KENTUCKY_PISTOL.get()) {
 			KentuckyPistolOverlayProcedure.execute(world, entity);
 		}
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.BROWNING_HARMONICA_CLIP.get()) {
+			BrowningHarmonicaClipOverlayProcedure.execute(entity);
+		}
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.BROWNING_HARMONICA_RIFLE.get()) {
+			BrowningHarmonicaRifleOverlayProcedure.execute(world, entity);
+		}
 	}
 }

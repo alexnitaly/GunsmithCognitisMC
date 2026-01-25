@@ -1,0 +1,46 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Rifledbarrel"
+      },
+      {
+        "value": "CUSTOM:Percussioncapgunkit"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Percussioncapgunkit"
+      },
+      {
+        "value": "CUSTOM:Rifledbarrel"
+      },
+      {
+        "value": "CUSTOM:PercussioncapMechanism"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:BrowningHarmonicaClip"
+      },
+      {
+        "value": "Blocks.LOG"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:BrowningHarmonicaRifle"
+    },
+    "name": "browning_harmonica_rifle_recipe",
+    "namespace": "mod"
+  }
+}

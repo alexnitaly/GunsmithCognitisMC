@@ -86,6 +86,8 @@ import net.mcreator.gunsmithcognitis.item.DiamondPikeItem;
 import net.mcreator.gunsmithcognitis.item.CuirassItem;
 import net.mcreator.gunsmithcognitis.item.CrudeSmoothborebarrelItem;
 import net.mcreator.gunsmithcognitis.item.CavalrySabreItem;
+import net.mcreator.gunsmithcognitis.item.BrowningHarmonicaRifleItem;
+import net.mcreator.gunsmithcognitis.item.BrowningHarmonicaClipItem;
 import net.mcreator.gunsmithcognitis.GunsmithCognitisMod;
 
 public class GunsmithCognitisModItems {
@@ -166,4 +168,6 @@ public class GunsmithCognitisModItems {
 	public static final RegistryObject<Item> MINIE_PAPER_CARTIDGE_AMMO = REGISTRY.register("minie_paper_cartidge_ammo", () -> new MiniePaperCartidgeAmmoItem());
 	public static final RegistryObject<Item> LORENZ_PISTOL = REGISTRY.register("lorenz_pistol", () -> new LorenzPistolItem());
 	public static final RegistryObject<Item> KENTUCKY_PISTOL = REGISTRY.register("kentucky_pistol", () -> new KentuckyPistolItem());
+	public static final RegistryObject<Item> BROWNING_HARMONICA_CLIP = REGISTRY.register("browning_harmonica_clip", () -> new BrowningHarmonicaClipItem());
+	public static final RegistryObject<Item> BROWNING_HARMONICA_RIFLE = REGISTRY.register("browning_harmonica_rifle", () -> new BrowningHarmonicaRifleItem());
 }

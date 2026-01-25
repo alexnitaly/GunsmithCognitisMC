@@ -7,7 +7,8 @@
     "customModelName": "Normal",
     "name": "Kentucky Pistol",
     "specialInfo": [
-      "Percussion Cap tier: Requires two gunpowder and a musket ball or a paper cartidge to load."
+      "Percussion Cap tier: Requires two gunpowder and a musket ball or a paper cartidge to load",
+      "needs a percussion cap from inventory in order to fire."
     ],
     "creativeTab": {
       "value": "CUSTOM:GunsmithCognitisPercussioncapTab"

@@ -37,7 +37,8 @@ public class Pattern1851minierifleItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("Percussion Cap tier: Requires 2 gunpowder and minie ball OR a minie paper cartidge to load."));
+		list.add(new TextComponent("Percussion Cap tier: Requires 2 gunpowder and minie ball in inventory OR a minie paper cartidge in inventory to load"));
+		list.add(new TextComponent("needs a percussion cap from inventory in order to fire."));
 	}
 
 	@Override

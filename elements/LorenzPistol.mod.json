@@ -7,7 +7,8 @@
     "customModelName": "Normal",
     "name": "Lorenz 1854 Pistol",
     "specialInfo": [
-      "Percussion Cap tier: Requires 1 Gunpowder and a minie ball to load."
+      "Percussion Cap tier: Requires 1 Gunpowder and a minie ball in inventory to load",
+      "needs a percussion cap from inventory in order to fire."
     ],
     "creativeTab": {
       "value": "CUSTOM:GunsmithCognitisPercussioncapTab"

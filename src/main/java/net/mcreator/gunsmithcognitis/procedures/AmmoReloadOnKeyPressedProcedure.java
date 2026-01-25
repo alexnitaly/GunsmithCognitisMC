@@ -131,5 +131,11 @@ public class AmmoReloadOnKeyPressedProcedure {
 		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.KENTUCKY_PISTOL.get()) {
 			KentuckyPistolOffhandReloadProcedure.execute(entity);
 		}
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.BROWNING_HARMONICA_CLIP.get()) {
+			BrowningHarmonicaClipReloadProcedure.execute(entity);
+		}
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.BROWNING_HARMONICA_RIFLE.get()) {
+			BrowningHarmonicaRifleReloadProcedure.execute(entity);
+		}
 	}
 }
