@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "gunsmith_cognitis:crude_smoothborebarrel"
+    },
+    "1": {
+      "item": "minecraft:string"
+    },
+    "2": {
+      "item": "gunsmith_cognitis:matchlockgunkit"
+    },
+    "3": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "result": {
+    "item": "gunsmith_cognitis:matchlock_pistol",
+    "count": 1
+  }
+}

@@ -111,6 +111,30 @@
       },
       {
         "value": "CUSTOM:KentuckyPistol"
+      },
+      {
+        "value": "CUSTOM:Handcannon"
+      },
+      {
+        "value": "CUSTOM:BrowningHarmonicaRifle"
+      },
+      {
+        "value": "CUSTOM:MiquoletMusket"
+      },
+      {
+        "value": "CUSTOM:WheellockPetronel"
+      },
+      {
+        "value": "CUSTOM:FlintlockBlunderbuss"
+      },
+      {
+        "value": "CUSTOM:MatchlockHeavyArquebus"
+      },
+      {
+        "value": "CUSTOM:LandsknechtHarkebus"
+      },
+      {
+        "value": "CUSTOM:MatchlockPistol"
       }
     ],
     "blocks": [],

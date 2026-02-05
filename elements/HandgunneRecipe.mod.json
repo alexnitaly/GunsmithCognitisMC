@@ -10,7 +10,7 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Blocks.COPPER_BLOCK"
+        "value": "CUSTOM:CrudeSmoothborebarrel"
       },
       {
         "value": "Items.STRING"

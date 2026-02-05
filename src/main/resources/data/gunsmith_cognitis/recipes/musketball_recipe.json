@@ -9,7 +9,7 @@
       "item": "minecraft:iron_nugget"
     },
     "1": {
-      "item": "minecraft:gunpowder"
+      "item": "minecraft:iron_nugget"
     },
     "2": {
       "item": "minecraft:gunpowder"
@@ -20,6 +20,6 @@
   },
   "result": {
     "item": "gunsmith_cognitis:musketball",
-    "count": 4
+    "count": 5
   }
 }

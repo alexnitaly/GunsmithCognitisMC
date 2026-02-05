@@ -38,7 +38,7 @@ public class MatchlockWallGunItem extends Item {
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
 		list.add(new TextComponent("Matchlock Tier: Requires a string"));
-		list.add(new TextComponent("two gunpowder and musket balls to load"));
+		list.add(new TextComponent("two gunpowder and heavy musket balls to load"));
 		list.add(new TextComponent("requires flint n' steel to fire."));
 	}
 

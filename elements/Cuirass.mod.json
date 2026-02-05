@@ -13,7 +13,7 @@
     "creativeTab": {
       "value": "CUSTOM:GunsmithCognitisMiscTab"
     },
-    "armorTextureFile": "cuirass_",
+    "armorTextureFile": "cuirass__",
     "helmetName": "Cuirass Helmet",
     "bodyName": "Cuirass",
     "leggingsName": "Cuirass Leggings",
@@ -57,7 +57,7 @@
     "damageValueBoots": 2,
     "enchantability": 9,
     "toughness": 0.5,
-    "knockbackResistance": 0.5,
+    "knockbackResistance": 0.05,
     "equipSound": {
       "value": ""
     },

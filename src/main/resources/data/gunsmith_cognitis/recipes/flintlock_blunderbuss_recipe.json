@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "345",
+    " 78"
+  ],
+  "key": {
+    "0": {
+      "item": "gunsmith_cognitis:smoothborebarrel"
+    },
+    "3": {
+      "item": "minecraft:gunpowder"
+    },
+    "4": {
+      "item": "gunsmith_cognitis:smoothborebarrel"
+    },
+    "5": {
+      "item": "gunsmith_cognitis:flintlock_mechanism"
+    },
+    "7": {
+      "item": "gunsmith_cognitis:flintlockgunkit"
+    },
+    "8": {
+      "item": "minecraft:oak_log"
+    }
+  },
+  "result": {
+    "item": "gunsmith_cognitis:flintlockmusket",
+    "count": 1
+  }
+}

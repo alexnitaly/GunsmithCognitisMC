@@ -1,0 +1,47 @@
+{
+  "_fv": 39,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "matchlock_heavy_musket",
+    "customModelName": "Normal",
+    "name": "Matchlock Heavy Arquebus",
+    "specialInfo": [
+      "Matchlock Tier: Requires a string",
+      "gunpowder and heavy musket balls to load",
+      "requires flint n' steel to fire."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:GunsmithCognitisTab"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 96,
+    "actionSound": {
+      "value": "CUSTOM:musket_shot"
+    },
+    "hasGlow": false,
+    "animation": "none",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "MatchlockArquebusRangedItemUsed"
+    },
+    "useCondition": {
+      "name": "MatchlockHeavyArquebusCanBeUsed"
+    },
+    "bulletPower": 3.5,
+    "bulletDamage": 4.0,
+    "bulletKnockback": 1,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:MusketBallProjectile"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": ""
+  }
+}

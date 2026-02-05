@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "name": "Handgunne",
     "specialInfo": [
-      "Matchlock Tier: Requires gunpowder and musket balls to load",
+      "Matchlock Tier: Requires gunpowder and heavy musket balls to load",
       "requires flint n' steel to fire."
     ],
     "creativeTab": {

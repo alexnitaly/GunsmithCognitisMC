@@ -1,22 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "01 ",
+    "0  ",
     "345",
     "678"
   ],
   "key": {
     "0": {
-      "item": "gunsmith_cognitis:crude_smoothborebarrel"
-    },
-    "1": {
-      "item": "minecraft:gunpowder"
+      "item": "gunsmith_cognitis:crude_bigborebarrel"
     },
     "3": {
-      "item": "minecraft:copper_ingot"
+      "item": "minecraft:gunpowder"
     },
     "4": {
-      "item": "gunsmith_cognitis:crude_smoothborebarrel"
+      "item": "gunsmith_cognitis:crude_bigborebarrel"
     },
     "5": {
       "item": "minecraft:string"

@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01 ",
+    "34 ",
+    " 78"
+  ],
+  "key": {
+    "0": {
+      "item": "gunsmith_cognitis:crude_bigborebarrel"
+    },
+    "1": {
+      "item": "minecraft:string"
+    },
+    "3": {
+      "item": "minecraft:string"
+    },
+    "4": {
+      "item": "gunsmith_cognitis:crude_bigborebarrel"
+    },
+    "7": {
+      "item": "gunsmith_cognitis:matchlockgunkit"
+    },
+    "8": {
+      "item": "minecraft:oak_log"
+    }
+  },
+  "result": {
+    "item": "gunsmith_cognitis:handcannon",
+    "count": 1
+  }
+}

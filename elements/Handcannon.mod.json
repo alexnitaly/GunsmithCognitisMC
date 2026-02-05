@@ -1,0 +1,52 @@
+{
+  "_fv": 39,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "handcannon",
+    "customModelName": "Normal",
+    "name": "Handgunne",
+    "specialInfo": [
+      "Matchlock Tier: Requires gunpowder and mortar balls to load",
+      "requires flint n' steel to fire."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:GunsmithCognitisTab"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 45,
+    "actionSound": {
+      "value": "entity.generic.explode"
+    },
+    "hasGlow": false,
+    "animation": "none",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "MatchlockArquebusRangedItemUsed"
+    },
+    "useCondition": {
+      "name": "HandcannonCanUseRanged"
+    },
+    "bulletPower": 3.0,
+    "bulletDamage": 5.0,
+    "bulletKnockback": 2,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:MusketBallProjectile"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "FlintlockHandMortarProjectileHitsBlock"
+    },
+    "onBulletHitsEntity": {
+      "name": "FlintlockHandMortarProjectileHitsBlock"
+    }
+  }
+}

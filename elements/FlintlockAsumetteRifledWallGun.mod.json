@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "name": "Flintlock Asumette Wall Gun",
     "specialInfo": [
-      "Flintlock tier: Requires gunpowder and musket ball to load."
+      "Flintlock tier: Requires gunpowder and heavy musket ball to load."
     ],
     "creativeTab": {
       "value": "CUSTOM:GunsmithCognitisFlintlockTab"

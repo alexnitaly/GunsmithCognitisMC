@@ -90,6 +90,21 @@
       },
       {
         "value": "CUSTOM:KentuckyPistol"
+      },
+      {
+        "value": "CUSTOM:WheellockPetronel"
+      },
+      {
+        "value": "CUSTOM:FlintlockBlunderbuss"
+      },
+      {
+        "value": "CUSTOM:MatchlockHeavyArquebus"
+      },
+      {
+        "value": "CUSTOM:LandsknechtHarkebus"
+      },
+      {
+        "value": "CUSTOM:MatchlockPistol"
       }
     ],
     "blocks": [],

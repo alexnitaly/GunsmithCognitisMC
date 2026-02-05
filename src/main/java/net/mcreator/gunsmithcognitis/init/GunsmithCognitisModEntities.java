@@ -18,6 +18,7 @@ import net.minecraft.world.entity.Entity;
 
 import net.mcreator.gunsmithcognitis.entity.WheellockSportingRifleEntity;
 import net.mcreator.gunsmithcognitis.entity.WheellockPistolEntity;
+import net.mcreator.gunsmithcognitis.entity.WheellockPetronelEntity;
 import net.mcreator.gunsmithcognitis.entity.WheellockMusketEntity;
 import net.mcreator.gunsmithcognitis.entity.WheellockKalthoffRepeaterEntity;
 import net.mcreator.gunsmithcognitis.entity.WheellockCarbineEntity;
@@ -26,15 +27,20 @@ import net.mcreator.gunsmithcognitis.entity.TanegashimaEntity;
 import net.mcreator.gunsmithcognitis.entity.RockEntity;
 import net.mcreator.gunsmithcognitis.entity.Pattern1851minierifleEntity;
 import net.mcreator.gunsmithcognitis.entity.NockVolleyGunEntity;
+import net.mcreator.gunsmithcognitis.entity.MiquoletMusketEntity;
 import net.mcreator.gunsmithcognitis.entity.MatchlockWallGunEntity;
 import net.mcreator.gunsmithcognitis.entity.MatchlockSnaphanceMusketEntity;
+import net.mcreator.gunsmithcognitis.entity.MatchlockPistolEntity;
+import net.mcreator.gunsmithcognitis.entity.MatchlockHeavyArquebusEntity;
 import net.mcreator.gunsmithcognitis.entity.MatchlockBlunderbussEntity;
 import net.mcreator.gunsmithcognitis.entity.MatchlockAxePistolEntity;
 import net.mcreator.gunsmithcognitis.entity.MatchlockArquebusEntity;
 import net.mcreator.gunsmithcognitis.entity.LorenzPistolEntity;
+import net.mcreator.gunsmithcognitis.entity.LandsknechtHarkebusEntity;
 import net.mcreator.gunsmithcognitis.entity.KentuckyPistolEntity;
 import net.mcreator.gunsmithcognitis.entity.JezailmusketEntity;
 import net.mcreator.gunsmithcognitis.entity.HandgunneEntity;
+import net.mcreator.gunsmithcognitis.entity.HandcannonEntity;
 import net.mcreator.gunsmithcognitis.entity.HandBombEntity;
 import net.mcreator.gunsmithcognitis.entity.FlintlockmusketgoldEntity;
 import net.mcreator.gunsmithcognitis.entity.FlintlockmusketbayonetEntity;
@@ -51,6 +57,7 @@ import net.mcreator.gunsmithcognitis.entity.FlintlockDoubleBarrelPistolEntity;
 import net.mcreator.gunsmithcognitis.entity.FlintlockDoubleBarrelMusketEntity;
 import net.mcreator.gunsmithcognitis.entity.FlintlockCollierRevolvingCarbineEntity;
 import net.mcreator.gunsmithcognitis.entity.FlintlockCollierRevolverEntity;
+import net.mcreator.gunsmithcognitis.entity.FlintlockBlunderbussEntity;
 import net.mcreator.gunsmithcognitis.entity.FlintlockAsumetteRifledWallGunEntity;
 import net.mcreator.gunsmithcognitis.entity.FergusonRifleEntity;
 import net.mcreator.gunsmithcognitis.entity.DynamitePackEntity;
@@ -160,6 +167,21 @@ public class GunsmithCognitisModEntities {
 	public static final RegistryObject<EntityType<BrowningHarmonicaRifleEntity>> BROWNING_HARMONICA_RIFLE = register("projectile_browning_harmonica_rifle",
 			EntityType.Builder.<BrowningHarmonicaRifleEntity>of(BrowningHarmonicaRifleEntity::new, MobCategory.MISC).setCustomClientFactory(BrowningHarmonicaRifleEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<HandcannonEntity>> HANDCANNON = register("projectile_handcannon",
+			EntityType.Builder.<HandcannonEntity>of(HandcannonEntity::new, MobCategory.MISC).setCustomClientFactory(HandcannonEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<MiquoletMusketEntity>> MIQUOLET_MUSKET = register("projectile_miquolet_musket",
+			EntityType.Builder.<MiquoletMusketEntity>of(MiquoletMusketEntity::new, MobCategory.MISC).setCustomClientFactory(MiquoletMusketEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<WheellockPetronelEntity>> WHEELLOCK_PETRONEL = register("projectile_wheellock_petronel", EntityType.Builder.<WheellockPetronelEntity>of(WheellockPetronelEntity::new, MobCategory.MISC)
+			.setCustomClientFactory(WheellockPetronelEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<FlintlockBlunderbussEntity>> FLINTLOCK_BLUNDERBUSS = register("projectile_flintlock_blunderbuss", EntityType.Builder.<FlintlockBlunderbussEntity>of(FlintlockBlunderbussEntity::new, MobCategory.MISC)
+			.setCustomClientFactory(FlintlockBlunderbussEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<MatchlockHeavyArquebusEntity>> MATCHLOCK_HEAVY_ARQUEBUS = register("projectile_matchlock_heavy_arquebus",
+			EntityType.Builder.<MatchlockHeavyArquebusEntity>of(MatchlockHeavyArquebusEntity::new, MobCategory.MISC).setCustomClientFactory(MatchlockHeavyArquebusEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<LandsknechtHarkebusEntity>> LANDSKNECHT_HARKEBUS = register("projectile_landsknecht_harkebus", EntityType.Builder.<LandsknechtHarkebusEntity>of(LandsknechtHarkebusEntity::new, MobCategory.MISC)
+			.setCustomClientFactory(LandsknechtHarkebusEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<MatchlockPistolEntity>> MATCHLOCK_PISTOL = register("projectile_matchlock_pistol", EntityType.Builder.<MatchlockPistolEntity>of(MatchlockPistolEntity::new, MobCategory.MISC)
+			.setCustomClientFactory(MatchlockPistolEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

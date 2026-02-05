@@ -24,16 +24,21 @@ import net.mcreator.gunsmithcognitis.init.GunsmithCognitisModItems;
 import net.mcreator.gunsmithcognitis.init.GunsmithCognitisModEntities;
 import net.mcreator.gunsmithcognitis.entity.WheellockSportingRifleEntity;
 import net.mcreator.gunsmithcognitis.entity.WheellockPistolEntity;
+import net.mcreator.gunsmithcognitis.entity.WheellockPetronelEntity;
 import net.mcreator.gunsmithcognitis.entity.WheellockMusketEntity;
 import net.mcreator.gunsmithcognitis.entity.WheellockKalthoffRepeaterEntity;
 import net.mcreator.gunsmithcognitis.entity.WheellockCarbineEntity;
 import net.mcreator.gunsmithcognitis.entity.ThreeeyegunEntity;
 import net.mcreator.gunsmithcognitis.entity.TanegashimaEntity;
 import net.mcreator.gunsmithcognitis.entity.MatchlockWallGunEntity;
+import net.mcreator.gunsmithcognitis.entity.MatchlockPistolEntity;
+import net.mcreator.gunsmithcognitis.entity.MatchlockHeavyArquebusEntity;
 import net.mcreator.gunsmithcognitis.entity.MatchlockBlunderbussEntity;
 import net.mcreator.gunsmithcognitis.entity.MatchlockAxePistolEntity;
 import net.mcreator.gunsmithcognitis.entity.MatchlockArquebusEntity;
+import net.mcreator.gunsmithcognitis.entity.LandsknechtHarkebusEntity;
 import net.mcreator.gunsmithcognitis.entity.HandgunneEntity;
+import net.mcreator.gunsmithcognitis.entity.HandcannonEntity;
 import net.mcreator.gunsmithcognitis.entity.DivineFiveThunderMachineEntity;
 
 import javax.annotation.Nullable;
@@ -110,6 +115,82 @@ public class MatchlockFireDelayProcedure {
 				}
 				MatchlockArquebusRangedItemUsedProcedure.execute(world, x, y, z, entity);
 			}
+			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.MATCHLOCK_HEAVY_ARQUEBUS.get()) {
+				{
+					ItemStack _ist = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+					if (_ist.hurt(1, new Random(), null)) {
+						_ist.shrink(1);
+						_ist.setDamageValue(0);
+					}
+				}
+				(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putBoolean("IsFiring", (false));
+				{
+					Entity _shootFrom = entity;
+					Level projectileLevel = _shootFrom.level;
+					if (!projectileLevel.isClientSide()) {
+						Projectile _entityToSpawn = new Object() {
+							public Projectile getArrow(Level level, Entity shooter, float damage, int knockback, byte piercing) {
+								AbstractArrow entityToSpawn = new MatchlockHeavyArquebusEntity(GunsmithCognitisModEntities.MATCHLOCK_HEAVY_ARQUEBUS.get(), level);
+								entityToSpawn.setOwner(shooter);
+								entityToSpawn.setBaseDamage(damage);
+								entityToSpawn.setKnockback(knockback);
+								entityToSpawn.setSilent(true);
+								entityToSpawn.setPierceLevel(piercing);
+								return entityToSpawn;
+							}
+						}.getArrow(projectileLevel, entity, 4, 1, (byte) 4);
+						_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
+						_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, (float) 5.5, (float) 1.75);
+						projectileLevel.addFreshEntity(_entityToSpawn);
+					}
+				}
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("gunsmith_cognitis:musket_shot")), SoundSource.NEUTRAL, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("gunsmith_cognitis:musket_shot")), SoundSource.NEUTRAL, 1, 1, false);
+					}
+				}
+				MatchlockArquebusRangedItemUsedProcedure.execute(world, x, y, z, entity);
+			}
+			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.LANDSKNECHT_HARKEBUS.get()) {
+				{
+					ItemStack _ist = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+					if (_ist.hurt(1, new Random(), null)) {
+						_ist.shrink(1);
+						_ist.setDamageValue(0);
+					}
+				}
+				(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putBoolean("IsFiring", (false));
+				{
+					Entity _shootFrom = entity;
+					Level projectileLevel = _shootFrom.level;
+					if (!projectileLevel.isClientSide()) {
+						Projectile _entityToSpawn = new Object() {
+							public Projectile getArrow(Level level, Entity shooter, float damage, int knockback, byte piercing) {
+								AbstractArrow entityToSpawn = new LandsknechtHarkebusEntity(GunsmithCognitisModEntities.LANDSKNECHT_HARKEBUS.get(), level);
+								entityToSpawn.setOwner(shooter);
+								entityToSpawn.setBaseDamage(damage);
+								entityToSpawn.setKnockback(knockback);
+								entityToSpawn.setSilent(true);
+								entityToSpawn.setPierceLevel(piercing);
+								return entityToSpawn;
+							}
+						}.getArrow(projectileLevel, entity, 3, 1, (byte) 3);
+						_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
+						_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 4, (float) 2.25);
+						projectileLevel.addFreshEntity(_entityToSpawn);
+					}
+				}
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("gunsmith_cognitis:musket_shot")), SoundSource.NEUTRAL, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("gunsmith_cognitis:musket_shot")), SoundSource.NEUTRAL, 1, 1, false);
+					}
+				}
+				MatchlockArquebusRangedItemUsedProcedure.execute(world, x, y, z, entity);
+			}
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.TANEGASHIMA.get()) {
 				{
 					ItemStack _ist = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
@@ -147,6 +228,44 @@ public class MatchlockFireDelayProcedure {
 					}
 				}
 				TanegashimaRangedItemUsedProcedure.execute(world, x, y, z, entity);
+			}
+			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.MATCHLOCK_AXE_PISTOL.get()) {
+				{
+					ItemStack _ist = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+					if (_ist.hurt(1, new Random(), null)) {
+						_ist.shrink(1);
+						_ist.setDamageValue(0);
+					}
+				}
+				(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putBoolean("IsFiring", (false));
+				{
+					Entity _shootFrom = entity;
+					Level projectileLevel = _shootFrom.level;
+					if (!projectileLevel.isClientSide()) {
+						Projectile _entityToSpawn = new Object() {
+							public Projectile getArrow(Level level, Entity shooter, float damage, int knockback, byte piercing) {
+								AbstractArrow entityToSpawn = new MatchlockPistolEntity(GunsmithCognitisModEntities.MATCHLOCK_PISTOL.get(), level);
+								entityToSpawn.setOwner(shooter);
+								entityToSpawn.setBaseDamage(damage);
+								entityToSpawn.setKnockback(knockback);
+								entityToSpawn.setSilent(true);
+								entityToSpawn.setPierceLevel(piercing);
+								return entityToSpawn;
+							}
+						}.getArrow(projectileLevel, entity, (float) 1.5, 0, (byte) 1);
+						_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
+						_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 4, (float) 2.75);
+						projectileLevel.addFreshEntity(_entityToSpawn);
+					}
+				}
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("gunsmith_cognitis:musket_shot")), SoundSource.NEUTRAL, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("gunsmith_cognitis:musket_shot")), SoundSource.NEUTRAL, 1, 1, false);
+					}
+				}
+				MatchlockAxePistolRangedItemUsedProcedure.execute(world, x, y, z, entity);
 			}
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.MATCHLOCK_AXE_PISTOL.get()) {
 				{
@@ -262,6 +381,45 @@ public class MatchlockFireDelayProcedure {
 					}
 				}
 				MatchlockWallGunRangedItemUsedProcedure.execute(world, x, y, z, entity);
+			}
+			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.HANDCANNON.get()) {
+				{
+					ItemStack _ist = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+					if (_ist.hurt(1, new Random(), null)) {
+						_ist.shrink(1);
+						_ist.setDamageValue(0);
+					}
+				}
+				(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putBoolean("IsFiring", (false));
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.explode")), SoundSource.NEUTRAL, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.explode")), SoundSource.NEUTRAL, 1, 1, false);
+					}
+				}
+				{
+					Entity _shootFrom = entity;
+					Level projectileLevel = _shootFrom.level;
+					if (!projectileLevel.isClientSide()) {
+						Projectile _entityToSpawn = new Object() {
+							public Projectile getArrow(Level level, Entity shooter, float damage, int knockback) {
+								AbstractArrow entityToSpawn = new HandcannonEntity(GunsmithCognitisModEntities.HANDCANNON.get(), level);
+								entityToSpawn.setOwner(shooter);
+								entityToSpawn.setBaseDamage(damage);
+								entityToSpawn.setKnockback(knockback);
+								entityToSpawn.setSilent(true);
+								return entityToSpawn;
+							}
+						}.getArrow(projectileLevel, entity, 2, 2);
+						_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
+						_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 4, 3);
+						projectileLevel.addFreshEntity(_entityToSpawn);
+					}
+				}
+				if (world instanceof ServerLevel _level)
+					_level.sendParticles(ParticleTypes.EXPLOSION, x, (y + 1.5), z, Mth.nextInt(new Random(), 2, 5), 0, 0, 0, 0.02);
+				MatchlockArquebusRangedItemUsedProcedure.execute(world, x, y, z, entity);
 			}
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.HANDGUNNE.get()) {
 				{
@@ -485,6 +643,44 @@ public class MatchlockFireDelayProcedure {
 						}.getArrow(projectileLevel, entity, 3, 0, (byte) 3);
 						_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
 						_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 5, (float) 1.8);
+						projectileLevel.addFreshEntity(_entityToSpawn);
+					}
+				}
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("gunsmith_cognitis:musket_shot")), SoundSource.NEUTRAL, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("gunsmith_cognitis:musket_shot")), SoundSource.NEUTRAL, 1, 1, false);
+					}
+				}
+				WheellockMusketRangedItemUsedProcedure.execute(world, x, y, z, entity);
+			}
+			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.WHEELLOCK_PETRONEL.get()) {
+				{
+					ItemStack _ist = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+					if (_ist.hurt(1, new Random(), null)) {
+						_ist.shrink(1);
+						_ist.setDamageValue(0);
+					}
+				}
+				(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putBoolean("IsFiring", (false));
+				{
+					Entity _shootFrom = entity;
+					Level projectileLevel = _shootFrom.level;
+					if (!projectileLevel.isClientSide()) {
+						Projectile _entityToSpawn = new Object() {
+							public Projectile getArrow(Level level, Entity shooter, float damage, int knockback, byte piercing) {
+								AbstractArrow entityToSpawn = new WheellockPetronelEntity(GunsmithCognitisModEntities.WHEELLOCK_PETRONEL.get(), level);
+								entityToSpawn.setOwner(shooter);
+								entityToSpawn.setBaseDamage(damage);
+								entityToSpawn.setKnockback(knockback);
+								entityToSpawn.setSilent(true);
+								entityToSpawn.setPierceLevel(piercing);
+								return entityToSpawn;
+							}
+						}.getArrow(projectileLevel, entity, 4, 1, (byte) 3);
+						_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
+						_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 5, 2);
 						projectileLevel.addFreshEntity(_entityToSpawn);
 					}
 				}

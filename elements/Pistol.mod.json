@@ -36,6 +36,15 @@
       },
       {
         "value": "CUSTOM:KentuckyPistol"
+      },
+      {
+        "value": "CUSTOM:LandsknechtHarkebus"
+      },
+      {
+        "value": "CUSTOM:WheellockPetronel"
+      },
+      {
+        "value": "CUSTOM:MatchlockPistol"
       }
     ],
     "blocks": [],

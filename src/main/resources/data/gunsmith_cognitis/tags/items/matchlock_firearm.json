@@ -3,12 +3,16 @@
   "values": [
     "gunsmith_cognitis:matchlock_wall_gun",
     "gunsmith_cognitis:matchlock_arquebus",
-    "gunsmith_cognitis:matchlock_snaphance_musket",
     "gunsmith_cognitis:tanegashima",
-    "gunsmith_cognitis:threeeyegun",
+    "gunsmith_cognitis:matchlock_heavy_arquebus",
     "gunsmith_cognitis:matchlock_axe_pistol",
     "gunsmith_cognitis:divine_five_thunder_machine",
-    "gunsmith_cognitis:matchlock_blunderbuss",
-    "gunsmith_cognitis:handgunne"
+    "gunsmith_cognitis:handcannon",
+    "gunsmith_cognitis:landsknecht_harkebus",
+    "gunsmith_cognitis:handgunne",
+    "gunsmith_cognitis:matchlock_snaphance_musket",
+    "gunsmith_cognitis:matchlock_pistol",
+    "gunsmith_cognitis:threeeyegun",
+    "gunsmith_cognitis:matchlock_blunderbuss"
   ]
 }

@@ -54,6 +54,12 @@
       },
       {
         "value": "CUSTOM:FlintlockHandMortar"
+      },
+      {
+        "value": "CUSTOM:MiquoletMusket"
+      },
+      {
+        "value": "CUSTOM:FlintlockBlunderbuss"
       }
     ],
     "blocks": [],

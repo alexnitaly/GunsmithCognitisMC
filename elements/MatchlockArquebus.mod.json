@@ -8,7 +8,7 @@
     "name": "Matchlock Arquebus",
     "specialInfo": [
       "Matchlock Tier: Requires a string",
-      "two gunpowder and musket balls to load",
+      "gunpowder and musket balls to load",
       "requires flint n' steel to fire."
     ],
     "creativeTab": {

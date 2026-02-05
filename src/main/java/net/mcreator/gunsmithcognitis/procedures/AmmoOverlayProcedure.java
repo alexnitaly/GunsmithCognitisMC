@@ -36,6 +36,15 @@ public class AmmoOverlayProcedure {
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.TANEGASHIMA.get()) {
 			TanegashimaAmmoOverlayProcedure.execute(world, x, y, z, entity);
 		}
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.MATCHLOCK_HEAVY_ARQUEBUS.get()) {
+			HeavyArquebusAmmoOverlayProcedure.execute(world, x, y, z, entity);
+		}
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.LANDSKNECHT_HARKEBUS.get()) {
+			LandsknechtHarkebusAmmoOverlayProcedure.execute(world, x, y, z, entity);
+		}
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.MATCHLOCK_PISTOL.get()) {
+			MatchlockPistolAmmoOverlayProcedure.execute(world, x, y, z, entity);
+		}
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.MATCHLOCK_AXE_PISTOL.get()) {
 			MatchlockAxePistolOverlayProcedure.execute(world, x, y, z, entity);
 		}
@@ -47,6 +56,9 @@ public class AmmoOverlayProcedure {
 		}
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.HANDGUNNE.get()) {
 			HandgunneammooverlayProcedure.execute(world, x, y, z, entity);
+		}
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.HANDGUNNE.get()) {
+			HandcannonammooverlayProcedure.execute(world, x, y, z, entity);
 		}
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.THREEEYEGUN.get()) {
 			ThreeEyeGunAmmoOverlayProcedure.execute(world, x, y, z, entity);
@@ -70,6 +82,9 @@ public class AmmoOverlayProcedure {
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.WHEELLOCK_CARBINE.get()) {
 			WheellockCarbineOverlayProcedure.execute(world, entity);
 		}
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.WHEELLOCK_PETRONEL.get()) {
+			WheellockPetronelAmmoOverlayProcedure.execute(world, entity);
+		}
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.WHEELLOCK_KALTHOFF_REPEATER.get()) {
 			WheellockKalthoffRepeaterOverlayProcedure.execute(world, entity);
 		}
@@ -78,8 +93,14 @@ public class AmmoOverlayProcedure {
 				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.FLINTLOCKMUSKETGOLD.get()) {
 			FlintlockmusketammooverlayProcedure.execute(world, x, y, z, entity);
 		}
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.FLINTLOCK_BLUNDERBUSS.get()) {
+			FlintlockBlunderbussAmmoOverlayProcedure.execute(world, x, y, z, entity);
+		}
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.FLINTLOCK_RIFLED_CARBINE.get()) {
 			FlintlockRifledCarbineOverlayProcedure.execute(world, x, y, z, entity);
+		}
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.MIQUOLET_MUSKET.get()) {
+			MiquoletrifledmusketAmmoOverlayProcedure.execute(world, x, y, z, entity);
 		}
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.FERGUSON_RIFLE.get()) {
 			FergusonRifleOverlayProcedure.execute(world, x, y, z, entity);

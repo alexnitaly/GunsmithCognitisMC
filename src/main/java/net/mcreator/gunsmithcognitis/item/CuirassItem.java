@@ -56,7 +56,7 @@ public abstract class CuirassItem extends ArmorItem {
 
 			@Override
 			public float getKnockbackResistance() {
-				return 0.5f;
+				return 0.05f;
 			}
 		}, slot, properties);
 	}
@@ -68,7 +68,7 @@ public abstract class CuirassItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "gunsmith_cognitis:textures/models/armor/cuirass__layer_1.png";
+			return "gunsmith_cognitis:textures/models/armor/cuirass___layer_1.png";
 		}
 	}
 }

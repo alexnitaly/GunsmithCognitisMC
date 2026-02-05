@@ -24,6 +24,12 @@
       },
       {
         "value": "CUSTOM:NockVolleyGun"
+      },
+      {
+        "value": "CUSTOM:Handcannon"
+      },
+      {
+        "value": "CUSTOM:MatchlockHeavyArquebus"
       }
     ],
     "blocks": [],

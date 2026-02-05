@@ -9,6 +9,9 @@
       },
       {
         "value": "CUSTOM:FlintlockHandMortar"
+      },
+      {
+        "value": "CUSTOM:FlintlockBlunderbuss"
       }
     ],
     "blocks": [],

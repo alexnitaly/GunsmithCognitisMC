@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 45"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:iron_ingot"
+    },
+    "1": {
+      "item": "gunsmith_cognitis:bigborebarrel"
+    },
+    "2": {
+      "item": "gunsmith_cognitis:flintlock_mechanism"
+    },
+    "4": {
+      "item": "gunsmith_cognitis:flintlockgunkit"
+    },
+    "5": {
+      "item": "minecraft:oak_log"
+    }
+  },
+  "result": {
+    "item": "gunsmith_cognitis:flintlock_hand_mortar",
+    "count": 1
+  }
+}

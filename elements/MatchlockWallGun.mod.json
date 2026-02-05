@@ -8,7 +8,7 @@
     "name": "Matchlock Wall Gun",
     "specialInfo": [
       "Matchlock Tier: Requires a string",
-      "two gunpowder and musket balls to load",
+      "two gunpowder and heavy musket balls to load",
       "requires flint n' steel to fire."
     ],
     "creativeTab": {

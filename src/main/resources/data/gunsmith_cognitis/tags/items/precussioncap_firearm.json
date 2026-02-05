@@ -1,4 +1,9 @@
 {
   "replace": false,
-  "values": []
+  "values": [
+    "gunsmith_cognitis:kentucky_pistol",
+    "gunsmith_cognitis:pattern_1851minierifle",
+    "gunsmith_cognitis:browning_harmonica_rifle",
+    "gunsmith_cognitis:lorenz_pistol"
+  ]
 }

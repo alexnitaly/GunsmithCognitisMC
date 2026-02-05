@@ -60,6 +60,15 @@
       },
       {
         "value": "CUSTOM:BrowningHarmonicaRifle"
+      },
+      {
+        "value": "CUSTOM:MiquoletMusket"
+      },
+      {
+        "value": "CUSTOM:FlintlockBlunderbuss"
+      },
+      {
+        "value": "CUSTOM:MatchlockHeavyArquebus"
       }
     ],
     "blocks": [],

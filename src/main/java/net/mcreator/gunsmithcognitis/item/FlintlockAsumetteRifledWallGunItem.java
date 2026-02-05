@@ -37,7 +37,7 @@ public class FlintlockAsumetteRifledWallGunItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("Flintlock tier: Requires gunpowder and musket ball to load."));
+		list.add(new TextComponent("Flintlock tier: Requires gunpowder and heavy musket ball to load."));
 	}
 
 	@Override

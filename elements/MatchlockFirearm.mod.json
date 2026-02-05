@@ -30,6 +30,18 @@
       },
       {
         "value": "CUSTOM:DivineFiveThunderMachine"
+      },
+      {
+        "value": "CUSTOM:MatchlockHeavyArquebus"
+      },
+      {
+        "value": "CUSTOM:LandsknechtHarkebus"
+      },
+      {
+        "value": "CUSTOM:MatchlockPistol"
+      },
+      {
+        "value": "CUSTOM:Handcannon"
       }
     ],
     "blocks": [],

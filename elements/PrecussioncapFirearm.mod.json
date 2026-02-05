@@ -3,7 +3,20 @@
   "_type": "tag",
   "definition": {
     "type": "Items",
-    "items": [],
+    "items": [
+      {
+        "value": "CUSTOM:Pattern1851minierifle"
+      },
+      {
+        "value": "CUSTOM:LorenzPistol"
+      },
+      {
+        "value": "CUSTOM:KentuckyPistol"
+      },
+      {
+        "value": "CUSTOM:BrowningHarmonicaRifle"
+      }
+    ],
     "blocks": [],
     "functions": [],
     "entities": [],
