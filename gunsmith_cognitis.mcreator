@@ -8942,6 +8942,19 @@
           "src/main/resources/data/forge/tags/items/has_bayonet.json"
         ]
       }
+    },
+    {
+      "name": "GunnerPillagerHandler",
+      "type": "code",
+      "sortid": 411,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gunner_pillager_handler",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/GunnerPillagerHandler.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -8979,8 +8992,8 @@
       "item.gunsmith_cognitis.nock_volley_gun_front_component": "Nock Volley Gun Barrels",
       "advancements.flintandlocked.title": "Flint and locked",
       "item.gunsmith_cognitis.matchlock_snaphance_musket": "Matchlock Snaphance Musket",
-      "item.gunsmith_cognitis.paper_cartidge_small_ammo": "Paper cartidge small ammo",
       "item.gunsmith_cognitis.matchlock_blunderbuss": "Matchlock Blunderbuss",
+      "item.gunsmith_cognitis.paper_cartidge_small_ammo": "Paper cartidge small ammo",
       "item.gunsmith_cognitis.rifledbarrel": "Rifled barrel",
       "item.gunsmith_cognitis.flintlock_mechanism": "Flintlock Mechanism",
       "item.gunsmith_cognitis.flintlock_hand_mortar": "Flintlock Hand Mortar",
@@ -8990,8 +9003,8 @@
       "advancements.flintlock_mastery.descr": "Create your first flintlock musket, unlocking access to further Flintlock weapons.",
       "gamerule.shotgunBackBlastMultiplier.description": "REQUIRES SHOTGUN COP STEVE TO WORK! Controls the strength of the recoil with a multiplier (Default: x1.0 (10))",
       "item.gunsmith_cognitis.cuirass_chestplate": "Cuirass",
-      "item.gunsmith_cognitis.wheellockgunkit": "Wheellock Gun Kit",
       "item.gunsmith_cognitis.cuirass_helmet": "Cuirass Helmet",
+      "item.gunsmith_cognitis.wheellockgunkit": "Wheellock Gun Kit",
       "item.gunsmith_cognitis.wheellock_sporting_rifle": "Wheellock Sporting Rifle",
       "item.gunsmith_cognitis.riflingtool": "Rifling tool",
       "gamerule.doGunsJam": "Do Firearms jam?",
@@ -9102,8 +9115,8 @@
       "item.gunsmith_cognitis.nock_volley_gun_front_component": "Seven Sisters Component",
       "advancements.flintandlocked.title": "Secret o\u0027 the Flint-Knappers",
       "item.gunsmith_cognitis.matchlock_snaphance_musket": "Early Match-Biter",
-      "item.gunsmith_cognitis.matchlock_blunderbuss": "Deck-Sweeper",
       "item.gunsmith_cognitis.paper_cartidge_small_ammo": "Wee Pre-Wrapped Powder",
+      "item.gunsmith_cognitis.matchlock_blunderbuss": "Deck-Sweeper",
       "item.gunsmith_cognitis.rifledbarrel": "Rifled barrel",
       "item.gunsmith_cognitis.flintlock_mechanism": "Flint-n-Steel Guts",
       "item.gunsmith_cognitis.flintlock_hand_mortar": "Hand-Held Hull-Breaker",
@@ -9113,8 +9126,8 @@
       "advancements.flintlock_mastery.descr": "Create your first flintlock musket, unlocking access to further Flintlock weapons.",
       "gamerule.shotgunBackBlastMultiplier.description": "REQUIRES SHOTGUN COP STEVE TO WORK! Controls the strength of the recoil with a multiplier (Default: x1)",
       "item.gunsmith_cognitis.cuirass_chestplate": "Cuirass",
-      "item.gunsmith_cognitis.cuirass_helmet": "Cuirass Helmet",
       "item.gunsmith_cognitis.wheellockgunkit": "Wheellock Gun Kit",
+      "item.gunsmith_cognitis.cuirass_helmet": "Cuirass Helmet",
       "item.gunsmith_cognitis.wheellock_sporting_rifle": "Fancy-Fluted Clock Snapper",
       "item.gunsmith_cognitis.riflingtool": "Rifling tool",
       "gamerule.doGunsJam": "Can Iron Barkers jam?",

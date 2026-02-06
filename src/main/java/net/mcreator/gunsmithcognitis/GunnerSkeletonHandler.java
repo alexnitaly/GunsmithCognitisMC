@@ -252,30 +252,30 @@ public class GunnerSkeletonHandler {
         Level world = skeleton.level;
         if (!(world instanceof ServerLevel _level)) return;
 
-        float spread = world.getDifficulty() == Difficulty.EASY ? 5.0F : (world.getDifficulty() == Difficulty.HARD ? 1.0F : 3.0F);
+        float spread = world.getDifficulty() == Difficulty.EASY ? 5.0F : (world.getDifficulty() == Difficulty.HARD ? 0.5F : 2.0F);
         TagKey<Item> SHOTGUN = TagKey.create(Registry.ITEM_REGISTRY, new ResourceLocation("gunsmith_cognitis", "shotgun"));
         int pellets = gun.is(SHOTGUN) ? 8 : 1;
         Item item = gun.getItem();
 
         for (int i = 0; i < pellets; i++) {
             if (item == GunsmithCognitisModItems.MATCHLOCK_ARQUEBUS.get()) {
-                spawnBullet(new MatchlockArquebusEntity(GunsmithCognitisModEntities.MATCHLOCK_ARQUEBUS.get(), skeleton, world), skeleton, 3.5F, spread, 5.0);
+                spawnBullet(new MatchlockArquebusEntity(GunsmithCognitisModEntities.MATCHLOCK_ARQUEBUS.get(), skeleton, world), skeleton, 2.5F, spread, 5.0);
             } 
             else if (item == GunsmithCognitisModItems.MATCHLOCK_BLUNDERBUSS.get() || pellets > 1) {
-                spawnBullet(new MatchlockBlunderbussEntity(GunsmithCognitisModEntities.MATCHLOCK_BLUNDERBUSS.get(), skeleton, world), skeleton, 2.8F, spread * 2.5F, 3.0);
+                spawnBullet(new MatchlockBlunderbussEntity(GunsmithCognitisModEntities.MATCHLOCK_BLUNDERBUSS.get(), skeleton, world), skeleton, 1.5F, spread * 2.5F, 3.0);
             }
             else if (item == GunsmithCognitisModItems.MATCHLOCK_HEAVY_ARQUEBUS.get()) {
-                spawnBullet(new MatchlockHeavyArquebusEntity(GunsmithCognitisModEntities.MATCHLOCK_HEAVY_ARQUEBUS.get(), skeleton, world), skeleton, 4.0F, spread * 0.75F, 7.0);
+                spawnBullet(new MatchlockHeavyArquebusEntity(GunsmithCognitisModEntities.MATCHLOCK_HEAVY_ARQUEBUS.get(), skeleton, world), skeleton, 3.0F, spread * 0.75F, 7.0);
             }
             else if (item == GunsmithCognitisModItems.HANDCANNON.get()) {
-                spawnBullet(new HandcannonEntity(GunsmithCognitisModEntities.HANDCANNON.get(), skeleton, world), skeleton, 3.2F, spread, 6.0);
+                spawnBullet(new HandcannonEntity(GunsmithCognitisModEntities.HANDCANNON.get(), skeleton, world), skeleton, 2.2F, spread, 6.0);
             }
             else if (item == GunsmithCognitisModItems.WHEELLOCK_PISTOL.get() || item == GunsmithCognitisModItems.MATCHLOCK_AXE_PISTOL.get()) {
-                spawnBullet(new WheellockPistolEntity(GunsmithCognitisModEntities.WHEELLOCK_PISTOL.get(), skeleton, world), skeleton, 2.5F, spread * 1.5F, 4.0);
+                spawnBullet(new WheellockPistolEntity(GunsmithCognitisModEntities.WHEELLOCK_PISTOL.get(), skeleton, world), skeleton, 1.5F, spread * 1.5F, 4.0);
             }
             else {
                 // Fallback for generic guns
-                spawnBullet(new MatchlockArquebusEntity(GunsmithCognitisModEntities.MATCHLOCK_ARQUEBUS.get(), skeleton, world), skeleton, 3.0F, spread, 4.0);
+                spawnBullet(new MatchlockArquebusEntity(GunsmithCognitisModEntities.MATCHLOCK_ARQUEBUS.get(), skeleton, world), skeleton, 2.0F, spread, 4.0);
             }
         }
 
@@ -328,6 +328,7 @@ public class GunnerSkeletonHandler {
                     addDrop(event, dropGun);
                 }
                 if (RANDOM.nextDouble() < 0.2) addDrop(event, new ItemStack(Items.IRON_INGOT, RANDOM.nextInt(2) + 1));
+                if (RANDOM.nextDouble() < 0.1) addDrop(event, new ItemStack(Items.FLINT_AND_STEEL, 1));
                 if (RANDOM.nextDouble() < 0.4) addDrop(event, new ItemStack(GunsmithCognitisModItems.MUSKETBALL.get(), RANDOM.nextInt(4) + 1));
                 if (RANDOM.nextDouble() < 0.5) addDrop(event, new ItemStack(Items.GUNPOWDER, RANDOM.nextInt(4) + 1));
             }
