@@ -15,6 +15,9 @@
       },
       {
         "value": "CUSTOM:DoubleBarrelShotgun"
+      },
+      {
+        "value": "CUSTOM:SawnOffDoubleBarrelShotgun"
       }
     ],
     "blocks": [],

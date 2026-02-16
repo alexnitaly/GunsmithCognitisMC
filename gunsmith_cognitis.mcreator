@@ -9376,6 +9376,20 @@
         ]
       },
       "path": "~/AmmoOverlays"
+    },
+    {
+      "name": "Pattern1851MinieRifleBayonetRecipe",
+      "type": "recipe",
+      "sortid": 431,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pattern_1851_minie_rifle_bayonet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gunsmith_cognitis/recipes/pattern_1851_minie_rifle_bayonet_recipe.json"
+        ]
+      },
+      "path": "~/Percussion Cap"
     }
   ],
   "variable_elements": [

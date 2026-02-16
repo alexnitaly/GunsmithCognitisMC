@@ -26,15 +26,15 @@ public class TanegashimaAmmoOverlayProcedure {
 					|| world.getBiome(new BlockPos(x, y, z)).is(TagKey.create(Registry.BIOME_REGISTRY, new ResourceLocation("minecraft:is_water")))
 					|| world.getBiome(new BlockPos(x, y, z)).is(TagKey.create(Registry.BIOME_REGISTRY, new ResourceLocation("minecraft:is_ocean"))) || entity.isInWaterRainOrBubble()) {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
-					_player.displayClientMessage(new TextComponent(("Matchlock Arquebus: " + "Unfit Envirorment! Can't Fire!")), (true));
-			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getBoolean("cooldown") == false
+					_player.displayClientMessage(new TextComponent(("Tanegashima: " + "Unfit Envirorment! Can't Fire!")), (true));
+			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("cooldown") <= 0
 					&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getBoolean("ramrod loaded") == true
 					&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getBoolean("jammed") == false) {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
-					_player.displayClientMessage(new TextComponent(("Matchlock Arquebus: " + "Loaded")), (true));
+					_player.displayClientMessage(new TextComponent(("Tanegashima: " + "Loaded")), (true));
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getBoolean("jammed")) {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
-					_player.displayClientMessage(new TextComponent(("Matchlock Arquebus: " + "Jammed! Fix Cooldown...")), (true));
+					_player.displayClientMessage(new TextComponent(("Tanegashima: " + "Jammed! Fix Cooldown...")), (true));
 				new Object() {
 					private int ticks = 0;
 					private float waitTicks;
@@ -60,26 +60,26 @@ public class TanegashimaAmmoOverlayProcedure {
 						MinecraftForge.EVENT_BUS.unregister(this);
 					}
 				}.start(world, 50);
-			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getBoolean("cooldown")) {
+			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("cooldown") > 0) {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
-					_player.displayClientMessage(new TextComponent(("Matchlock Arquebus: " + "On Cooldown!")), (true));
+					_player.displayClientMessage(new TextComponent(("Tanegashima: " + "On Cooldown!")), (true));
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("ammo") > 0) {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
-					_player.displayClientMessage(new TextComponent(("Matchlock Arquebus: " + "Needs to be loaded with Ramrod")), (true));
+					_player.displayClientMessage(new TextComponent(("Tanegashima: " + "Needs to be loaded with Ramrod")), (true));
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("gunpowder") > 0) {
 				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("gunpowder") == 2) {
 					if (entity instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(new TextComponent(("Matchlock Arquebus: " + "Needs ammo")), (true));
+						_player.displayClientMessage(new TextComponent(("Tanegashima: " + "Needs ammo")), (true));
 				} else {
 					if (entity instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(new TextComponent(("Matchlock Arquebus: " + "Not Enough Gunpowder")), (true));
+						_player.displayClientMessage(new TextComponent(("Tanegashima: " + "Not Enough Gunpowder")), (true));
 				}
 			} else if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getBoolean("hasString"))) {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
-					_player.displayClientMessage(new TextComponent(("Matchlock Arquebus: " + "Lacks a String")), (true));
+					_player.displayClientMessage(new TextComponent(("Tanegashima: " + "Lacks a String")), (true));
 			} else {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
-					_player.displayClientMessage(new TextComponent(("Matchlock Arquebus: " + "Empty")), (true));
+					_player.displayClientMessage(new TextComponent(("Tanegashima: " + "Empty")), (true));
 			}
 		}
 	}

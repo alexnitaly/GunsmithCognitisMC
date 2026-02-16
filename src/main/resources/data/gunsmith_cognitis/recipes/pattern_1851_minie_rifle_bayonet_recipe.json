@@ -5,14 +5,14 @@
       "item": "minecraft:flint"
     },
     {
-      "item": "minecraft:iron_ingot"
+      "item": "gunsmith_cognitis:pattern_1851minierifle"
     },
     {
-      "item": "gunsmith_cognitis:flintlockmusket"
+      "item": "minecraft:iron_ingot"
     }
   ],
   "result": {
-    "item": "gunsmith_cognitis:flintlockmusketbayonet",
+    "item": "gunsmith_cognitis:pattern_1851_minie_rifle_bayonet",
     "count": 1
   }
 }

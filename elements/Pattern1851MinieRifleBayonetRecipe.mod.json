@@ -10,22 +10,22 @@
     "recipeShapeless": true,
     "recipeSlots": [
       {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
         "value": "Items.FLINT"
       },
       {
         "value": ""
       },
       {
-        "value": ""
+        "value": "CUSTOM:Pattern1851minierifle"
       },
       {
         "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": "CUSTOM:Flintlockmusket"
-      },
-      {
-        "value": ""
       },
       {
         "value": ""
@@ -38,9 +38,9 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Flintlockmusketbayonet"
+      "value": "CUSTOM:Pattern1851MinieRifleBayonet"
     },
-    "name": "flintlock_musket_bayonet_recipe",
+    "name": "pattern_1851_minie_rifle_bayonet_recipe",
     "namespace": "mod"
   }
 }

@@ -45,6 +45,9 @@
       },
       {
         "value": "CUSTOM:MatchlockPistol"
+      },
+      {
+        "value": "CUSTOM:SawnOffDoubleBarrelShotgun"
       }
     ],
     "blocks": [],
