@@ -69,6 +69,15 @@
       },
       {
         "value": "CUSTOM:MatchlockHeavyArquebus"
+      },
+      {
+        "value": "CUSTOM:DreyseNeedleGun"
+      },
+      {
+        "value": "CUSTOM:DoubleBarrelShotgun"
+      },
+      {
+        "value": "CUSTOM:Pattern1851MinieRifleBayonet"
       }
     ],
     "blocks": [],

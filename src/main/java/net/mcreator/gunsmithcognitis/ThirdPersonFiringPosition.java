@@ -1,4 +1,4 @@
-package net.mcreator.gunsmithcognitis; // Matches your package
+package net.mcreator.gunsmithcognitis;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -11,6 +11,7 @@ import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.model.PlayerModel;
 import net.minecraft.client.player.AbstractClientPlayer;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.world.InteractionHand;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.FORGE, value = Dist.CLIENT)
 public class ThirdPersonFiringPosition {
@@ -20,20 +21,38 @@ public class ThirdPersonFiringPosition {
         Player player = event.getPlayer();
         if (player == null) return;
 
-        ItemStack mainHand = player.getMainHandItem();
+        updateArmPose(player, InteractionHand.MAIN_HAND, event);
+        updateArmPose(player, InteractionHand.OFF_HAND, event);
+    }
 
-        // Is it from my mod?
-        if (!mainHand.isEmpty() && mainHand.getItem().getRegistryName().getNamespace().equals("gunsmith_cognitis")) {
+    private static void updateArmPose(Player player, InteractionHand hand, RenderPlayerEvent.Pre event) {
+        ItemStack stack = player.getItemInHand(hand);
+        
+        if (!stack.isEmpty() && stack.getItem().getRegistryName().getNamespace().equals("gunsmith_cognitis")) {
+            CompoundTag nbt = stack.getTag();
+            if (nbt == null) return;
+
+            PlayerModel<AbstractClientPlayer> model = event.getRenderer().getModel();
             
-            // Access the Item's NBT Tag
-            CompoundTag nbt = mainHand.getTag();
+            // Check for "Jammed" or "Cooldown" (Reloading/Maintenance Phase)
+            if (nbt.getBoolean("jammed") || nbt.getBoolean("cooldown") || (nbt.contains("cooldown") && nbt.getInt("cooldown") > 1)) {
+                
+                if (hand == InteractionHand.MAIN_HAND) {
+                    model.rightArmPose = HumanoidModel.ArmPose.CROSSBOW_CHARGE;
+                } else {
+                    model.leftArmPose = HumanoidModel.ArmPose.CROSSBOW_CHARGE;
+                }
+                
+            } 
             
-            // Check if the "ammo" tag exists and is greater than 0
-            if (nbt != null && nbt.contains("ammo") && nbt.getInt("ammo") > 0) {
+            // Aiming Phase
+            else if (nbt.contains("ammo") && nbt.getInt("ammo") > 0) {
                 
-                PlayerModel<AbstractClientPlayer> model = event.getRenderer().getModel();
-                
-                model.rightArmPose = HumanoidModel.ArmPose.CROSSBOW_HOLD;
+                if (hand == InteractionHand.MAIN_HAND) {
+                    model.rightArmPose = HumanoidModel.ArmPose.CROSSBOW_HOLD;
+                } else {
+                    model.leftArmPose = HumanoidModel.ArmPose.CROSSBOW_HOLD;
+                }
             }
         }
     }

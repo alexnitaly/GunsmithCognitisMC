@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "gunsmith_cognitis:pattern_1851_minie_rifle_bayonet",
     "gunsmith_cognitis:flintlock_asumette_rifled_wall_gun",
     "gunsmith_cognitis:miquolet_musket",
     "gunsmith_cognitis:pattern_1851minierifle",
@@ -8,6 +9,7 @@
     "gunsmith_cognitis:jezailmusket",
     "gunsmith_cognitis:lorenz_pistol",
     "gunsmith_cognitis:ferguson_rifle",
+    "gunsmith_cognitis:dreyse_needle_gun",
     "gunsmith_cognitis:flintlock_rifled_carbine",
     "gunsmith_cognitis:wheellock_sporting_rifle"
   ]

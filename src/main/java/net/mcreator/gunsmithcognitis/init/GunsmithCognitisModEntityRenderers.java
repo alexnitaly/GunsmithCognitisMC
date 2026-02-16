@@ -63,5 +63,9 @@ public class GunsmithCognitisModEntityRenderers {
 		event.registerEntityRenderer(GunsmithCognitisModEntities.MATCHLOCK_HEAVY_ARQUEBUS.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(GunsmithCognitisModEntities.LANDSKNECHT_HARKEBUS.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(GunsmithCognitisModEntities.MATCHLOCK_PISTOL.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(GunsmithCognitisModEntities.DREYSE_NEEDLE_GUN.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(GunsmithCognitisModEntities.DOUBLE_BARREL_SHOTGUN.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(GunsmithCognitisModEntities.PATTERN_1851_MINIE_RIFLE_BAYONET.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(GunsmithCognitisModEntities.SAWN_OFF_DOUBLE_BARREL_SHOTGUN.get(), ThrownItemRenderer::new);
 	}
 }

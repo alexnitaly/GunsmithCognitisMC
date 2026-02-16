@@ -12,6 +12,9 @@
       },
       {
         "value": "CUSTOM:FlintlockBlunderbuss"
+      },
+      {
+        "value": "CUSTOM:DoubleBarrelShotgun"
       }
     ],
     "blocks": [],

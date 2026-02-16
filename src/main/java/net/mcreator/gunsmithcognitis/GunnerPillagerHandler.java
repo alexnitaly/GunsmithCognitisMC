@@ -145,27 +145,49 @@ public class GunnerPillagerHandler {
                 int baseReload = pillager.level.getDifficulty() == Difficulty.HARD ? 60 : 100;
                 pillager.getPersistentData().putInt("gun_cooldown", baseReload + RANDOM.nextInt(20));
            
-        } else if (pillager.hasLineOfSight(target) && retreatTicks <= 0) {
-            pillager.getPersistentData().putInt("priming_ticks", 12); 
-        }
+	        } else if (pillager.hasLineOfSight(target) && retreatTicks <= 0) {
+	            pillager.getPersistentData().putInt("priming_ticks", 12); 
+	        }
+	    }
     }
+
+     private static void spawnBullet(net.minecraft.world.entity.projectile.AbstractArrow bullet, Pillager pillager, float power, float spread, double damage) {
+        bullet.setPos(pillager.getX() + pillager.getLookAngle().x * 0.5, pillager.getEyeY() - 0.1, pillager.getZ() + pillager.getLookAngle().z * 0.5);
+        bullet.setOwner(pillager);
+        bullet.shoot(pillager.getLookAngle().x, pillager.getLookAngle().y, pillager.getLookAngle().z, power, spread);
+        bullet.setBaseDamage(damage);
+        if (!pillager.level.isClientSide()) {
+            pillager.level.addFreshEntity(bullet);
+        }
+    } 
 
     private static ItemStack selectPillagerFirearm() {
         double roll = RANDOM.nextDouble();
-        // 75% Wheellock / 25% Flintlock
-        ResourceLocation tagLoc = (RANDOM.nextDouble() < 0.25) ? 
+        boolean isFlintlock = RANDOM.nextDouble() < 0.25;
+        ResourceLocation tagLoc = isFlintlock ? 
             new ResourceLocation("gunsmith_cognitis", "flintlock_firearm") : 
             new ResourceLocation("gunsmith_cognitis", "wheellock_firearm");
 
-        // Specific Weights
-        if (roll < 0.40) return new ItemStack(GunsmithCognitisModItems.WHEELLOCK_PISTOL.get());
-        if (roll < 0.70) return new ItemStack(GunsmithCognitisModItems.WHEELLOCK_MUSKET.get());
-        if (roll < 0.35) return new ItemStack(GunsmithCognitisModItems.FLINTLOCKMUSKET.get());
-        if (roll < 0.45) return new ItemStack(GunsmithCognitisModItems.FLINTLOCK_PISTOL.get());
+        if (roll < 0.40) {
+            return isFlintlock ? 
+                new ItemStack(GunsmithCognitisModItems.FLINTLOCK_PISTOL.get()) : 
+                new ItemStack(GunsmithCognitisModItems.WHEELLOCK_PISTOL.get());
+        } 
+        
+        if (roll < 0.70) {
+            return isFlintlock ? 
+                new ItemStack(GunsmithCognitisModItems.FLINTLOCKMUSKET.get()) : 
+                new ItemStack(GunsmithCognitisModItems.WHEELLOCK_MUSKET.get());
+        }
 
         TagKey<Item> tag = TagKey.create(Registry.ITEM_REGISTRY, tagLoc);
         List<Item> tagItems = ForgeRegistries.ITEMS.tags().getTag(tag).stream().collect(Collectors.toList());
-        return tagItems.isEmpty() ? new ItemStack(GunsmithCognitisModItems.WHEELLOCK_MUSKET.get()) : new ItemStack(tagItems.get(RANDOM.nextInt(tagItems.size())));
+        
+        if (!tagItems.isEmpty()) {
+            return new ItemStack(tagItems.get(RANDOM.nextInt(tagItems.size())));
+        }
+
+        return new ItemStack(GunsmithCognitisModItems.WHEELLOCK_MUSKET.get());
     }
 
     private static void fireGunForPillager(Pillager pillager, ItemStack gun) {
@@ -188,14 +210,6 @@ public class GunnerPillagerHandler {
         _level.sendParticles(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE, pillager.getX(), pillager.getY() + 1.5, pillager.getZ(), 10, 0.1, 0.1, 0.1, 0.01);
         world.playSound(null, pillager.getX(), pillager.getY(), pillager.getZ(), 
             ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("gunsmith_cognitis", "musket_shot")), SoundSource.HOSTILE, 1.0F, 1.1F);
-    }
-
-    private static void spawnBullet(net.minecraft.world.entity.projectile.AbstractArrow bullet, Pillager pillager, float power, float spread, double damage) {
-        bullet.setPos(pillager.getX() + pillager.getLookAngle().x * 0.5, pillager.getEyeY() - 0.1, pillager.getZ() + pillager.getLookAngle().z * 0.5);
-        bullet.setOwner(pillager);
-        bullet.shoot(pillager.getLookAngle().x, pillager.getLookAngle().y, pillager.getLookAngle().z, power, spread);
-        bullet.setBaseDamage(damage);
-        if (!pillager.level.isClientSide()) pillager.level.addFreshEntity(bullet);
     }
 
     @SubscribeEvent

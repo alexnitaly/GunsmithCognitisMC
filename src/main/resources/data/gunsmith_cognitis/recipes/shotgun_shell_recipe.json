@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "gunsmith_cognitis:musket_ball_projectile"
+    },
+    {
+      "item": "gunsmith_cognitis:musket_ball_projectile"
+    },
+    {
+      "item": "gunsmith_cognitis:musket_ball_projectile"
+    },
+    {
+      "item": "gunsmith_cognitis:musket_ball_projectile"
+    },
+    {
+      "item": "minecraft:gunpowder"
+    },
+    {
+      "item": "minecraft:paper"
+    }
+  ],
+  "result": {
+    "item": "gunsmith_cognitis:shotgun_shell",
+    "count": 2
+  }
+}

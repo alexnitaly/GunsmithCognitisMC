@@ -1,0 +1,45 @@
+{
+  "_fv": 39,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "caplock_double_barrel_shotgun",
+    "customModelName": "Normal",
+    "name": "Double Barrel Shotgun",
+    "specialInfo": [
+      "Breech Loading Shotgun: Uses Shotgun Shell Ammo."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:GunsmithCognitisPercussioncapTab"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 779,
+    "actionSound": {
+      "value": "CUSTOM:musket_shot"
+    },
+    "hasGlow": false,
+    "animation": "none",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "DoubleBarrelShotgunUsed"
+    },
+    "useCondition": {
+      "name": "DoubleBarrelShotgunCanBeUsed"
+    },
+    "bulletPower": 4.0,
+    "bulletDamage": 1.5,
+    "bulletKnockback": 1,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:MusketBallProjectile"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": ""
+  }
+}

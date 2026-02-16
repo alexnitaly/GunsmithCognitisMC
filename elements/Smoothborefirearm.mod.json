@@ -105,6 +105,9 @@
       },
       {
         "value": "CUSTOM:MatchlockPistol"
+      },
+      {
+        "value": "CUSTOM:DoubleBarrelShotgun"
       }
     ],
     "blocks": [],
