@@ -38,7 +38,7 @@ public class FlintlockCollierRevolvingCarbineItem extends Item {
 	@Override
 	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity) {
 		boolean retval = super.onEntitySwing(itemstack, entity);
-		FlintlockCollierRevolvingCarbineItemSwungProcedure.execute(entity);
+		FlintlockCollierRevolvingCarbineItemSwungProcedure.execute(entity, itemstack);
 		return retval;
 	}
 

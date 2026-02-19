@@ -41,35 +41,61 @@ public class NockVolleyGunRangedItemUsedProcedure {
 					}
 				}
 			}
-			itemstack.getOrCreateTag().putBoolean("cooldown", (true));
-			new Object() {
-				private int ticks = 0;
-				private float waitTicks;
-				private LevelAccessor world;
+			for (int index0 = 0; index0 < (int) (8); index0++) {
+				new Object() {
+					private int ticks = 0;
+					private float waitTicks;
+					private LevelAccessor world;
 
-				public void start(LevelAccessor world, int waitTicks) {
-					this.waitTicks = waitTicks;
-					MinecraftForge.EVENT_BUS.register(this);
-					this.world = world;
-				}
-
-				@SubscribeEvent
-				public void tick(TickEvent.ServerTickEvent event) {
-					if (event.phase == TickEvent.Phase.END) {
-						this.ticks += 1;
-						if (this.ticks >= this.waitTicks)
-							run();
+					public void start(LevelAccessor world, int waitTicks) {
+						this.waitTicks = waitTicks;
+						MinecraftForge.EVENT_BUS.register(this);
+						this.world = world;
 					}
-				}
 
-				private void run() {
-					itemstack.getOrCreateTag().putBoolean("cooldown", (false));
-					MinecraftForge.EVENT_BUS.unregister(this);
-				}
-			}.start(world, 40);
+					@SubscribeEvent
+					public void tick(TickEvent.ServerTickEvent event) {
+						if (event.phase == TickEvent.Phase.END) {
+							this.ticks += 1;
+							if (this.ticks >= this.waitTicks)
+								run();
+						}
+					}
+
+					private void run() {
+						if (world instanceof Level _level) {
+							if (!_level.isClientSide()) {
+								_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("gunsmith_cognitis:musket_shot")), SoundSource.NEUTRAL, 1, 1);
+							} else {
+								_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("gunsmith_cognitis:musket_shot")), SoundSource.NEUTRAL, 1, 1, false);
+							}
+						}
+						if (world instanceof ServerLevel projectileLevel) {
+							Projectile _entityToSpawn = new Object() {
+								public Projectile getArrow(Level level, Entity shooter, float damage, int knockback, byte piercing) {
+									AbstractArrow entityToSpawn = new NockVolleyGunEntity(GunsmithCognitisModEntities.NOCK_VOLLEY_GUN.get(), level);
+									entityToSpawn.setOwner(shooter);
+									entityToSpawn.setBaseDamage(damage);
+									entityToSpawn.setKnockback(knockback);
+									entityToSpawn.setSilent(true);
+									entityToSpawn.setPierceLevel(piercing);
+									return entityToSpawn;
+								}
+							}.getArrow(projectileLevel, entity, 2, 0, (byte) 3);
+							_entityToSpawn.setPos(x, y, z);
+							_entityToSpawn.shoot(0, 0, 0, 5, 3);
+							projectileLevel.addFreshEntity(_entityToSpawn);
+						}
+						if (world instanceof ServerLevel _level)
+							_level.sendParticles(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE, x, (y + 1.5), z, 24, 0, 0, 0, 0.004);
+						MinecraftForge.EVENT_BUS.unregister(this);
+					}
+				}.start(world, 4);
+			}
+			itemstack.getOrCreateTag().putDouble("cooldown", 72);
 		} else {
 			if (itemstack.getOrCreateTag().getDouble("ammo") >= 1) {
-				for (int index0 = 0; index0 < (int) (8); index0++) {
+				for (int index1 = 0; index1 < (int) (8); index1++) {
 					if (itemstack.getOrCreateTag().getDouble("ammo") >= 1 && itemstack.getOrCreateTag().getDouble("gunpowder") >= 2) {
 						itemstack.getOrCreateTag().putDouble("gunpowder", (itemstack.getOrCreateTag().getDouble("gunpowder") - 2));
 						itemstack.getOrCreateTag().putDouble("ammo", (itemstack.getOrCreateTag().getDouble("ammo") - 1));
@@ -123,34 +149,9 @@ public class NockVolleyGunRangedItemUsedProcedure {
 							}
 						}.start(world, 4);
 					} else {
-						itemstack.getOrCreateTag().putBoolean("cooldown", (true));
 						itemstack.getOrCreateTag().putDouble("gunpowder", 0);
+						itemstack.getOrCreateTag().putDouble("cooldown", 24);
 						itemstack.getOrCreateTag().putBoolean("ramrod loaded", (false));
-						new Object() {
-							private int ticks = 0;
-							private float waitTicks;
-							private LevelAccessor world;
-
-							public void start(LevelAccessor world, int waitTicks) {
-								this.waitTicks = waitTicks;
-								MinecraftForge.EVENT_BUS.register(this);
-								this.world = world;
-							}
-
-							@SubscribeEvent
-							public void tick(TickEvent.ServerTickEvent event) {
-								if (event.phase == TickEvent.Phase.END) {
-									this.ticks += 1;
-									if (this.ticks >= this.waitTicks)
-										run();
-								}
-							}
-
-							private void run() {
-								itemstack.getOrCreateTag().putBoolean("cooldown", (false));
-								MinecraftForge.EVENT_BUS.unregister(this);
-							}
-						}.start(world, 25);
 					}
 				}
 			}

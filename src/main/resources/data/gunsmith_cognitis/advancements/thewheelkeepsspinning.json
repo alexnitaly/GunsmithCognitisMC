@@ -37,7 +37,8 @@
     "recipes": [
       "gunsmith_cognitis:wheellockgunkitrecipe",
       "gunsmith_cognitis:wheellock_pistol_recipe",
-      "gunsmith_cognitis:wheellock_musket_recipe"
+      "gunsmith_cognitis:wheellock_musket_recipe",
+      "gunsmith_cognitis:wheellock_petronel_recipe"
     ]
   },
   "parent": "gunsmith_cognitis:betterfirearmtheory"

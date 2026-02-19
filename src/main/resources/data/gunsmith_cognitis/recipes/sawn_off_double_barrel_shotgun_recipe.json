@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "gunsmith_cognitis:double_barrel_shotgun"
+  },
+  "result": "gunsmith_cognitis:sawn_off_double_barrel_shotgun"
+}

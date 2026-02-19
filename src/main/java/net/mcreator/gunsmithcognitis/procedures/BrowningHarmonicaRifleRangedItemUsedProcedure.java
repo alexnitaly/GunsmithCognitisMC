@@ -28,7 +28,7 @@ public class BrowningHarmonicaRifleRangedItemUsedProcedure {
 				}
 			}
 			itemstack.getOrCreateTag().putBoolean("cocked", (false));
-			itemstack.getOrCreateTag().putDouble("cooldown", 30);
+			itemstack.getOrCreateTag().putDouble("cooldown", 24);
 		} else {
 			if (!(itemstack.getOrCreateTag().getDouble("ammo") < 1)) {
 				if (world instanceof ServerLevel _level)
@@ -36,7 +36,7 @@ public class BrowningHarmonicaRifleRangedItemUsedProcedure {
 				itemstack.getOrCreateTag().putDouble("ammo", (itemstack.getOrCreateTag().getDouble("ammo") - 1));
 				itemstack.getOrCreateTag().putDouble("gunpowder", (itemstack.getOrCreateTag().getDouble("gunpowder") - 1));
 				itemstack.getOrCreateTag().putBoolean("percussion cap", (false));
-				itemstack.getOrCreateTag().putDouble("cooldown", 15);
+				itemstack.getOrCreateTag().putDouble("cooldown", 16);
 				if (itemstack.getOrCreateTag().getDouble("ammo") <= 0) {
 					itemstack.getOrCreateTag().putDouble("gunpowder", 0);
 				}

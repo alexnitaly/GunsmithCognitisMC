@@ -16,7 +16,8 @@
     "rewardRecipes": [
       "Wheellockgunkitrecipe",
       "WheellockPistolRecipe",
-      "WheellockMusketRecipe"
+      "WheellockMusketRecipe",
+      "WheellockPetronelRecipe"
     ],
     "rewardFunction": "No function",
     "rewardXP": 5,

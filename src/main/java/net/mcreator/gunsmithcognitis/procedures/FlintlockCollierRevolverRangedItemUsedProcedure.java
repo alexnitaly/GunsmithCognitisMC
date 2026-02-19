@@ -1,9 +1,5 @@
 package net.mcreator.gunsmithcognitis.procedures;
 
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.common.MinecraftForge;
-
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
@@ -32,65 +28,15 @@ public class FlintlockCollierRevolverRangedItemUsedProcedure {
 				}
 			}
 			itemstack.getOrCreateTag().putBoolean("cocked", (false));
-			itemstack.getOrCreateTag().putBoolean("cooldown", (true));
-			new Object() {
-				private int ticks = 0;
-				private float waitTicks;
-				private LevelAccessor world;
-
-				public void start(LevelAccessor world, int waitTicks) {
-					this.waitTicks = waitTicks;
-					MinecraftForge.EVENT_BUS.register(this);
-					this.world = world;
-				}
-
-				@SubscribeEvent
-				public void tick(TickEvent.ServerTickEvent event) {
-					if (event.phase == TickEvent.Phase.END) {
-						this.ticks += 1;
-						if (this.ticks >= this.waitTicks)
-							run();
-					}
-				}
-
-				private void run() {
-					itemstack.getOrCreateTag().putBoolean("cooldown", (true));
-					MinecraftForge.EVENT_BUS.unregister(this);
-				}
-			}.start(world, 12);
+			itemstack.getOrCreateTag().putDouble("cooldown", 20);
 		} else {
 			if (!(itemstack.getOrCreateTag().getDouble("ammo") < 1)) {
 				if (world instanceof ServerLevel _level)
 					_level.sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE, x, (y + 1.5), z, 8, 0, 0, 0, 0.0025);
 				itemstack.getOrCreateTag().putDouble("ammo", (itemstack.getOrCreateTag().getDouble("ammo") - 1));
 				itemstack.getOrCreateTag().putDouble("gunpowder", (itemstack.getOrCreateTag().getDouble("gunpowder") - 1));
+				itemstack.getOrCreateTag().putDouble("cooldown", 6);
 				itemstack.getOrCreateTag().putBoolean("cocked", (false));
-				itemstack.getOrCreateTag().putBoolean("cooldown", (true));
-				new Object() {
-					private int ticks = 0;
-					private float waitTicks;
-					private LevelAccessor world;
-
-					public void start(LevelAccessor world, int waitTicks) {
-						this.waitTicks = waitTicks;
-						MinecraftForge.EVENT_BUS.register(this);
-						this.world = world;
-					}
-
-					@SubscribeEvent
-					public void tick(TickEvent.ServerTickEvent event) {
-						if (event.phase == TickEvent.Phase.END) {
-							this.ticks += 1;
-							if (this.ticks >= this.waitTicks)
-								run();
-						}
-					}
-
-					private void run() {
-						itemstack.getOrCreateTag().putBoolean("cooldown", (false));
-						MinecraftForge.EVENT_BUS.unregister(this);
-					}
-				}.start(world, 5);
 				if (itemstack.getOrCreateTag().getDouble("ammo") == 0) {
 					itemstack.getOrCreateTag().putDouble("gunpowder", 0);
 				}

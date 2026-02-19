@@ -38,7 +38,11 @@
       "gunsmith_cognitis:matchlock_arquebus_recipe",
       "gunsmith_cognitis:three_eye_gun_recipe",
       "gunsmith_cognitis:matchlock_blunderbuss_recipe",
-      "gunsmith_cognitis:crude_smoothborebarrel_recipe"
+      "gunsmith_cognitis:crude_smoothborebarrel_recipe",
+      "gunsmith_cognitis:crude_big_bore_barrel_recipe",
+      "gunsmith_cognitis:matchlock_pistol_recipe",
+      "gunsmith_cognitis:landsknecht_harkebus_recipe",
+      "gunsmith_cognitis:handcannon_recipe"
     ]
   },
   "parent": "gunsmith_cognitis:gunpowdercognitisstart"

@@ -20,14 +20,15 @@ public class WheellockmusketammooverlayProcedure {
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.WHEELLOCK_MUSKET.get()) {
 			if (entity.isInWaterOrBubble()) {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
-					_player.displayClientMessage(new TextComponent(("Wheellock Musket:" + "Unfit Envirorment! Can't Fire!")), (true));
+					_player.displayClientMessage(new TextComponent(("Wheellock Musket: " + "Unfit Envirorment! Can't Fire!")), (true));
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getBoolean("ramrod loaded") == true
-					&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getBoolean("jammed") == false) {
+					&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getBoolean("jammed") == false
+					&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("cooldown") <= 0) {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
-					_player.displayClientMessage(new TextComponent(("Wheellock Musket:" + "Loaded")), (true));
+					_player.displayClientMessage(new TextComponent(("Wheellock Musket: " + "Loaded")), (true));
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getBoolean("jammed")) {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
-					_player.displayClientMessage(new TextComponent(("Wheellock Musket:" + "Jammed! Fix Cooldown...")), (true));
+					_player.displayClientMessage(new TextComponent(("Wheellock Musket: " + "Jammed! Fix Cooldown...")), (true));
 				new Object() {
 					private int ticks = 0;
 					private float waitTicks;
@@ -53,23 +54,26 @@ public class WheellockmusketammooverlayProcedure {
 						MinecraftForge.EVENT_BUS.unregister(this);
 					}
 				}.start(world, 50);
+			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("cooldown") > 0) {
+				if (entity instanceof Player _player && !_player.level.isClientSide())
+					_player.displayClientMessage(new TextComponent(("Wheellock Musket: " + "On Cooldown...")), (true));
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("ammo") > 0) {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
-					_player.displayClientMessage(new TextComponent(("Wheellock Musket:" + "Needs to be loaded with Ramrod")), (true));
+					_player.displayClientMessage(new TextComponent(("Wheellock Musket: " + "Needs to be loaded with Ramrod")), (true));
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("gunpowder") > 0) {
 				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("gunpowder") == 2) {
 					if (entity instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(new TextComponent(("Wheellock Musket:" + "Needs ammo")), (true));
+						_player.displayClientMessage(new TextComponent(("Wheellock Musket: " + "Needs ammo")), (true));
 				} else {
 					if (entity instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(new TextComponent(("Wheellock Musket:" + "Not Enough Gunpowder")), (true));
+						_player.displayClientMessage(new TextComponent(("Wheellock Musket: " + "Not Enough Gunpowder")), (true));
 				}
 			} else if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getBoolean("IsWound"))) {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
-					_player.displayClientMessage(new TextComponent(("Wheellock Musket:" + "Mechanism not Wound")), (true));
+					_player.displayClientMessage(new TextComponent(("Wheellock Musket: " + "Mechanism not Wound")), (true));
 			} else {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
-					_player.displayClientMessage(new TextComponent(("Wheellock Musket:" + "Empty")), (true));
+					_player.displayClientMessage(new TextComponent(("Wheellock Musket: " + "Empty")), (true));
 			}
 		}
 	}
