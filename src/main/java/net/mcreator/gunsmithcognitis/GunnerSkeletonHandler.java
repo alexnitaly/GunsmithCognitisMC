@@ -35,6 +35,7 @@ import net.mcreator.gunsmithcognitis.entity.MatchlockBlunderbussEntity;
 import net.mcreator.gunsmithcognitis.entity.MatchlockHeavyArquebusEntity;
 import net.mcreator.gunsmithcognitis.entity.HandcannonEntity;
 import net.mcreator.gunsmithcognitis.entity.WheellockPistolEntity;
+import net.mcreator.gunsmithcognitis.init.GunsmithCognitisModGameRules;
 
 import java.util.Random;
 import java.util.List;
@@ -47,9 +48,7 @@ public class GunnerSkeletonHandler {
 
    @SubscribeEvent
     public static void onSkeletonSpawn(EntityJoinWorldEvent event) {
-        if (event.getWorld().isClientSide()) return;
-
-        if (event.getEntity() instanceof Skeleton skeleton) {
+        if (event.getEntity() instanceof Skeleton skeleton && skeleton.level.getGameRules().getBoolean(GunsmithCognitisModGameRules.CANSKELETONHAVEFIREARMS) && !event.getWorld().isClientSide()) {
             if (!skeleton.getPersistentData().getBoolean("gunsmith_checked")) {
                 skeleton.getPersistentData().putBoolean("gunsmith_checked", true);
 

@@ -8,6 +8,6 @@ import net.mcreator.gunsmithcognitis.init.GunsmithCognitisModTabs;
 
 public class SmoothborebarrelItem extends Item {
 	public SmoothborebarrelItem() {
-		super(new Item.Properties().tab(GunsmithCognitisModTabs.TAB_GUNSMITH_COGNITIS_TAB).stacksTo(64).rarity(Rarity.COMMON));
+		super(new Item.Properties().tab(GunsmithCognitisModTabs.TAB_GUNSMITH_COGNITIS_MISC_TAB).stacksTo(64).rarity(Rarity.COMMON));
 	}
 }

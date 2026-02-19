@@ -18,6 +18,7 @@ import java.util.HashMap;
 public class GunsmithCognitisModSounds {
 	public static Map<ResourceLocation, SoundEvent> REGISTRY = new HashMap<>();
 	static {
+		REGISTRY.put(new ResourceLocation("gunsmith_cognitis", "gun_shot_heavy"), new SoundEvent(new ResourceLocation("gunsmith_cognitis", "gun_shot_heavy")));
 		REGISTRY.put(new ResourceLocation("gunsmith_cognitis", "musket_shot"), new SoundEvent(new ResourceLocation("gunsmith_cognitis", "musket_shot")));
 	}
 

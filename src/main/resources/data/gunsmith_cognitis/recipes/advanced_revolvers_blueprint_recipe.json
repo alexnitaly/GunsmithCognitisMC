@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "gunsmith_cognitis:percussioncap_blueprint"
+  },
+  "addition": {
+    "item": "gunsmith_cognitis:colt_peterson_1836"
+  },
+  "result": {
+    "item": "gunsmith_cognitis:advanced_revolvers_blueprint"
+  }
+}

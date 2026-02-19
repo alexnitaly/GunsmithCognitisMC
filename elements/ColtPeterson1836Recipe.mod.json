@@ -1,0 +1,46 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Rifledbarrel"
+      },
+      {
+        "value": "CUSTOM:PercussioncapBlueprint"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:RevolverDrum"
+      },
+      {
+        "value": "CUSTOM:PercussioncapMechanism"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.PLANKS"
+      },
+      {
+        "value": "Items.IRON_INGOT"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:ColtPeterson1836"
+    },
+    "name": "colt_peterson_1836_recipe",
+    "namespace": "mod"
+  }
+}

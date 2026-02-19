@@ -21,6 +21,15 @@
       },
       {
         "value": "CUSTOM:DoubleBarrelShotgun"
+      },
+      {
+        "value": "CUSTOM:Pattern1851MinieRifleBayonet"
+      },
+      {
+        "value": "CUSTOM:SawnOffDoubleBarrelShotgun"
+      },
+      {
+        "value": "CUSTOM:ColtPeterson1836"
       }
     ],
     "blocks": [],

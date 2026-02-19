@@ -1,0 +1,23 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "CUSTOM:PercussioncapBlueprint"
+    },
+    "smithingInputAdditionStack": {
+      "value": "CUSTOM:ColtPeterson1836"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:AdvancedRevolversBlueprint"
+    },
+    "name": "advanced_revolvers_blueprint_recipe",
+    "namespace": "mod"
+  }
+}

@@ -29,12 +29,12 @@ import net.mcreator.gunsmithcognitis.init.GunsmithCognitisModItems;
 import net.mcreator.gunsmithcognitis.init.GunsmithCognitisModEntities;
 import net.mcreator.gunsmithcognitis.entity.WheellockPistolEntity;
 import net.mcreator.gunsmithcognitis.entity.FlintlockHandMortarEntity;
-import net.mcreator.gunsmithcognitis.entity.FlintlockmusketEntity; // Used as fallback for Musket logic
+import net.mcreator.gunsmithcognitis.entity.FlintlockmusketEntity;
+import net.mcreator.gunsmithcognitis.init.GunsmithCognitisModGameRules;
 
 import java.util.Random;
 import java.util.List;
 import java.util.stream.Collectors;
-import net.minecraft.world.item.FlintAndSteelItem;
 
 @Mod.EventBusSubscriber
 public class GunnerPillagerHandler {
@@ -43,11 +43,10 @@ public class GunnerPillagerHandler {
 
     @SubscribeEvent
     public static void onPillagerSpawn(EntityJoinWorldEvent event) {
-        if (event.getEntity() instanceof Pillager pillager && !event.getWorld().isClientSide()) {
+        if (event.getEntity() instanceof Pillager pillager && pillager.level.getGameRules().getBoolean(GunsmithCognitisModGameRules.CANPILLAGERSHAVEFIREARMS) && !event.getWorld().isClientSide()) {
             if (!pillager.getPersistentData().getBoolean("gunsmith_checked")) {
                 pillager.getPersistentData().putBoolean("gunsmith_checked", true);
 
-                // --- 1. DIFFICULTY-BASED SPAWN CHANCE ---
                 double gunChance = 0.0;
                 Difficulty diff = pillager.level.getDifficulty();
                 if (diff == Difficulty.HARD) gunChance = 0.66;
@@ -60,10 +59,12 @@ public class GunnerPillagerHandler {
                         pillager.setItemInHand(InteractionHand.MAIN_HAND, gun);
                         pillager.getPersistentData().putInt("gun_cooldown", 30 + RANDOM.nextInt(30));
                         
-                        // Increase detection range for these "Marksmen"
                         if (pillager.getAttribute(Attributes.FOLLOW_RANGE) != null) {
                             pillager.getAttribute(Attributes.FOLLOW_RANGE).setBaseValue(45.0D);
                         }
+
+                        pillager.goalSelector.getAvailableGoals().removeIf(goal -> 
+                            goal.getGoal() instanceof LookAtPlayerGoal || goal.getGoal() instanceof RandomLookAroundGoal);
                     }
                 }
             }
@@ -94,9 +95,9 @@ public class GunnerPillagerHandler {
         double dist = pillager.distanceTo(target);
         TagKey<Item> PISTOL = TagKey.create(Registry.ITEM_REGISTRY, new ResourceLocation("gunsmith_cognitis", "pistol"));
         
-        // --- REPOSITIONING ---
+        // REPOSITIONING
         int retreatTicks = pillager.getPersistentData().getInt("retreat_ticks");
-        double optimalMin = gun.is(PISTOL) ? 3.0 : 6.0;
+        double optimalMin = gun.is(PISTOL) ? 4.0 : 7.0;
         double optimalMax = gun.is(PISTOL) ? 12.0 : 35.0;
 
         if (retreatTicks > 0) {
@@ -112,7 +113,7 @@ public class GunnerPillagerHandler {
             pillager.getNavigation().stop();
         }
 
-        // --- ANIMATION & COMBAT STATE MACHINE ---
+        // ANIMATION & COMBAT STATE MACHINE
         int cooldown = pillager.getPersistentData().getInt("gun_cooldown");
         int priming = pillager.getPersistentData().getInt("priming_ticks");
 
@@ -122,9 +123,8 @@ public class GunnerPillagerHandler {
         }
 
         if (cooldown > 0) {
+            // PHASE: RELOADING
             pillager.getPersistentData().putInt("gun_cooldown", cooldown - 1);
-            
-            // PHASE: RELOADING (Two-Handed Crossbow Charge Animation)
             if (cooldown < 35 && retreatTicks <= 0) {
                 pillager.setChargingCrossbow(true);
                 pillager.setAggressive(false);
@@ -133,7 +133,7 @@ public class GunnerPillagerHandler {
                 pillager.setAggressive(false);
             }
         } else if (priming > 0) {
-            // PHASE: AIMING (Aggressive Animation)
+            // PHASE: AIMING
             pillager.setChargingCrossbow(false);
             pillager.setAggressive(true);
             
@@ -144,22 +144,56 @@ public class GunnerPillagerHandler {
                 fireGunForPillager(pillager, gun);
                 int baseReload = pillager.level.getDifficulty() == Difficulty.HARD ? 60 : 100;
                 pillager.getPersistentData().putInt("gun_cooldown", baseReload + RANDOM.nextInt(20));
-           
-	        } else if (pillager.hasLineOfSight(target) && retreatTicks <= 0) {
-	            pillager.getPersistentData().putInt("priming_ticks", 12); 
-	        }
-	    }
+                pillager.setAggressive(false);
+            }
+        } else if (pillager.hasLineOfSight(target) && retreatTicks <= 0) {
+            pillager.getPersistentData().putInt("priming_ticks", 12); 
+        }
     }
 
-     private static void spawnBullet(net.minecraft.world.entity.projectile.AbstractArrow bullet, Pillager pillager, float power, float spread, double damage) {
-        bullet.setPos(pillager.getX() + pillager.getLookAngle().x * 0.5, pillager.getEyeY() - 0.1, pillager.getZ() + pillager.getLookAngle().z * 0.5);
+    private static void fireGunForPillager(Pillager pillager, ItemStack gun) {
+        Level world = pillager.level;
+        LivingEntity target = pillager.getTarget(); // Get the target to calculate the vector
+        if (!(world instanceof ServerLevel _level) || target == null) return;
+
+        float spread = world.getDifficulty() == Difficulty.EASY ? 2.5F : (world.getDifficulty() == Difficulty.HARD ? 0.5F : 1.25F);
+        Item item = gun.getItem();
+
+        double dX = target.getX() - pillager.getX();
+        double dY = target.getY(0.5) - pillager.getEyeY(); // Aim for the chest/center
+        double dZ = target.getZ() - pillager.getZ();
+
+        // Spawn the specific projectile
+        if (item == GunsmithCognitisModItems.WHEELLOCK_PISTOL.get() || item == GunsmithCognitisModItems.FLINTLOCK_PISTOL.get()) {
+            spawnBullet(new WheellockPistolEntity(GunsmithCognitisModEntities.WHEELLOCK_PISTOL.get(), pillager, world), pillager, dX, dY, dZ, 1.5F, spread * 1.25F, 5.0);
+        } else if (item == GunsmithCognitisModItems.FLINTLOCK_HAND_MORTAR.get()) {
+            spawnBullet(new FlintlockHandMortarEntity(GunsmithCognitisModEntities.FLINTLOCK_HAND_MORTAR.get(), pillager, world), pillager, dX, dY, dZ, 2.5F, spread, 7.0);
+        } else {
+            spawnBullet(new FlintlockmusketEntity(GunsmithCognitisModEntities.FLINTLOCKMUSKET.get(), pillager, world), pillager, dX, dY, dZ, 2.5F, spread, 7.0);
+        }
+
+        // VISUALS
+        _level.sendParticles(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE, pillager.getX(), pillager.getY() + 1.5, pillager.getZ(), 10, 0.1, 0.1, 0.1, 0.01);
+        world.playSound(null, pillager.getX(), pillager.getY(), pillager.getZ(), 
+            ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("gunsmith_cognitis", "musket_shot")), SoundSource.HOSTILE, 1.0F, 1.1F);
+    }
+
+    private static void spawnBullet(net.minecraft.world.entity.projectile.AbstractArrow bullet, Pillager pillager, double dX, double dY, double dZ, float power, float spread, double damage) {
+        // Position the bullet slightly in front of the pillager
+        double px = pillager.getX() + (dX / Math.sqrt(dX * dX + dZ * dZ)) * 0.5;
+        double py = pillager.getEyeY() - 0.1;
+        double pz = pillager.getZ() + (dZ / Math.sqrt(dX * dX + dZ * dZ)) * 0.5;
+        
+        bullet.setPos(px, py, pz);
         bullet.setOwner(pillager);
-        bullet.shoot(pillager.getLookAngle().x, pillager.getLookAngle().y, pillager.getLookAngle().z, power, spread);
+        
+        bullet.shoot(dX, dY, dZ, power, spread);
+        
         bullet.setBaseDamage(damage);
         if (!pillager.level.isClientSide()) {
             pillager.level.addFreshEntity(bullet);
         }
-    } 
+    }
 
     private static ItemStack selectPillagerFirearm() {
         double roll = RANDOM.nextDouble();
@@ -190,28 +224,6 @@ public class GunnerPillagerHandler {
         return new ItemStack(GunsmithCognitisModItems.WHEELLOCK_MUSKET.get());
     }
 
-    private static void fireGunForPillager(Pillager pillager, ItemStack gun) {
-        Level world = pillager.level;
-        if (!(world instanceof ServerLevel _level)) return;
-
-        float spread = world.getDifficulty() == Difficulty.EASY ? 2.5F : (world.getDifficulty() == Difficulty.HARD ? 0.5F : 1.25F);
-        Item item = gun.getItem();
-        // SPWNANING PROJECTILE
-
-        if (item == GunsmithCognitisModItems.WHEELLOCK_PISTOL.get() || item == GunsmithCognitisModItems.FLINTLOCK_PISTOL.get()) {
-            spawnBullet(new WheellockPistolEntity(GunsmithCognitisModEntities.WHEELLOCK_PISTOL.get(), pillager, world), pillager, 1.5F, spread * 1.25F, 5.0);
-        } else if (item == GunsmithCognitisModItems.FLINTLOCK_HAND_MORTAR.get()) {
-            spawnBullet(new FlintlockHandMortarEntity(GunsmithCognitisModEntities.FLINTLOCK_HAND_MORTAR.get(), pillager, world), pillager, 2.5F, spread, 7.0);
-        } else {
-            spawnBullet(new FlintlockmusketEntity(GunsmithCognitisModEntities.FLINTLOCKMUSKET.get(), pillager, world), pillager, 2.5F, spread, 7.0);
-        }
-
-        // VISUALS
-        _level.sendParticles(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE, pillager.getX(), pillager.getY() + 1.5, pillager.getZ(), 10, 0.1, 0.1, 0.1, 0.01);
-        world.playSound(null, pillager.getX(), pillager.getY(), pillager.getZ(), 
-            ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("gunsmith_cognitis", "musket_shot")), SoundSource.HOSTILE, 1.0F, 1.1F);
-    }
-
     @SubscribeEvent
     public static void onPillagerDrops(LivingDropsEvent event) {
         if (event.getEntity() instanceof Pillager pillager) {
@@ -230,16 +242,14 @@ public class GunnerPillagerHandler {
                 if (RANDOM.nextDouble() < 0.4) addDrop(event, new ItemStack(GunsmithCognitisModItems.MUSKETBALL.get(), RANDOM.nextInt(6) + 1));
                 if (RANDOM.nextDouble() < 0.2) addDrop(event, new ItemStack(GunsmithCognitisModItems.RAMROD.get(), 1));
                 
-                // Tier-Specific Kits
                 if (gun.is(TagKey.create(Registry.ITEM_REGISTRY, new ResourceLocation("gunsmith_cognitis", "wheellock_firearm"))) && RANDOM.nextDouble() < 0.1)
                     addDrop(event, new ItemStack(GunsmithCognitisModItems.WHEELLOCKGUNKIT.get()));
-                if (gun.is(TagKey.create(Registry.ITEM_REGISTRY, new ResourceLocation("gunsmith_cognitis", "flintlock_firearm"))) && RANDOM.nextDouble() < 0.05)
+                if (gun.is(TagKey.create(Registry.ITEM_REGISTRY, new ResourceLocation("gunsmith_cognitis", "flintlock_firearm"))) && RANDOM.nextDouble() < 0.05) {
                 	if (RANDOM.nextDouble() < 0.5) 
-                	{
                 		addDrop(event, new ItemStack(GunsmithCognitisModItems.FLINTLOCK_MECHANISM.get(), RANDOM.nextInt(1) + 1));
-                	} else {
+                	else 
                 		addDrop(event, new ItemStack(GunsmithCognitisModItems.FLINTLOCKGUNKIT.get(), 1));
-                	}
+                }
             }
         }
     }

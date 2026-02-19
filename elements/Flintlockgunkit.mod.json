@@ -8,7 +8,7 @@
     "name": "Flintlock Gun Kit",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:GunsmithCognitisTab"
+      "value": "CUSTOM:GunsmithCognitisMiscTab"
     },
     "stackSize": 16,
     "enchantability": 0,

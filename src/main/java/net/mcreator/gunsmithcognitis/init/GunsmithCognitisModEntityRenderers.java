@@ -67,5 +67,6 @@ public class GunsmithCognitisModEntityRenderers {
 		event.registerEntityRenderer(GunsmithCognitisModEntities.DOUBLE_BARREL_SHOTGUN.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(GunsmithCognitisModEntities.PATTERN_1851_MINIE_RIFLE_BAYONET.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(GunsmithCognitisModEntities.SAWN_OFF_DOUBLE_BARREL_SHOTGUN.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(GunsmithCognitisModEntities.COLT_PETERSON_1836.get(), ThrownItemRenderer::new);
 	}
 }
