@@ -67,7 +67,10 @@ import net.mcreator.gunsmithcognitis.entity.DynamiteEntity;
 import net.mcreator.gunsmithcognitis.entity.DreyseNeedleGunEntity;
 import net.mcreator.gunsmithcognitis.entity.DoubleBarrelShotgunEntity;
 import net.mcreator.gunsmithcognitis.entity.DivineFiveThunderMachineEntity;
+import net.mcreator.gunsmithcognitis.entity.ColtWalker1847Entity;
+import net.mcreator.gunsmithcognitis.entity.ColtRevolvingRifle1855Entity;
 import net.mcreator.gunsmithcognitis.entity.ColtPeterson1836Entity;
+import net.mcreator.gunsmithcognitis.entity.ColtDragoon1848Entity;
 import net.mcreator.gunsmithcognitis.entity.BrowningHarmonicaRifleEntity;
 import net.mcreator.gunsmithcognitis.GunsmithCognitisMod;
 
@@ -199,6 +202,13 @@ public class GunsmithCognitisModEntities {
 					.setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<ColtPeterson1836Entity>> COLT_PETERSON_1836 = register("projectile_colt_peterson_1836", EntityType.Builder.<ColtPeterson1836Entity>of(ColtPeterson1836Entity::new, MobCategory.MISC)
 			.setCustomClientFactory(ColtPeterson1836Entity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<ColtDragoon1848Entity>> COLT_DRAGOON_1848 = register("projectile_colt_dragoon_1848", EntityType.Builder.<ColtDragoon1848Entity>of(ColtDragoon1848Entity::new, MobCategory.MISC)
+			.setCustomClientFactory(ColtDragoon1848Entity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<ColtWalker1847Entity>> COLT_WALKER_1847 = register("projectile_colt_walker_1847",
+			EntityType.Builder.<ColtWalker1847Entity>of(ColtWalker1847Entity::new, MobCategory.MISC).setCustomClientFactory(ColtWalker1847Entity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<ColtRevolvingRifle1855Entity>> COLT_REVOLVING_RIFLE_1855 = register("projectile_colt_revolving_rifle_1855",
+			EntityType.Builder.<ColtRevolvingRifle1855Entity>of(ColtRevolvingRifle1855Entity::new, MobCategory.MISC).setCustomClientFactory(ColtRevolvingRifle1855Entity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

@@ -167,5 +167,16 @@ public class AmmoReloadOnKeyPressedProcedure {
 		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.SAWN_OFF_DOUBLE_BARREL_SHOTGUN.get()) {
 			SawnOffDoubleBarrelShotgunOffhandReloadProcedure.execute(entity);
 		}
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.COLT_DRAGOON_1848.get()) {
+			ColtDragoon1848ReloadProcedure.execute(entity);
+		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.COLT_DRAGOON_1848.get()) {
+			ColtDragoon1848OffhandReloadProcedure.execute(entity);
+		}
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.COLT_WALKER_1847.get()) {
+			ColtWalker1847ReloadProcedure.execute(entity);
+		}
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.COLT_REVOLVING_RIFLE_1855.get()) {
+			ColtRevolvingRifle1855ReloadProcedure.execute(entity);
+		}
 	}
 }

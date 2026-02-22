@@ -3,6 +3,7 @@
   "values": [
     "gunsmith_cognitis:kentucky_pistol",
     "gunsmith_cognitis:colt_peterson_1836",
+    "gunsmith_cognitis:colt_dragoon_1848",
     "gunsmith_cognitis:matchlock_axe_pistol",
     "gunsmith_cognitis:lorenz_pistol",
     "gunsmith_cognitis:landsknecht_harkebus",
@@ -16,6 +17,7 @@
     "gunsmith_cognitis:matchlock_pistol",
     "gunsmith_cognitis:flintlock_heavy_dragoon_pistol",
     "gunsmith_cognitis:flintlock_pepperbox",
+    "gunsmith_cognitis:colt_walker_1847",
     "gunsmith_cognitis:flintlock_lorenzoni_repeater"
   ]
 }

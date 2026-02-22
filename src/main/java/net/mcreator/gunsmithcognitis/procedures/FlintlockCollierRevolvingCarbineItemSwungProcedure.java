@@ -14,6 +14,7 @@ public class FlintlockCollierRevolvingCarbineItemSwungProcedure {
 				&& !((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getBoolean("cocked"))) {
 			if (entity.isShiftKeyDown()) {
 				(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putBoolean("cocked", (true));
+				itemstack.getOrCreateTag().putDouble("cooldown", 15);
 			}
 		}
 	}

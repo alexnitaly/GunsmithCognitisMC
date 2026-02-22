@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "gunsmith_cognitis:block/research_table"
+    },
+    "facing=east": {
+      "model": "gunsmith_cognitis:block/research_table",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "gunsmith_cognitis:block/research_table",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "gunsmith_cognitis:block/research_table",
+      "y": 270
+    }
+  }
+}

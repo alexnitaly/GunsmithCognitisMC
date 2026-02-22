@@ -7,6 +7,7 @@ package net.mcreator.gunsmithcognitis.init;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.CreativeModeTab;
 
@@ -17,6 +18,7 @@ public class GunsmithCognitisModTabs {
 	public static CreativeModeTab TAB_GUNSMITH_COGNITIS_FLINTLOCK_TAB;
 	public static CreativeModeTab TAB_GUNSMITH_COGNITIS_PERCUSSIONCAP_TAB;
 	public static CreativeModeTab TAB_GUNSMITH_COGNITIS_MISC_TAB;
+	public static CreativeModeTab TAB_GUNSMITH_COGNITIS_RESEARCH_TAB;
 
 	public static void load() {
 		TAB_GUNSMITH_COGNITIS_TAB = new CreativeModeTab("tabgunsmith_cognitis_tab") {
@@ -78,6 +80,17 @@ public class GunsmithCognitisModTabs {
 			@Override
 			public ItemStack makeIcon() {
 				return new ItemStack(GunsmithCognitisModItems.FULMINATEPOWDER.get());
+			}
+
+			@OnlyIn(Dist.CLIENT)
+			public boolean hasSearchBar() {
+				return false;
+			}
+		};
+		TAB_GUNSMITH_COGNITIS_RESEARCH_TAB = new CreativeModeTab("tabgunsmith_cognitis_research_tab") {
+			@Override
+			public ItemStack makeIcon() {
+				return new ItemStack(Items.PAPER);
 			}
 
 			@OnlyIn(Dist.CLIENT)

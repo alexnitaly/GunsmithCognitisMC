@@ -1,0 +1,49 @@
+{
+  "_fv": 39,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "colt_1848_dragoon",
+    "customModelName": "Normal",
+    "name": "Colt Dragoon 1848 Revolver",
+    "specialInfo": [
+      "Single Action: Uses Gunpowder from Inventory",
+      "Requires Heavy musket balls to Reload."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:GunsmithCognitisPercussioncapTab"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 677,
+    "actionSound": {
+      "value": "CUSTOM:gun_shot_heavy"
+    },
+    "hasGlow": false,
+    "animation": "none",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "ColtDragoon1848ItemUsed"
+    },
+    "onEntitySwing": {
+      "name": "ColtDragoon1848ItemSwung"
+    },
+    "useCondition": {
+      "name": "ColtDragoon1848CanUseRanged"
+    },
+    "bulletPower": 3.0,
+    "bulletDamage": 1.8,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:MusketBallProjectile"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": ""
+  }
+}

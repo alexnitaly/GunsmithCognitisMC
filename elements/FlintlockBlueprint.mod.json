@@ -5,10 +5,10 @@
     "renderType": 0,
     "texture": "blueprint_flintlock",
     "customModelName": "Normal",
-    "name": "Flintlock Blueprint",
-    "rarity": "UNCOMMON",
+    "name": "Flintlock Blueprint (Entry)",
+    "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:GunsmithCognitisMiscTab"
+      "value": "CUSTOM:GunsmithCognitisResearchTab"
     },
     "stackSize": 1,
     "enchantability": 0,

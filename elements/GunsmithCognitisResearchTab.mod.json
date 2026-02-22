@@ -1,0 +1,11 @@
+{
+  "_fv": 39,
+  "_type": "tab",
+  "definition": {
+    "name": "Gunsmith Cognitis Research Tab",
+    "icon": {
+      "value": "Items.PAPER"
+    },
+    "showSearch": false
+  }
+}

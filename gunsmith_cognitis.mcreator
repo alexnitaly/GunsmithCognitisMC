@@ -827,7 +827,7 @@
           "src/main/java/net/mcreator/gunsmithcognitis/item/FlintlockBlueprintItem.java"
         ]
       },
-      "path": "~/Flintlock"
+      "path": "~/Research"
     },
     {
       "name": "Flintlockmusket",
@@ -6744,21 +6744,7 @@
           "src/main/java/net/mcreator/gunsmithcognitis/item/PercussioncapBlueprintItem.java"
         ]
       },
-      "path": "~/Percussion Cap"
-    },
-    {
-      "name": "PercussioncapBlueprintRecipe",
-      "type": "recipe",
-      "sortid": 310,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "percussioncap_blueprint_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/gunsmith_cognitis/recipes/percussioncap_blueprint_recipe.json"
-        ]
-      },
-      "path": "~/Percussion Cap"
+      "path": "~/Research"
     },
     {
       "name": "Fulminatepowder",
@@ -9569,7 +9555,7 @@
           "src/main/java/net/mcreator/gunsmithcognitis/item/AdvancedRevolversBlueprintItem.java"
         ]
       },
-      "path": "~/Percussion Cap"
+      "path": "~/Research"
     },
     {
       "name": "AdvancedRevolversBlueprintRecipe",
@@ -9623,6 +9609,863 @@
         ]
       },
       "path": "~/Misc. Items"
+    },
+    {
+      "name": "ColtDragoon1848",
+      "type": "rangeditem",
+      "sortid": 442,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "colt_dragoon_1848",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/entity/ColtDragoon1848Entity.java",
+          "src/main/resources/assets/gunsmith_cognitis/models/item/colt_dragoon_1848.json",
+          "src/main/java/net/mcreator/gunsmithcognitis/item/ColtDragoon1848Item.java"
+        ]
+      },
+      "path": "~/Percussion Cap"
+    },
+    {
+      "name": "ColtDragoon1848CanUseRanged",
+      "type": "procedure",
+      "sortid": 443,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "colt_dragoon_1848_can_use_ranged",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/ColtDragoon1848CanUseRangedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Percussion Cap"
+    },
+    {
+      "name": "ColtDragoon1848ItemUsed",
+      "type": "procedure",
+      "sortid": 444,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "colt_dragoon_1848_item_used",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/ColtDragoon1848ItemUsedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Percussion Cap"
+    },
+    {
+      "name": "ColtDragoon1848ItemSwung",
+      "type": "procedure",
+      "sortid": 445,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "colt_dragoon_1848_item_swung",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/ColtDragoon1848ItemSwungProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Percussion Cap"
+    },
+    {
+      "name": "ColtDragoon1848Reload",
+      "type": "procedure",
+      "sortid": 446,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "colt_dragoon_1848_reload",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/ColtDragoon1848ReloadProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Percussion Cap"
+    },
+    {
+      "name": "ColtDragoon1848OffhandReload",
+      "type": "procedure",
+      "sortid": 447,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "colt_dragoon_1848_offhand_reload",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/ColtDragoon1848OffhandReloadProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Percussion Cap"
+    },
+    {
+      "name": "ColtDragoon1848Overlay",
+      "type": "procedure",
+      "sortid": 448,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "colt_dragoon_1848_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/ColtDragoon1848OverlayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/AmmoOverlays"
+    },
+    {
+      "name": "ColtWalker1847",
+      "type": "rangeditem",
+      "sortid": 449,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "colt_walker_1847",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/entity/ColtWalker1847Entity.java",
+          "src/main/java/net/mcreator/gunsmithcognitis/item/ColtWalker1847Item.java",
+          "src/main/resources/assets/gunsmith_cognitis/models/item/colt_walker_1847.json"
+        ]
+      },
+      "path": "~/Percussion Cap"
+    },
+    {
+      "name": "ColtWalker1847CanUseRanged",
+      "type": "procedure",
+      "sortid": 450,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "colt_walker_1847_can_use_ranged",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/ColtWalker1847CanUseRangedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Percussion Cap"
+    },
+    {
+      "name": "ColtWalker1847ItemUsed",
+      "type": "procedure",
+      "sortid": 451,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "colt_walker_1847_item_used",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/ColtWalker1847ItemUsedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Percussion Cap"
+    },
+    {
+      "name": "ColtWalker1847ItemSwung",
+      "type": "procedure",
+      "sortid": 452,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "colt_walker_1847_item_swung",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/ColtWalker1847ItemSwungProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Percussion Cap"
+    },
+    {
+      "name": "ColtWalker1847Reload",
+      "type": "procedure",
+      "sortid": 453,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "colt_walker_1847_reload",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/ColtWalker1847ReloadProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Percussion Cap"
+    },
+    {
+      "name": "ColtWalker1847Overlay",
+      "type": "procedure",
+      "sortid": 454,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "colt_walker_1847_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/ColtWalker1847OverlayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/AmmoOverlays"
+    },
+    {
+      "name": "ColtRevolvingRifle1855",
+      "type": "rangeditem",
+      "sortid": 455,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "colt_revolving_rifle_1855",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gunsmith_cognitis/models/item/colt_revolving_rifle_1855.json",
+          "src/main/java/net/mcreator/gunsmithcognitis/item/ColtRevolvingRifle1855Item.java",
+          "src/main/java/net/mcreator/gunsmithcognitis/entity/ColtRevolvingRifle1855Entity.java"
+        ]
+      },
+      "path": "~/Percussion Cap"
+    },
+    {
+      "name": "ColtRevolvingRifle1855CanUseRanged",
+      "type": "procedure",
+      "sortid": 456,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "colt_revolving_rifle_1855_can_use_ranged",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/ColtRevolvingRifle1855CanUseRangedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Percussion Cap"
+    },
+    {
+      "name": "ColtRevolvingRifle1855ItemUsed",
+      "type": "procedure",
+      "sortid": 457,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "colt_revolving_rifle_1855_item_used",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/ColtRevolvingRifle1855ItemUsedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Percussion Cap"
+    },
+    {
+      "name": "ColtRevolvingRifle1855ItemSwung",
+      "type": "procedure",
+      "sortid": 458,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "colt_revolving_rifle_1855_item_swung",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/ColtRevolvingRifle1855ItemSwungProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Percussion Cap"
+    },
+    {
+      "name": "ColtRevolvingRifle1855Reload",
+      "type": "procedure",
+      "sortid": 459,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "colt_revolving_rifle_1855_reload",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/ColtRevolvingRifle1855ReloadProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Percussion Cap"
+    },
+    {
+      "name": "ColtRevolvingRifle1855Overlay",
+      "type": "procedure",
+      "sortid": 460,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "colt_revolving_rifle_1855_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/ColtRevolvingRifle1855OverlayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/AmmoOverlays"
+    },
+    {
+      "name": "ResearchTable",
+      "type": "block",
+      "sortid": 461,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "research_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gunsmith_cognitis/models/item/research_table.json",
+          "src/main/java/net/mcreator/gunsmithcognitis/block/ResearchTableBlock.java",
+          "src/main/resources/assets/gunsmith_cognitis/models/block/research_table.json",
+          "src/main/resources/assets/gunsmith_cognitis/blockstates/research_table.json"
+        ]
+      },
+      "path": "~/Research"
+    },
+    {
+      "name": "WeaponsmithTradeExtension",
+      "type": "villagertrade",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weaponsmith_trade_extension",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "GunsmithVillager",
+      "type": "code",
+      "sortid": 462,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gunsmith_villager",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/GunsmithVillager.java"
+        ]
+      }
+    },
+    {
+      "name": "GunsmithTrades",
+      "type": "code",
+      "sortid": 463,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gunsmith_trades",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/GunsmithTrades.java"
+        ]
+      }
+    },
+    {
+      "name": "ResearchTableUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "research_table_ui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/network/ResearchTableUIButtonMessage.java",
+          "src/main/java/net/mcreator/gunsmithcognitis/world/inventory/ResearchTableUIMenu.java",
+          "src/main/java/net/mcreator/gunsmithcognitis/client/gui/ResearchTableUIScreen.java"
+        ]
+      },
+      "path": "~/Research"
+    },
+    {
+      "name": "FlintlockBlueprintIntermediate",
+      "type": "item",
+      "sortid": 464,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock_blueprint_intermediate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/item/FlintlockBlueprintIntermediateItem.java",
+          "src/main/resources/assets/gunsmith_cognitis/models/item/flintlock_blueprint_intermediate.json"
+        ]
+      },
+      "path": "~/Research"
+    },
+    {
+      "name": "FlintlockBlueprintMastery",
+      "type": "item",
+      "sortid": 465,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock_blueprint_mastery",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/item/FlintlockBlueprintMasteryItem.java",
+          "src/main/resources/assets/gunsmith_cognitis/models/item/flintlock_blueprint_mastery.json"
+        ]
+      },
+      "path": "~/Research"
+    },
+    {
+      "name": "PercussioncapBlueprintIntermediate",
+      "type": "item",
+      "sortid": 466,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "percussioncap_blueprint_intermediate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gunsmith_cognitis/models/item/percussioncap_blueprint_intermediate.json",
+          "src/main/java/net/mcreator/gunsmithcognitis/item/PercussioncapBlueprintIntermediateItem.java"
+        ]
+      },
+      "path": "~/Research"
+    },
+    {
+      "name": "PercussioncapBlueprintMastery",
+      "type": "item",
+      "sortid": 467,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "percussioncap_blueprint_mastery",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/item/PercussioncapBlueprintMasteryItem.java",
+          "src/main/resources/assets/gunsmith_cognitis/models/item/percussioncap_blueprint_mastery.json"
+        ]
+      },
+      "path": "~/Research"
+    },
+    {
+      "name": "MatchlockBlueprint",
+      "type": "item",
+      "sortid": 468,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "matchlock_blueprint",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gunsmith_cognitis/models/item/matchlock_blueprint.json",
+          "src/main/java/net/mcreator/gunsmithcognitis/item/MatchlockBlueprintItem.java"
+        ]
+      },
+      "path": "~/Research"
+    },
+    {
+      "name": "GunsmithCognitisResearchTab",
+      "type": "tab",
+      "sortid": 469,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gunsmith_cognitis_research_tab",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Research"
+    },
+    {
+      "name": "MatchlockBlueprintIntermediate",
+      "type": "item",
+      "sortid": 470,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "matchlock_blueprint_intermediate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/item/MatchlockBlueprintIntermediateItem.java",
+          "src/main/resources/assets/gunsmith_cognitis/models/item/matchlock_blueprint_intermediate.json"
+        ]
+      },
+      "path": "~/Research"
+    },
+    {
+      "name": "MatchlockBlueprintMastery",
+      "type": "item",
+      "sortid": 471,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "matchlock_blueprint_mastery",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/item/MatchlockBlueprintMasteryItem.java",
+          "src/main/resources/assets/gunsmith_cognitis/models/item/matchlock_blueprint_mastery.json"
+        ]
+      },
+      "path": "~/Research"
+    },
+    {
+      "name": "WheellockBlueprint",
+      "type": "item",
+      "sortid": 472,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wheellock_blueprint",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/item/WheellockBlueprintItem.java",
+          "src/main/resources/assets/gunsmith_cognitis/models/item/wheellock_blueprint.json"
+        ]
+      },
+      "path": "~/Research"
+    },
+    {
+      "name": "WheellockBlueprintIntermediate",
+      "type": "item",
+      "sortid": 473,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wheellock_blueprint_intermediate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/item/WheellockBlueprintIntermediateItem.java",
+          "src/main/resources/assets/gunsmith_cognitis/models/item/wheellock_blueprint_intermediate.json"
+        ]
+      },
+      "path": "~/Research"
+    },
+    {
+      "name": "WheellockBlueprintMastery",
+      "type": "item",
+      "sortid": 474,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wheellock_blueprint_mastery",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gunsmith_cognitis/models/item/wheellock_blueprint_mastery.json",
+          "src/main/java/net/mcreator/gunsmithcognitis/item/WheellockBlueprintMasteryItem.java"
+        ]
+      },
+      "path": "~/Research"
+    },
+    {
+      "name": "Techbuttonnext",
+      "type": "procedure",
+      "sortid": 477,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "techbuttonnext",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/TechbuttonnextProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Research"
+    },
+    {
+      "name": "Techbuttonlast",
+      "type": "procedure",
+      "sortid": 478,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "techbuttonlast",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/TechbuttonlastProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Research"
+    },
+    {
+      "name": "ResearchTableCurrentTechValue",
+      "type": "procedure",
+      "sortid": 479,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "research_table_current_tech_value",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/ResearchTableCurrentTechValueProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Research"
+    },
+    {
+      "name": "ResearchTableTechName",
+      "type": "procedure",
+      "sortid": 480,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "research_table_tech_name",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/ResearchTableTechNameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Research"
+    },
+    {
+      "name": "ResearchTableTechDescription",
+      "type": "procedure",
+      "sortid": 481,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "research_table_tech_description",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/ResearchTableTechDescriptionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Research"
+    },
+    {
+      "name": "ResearchTableTechCost",
+      "type": "procedure",
+      "sortid": 482,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "research_table_tech_cost",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/ResearchTableTechCostProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Research"
+    },
+    {
+      "name": "ResearchTableResearchButton",
+      "type": "procedure",
+      "sortid": 483,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "research_table_research_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/ResearchTableResearchButtonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Research"
     }
   ],
   "variable_elements": [
@@ -9631,6 +10474,36 @@
       "type": "string",
       "scope": "player_persistent",
       "value": "\"\""
+    },
+    {
+      "name": "progression_matchlock",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "1.0"
+    },
+    {
+      "name": "progression_wheellock",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "progression_flintlock",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "progression_percussioncap",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "progression_moderncartidges",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [
@@ -9656,22 +10529,26 @@
       "item.gunsmith_cognitis.matchlockgunkit": "Matchlock Gun Kit",
       "itemGroup.tabgunsmith_cognitis_tab": "Matchlock",
       "item.gunsmith_cognitis.wheellock_musket": "Wheellock Musket",
+      "item.gunsmith_cognitis.wheellock_blueprint": "Wheellock Blueprint (Entry)",
       "item.gunsmith_cognitis.browning_harmonica_rifle": "Browning Harmonica Rifle",
       "item.gunsmith_cognitis.landsknecht_harkebus": "Landsknecht Harkebus",
       "item.gunsmith_cognitis.flintlock_pistol_gold": "Refined Flintlock Pistol",
-      "item.gunsmith_cognitis.flintlock_blueprint": "Flintlock Blueprint",
+      "item.gunsmith_cognitis.flintlock_blueprint": "Flintlock Blueprint (Entry)",
       "item.gunsmith_cognitis.percussioncapgunkit": "Percussion Cap Gun Kit",
+      "item.gunsmith_cognitis.colt_revolving_rifle_1855": "Colt Revolving Rifle 1855",
       "advancements.betterfirearmtheory.descr": "The Arquebus design as a firearm seems to be the most optimal, i could probably improve on this...",
       "advancements.gunpowdercognitisstart.descr": "Gunpowder, something always used to make things blow up, but what if we use it to shoot things?",
       "item.gunsmith_cognitis.minie_paper_cartidge_ammo": "Minie Paper cartidge ammo",
-      "item.gunsmith_cognitis.flintlock_lorenzoni_repeater": "Flintlock Lorenzoni Repeater",
       "item.gunsmith_cognitis.nock_volley_gun_front_component": "Nock Volley Gun Barrels",
+      "item.gunsmith_cognitis.flintlock_lorenzoni_repeater": "Flintlock Lorenzoni Repeater",
+      "item.gunsmith_cognitis.flintlock_blueprint_intermediate": "Flintlock Blueprint (Intermediate)",
       "advancements.flintandlocked.title": "Flint and locked",
       "item.gunsmith_cognitis.matchlock_snaphance_musket": "Matchlock Snaphance Musket",
       "subtitles.gun_shot_normal": "Gunshot",
       "item.gunsmith_cognitis.matchlock_blunderbuss": "Matchlock Blunderbuss",
       "item.gunsmith_cognitis.paper_cartidge_small_ammo": "Paper cartidge small ammo",
       "item.gunsmith_cognitis.advanced_revolvers_blueprint": "Advanced Revolvers Blueprint",
+      "gui.gunsmith_cognitis.research_table_ui.button_next": "Next",
       "item.gunsmith_cognitis.rifledbarrel": "Rifled barrel",
       "item.gunsmith_cognitis.flintlock_mechanism": "Flintlock Mechanism",
       "item.gunsmith_cognitis.flintlock_hand_mortar": "Flintlock Hand Mortar",
@@ -9693,33 +10570,43 @@
       "item.gunsmith_cognitis.kentucky_pistol": "Kentucky Pistol",
       "gamerule.canSkeletonHaveFirearms": "Can Skeletons have firearms?",
       "item.gunsmith_cognitis.tanegashima": "Tanegashima-teppō",
+      "block.gunsmith_cognitis.research_table": "Research Table",
       "item.gunsmith_cognitis.heavy_musketball": "Heavy Musket ball",
       "item.gunsmith_cognitis.netheritehalberd": "Netherite halberd",
       "item.gunsmith_cognitis.wheellock_petronel": "Wheellock Petronel",
       "item.gunsmith_cognitis.stonehalberd": "Stone halberd",
       "item.gunsmith_cognitis.lorenz_pistol": "Lorenz 1854 Pistol",
       "item.gunsmith_cognitis.stonepike": "Stone pike",
+      "item.gunsmith_cognitis.flintlock_blueprint_mastery": "Flintlock Blueprint (Mastery)",
       "advancements.matchlock_mastery.descr": "Ok, so we can use it to shoot things! Let\u0027s try and improve upon our designs this time.",
       "item.gunsmith_cognitis.matchlock_wall_gun": "Matchlock Wall Gun",
+      "villager.gunsmith_cognitis.gunsmith": "Gunsmith",
+      "gui.gunsmith_cognitis.research_table_ui.label_current_tech": "(CURRENT_TECH)",
       "item.gunsmith_cognitis.paper_cartidge_ammo": "Paper cartidge ammo",
-      "item.gunsmith_cognitis.percussioncap_blueprint": "Percussion Cap Blueprint",
+      "item.gunsmith_cognitis.percussioncap_blueprint": "Percussion Cap Blueprint (Entry)",
       "item.gunsmith_cognitis.diamondhalberd": "Diamond halberd",
       "itemGroup.tabgunsmith_cognitis_misc_tab": "Gunsmith Cognitis Misc Tab",
       "itemGroup.tabgunsmith_cognitis_wheellock_tab": "Gunsmith Cognitis Wheellock Tab",
+      "item.gunsmith_cognitis.wheellock_blueprint_mastery": "Wheellock Blueprint (Mastery)",
       "advancements.matchlock_mastery.title": "Matchlock Mastery",
       "item.gunsmith_cognitis.pattern_1851_minie_rifle_bayonet": "Pattern 1851 Minié Rifle (Bayonet)",
       "item.gunsmith_cognitis.crude_smoothborebarrel": "Crude Smoothbore Barrel",
+      "item.gunsmith_cognitis.matchlock_blueprint": "Matchlock Blueprint (Entry)",
       "item.gunsmith_cognitis.matchlock_axe_pistol": "Matchlock Axe Pistol",
       "item.gunsmith_cognitis.flintlock_blunderbuss": "Flintlock Blunderbuss",
       "gamerule.shotgunBackBlastMultiplier": "Shotgun Backblast Multiplier",
       "item.gunsmith_cognitis.wheellock_kalthoff_repeater": "Kalthoff Repeater",
       "gamerule.shotgunBackBlast.description": "All shotgun-type weapons, including blunderbusses, will cause knockback to the player when shot.",
       "gamerule.doGunsJam.description": "Are firearms from Gunsmith Cognitis allowed to jam at low durability or in bad (but not unfit) envirorments?",
+      "gui.gunsmith_cognitis.research_table_ui.button_last": "Last",
       "item.gunsmith_cognitis.cuirass_boots": "Cuirass Boots",
       "item.gunsmith_cognitis.flintlock_double_barrel_musket": "Flintlock Double Barrel Musket",
+      "gui.gunsmith_cognitis.research_table_ui.label_requirements": "(REQUIREMENTS)",
       "item.gunsmith_cognitis.nock_volley_gun": "Nock Volley Gun",
+      "item.gunsmith_cognitis.colt_dragoon_1848": "Colt Dragoon 1848 Revolver",
       "enchantment.gunsmith_cognitis.poisoned_bullets": "Poison Tipped",
       "item.gunsmith_cognitis.sawn_off_double_barrel_shotgun": "Sawn-Off Double Barrel Shotgun",
+      "gui.gunsmith_cognitis.research_table_ui.label_description": "(DESCRIPTION)",
       "item.gunsmith_cognitis.pattern_1851minierifle": "Pattern 1851 Minié Rifle",
       "item.gunsmith_cognitis.flintlock_pepperbox": "Flintlock Pepperbox",
       "advancements.betterfirearmtheory.title": "Better Firearm Theory",
@@ -9741,11 +10628,15 @@
       "item.gunsmith_cognitis.goldhalberd": "Gold halberd",
       "item.gunsmith_cognitis.flintlockgunkit": "Flintlock Gun Kit",
       "item.gunsmith_cognitis.double_barrels_part": "Double Barrels Part",
+      "item.gunsmith_cognitis.colt_walker_1847": "Colt Walker 1847 Revolver",
+      "gui.gunsmith_cognitis.research_table_ui.button_reprint": "Reprint",
       "item.gunsmith_cognitis.flintlock_heavy_dragoon_pistol": "Flintlock Heavy Dragoon Pistol",
       "item.gunsmith_cognitis.rock": "Rock",
       "item.gunsmith_cognitis.shotgun_shell": "Shotgun Shell",
       "item.gunsmith_cognitis.wheellock_pistol": "Wheellock Pistol",
+      "item.gunsmith_cognitis.matchlock_blueprint_mastery": "Matchlock Blueprint (Mastery)",
       "item.gunsmith_cognitis.percussionnipple": "Percussion cap",
+      "item.gunsmith_cognitis.wheellock_blueprint_intermediate": "Wheellock Blueprint (Intermediate)",
       "item.gunsmith_cognitis.bigborebarrel": "Big bore Barrel",
       "item.gunsmith_cognitis.percussioncap_mechanism": "Percussioncap Mechanism",
       "item.gunsmith_cognitis.threeeyegun": "Three Eye Gun",
@@ -9757,12 +10648,15 @@
       "item.gunsmith_cognitis.diamondpike": "Diamond pike",
       "item.gunsmith_cognitis.dynamite_pack": "Dynamite Pack",
       "item.gunsmith_cognitis.musketball": "Musket ball",
+      "entity.minecraft.villager.gunsmith_cognitis.gunsmith": "Gunsmith",
       "itemGroup.tabgunsmith_cognitis_melee": "Gunsmith Cognitis Melee",
+      "item.gunsmith_cognitis.percussioncap_blueprint_intermediate": "Percussion Cap Blueprint (Intermediate)",
       "item.gunsmith_cognitis.colt_peterson_1836": "Colt Peterson 1836 Revolver",
       "item.gunsmith_cognitis.cuirass_leggings": "Cuirass Leggings",
       "itemGroup.tabgunsmith_cognitis_flintlock_tab": "Gunsmith Cognitis Flintlock Tab",
       "item.gunsmith_cognitis.ramrod": "Ramrod",
       "subtitles.musket_shot": "Musket Shot",
+      "itemGroup.tabgunsmith_cognitis_research_tab": "Gunsmith Cognitis Research Tab",
       "item.gunsmith_cognitis.matchlock_pistol": "Matchlock Pistol",
       "item.gunsmith_cognitis.flintlockmusketbayonet": "Flintlock Musket (Bayonet)",
       "item.gunsmith_cognitis.flintlock_pistol": "Flintlock Pistol",
@@ -9781,35 +10675,43 @@
       "item.gunsmith_cognitis.smoothborebarrel": "Smoothbore Barrel",
       "key.gunsmith_cognitis.ammo_reload": "Gunsmith Congitis: Reload",
       "item.gunsmith_cognitis.hand_bomb": "Hand Bomb",
+      "gui.gunsmith_cognitis.research_table_ui.label_tech_name": "(TECH_NAME)",
+      "gui.gunsmith_cognitis.research_table_ui.button_research": "Research",
       "itemGroup.tabgunsmith_cognitis_percussioncap_tab": "Gunsmith Cognitis Percussioncap Tab",
+      "item.gunsmith_cognitis.matchlock_blueprint_intermediate": "Matchlock Blueprint (Intermediate)",
       "item.gunsmith_cognitis.flintlockmusketgold": "Refined Flintlock Musket",
       "item.gunsmith_cognitis.fulminatepowder": "Fulminate powder",
       "gamerule.shotgunBackBlast": "Shotgun Cop Steve",
       "advancements.thewheelkeepsspinning.title": "The wheel keeps spinning",
       "item.gunsmith_cognitis.flintlock_asumette_rifled_wall_gun": "Flintlock Asumette Wall Gun",
       "item.gunsmith_cognitis.flintlock_collier_revolving_carbine": "Flintlock Collier Revolving Carbine",
-      "item.gunsmith_cognitis.flintlockmusket": "Flintlock Musket"
+      "item.gunsmith_cognitis.flintlockmusket": "Flintlock Musket",
+      "item.gunsmith_cognitis.percussioncap_blueprint_mastery": "Percussion Cap Blueprint (Mastery)"
     },
     "en_pt": {
       "item.gunsmith_cognitis.matchlockgunkit": "\tSlow-Burner’s Satchel",
       "itemGroup.tabgunsmith_cognitis_tab": "Match-Burners",
       "item.gunsmith_cognitis.wheellock_musket": "Long-Clock Snapper",
+      "item.gunsmith_cognitis.wheellock_blueprint": "Matchlock Blueprint (Entry)",
       "item.gunsmith_cognitis.browning_harmonica_rifle": "Flintlock Collier Revolving Carbine",
       "item.gunsmith_cognitis.landsknecht_harkebus": "Landlubber Short-Match",
       "item.gunsmith_cognitis.flintlock_pistol_gold": "The Captain’s Sea-Barker",
       "item.gunsmith_cognitis.flintlock_blueprint": "Flint-Knapper’s Scroll",
       "item.gunsmith_cognitis.percussioncapgunkit": "Percussion Cap Gun Kit",
       "advancements.betterfirearmtheory.descr": "This crude tube design as a firearm seems not to be the most pristine, ye could probably improve on this...",
+      "item.gunsmith_cognitis.colt_revolving_rifle_1855": "Colt Walker 1847 Revolver",
       "advancements.gunpowdercognitisstart.descr": "Gunpowder, something always used to make things blow up, but what if we use it to shoot things?",
       "item.gunsmith_cognitis.minie_paper_cartidge_ammo": "Wrapped Flyin\u0027 Cone",
       "item.gunsmith_cognitis.flintlock_lorenzoni_repeater": "Lever Trick-Iron",
       "item.gunsmith_cognitis.nock_volley_gun_front_component": "Seven Sisters Component",
+      "item.gunsmith_cognitis.flintlock_blueprint_intermediate": "Flintlock Blueprint (Entry)",
       "advancements.flintandlocked.title": "Secret o\u0027 the Flint-Knappers",
       "item.gunsmith_cognitis.matchlock_snaphance_musket": "Early Match-Biter",
       "subtitles.gun_shot_normal": "Gunshot",
-      "item.gunsmith_cognitis.matchlock_blunderbuss": "Deck-Sweeper",
       "item.gunsmith_cognitis.paper_cartidge_small_ammo": "Wee Pre-Wrapped Powder",
+      "item.gunsmith_cognitis.matchlock_blunderbuss": "Deck-Sweeper",
       "item.gunsmith_cognitis.advanced_revolvers_blueprint": "Percussion Cap Blueprint",
+      "gui.gunsmith_cognitis.research_table_ui.button_next": "Next",
       "item.gunsmith_cognitis.rifledbarrel": "Rifled barrel",
       "item.gunsmith_cognitis.flintlock_mechanism": "Flint-n-Steel Guts",
       "item.gunsmith_cognitis.flintlock_hand_mortar": "Hand-Held Hull-Breaker",
@@ -9831,33 +10733,43 @@
       "item.gunsmith_cognitis.kentucky_pistol": "Heavy Snap-Barker",
       "gamerule.canSkeletonHaveFirearms": "Can Skeletons have firearms?",
       "item.gunsmith_cognitis.tanegashima": "Eastern Match-Pipe",
+      "block.gunsmith_cognitis.research_table": "Research Table",
       "item.gunsmith_cognitis.heavy_musketball": "Musket ball",
       "item.gunsmith_cognitis.netheritehalberd": "Blackbeard\u0027s Guard-Pole",
       "item.gunsmith_cognitis.wheellock_petronel": "Short-Clock Barker",
       "item.gunsmith_cognitis.stonehalberd": "Rock Board-Pole",
       "item.gunsmith_cognitis.lorenz_pistol": "Austrian Snap-Barker",
       "item.gunsmith_cognitis.stonepike": "Rock Boardin\u0027 Pike",
+      "item.gunsmith_cognitis.flintlock_blueprint_mastery": "Flintlock Blueprint (Entry)",
       "advancements.matchlock_mastery.descr": "Ok, so we can use it to shoot things! Let\u0027s try and improve upon our designs this time.",
       "item.gunsmith_cognitis.matchlock_wall_gun": "Rail-Mounted Match-Iron",
+      "villager.gunsmith_cognitis.gunsmith": "Gun Dealer",
+      "gui.gunsmith_cognitis.research_table_ui.label_current_tech": "(CURRENT_TECH)",
       "item.gunsmith_cognitis.paper_cartidge_ammo": "Pre-Wrapped Powder",
       "item.gunsmith_cognitis.percussioncap_blueprint": "Thunder-Cap Scroll",
       "item.gunsmith_cognitis.diamondhalberd": "Diamond Guard-Pole",
       "itemGroup.tabgunsmith_cognitis_misc_tab": "Gunsmith Cognitis Misc",
       "itemGroup.tabgunsmith_cognitis_wheellock_tab": "Gunsmith Cognitis Wheellock",
+      "item.gunsmith_cognitis.wheellock_blueprint_mastery": "Wheellock Blueprint (Intermediate)",
       "advancements.matchlock_mastery.title": "Match Barkers Mastery",
       "item.gunsmith_cognitis.pattern_1851_minie_rifle_bayonet": "Pointy Pattern 1851 Minié Rifle",
       "item.gunsmith_cognitis.crude_smoothborebarrel": "Rough Pipe",
+      "item.gunsmith_cognitis.matchlock_blueprint": "Flintlock Blueprint (Entry)",
       "item.gunsmith_cognitis.matchlock_axe_pistol": "\tBoarding Hanger-Gun",
       "item.gunsmith_cognitis.flintlock_blunderbuss": "Flintlock Musket",
       "gamerule.shotgunBackBlastMultiplier": "Shotgun Backblast Multiplier",
       "item.gunsmith_cognitis.wheellock_kalthoff_repeater": "Many-Shot Clock Snapper",
       "gamerule.shotgunBackBlast.description": "All shotgun-type weapons, including blunderbusses, will cause knockback to the player when shot.",
       "gamerule.doGunsJam.description": "Are the barkers from Gunsmith Cognitis allowed to jam at scarce durability or in cursed (but not impossible) envirorments?",
+      "gui.gunsmith_cognitis.research_table_ui.button_last": "Last",
       "item.gunsmith_cognitis.cuirass_boots": "Cuirass Boots",
       "item.gunsmith_cognitis.flintlock_double_barrel_musket": "Long Twin-Sting Barker",
+      "gui.gunsmith_cognitis.research_table_ui.label_requirements": "(REQUIREMENTS)",
       "item.gunsmith_cognitis.nock_volley_gun": "Seven Sisters",
+      "item.gunsmith_cognitis.colt_dragoon_1848": "Colt Peterson 1836 Revolver",
       "enchantment.gunsmith_cognitis.poisoned_bullets": "Poison Tipped",
       "item.gunsmith_cognitis.sawn_off_double_barrel_shotgun": "Double Short-Shotty",
+      "gui.gunsmith_cognitis.research_table_ui.label_description": "(DESCRIPTION)",
       "item.gunsmith_cognitis.pattern_1851minierifle": "Groove-Bore Long-Iron",
       "item.gunsmith_cognitis.flintlock_pepperbox": "Bundle o\u0027 Barrels",
       "advancements.betterfirearmtheory.title": "Better Lead-spitter Theory",
@@ -9879,11 +10791,15 @@
       "item.gunsmith_cognitis.goldhalberd": "Glided Guard-Pole",
       "item.gunsmith_cognitis.flintlockgunkit": "Flint-Knapper Fixin\u0027 Bag",
       "item.gunsmith_cognitis.double_barrels_part": "Nock Volley Gun Barrels",
+      "item.gunsmith_cognitis.colt_walker_1847": "Colt Dragoon 1848 Revolver",
+      "gui.gunsmith_cognitis.research_table_ui.button_reprint": "Reprint",
       "item.gunsmith_cognitis.flintlock_heavy_dragoon_pistol": "Great Sea-Dog Pistol",
       "item.gunsmith_cognitis.rock": "Rock",
       "item.gunsmith_cognitis.shotgun_shell": "Paper cartidge ammo",
       "item.gunsmith_cognitis.wheellock_pistol": "Clockwork Barker",
+      "item.gunsmith_cognitis.matchlock_blueprint_mastery": "Matchlock Blueprint (Intermediate)",
       "item.gunsmith_cognitis.percussionnipple": "Percussion cap",
+      "item.gunsmith_cognitis.wheellock_blueprint_intermediate": "Wheellock Blueprint (Entry)",
       "item.gunsmith_cognitis.bigborebarrel": "Smoothbore Barrel",
       "item.gunsmith_cognitis.percussioncap_mechanism": "Thunder-Cap Guts",
       "item.gunsmith_cognitis.threeeyegun": "Three-Pipe Barker",
@@ -9895,12 +10811,15 @@
       "item.gunsmith_cognitis.diamondpike": "Diamond Boardin\u0027 Pike",
       "item.gunsmith_cognitis.dynamite_pack": "Boom-Bundle",
       "item.gunsmith_cognitis.musketball": "Lead Pill",
+      "entity.minecraft.villager.gunsmith_cognitis.gunsmith": "Gun Dealer",
       "itemGroup.tabgunsmith_cognitis_melee": "Gunsmith Cognitis Melee",
+      "item.gunsmith_cognitis.percussioncap_blueprint_intermediate": "Percussion Cap Blueprint (Entry)",
       "item.gunsmith_cognitis.colt_peterson_1836": "Lorenz 1854 Pistol",
       "item.gunsmith_cognitis.cuirass_leggings": "Cuirass Leggings",
       "itemGroup.tabgunsmith_cognitis_flintlock_tab": "Gunsmith Cognitis Flintlock",
       "item.gunsmith_cognitis.ramrod": "Stuffin’ Stick",
       "subtitles.musket_shot": "Musket Shot",
+      "itemGroup.tabgunsmith_cognitis_research_tab": "Gunsmith Cognitis Research Tab",
       "item.gunsmith_cognitis.matchlock_pistol": "Short-Match Barker",
       "item.gunsmith_cognitis.flintlockmusketbayonet": "Pointy Long Flint Barker",
       "item.gunsmith_cognitis.flintlock_pistol": "Flint-Barker",
@@ -9919,14 +10838,18 @@
       "item.gunsmith_cognitis.smoothborebarrel": "Smoothbore Pipe",
       "key.gunsmith_cognitis.ammo_reload": "Gunsmith Congitis: Reload",
       "item.gunsmith_cognitis.hand_bomb": "\tBoom-Ball",
+      "gui.gunsmith_cognitis.research_table_ui.label_tech_name": "(TECH_NAME)",
+      "gui.gunsmith_cognitis.research_table_ui.button_research": "Research",
       "itemGroup.tabgunsmith_cognitis_percussioncap_tab": "Gunsmith Cognitis Percussion",
+      "item.gunsmith_cognitis.matchlock_blueprint_intermediate": "Matchlock Blueprint (Entry)",
       "item.gunsmith_cognitis.flintlockmusketgold": "Admiral\u0027s Gilded Long-Iron",
       "item.gunsmith_cognitis.fulminatepowder": "Devil’s Fire-Salt",
       "gamerule.shotgunBackBlast": "Shotgun Cop Steve",
       "advancements.thewheelkeepsspinning.title": "The wheel keeps spinning",
       "item.gunsmith_cognitis.flintlock_asumette_rifled_wall_gun": "Swivel-Mount Beast",
       "item.gunsmith_cognitis.flintlock_collier_revolving_carbine": "Long Spinnin\u0027 Barker",
-      "item.gunsmith_cognitis.flintlockmusket": "Brown Bessie"
+      "item.gunsmith_cognitis.flintlockmusket": "Brown Bessie",
+      "item.gunsmith_cognitis.percussioncap_blueprint_mastery": "Percussion Cap Blueprint (Entry)"
     }
   },
   "foldersRoot": {
@@ -9966,6 +10889,10 @@
       },
       {
         "name": "Percussion Cap",
+        "children": []
+      },
+      {
+        "name": "Research",
         "children": []
       }
     ]

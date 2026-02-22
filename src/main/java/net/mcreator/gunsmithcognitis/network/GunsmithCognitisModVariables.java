@@ -67,6 +67,11 @@ public class GunsmithCognitisModVariables {
 			PlayerVariables original = ((PlayerVariables) event.getOriginal().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			clone.firearmoverlay = original.firearmoverlay;
+			clone.progression_matchlock = original.progression_matchlock;
+			clone.progression_wheellock = original.progression_wheellock;
+			clone.progression_flintlock = original.progression_flintlock;
+			clone.progression_percussioncap = original.progression_percussioncap;
+			clone.progression_moderncartidges = original.progression_moderncartidges;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -104,6 +109,11 @@ public class GunsmithCognitisModVariables {
 
 	public static class PlayerVariables {
 		public String firearmoverlay = "\"\"";
+		public double progression_matchlock = 1.0;
+		public double progression_wheellock = 0;
+		public double progression_flintlock = 0;
+		public double progression_percussioncap = 0;
+		public double progression_moderncartidges = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -113,12 +123,22 @@ public class GunsmithCognitisModVariables {
 		public Tag writeNBT() {
 			CompoundTag nbt = new CompoundTag();
 			nbt.putString("firearmoverlay", firearmoverlay);
+			nbt.putDouble("progression_matchlock", progression_matchlock);
+			nbt.putDouble("progression_wheellock", progression_wheellock);
+			nbt.putDouble("progression_flintlock", progression_flintlock);
+			nbt.putDouble("progression_percussioncap", progression_percussioncap);
+			nbt.putDouble("progression_moderncartidges", progression_moderncartidges);
 			return nbt;
 		}
 
 		public void readNBT(Tag Tag) {
 			CompoundTag nbt = (CompoundTag) Tag;
 			firearmoverlay = nbt.getString("firearmoverlay");
+			progression_matchlock = nbt.getDouble("progression_matchlock");
+			progression_wheellock = nbt.getDouble("progression_wheellock");
+			progression_flintlock = nbt.getDouble("progression_flintlock");
+			progression_percussioncap = nbt.getDouble("progression_percussioncap");
+			progression_moderncartidges = nbt.getDouble("progression_moderncartidges");
 		}
 	}
 
@@ -144,6 +164,11 @@ public class GunsmithCognitisModVariables {
 				if (!context.getDirection().getReceptionSide().isServer()) {
 					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 					variables.firearmoverlay = message.data.firearmoverlay;
+					variables.progression_matchlock = message.data.progression_matchlock;
+					variables.progression_wheellock = message.data.progression_wheellock;
+					variables.progression_flintlock = message.data.progression_flintlock;
+					variables.progression_percussioncap = message.data.progression_percussioncap;
+					variables.progression_moderncartidges = message.data.progression_moderncartidges;
 				}
 			});
 			context.setPacketHandled(true);

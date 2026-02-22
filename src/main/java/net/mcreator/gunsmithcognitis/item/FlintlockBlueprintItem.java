@@ -9,7 +9,7 @@ import net.mcreator.gunsmithcognitis.init.GunsmithCognitisModTabs;
 
 public class FlintlockBlueprintItem extends Item {
 	public FlintlockBlueprintItem() {
-		super(new Item.Properties().tab(GunsmithCognitisModTabs.TAB_GUNSMITH_COGNITIS_MISC_TAB).stacksTo(1).rarity(Rarity.UNCOMMON));
+		super(new Item.Properties().tab(GunsmithCognitisModTabs.TAB_GUNSMITH_COGNITIS_RESEARCH_TAB).stacksTo(1).rarity(Rarity.COMMON));
 	}
 
 	@Override

@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "name": "Flintlock Heavy Dragoon Pistol",
     "specialInfo": [
-      "Flintlock tier: Requires two gunpowder and musket ball OR a paper cartidge to load."
+      "Flintlock tier: Requires two gunpowder and heavy musket ball to load."
     ],
     "creativeTab": {
       "value": "CUSTOM:GunsmithCognitisFlintlockTab"

@@ -5,10 +5,10 @@
     "renderType": 0,
     "texture": "blueprint_caplock",
     "customModelName": "Normal",
-    "name": "Percussion Cap Blueprint",
-    "rarity": "RARE",
+    "name": "Percussion Cap Blueprint (Entry)",
+    "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:GunsmithCognitisMiscTab"
+      "value": "CUSTOM:GunsmithCognitisResearchTab"
     },
     "stackSize": 1,
     "enchantability": 0,

@@ -1,0 +1,9 @@
+{
+  "parent": "gunsmith_cognitis:custom/research_table",
+  "textures": {
+    "all": "gunsmith_cognitis:blocks/research_table_decor_texture",
+    "particle": "gunsmith_cognitis:blocks/research_table_decor_texture",
+    "0": "gunsmith_cognitis:blocks/research_table_texture",
+    "5": "gunsmith_cognitis:blocks/research_table_decor_texture"
+  }
+}

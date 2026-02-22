@@ -184,5 +184,15 @@ public class AmmoOverlayProcedure {
 				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.COLT_PETERSON_1836.get()) {
 			ColtPeterson1836OverlayProcedure.execute(world, entity);
 		}
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.COLT_WALKER_1847.get()) {
+			ColtWalker1847OverlayProcedure.execute(world, entity);
+		}
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.COLT_DRAGOON_1848.get()
+				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.COLT_DRAGOON_1848.get()) {
+			ColtDragoon1848OverlayProcedure.execute(world, entity);
+		}
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.COLT_REVOLVING_RIFLE_1855.get()) {
+			ColtRevolvingRifle1855OverlayProcedure.execute(world, entity);
+		}
 	}
 }
