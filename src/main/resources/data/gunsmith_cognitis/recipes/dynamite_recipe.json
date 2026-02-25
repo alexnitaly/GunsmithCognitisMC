@@ -1,13 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "0 ",
+    "01",
     "23",
     "45"
   ],
   "key": {
     "0": {
       "item": "minecraft:string"
+    },
+    "1": {
+      "tag": "gunsmith_cognitis:blueprint_percussion_intermediate"
     },
     "2": {
       "item": "gunsmith_cognitis:fulminatepowder"

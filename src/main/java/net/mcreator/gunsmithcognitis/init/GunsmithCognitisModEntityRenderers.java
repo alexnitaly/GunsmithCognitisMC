@@ -17,7 +17,6 @@ public class GunsmithCognitisModEntityRenderers {
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerEntityRenderer(GunsmithCognitisModEntities.HANDGUNNE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(GunsmithCognitisModEntities.THREEEYEGUN.get(), ThrownItemRenderer::new);
-		event.registerEntityRenderer(GunsmithCognitisModEntities.HAND_BOMB.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(GunsmithCognitisModEntities.MATCHLOCK_BLUNDERBUSS.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(GunsmithCognitisModEntities.MATCHLOCK_WALL_GUN.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(GunsmithCognitisModEntities.MATCHLOCK_AXE_PISTOL.get(), ThrownItemRenderer::new);
@@ -71,5 +70,13 @@ public class GunsmithCognitisModEntityRenderers {
 		event.registerEntityRenderer(GunsmithCognitisModEntities.COLT_DRAGOON_1848.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(GunsmithCognitisModEntities.COLT_WALKER_1847.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(GunsmithCognitisModEntities.COLT_REVOLVING_RIFLE_1855.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(GunsmithCognitisModEntities.COLT_ARMY_1860.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(GunsmithCognitisModEntities.SPRINGFIELD_MODEL_1861_RIFLED_MUSKET.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(GunsmithCognitisModEntities.SPRINGFIELD_MODEL_1861_RIFLED_MUSKET_BAYONET.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(GunsmithCognitisModEntities.FUSIL_1866_CHASSEPOT.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(GunsmithCognitisModEntities.FUSIL_1866_CHASSEPOT_BAYONET.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(GunsmithCognitisModEntities.JOSEPH_EGG_PISTOL.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(GunsmithCognitisModEntities.BIG_GAME_4_BORE_PERCUSSION_RIFLE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(GunsmithCognitisModEntities.HAND_BOMB.get(), ThrownItemRenderer::new);
 	}
 }

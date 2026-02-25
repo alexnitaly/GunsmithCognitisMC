@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "gunsmith_cognitis:flintlock_blueprint",
+    "gunsmith_cognitis:flintlock_blueprint_intermediate",
+    "gunsmith_cognitis:flintlock_blueprint_mastery",
+    "gunsmith_cognitis:universal_blueprint"
+  ]
+}

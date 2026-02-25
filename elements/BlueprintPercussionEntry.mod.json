@@ -1,0 +1,27 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:PercussioncapBlueprint"
+      },
+      {
+        "value": "CUSTOM:PercussioncapBlueprintIntermediate"
+      },
+      {
+        "value": "CUSTOM:PercussioncapBlueprintMastery"
+      },
+      {
+        "value": "CUSTOM:UniversalBlueprint"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "blueprint_percussion_entry",
+    "namespace": "forge"
+  }
+}

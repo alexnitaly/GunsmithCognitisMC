@@ -2,12 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "0  ",
-    " 45",
+    "345",
     " 78"
   ],
   "key": {
     "0": {
       "item": "gunsmith_cognitis:rifledbarrel"
+    },
+    "3": {
+      "tag": "gunsmith_cognitis:blueprint_flintlock_intermediate"
     },
     "4": {
       "item": "gunsmith_cognitis:rifledbarrel"

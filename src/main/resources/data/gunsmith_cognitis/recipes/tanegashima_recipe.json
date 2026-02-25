@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "01 ",
+    "012",
     "345",
     "678"
   ],
@@ -11,6 +11,9 @@
     },
     "1": {
       "item": "minecraft:gold_nugget"
+    },
+    "2": {
+      "tag": "gunsmith_cognitis:blueprint_matchlock_mastery"
     },
     "3": {
       "item": "minecraft:gunpowder"

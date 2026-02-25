@@ -1,0 +1,29 @@
+{
+  "_fv": 39,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "A Student of Blackpowder",
+    "achievementDescription": "The idea of a firearm could revolutionize warfare forever.",
+    "achievementIcon": {
+      "value": "Items.WRITABLE_BOOK"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": false,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [
+      "Matchlockgunkitrecipe",
+      "MatchlockPistolRecipe",
+      "LandsknechtHarkebusRecipe"
+    ],
+    "rewardFunction": "No function",
+    "rewardXP": 0,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:Gunpowdercognitisstart"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"block_placed\" x=\"164\" y=\"209\"><value name=\"block\"><block type=\"mcitem_allblocks\"><field name=\"value\">CUSTOM:ResearchTable</field></block></value><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+  }
+}

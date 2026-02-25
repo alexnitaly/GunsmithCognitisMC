@@ -16,7 +16,7 @@
       "item": "minecraft:gunpowder"
     },
     "4": {
-      "item": "gunsmith_cognitis:flintlock_blueprint"
+      "tag": "gunsmith_cognitis:blueprint_flintlock_entry"
     },
     "5": {
       "item": "minecraft:gunpowder"

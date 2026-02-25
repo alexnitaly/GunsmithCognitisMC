@@ -1,0 +1,42 @@
+{
+  "display": {
+    "icon": {
+      "item": "gunsmith_cognitis:divine_five_thunder_machine"
+    },
+    "title": {
+      "translate": "advancements.divine_five_thunder_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.divine_five_thunder_advancement.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "divine_five_thunder_advancement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "gunsmith_cognitis:divine_five_thunder_machine"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 10,
+    "recipes": [
+      "gunsmith_cognitis:musketball_recipe"
+    ]
+  },
+  "parent": "gunsmith_cognitis:matchlock_intermediate_advancement"
+}

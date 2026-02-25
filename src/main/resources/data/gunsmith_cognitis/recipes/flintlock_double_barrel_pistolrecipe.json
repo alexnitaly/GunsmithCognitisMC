@@ -1,20 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "01",
-    "23"
+    "012",
+    " 45"
   ],
   "key": {
     "0": {
-      "item": "minecraft:gunpowder"
+      "tag": "gunsmith_cognitis:blueprint_flintlock_intermediate"
     },
     "1": {
-      "item": "gunsmith_cognitis:flintlock_mechanism"
+      "item": "minecraft:gunpowder"
     },
     "2": {
+      "item": "gunsmith_cognitis:flintlock_mechanism"
+    },
+    "4": {
       "item": "gunsmith_cognitis:smoothborebarrel"
     },
-    "3": {
+    "5": {
       "item": "gunsmith_cognitis:flintlock_pistol"
     }
   },

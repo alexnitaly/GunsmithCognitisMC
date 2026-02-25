@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "01 ",
+    "012",
     "345",
     "678"
   ],
@@ -11,6 +11,9 @@
     },
     "1": {
       "item": "gunsmith_cognitis:smoothborebarrel"
+    },
+    "2": {
+      "tag": "gunsmith_cognitis:blueprint_flintlock_intermediate"
     },
     "3": {
       "item": "gunsmith_cognitis:smoothborebarrel"

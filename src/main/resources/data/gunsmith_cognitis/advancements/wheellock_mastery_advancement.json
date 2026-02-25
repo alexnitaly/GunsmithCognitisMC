@@ -1,0 +1,44 @@
+{
+  "display": {
+    "icon": {
+      "item": "gunsmith_cognitis:wheellock_sporting_rifle"
+    },
+    "title": {
+      "translate": "advancements.wheellock_mastery_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.wheellock_mastery_advancement.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "wheellock_mastery_advancement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "gunsmith_cognitis:wheellock_blueprint_mastery"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 5,
+    "recipes": [
+      "gunsmith_cognitis:wheellock_sporting_rifle_recipe",
+      "gunsmith_cognitis:rifledbarrel_recipe",
+      "gunsmith_cognitis:riflingtool_recipe"
+    ]
+  },
+  "parent": "gunsmith_cognitis:gun_enthusiast_advancement"
+}

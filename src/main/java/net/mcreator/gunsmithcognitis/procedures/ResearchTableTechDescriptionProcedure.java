@@ -10,46 +10,46 @@ public class ResearchTableTechDescriptionProcedure {
 			return "";
 		if (entity.getPersistentData().getDouble("gui_tech_page") == 0) {
 			if ((entity.getCapability(GunsmithCognitisModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GunsmithCognitisModVariables.PlayerVariables())).progression_matchlock <= 0) {
-				return "Description here";
+				return "With this gunpowder, you start your journey.";
 			} else if ((entity.getCapability(GunsmithCognitisModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GunsmithCognitisModVariables.PlayerVariables())).progression_matchlock == 1) {
-				return "Matchlock - Intermediate Level";
+				return "From cannons on a stick to proper arquebuses.";
 			} else if ((entity.getCapability(GunsmithCognitisModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GunsmithCognitisModVariables.PlayerVariables())).progression_matchlock == 2) {
-				return "Matchlock - Mastery Level";
+				return "Perfect the current musket design from crude to refined.";
 			} else if ((entity.getCapability(GunsmithCognitisModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GunsmithCognitisModVariables.PlayerVariables())).progression_matchlock >= 3) {
-				return "Matchlock - Research Complete";
+				return "You can craft everything related to Matchlocks!";
 			}
 		}
 		if (entity.getPersistentData().getDouble("gui_tech_page") == 1) {
 			if ((entity.getCapability(GunsmithCognitisModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GunsmithCognitisModVariables.PlayerVariables())).progression_wheellock <= 0) {
-				return "Wheellock - Entry Level";
+				return "Switch from a match to a Clockwork mechanism.";
 			} else if ((entity.getCapability(GunsmithCognitisModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GunsmithCognitisModVariables.PlayerVariables())).progression_wheellock == 1) {
-				return "Wheellock - Intermediate Level";
+				return "Make the barrels longer for infantry musket designs.";
 			} else if ((entity.getCapability(GunsmithCognitisModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GunsmithCognitisModVariables.PlayerVariables())).progression_wheellock == 2) {
-				return "Wheellock - Mastery Level";
+				return "Improve the musket's barrel itself with rifling.";
 			} else if ((entity.getCapability(GunsmithCognitisModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GunsmithCognitisModVariables.PlayerVariables())).progression_wheellock >= 3) {
-				return "Wheellock - Research Complete";
+				return "You can craft everything related to Wheellocks!";
 			}
 		}
 		if (entity.getPersistentData().getDouble("gui_tech_page") == 2) {
 			if ((entity.getCapability(GunsmithCognitisModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GunsmithCognitisModVariables.PlayerVariables())).progression_flintlock <= 0) {
-				return "Flintlock - Entry Level";
+				return "The next step of firearm technology.";
 			} else if ((entity.getCapability(GunsmithCognitisModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GunsmithCognitisModVariables.PlayerVariables())).progression_flintlock == 1) {
-				return "Flintlock - Intermediate Level";
+				return "Start to experiment with multi-barrel system.";
 			} else if ((entity.getCapability(GunsmithCognitisModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GunsmithCognitisModVariables.PlayerVariables())).progression_flintlock == 2) {
-				return "Flintlock - Mastery Level";
+				return "Perfect the Flintlock design and prototypes.";
 			} else if ((entity.getCapability(GunsmithCognitisModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GunsmithCognitisModVariables.PlayerVariables())).progression_flintlock >= 3) {
-				return "Flintlock - Research Complete";
+				return "You can craft everything related to Flintlocks!";
 			}
 		}
 		if (entity.getPersistentData().getDouble("gui_tech_page") == 3) {
-			if ((entity.getCapability(GunsmithCognitisModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GunsmithCognitisModVariables.PlayerVariables())).progression_flintlock <= 0) {
-				return "Percussion Cap - Entry Level";
-			} else if ((entity.getCapability(GunsmithCognitisModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GunsmithCognitisModVariables.PlayerVariables())).progression_flintlock == 1) {
-				return "Percussion Cap - Intermediate Level";
-			} else if ((entity.getCapability(GunsmithCognitisModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GunsmithCognitisModVariables.PlayerVariables())).progression_flintlock == 2) {
-				return "Percussion Cap - Mastery Level";
-			} else if ((entity.getCapability(GunsmithCognitisModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GunsmithCognitisModVariables.PlayerVariables())).progression_flintlock >= 3) {
-				return "Percussion Cap - Research Complete";
+			if ((entity.getCapability(GunsmithCognitisModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GunsmithCognitisModVariables.PlayerVariables())).progression_percussioncap <= 0) {
+				return "Step up from Gunpowder to Fulminate.";
+			} else if ((entity.getCapability(GunsmithCognitisModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GunsmithCognitisModVariables.PlayerVariables())).progression_percussioncap == 1) {
+				return "Prototyping new firing mechanisms.";
+			} else if ((entity.getCapability(GunsmithCognitisModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GunsmithCognitisModVariables.PlayerVariables())).progression_percussioncap == 2) {
+				return "Experimenting with the concept of a modern cartidge firearm.";
+			} else if ((entity.getCapability(GunsmithCognitisModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GunsmithCognitisModVariables.PlayerVariables())).progression_percussioncap >= 3) {
+				return "You can craft everything related to Percussion Caps!";
 			}
 		}
 		return "NONE";

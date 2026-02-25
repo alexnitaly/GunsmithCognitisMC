@@ -24,16 +24,16 @@
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": 0.0,
+        "mx": -16.0,
         "my": 0.0,
-        "mz": 16.0,
+        "mz": 0.0,
         "Mx": 16.0,
         "My": 32.0,
         "Mz": 16.0,
         "subtract": false
       }
     ],
-    "name": "Research Table",
+    "name": "Firearm Research Table",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
@@ -100,10 +100,10 @@
     "unbreakable": false,
     "breakHarvestLevel": 1,
     "isBonemealable": false,
-    "hasInventory": false,
-    "guiBoundTo": "<NONE>",
-    "openGUIOnRightClick": false,
-    "inventorySize": 9,
+    "hasInventory": true,
+    "guiBoundTo": "ResearchTableUI",
+    "openGUIOnRightClick": true,
+    "inventorySize": 0,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
@@ -117,6 +117,15 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onBlockAdded": {
+      "name": "ResearchTableBlockAdded"
+    },
+    "onDestroyedByPlayer": {
+      "name": "ResearchTableBlockDestroyed"
+    },
+    "onDestroyedByExplosion": {
+      "name": "ResearchTableBlockDestroyed"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [],

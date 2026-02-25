@@ -10,7 +10,7 @@
       "item": "gunsmith_cognitis:rifledbarrel"
     },
     "1": {
-      "item": "gunsmith_cognitis:percussioncap_blueprint"
+      "tag": "gunsmith_cognitis:blueprint_percussion_intermediate"
     },
     "2": {
       "item": "gunsmith_cognitis:revolver_drum"

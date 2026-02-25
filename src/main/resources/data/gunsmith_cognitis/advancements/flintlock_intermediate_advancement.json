@@ -1,0 +1,47 @@
+{
+  "display": {
+    "icon": {
+      "item": "gunsmith_cognitis:flintlock_pepperbox"
+    },
+    "title": {
+      "translate": "advancements.flintlock_intermediate_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.flintlock_intermediate_advancement.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "flintlock_intermediate_advancement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "gunsmith_cognitis:flintlock_blueprint_intermediate"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 5,
+    "recipes": [
+      "gunsmith_cognitis:flintlock_musket_db_recipe",
+      "gunsmith_cognitis:rifledbarrel_recipe",
+      "gunsmith_cognitis:riflingtool_recipe",
+      "gunsmith_cognitis:flintlock_rifled_carbine_recipe",
+      "gunsmith_cognitis:flintlock_pepperbox_recipe",
+      "gunsmith_cognitis:flintlock_pepperbox_carbine_recipe"
+    ]
+  },
+  "parent": "gunsmith_cognitis:flintlock_entry_advancement"
+}

@@ -9,7 +9,7 @@
     "group": "",
     "recipeShapeless": false,
     "smithingInputStack": {
-      "value": "CUSTOM:PercussioncapBlueprint"
+      "value": "CUSTOM:PercussioncapBlueprintIntermediate"
     },
     "smithingInputAdditionStack": {
       "value": "CUSTOM:ColtPeterson1836"

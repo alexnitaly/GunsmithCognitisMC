@@ -10,46 +10,46 @@ public class ResearchTableTechCostProcedure {
 			return "";
 		if (entity.getPersistentData().getDouble("gui_tech_page") == 0) {
 			if ((entity.getCapability(GunsmithCognitisModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GunsmithCognitisModVariables.PlayerVariables())).progression_matchlock <= 0) {
-				return "Matchlock - Entry Level";
+				return "3 Gunpowder, 4XP";
 			} else if ((entity.getCapability(GunsmithCognitisModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GunsmithCognitisModVariables.PlayerVariables())).progression_matchlock == 1) {
-				return "Matchlock - Intermediate Level";
+				return "5 Gunpowder, Crude Barrel, 3 Copper, 6XP";
 			} else if ((entity.getCapability(GunsmithCognitisModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GunsmithCognitisModVariables.PlayerVariables())).progression_matchlock == 2) {
-				return "Matchlock - Mastery Level";
+				return "3 Matchlock Gunkits, 5 Iron, 1 Flint n' Steel, 9XP";
 			} else if ((entity.getCapability(GunsmithCognitisModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GunsmithCognitisModVariables.PlayerVariables())).progression_matchlock >= 3) {
-				return "Matchlock - Research Complete";
+				return "None, Research Complete";
 			}
 		}
 		if (entity.getPersistentData().getDouble("gui_tech_page") == 1) {
 			if ((entity.getCapability(GunsmithCognitisModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GunsmithCognitisModVariables.PlayerVariables())).progression_wheellock <= 0) {
-				return "Wheellock - Entry Level";
+				return "5 Iron, 1 Clock, 10XP";
 			} else if ((entity.getCapability(GunsmithCognitisModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GunsmithCognitisModVariables.PlayerVariables())).progression_wheellock == 1) {
-				return "Wheellock - Intermediate Level";
+				return "6 Gunpowder, 5 Gold, 9 Redstone, 15XP";
 			} else if ((entity.getCapability(GunsmithCognitisModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GunsmithCognitisModVariables.PlayerVariables())).progression_wheellock == 2) {
-				return "Wheellock - Mastery Level";
+				return "5 Wheellock Gunkit, 1 Rifled Barrel, 3 Clocks, 25XP";
 			} else if ((entity.getCapability(GunsmithCognitisModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GunsmithCognitisModVariables.PlayerVariables())).progression_wheellock >= 3) {
-				return "Wheellock - Research Complete";
+				return "None, Research Complete";
 			}
 		}
 		if (entity.getPersistentData().getDouble("gui_tech_page") == 2) {
 			if ((entity.getCapability(GunsmithCognitisModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GunsmithCognitisModVariables.PlayerVariables())).progression_flintlock <= 0) {
-				return "Flintlock - Entry Level";
+				return "3 Matchlock & Wheellock Gunkit, 5 Iron, 1 Flint n' Steel, 25XP";
 			} else if ((entity.getCapability(GunsmithCognitisModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GunsmithCognitisModVariables.PlayerVariables())).progression_flintlock == 1) {
-				return "Flintlock - Intermediate Level";
+				return "5 Barrels, 1 Rifled Barrel, 3 Flintlock Mechanisms, 25XP";
 			} else if ((entity.getCapability(GunsmithCognitisModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GunsmithCognitisModVariables.PlayerVariables())).progression_flintlock == 2) {
-				return "Flintlock - Mastery Level";
+				return "5 Flintlock Gunkits, 9 Gold and Iron Ingots, 40XP";
 			} else if ((entity.getCapability(GunsmithCognitisModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GunsmithCognitisModVariables.PlayerVariables())).progression_flintlock >= 3) {
-				return "Flintlock - Research Complete";
+				return "None, Research Complete";
 			}
 		}
 		if (entity.getPersistentData().getDouble("gui_tech_page") == 3) {
-			if ((entity.getCapability(GunsmithCognitisModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GunsmithCognitisModVariables.PlayerVariables())).progression_flintlock <= 0) {
-				return "Percussion Cap - Entry Level";
-			} else if ((entity.getCapability(GunsmithCognitisModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GunsmithCognitisModVariables.PlayerVariables())).progression_flintlock == 1) {
-				return "Percussion Cap - Intermediate Level";
-			} else if ((entity.getCapability(GunsmithCognitisModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GunsmithCognitisModVariables.PlayerVariables())).progression_flintlock == 2) {
-				return "Percussion Cap - Mastery Level";
-			} else if ((entity.getCapability(GunsmithCognitisModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GunsmithCognitisModVariables.PlayerVariables())).progression_flintlock >= 3) {
-				return "Percussion Cap - Research Complete";
+			if ((entity.getCapability(GunsmithCognitisModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GunsmithCognitisModVariables.PlayerVariables())).progression_percussioncap <= 0) {
+				return "1 Flintlock Blueprint (2>), 12 Fulminate, 3 Gold, 32XP";
+			} else if ((entity.getCapability(GunsmithCognitisModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GunsmithCognitisModVariables.PlayerVariables())).progression_percussioncap == 1) {
+				return "6 Percussion Mechanisms, 6 Rifled Barrels, 12 Caps, 48XP";
+			} else if ((entity.getCapability(GunsmithCognitisModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GunsmithCognitisModVariables.PlayerVariables())).progression_percussioncap == 2) {
+				return "6 Percussion Gunkits, 32 Fulminate, 24 Iron, 64XP";
+			} else if ((entity.getCapability(GunsmithCognitisModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GunsmithCognitisModVariables.PlayerVariables())).progression_percussioncap >= 3) {
+				return "None, Research Complete";
 			}
 		}
 		return "NONE";

@@ -81,6 +81,12 @@
       },
       {
         "value": "CUSTOM:ColtRevolvingRifle1855"
+      },
+      {
+        "value": "CUSTOM:Fusil1866Chassepot"
+      },
+      {
+        "value": "CUSTOM:Fusil1866ChassepotBayonet"
       }
     ],
     "blocks": [],

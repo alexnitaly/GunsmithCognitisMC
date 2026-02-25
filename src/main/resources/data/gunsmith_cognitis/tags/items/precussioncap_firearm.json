@@ -3,15 +3,22 @@
   "values": [
     "gunsmith_cognitis:kentucky_pistol",
     "gunsmith_cognitis:pattern_1851_minie_rifle_bayonet",
-    "gunsmith_cognitis:sawn_off_double_barrel_shotgun",
     "gunsmith_cognitis:colt_peterson_1836",
     "gunsmith_cognitis:double_barrel_shotgun",
-    "gunsmith_cognitis:pattern_1851minierifle",
+    "gunsmith_cognitis:fusil_1866_chassepot",
     "gunsmith_cognitis:browning_harmonica_rifle",
     "gunsmith_cognitis:colt_dragoon_1848",
     "gunsmith_cognitis:colt_revolving_rifle_1855",
-    "gunsmith_cognitis:colt_walker_1847",
     "gunsmith_cognitis:lorenz_pistol",
-    "gunsmith_cognitis:dreyse_needle_gun"
+    "gunsmith_cognitis:joseph_egg_pistol",
+    "gunsmith_cognitis:sawn_off_double_barrel_shotgun",
+    "gunsmith_cognitis:colt_army_1860",
+    "gunsmith_cognitis:big_game_4_bore_percussion_rifle",
+    "gunsmith_cognitis:pattern_1851minierifle",
+    "gunsmith_cognitis:colt_walker_1847",
+    "gunsmith_cognitis:dreyse_needle_gun",
+    "gunsmith_cognitis:springfield_model_1861_rifled_musket_bayonet",
+    "gunsmith_cognitis:springfield_model_1861_rifled_musket",
+    "gunsmith_cognitis:fusil_1866_chassepot_bayonet"
   ]
 }

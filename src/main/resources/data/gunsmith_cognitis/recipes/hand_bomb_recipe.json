@@ -1,11 +1,14 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " 12",
+    "012",
     "345",
     "67 "
   ],
   "key": {
+    "0": {
+      "tag": "gunsmith_cognitis:blueprint_matchlock_intermediate"
+    },
     "1": {
       "item": "minecraft:gunpowder"
     },

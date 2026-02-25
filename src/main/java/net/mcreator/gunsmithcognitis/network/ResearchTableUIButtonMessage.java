@@ -15,6 +15,7 @@ import net.mcreator.gunsmithcognitis.world.inventory.ResearchTableUIMenu;
 import net.mcreator.gunsmithcognitis.procedures.TechbuttonnextProcedure;
 import net.mcreator.gunsmithcognitis.procedures.TechbuttonlastProcedure;
 import net.mcreator.gunsmithcognitis.procedures.ResearchTableResearchButtonProcedure;
+import net.mcreator.gunsmithcognitis.procedures.ResearchTableButtonReprintProcedure;
 import net.mcreator.gunsmithcognitis.GunsmithCognitisMod;
 
 import java.util.function.Supplier;
@@ -66,7 +67,11 @@ public class ResearchTableUIButtonMessage {
 			return;
 		if (buttonID == 0) {
 
-			ResearchTableResearchButtonProcedure.execute(world, entity);
+			ResearchTableResearchButtonProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 1) {
+
+			ResearchTableButtonReprintProcedure.execute(world, x, y, z, entity);
 		}
 		if (buttonID == 2) {
 

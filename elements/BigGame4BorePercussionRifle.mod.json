@@ -1,0 +1,46 @@
+{
+  "_fv": 39,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "4_bore_big_game_percussion_rifle",
+    "customModelName": "Normal",
+    "name": "4-Bore Big Game Percussion Rifle",
+    "specialInfo": [
+      "Percussion Cap tier: Requires a Heavy Ball in off-hand and 3 gunpowder in inventory to load",
+      "needs a percussion cap from inventory in order to fire."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:GunsmithCognitisPercussioncapTab"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 755,
+    "actionSound": {
+      "value": "CUSTOM:musket_shot"
+    },
+    "hasGlow": false,
+    "animation": "none",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "BigGame4BorePercussionRifleItemUsed"
+    },
+    "useCondition": {
+      "name": "BigGame4BorePercussionRifleCanUseRanged"
+    },
+    "bulletPower": 6.0,
+    "bulletDamage": 3.5,
+    "bulletKnockback": 1,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:MusketBallProjectile"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": ""
+  }
+}

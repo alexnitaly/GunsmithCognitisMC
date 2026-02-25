@@ -1,26 +1,30 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "012",
-    "345"
+    " 1 ",
+    "345",
+    "678"
   ],
   "key": {
-    "0": {
-      "item": "minecraft:iron_axe"
-    },
     "1": {
-      "item": "gunsmith_cognitis:smoothborebarrel"
-    },
-    "2": {
-      "item": "minecraft:string"
+      "tag": "gunsmith_cognitis:blueprint_matchlock_mastery"
     },
     "3": {
-      "item": "minecraft:gunpowder"
+      "item": "minecraft:iron_axe"
     },
     "4": {
-      "item": "gunsmith_cognitis:matchlockgunkit"
+      "item": "gunsmith_cognitis:smoothborebarrel"
     },
     "5": {
+      "item": "minecraft:string"
+    },
+    "6": {
+      "item": "minecraft:gunpowder"
+    },
+    "7": {
+      "item": "gunsmith_cognitis:matchlockgunkit"
+    },
+    "8": {
       "item": "minecraft:oak_log"
     }
   },

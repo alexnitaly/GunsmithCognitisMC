@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "gunsmith_cognitis:pattern_1851_minie_rifle_bayonet",
-    "gunsmith_cognitis:flintlockmusketbayonet"
+    "gunsmith_cognitis:flintlockmusketbayonet",
+    "gunsmith_cognitis:springfield_model_1861_rifled_musket_bayonet",
+    "gunsmith_cognitis:fusil_1866_chassepot_bayonet"
   ]
 }

@@ -7,8 +7,6 @@ import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.world.phys.EntityHitResult;
-import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.ItemSupplier;
@@ -20,7 +18,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
 
 import net.mcreator.gunsmithcognitis.procedures.HandBombWhileProjectileFlyingTickProcedure;
-import net.mcreator.gunsmithcognitis.procedures.HandBombProjectileHitsBlockProcedure;
 import net.mcreator.gunsmithcognitis.init.GunsmithCognitisModItems;
 import net.mcreator.gunsmithcognitis.init.GunsmithCognitisModEntities;
 
@@ -57,7 +54,7 @@ public class HandBombEntity extends AbstractArrow implements ItemSupplier {
 
 	@Override
 	protected ItemStack getPickupItem() {
-		return new ItemStack(GunsmithCognitisModItems.HAND_BOMB.get());
+		return new ItemStack(GunsmithCognitisModItems.DYNAMITE.get());
 	}
 
 	@Override
@@ -67,21 +64,9 @@ public class HandBombEntity extends AbstractArrow implements ItemSupplier {
 	}
 
 	@Override
-	public void onHitEntity(EntityHitResult entityHitResult) {
-		super.onHitEntity(entityHitResult);
-		HandBombProjectileHitsBlockProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), entityHitResult.getEntity());
-	}
-
-	@Override
-	public void onHitBlock(BlockHitResult blockHitResult) {
-		super.onHitBlock(blockHitResult);
-		HandBombProjectileHitsBlockProcedure.execute(this.level, blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ(), this.getOwner());
-	}
-
-	@Override
 	public void tick() {
 		super.tick();
-		HandBombWhileProjectileFlyingTickProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), this.getOwner());
+		HandBombWhileProjectileFlyingTickProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), this);
 		if (this.inGround)
 			this.discard();
 	}
@@ -94,7 +79,7 @@ public class HandBombEntity extends AbstractArrow implements ItemSupplier {
 		entityarrow.setBaseDamage(damage);
 		entityarrow.setKnockback(knockback);
 		world.addFreshEntity(entityarrow);
-		world.playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.firework_rocket.launch")), SoundSource.PLAYERS, 1, 1f / (random.nextFloat() * 0.5f + 1) + (power / 2));
+		world.playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.tnt.primed")), SoundSource.PLAYERS, 1, 1f / (random.nextFloat() * 0.5f + 1) + (power / 2));
 		return entityarrow;
 	}
 
@@ -103,13 +88,13 @@ public class HandBombEntity extends AbstractArrow implements ItemSupplier {
 		double dx = target.getX() - entity.getX();
 		double dy = target.getY() + target.getEyeHeight() - 1.1;
 		double dz = target.getZ() - entity.getZ();
-		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 1f * 2, 12.0F);
+		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 1.2f * 2, 12.0F);
 		entityarrow.setSilent(true);
-		entityarrow.setBaseDamage(5);
-		entityarrow.setKnockback(3);
+		entityarrow.setBaseDamage(2);
+		entityarrow.setKnockback(1);
 		entityarrow.setCritArrow(true);
 		entity.level.addFreshEntity(entityarrow);
-		entity.level.playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.firework_rocket.launch")), SoundSource.PLAYERS, 1, 1f / (new Random().nextFloat() * 0.5f + 1));
+		entity.level.playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.tnt.primed")), SoundSource.PLAYERS, 1, 1f / (new Random().nextFloat() * 0.5f + 1));
 		return entityarrow;
 	}
 }

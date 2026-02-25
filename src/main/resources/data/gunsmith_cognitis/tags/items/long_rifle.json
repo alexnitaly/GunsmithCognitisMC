@@ -4,11 +4,14 @@
     "gunsmith_cognitis:matchlock_wall_gun",
     "gunsmith_cognitis:flintlock_asumette_rifled_wall_gun",
     "gunsmith_cognitis:nock_volley_gun",
+    "gunsmith_cognitis:big_game_4_bore_percussion_rifle",
     "gunsmith_cognitis:threeeyegun",
     "gunsmith_cognitis:matchlock_heavy_arquebus",
     "gunsmith_cognitis:divine_five_thunder_machine",
     "gunsmith_cognitis:handcannon",
     "gunsmith_cognitis:jezailmusket",
-    "gunsmith_cognitis:handgunne"
+    "gunsmith_cognitis:handgunne",
+    "gunsmith_cognitis:springfield_model_1861_rifled_musket_bayonet",
+    "gunsmith_cognitis:springfield_model_1861_rifled_musket"
   ]
 }

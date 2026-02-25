@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "gunsmith_cognitis:chassepot_bayonet"
+    },
+    {
+      "item": "gunsmith_cognitis:fusil_1866_chassepot"
+    }
+  ],
+  "result": {
+    "item": "gunsmith_cognitis:springfield_model_1861_rifled_musket_bayonet",
+    "count": 1
+  }
+}

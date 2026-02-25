@@ -1,0 +1,27 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:WheellockBlueprint"
+      },
+      {
+        "value": "CUSTOM:WheellockBlueprintIntermediate"
+      },
+      {
+        "value": "CUSTOM:WheellockBlueprintMastery"
+      },
+      {
+        "value": "CUSTOM:UniversalBlueprint"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "blueprint_wheellock_entry",
+    "namespace": "forge"
+  }
+}

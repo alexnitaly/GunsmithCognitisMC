@@ -29,6 +29,9 @@
         "data": {
           "name": "button_reprint",
           "text": "Reprint",
+          "onClick": {
+            "name": "ResearchTableButtonReprint"
+          },
           "width": 61,
           "height": 20,
           "x": 303,
@@ -47,8 +50,8 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 60,
-          "y": 70
+          "x": 58,
+          "y": 72
         }
       },
       {
@@ -91,8 +94,8 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 59,
-          "y": 96
+          "x": 58,
+          "y": 87
         }
       },
       {
@@ -107,8 +110,8 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 59,
-          "y": 124
+          "x": 58,
+          "y": 136
         }
       },
       {
@@ -123,13 +126,58 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 61,
-          "y": 47
+          "x": 58,
+          "y": 45
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_cost",
+          "text": {
+            "fixedValue": "Requirements:"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 58,
+          "y": 124
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_1_ink_paper",
+          "text": {
+            "fixedValue": "Ink + Paper"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 306,
+          "y": 163
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ink_sack_and_paper",
+          "text": {
+            "fixedValue": "Ink Sack and Paper"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 58,
+          "y": 147
         }
       }
     ],
     "gridSettings": {
-      "sx": 18,
+      "sx": 16,
       "sy": 18,
       "ox": 11,
       "oy": 15,

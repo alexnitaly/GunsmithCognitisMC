@@ -27,7 +27,7 @@ import java.util.List;
 
 public class HandBombItem extends Item {
 	public HandBombItem() {
-		super(new Item.Properties().tab(GunsmithCognitisModTabs.TAB_GUNSMITH_COGNITIS_TAB).stacksTo(12));
+		super(new Item.Properties().tab(GunsmithCognitisModTabs.TAB_GUNSMITH_COGNITIS_TAB).stacksTo(8));
 	}
 
 	@Override
@@ -58,24 +58,24 @@ public class HandBombItem extends Item {
 			double x = entity.getX();
 			double y = entity.getY();
 			double z = entity.getZ();
-			if (HandBombCanUseRangedItemProcedure.execute(entity, itemstack)) {
-				ItemStack stack = ProjectileWeaponItem.getHeldProjectile(entity, e -> e.getItem() == GunsmithCognitisModItems.HAND_BOMB.get());
+			if (HandBombCanUseRangedItemProcedure.execute(entity)) {
+				ItemStack stack = ProjectileWeaponItem.getHeldProjectile(entity, e -> e.getItem() == GunsmithCognitisModItems.DYNAMITE.get());
 				if (stack == ItemStack.EMPTY) {
 					for (int i = 0; i < entity.getInventory().items.size(); i++) {
 						ItemStack teststack = entity.getInventory().items.get(i);
-						if (teststack != null && teststack.getItem() == GunsmithCognitisModItems.HAND_BOMB.get()) {
+						if (teststack != null && teststack.getItem() == GunsmithCognitisModItems.DYNAMITE.get()) {
 							stack = teststack;
 							break;
 						}
 					}
 				}
 				if (entity.getAbilities().instabuild || stack != ItemStack.EMPTY) {
-					HandBombEntity entityarrow = HandBombEntity.shoot(world, entity, world.getRandom(), 1f, 5, 3);
+					HandBombEntity entityarrow = HandBombEntity.shoot(world, entity, world.getRandom(), 1.2f, 2, 1);
 					itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 					if (entity.getAbilities().instabuild) {
 						entityarrow.pickup = AbstractArrow.Pickup.CREATIVE_ONLY;
 					} else {
-						if (new ItemStack(GunsmithCognitisModItems.HAND_BOMB.get()).isDamageableItem()) {
+						if (new ItemStack(GunsmithCognitisModItems.DYNAMITE.get()).isDamageableItem()) {
 							if (stack.hurt(1, world.getRandom(), entity)) {
 								stack.shrink(1);
 								stack.setDamageValue(0);
@@ -89,7 +89,7 @@ public class HandBombItem extends Item {
 						}
 					}
 
-					HandBombRangedItemUsedProcedure.execute(world, itemstack);
+					HandBombRangedItemUsedProcedure.execute(itemstack);
 				}
 			}
 		}

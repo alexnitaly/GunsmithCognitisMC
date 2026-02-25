@@ -1,0 +1,32 @@
+{
+  "_fv": 39,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Barrel Frenzy!",
+    "achievementDescription": "Multi-Barrels? Rifled Barrels? Oh, the joy of improving on previous designs never ends!",
+    "achievementIcon": {
+      "value": "CUSTOM:FlintlockPepperbox"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [
+      "FlintlockMusketDBRecipe",
+      "RifledbarrelRecipe",
+      "RiflingtoolRecipe",
+      "FlintlockRifledCarbineRecipe",
+      "FlintlockPepperboxRecipe",
+      "FlintlockPepperboxCarbineRecipe"
+    ],
+    "rewardFunction": "No function",
+    "rewardXP": 5,
+    "achievementType": "goal",
+    "parent": {
+      "value": "CUSTOM:FlintlockEntryAdvancement"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"item_in_inventory\" x=\"29\" y=\"10\"><value name=\"amount_l\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"amount_h\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:FlintlockBlueprintIntermediate</field></block></value><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+  }
+}

@@ -156,6 +156,14 @@ public class AmmoOverlayProcedure {
 				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.PATTERN_1851MINIERIFLE.get()) {
 			Pattern1851MinieRifleOverlayProcedure.execute(world, entity);
 		}
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.SPRINGFIELD_MODEL_1861_RIFLED_MUSKET.get()
+				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.SPRINGFIELD_MODEL_1861_RIFLED_MUSKET_BAYONET.get()) {
+			SpringfieldModel1861OverlayProcedure.execute(world, entity);
+		}
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.FUSIL_1866_CHASSEPOT.get()
+				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.FUSIL_1866_CHASSEPOT_BAYONET.get()) {
+			Fusil1866ChassepotOverlayProcedure.execute(world, entity);
+		}
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.LORENZ_PISTOL.get()
 				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.LORENZ_PISTOL.get()) {
 			LorenzPistolOverlayProcedure.execute(world, entity);
@@ -193,6 +201,17 @@ public class AmmoOverlayProcedure {
 		}
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.COLT_REVOLVING_RIFLE_1855.get()) {
 			ColtRevolvingRifle1855OverlayProcedure.execute(world, entity);
+		}
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.COLT_ARMY_1860.get()
+				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.COLT_ARMY_1860.get()) {
+			ColtArmy1860OverlayProcedure.execute(world, entity);
+		}
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.JOSEPH_EGG_PISTOL.get()
+				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.JOSEPH_EGG_PISTOL.get()) {
+			JosephEggPistolOverlayProcedure.execute(world, entity);
+		}
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.BIG_GAME_4_BORE_PERCUSSION_RIFLE.get()) {
+			BigGame4BorePercussionRifleOverlayProcedure.execute(world, entity);
 		}
 	}
 }

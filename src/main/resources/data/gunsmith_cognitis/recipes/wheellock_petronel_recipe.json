@@ -1,23 +1,27 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "012",
-    " 45"
+    " 1 ",
+    "345",
+    " 78"
   ],
   "key": {
-    "0": {
+    "1": {
+      "tag": "gunsmith_cognitis:blueprint_wheellock_entry"
+    },
+    "3": {
       "item": "minecraft:gunpowder"
     },
-    "1": {
+    "4": {
       "item": "gunsmith_cognitis:bigborebarrel"
     },
-    "2": {
+    "5": {
       "item": "minecraft:redstone"
     },
-    "4": {
+    "7": {
       "item": "gunsmith_cognitis:wheellockgunkit"
     },
-    "5": {
+    "8": {
       "item": "minecraft:oak_log"
     }
   },

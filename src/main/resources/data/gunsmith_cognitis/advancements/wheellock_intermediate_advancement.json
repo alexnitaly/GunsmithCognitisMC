@@ -1,0 +1,45 @@
+{
+  "display": {
+    "icon": {
+      "item": "gunsmith_cognitis:wheellock_musket"
+    },
+    "title": {
+      "translate": "advancements.wheellock_intermediate_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.wheellock_intermediate_advancement.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "wheellock_intermediate_advancement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "gunsmith_cognitis:wheellock_blueprint_intermediate"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 4,
+    "recipes": [
+      "gunsmith_cognitis:wheellock_musket_recipe",
+      "gunsmith_cognitis:wheellock_carbine_recipe",
+      "gunsmith_cognitis:rifledbarrel_recipe",
+      "gunsmith_cognitis:riflingtool_recipe"
+    ]
+  },
+  "parent": "gunsmith_cognitis:gun_enthusiast_advancement"
+}

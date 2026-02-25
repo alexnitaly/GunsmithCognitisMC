@@ -39,6 +39,27 @@
       },
       {
         "value": "CUSTOM:ColtRevolvingRifle1855"
+      },
+      {
+        "value": "CUSTOM:ColtArmy1860"
+      },
+      {
+        "value": "CUSTOM:SpringfieldModel1861RifledMusket"
+      },
+      {
+        "value": "CUSTOM:SpringfieldModel1861RifledMusketBayonet"
+      },
+      {
+        "value": "CUSTOM:Fusil1866Chassepot"
+      },
+      {
+        "value": "CUSTOM:Fusil1866ChassepotBayonet"
+      },
+      {
+        "value": "CUSTOM:JosephEggPistol"
+      },
+      {
+        "value": "CUSTOM:BigGame4BorePercussionRifle"
       }
     ],
     "blocks": [],

@@ -19,7 +19,7 @@
       "item": "minecraft:gold_nugget"
     },
     "4": {
-      "item": "gunsmith_cognitis:percussioncap_blueprint"
+      "tag": "gunsmith_cognitis:blueprint_percussion_entry"
     },
     "5": {
       "item": "minecraft:gold_nugget"

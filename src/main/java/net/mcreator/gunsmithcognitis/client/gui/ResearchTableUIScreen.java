@@ -82,16 +82,19 @@ public class ResearchTableUIScreen extends AbstractContainerScreen<ResearchTable
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
 		this.font.draw(poseStack,
 
-				ResearchTableTechNameProcedure.execute(entity), 9, 33, -12829636);
+				ResearchTableTechNameProcedure.execute(entity), 7, 35, -12829636);
 		this.font.draw(poseStack,
 
-				ResearchTableTechDescriptionProcedure.execute(entity), 8, 59, -12829636);
+				ResearchTableTechDescriptionProcedure.execute(entity), 7, 50, -12829636);
 		this.font.draw(poseStack,
 
-				ResearchTableTechCostProcedure.execute(entity), 8, 87, -12829636);
+				ResearchTableTechCostProcedure.execute(entity), 7, 99, -12829636);
 		this.font.draw(poseStack,
 
-				ResearchTableCurrentTechValueProcedure.execute(entity), 10, 10, -12829636);
+				ResearchTableCurrentTechValueProcedure.execute(entity), 7, 8, -12829636);
+		this.font.draw(poseStack, new TranslatableComponent("gui.gunsmith_cognitis.research_table_ui.label_cost"), 7, 87, -12829636);
+		this.font.draw(poseStack, new TranslatableComponent("gui.gunsmith_cognitis.research_table_ui.label_1_ink_paper"), 255, 126, -12829636);
+		this.font.draw(poseStack, new TranslatableComponent("gui.gunsmith_cognitis.research_table_ui.label_ink_sack_and_paper"), 7, 110, -12829636);
 	}
 
 	@Override
@@ -113,6 +116,10 @@ public class ResearchTableUIScreen extends AbstractContainerScreen<ResearchTable
 		guistate.put("button:button_research", button_research);
 		this.addRenderableWidget(button_research);
 		button_reprint = new Button(this.leftPos + 252, this.topPos + 137, 61, 20, new TranslatableComponent("gui.gunsmith_cognitis.research_table_ui.button_reprint"), e -> {
+			if (true) {
+				GunsmithCognitisMod.PACKET_HANDLER.sendToServer(new ResearchTableUIButtonMessage(1, x, y, z));
+				ResearchTableUIButtonMessage.handleButtonAction(entity, 1, x, y, z);
+			}
 		});
 		guistate.put("button:button_reprint", button_reprint);
 		this.addRenderableWidget(button_reprint);

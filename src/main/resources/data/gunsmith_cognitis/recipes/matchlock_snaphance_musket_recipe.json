@@ -13,7 +13,7 @@
       "item": "minecraft:chain"
     },
     "2": {
-      "item": "gunsmith_cognitis:matchlockgunkit"
+      "tag": "gunsmith_cognitis:blueprint_matchlock_mastery"
     },
     "3": {
       "item": "minecraft:gunpowder"

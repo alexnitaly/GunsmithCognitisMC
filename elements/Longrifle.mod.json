@@ -30,6 +30,15 @@
       },
       {
         "value": "CUSTOM:MatchlockHeavyArquebus"
+      },
+      {
+        "value": "CUSTOM:SpringfieldModel1861RifledMusket"
+      },
+      {
+        "value": "CUSTOM:SpringfieldModel1861RifledMusketBayonet"
+      },
+      {
+        "value": "CUSTOM:BigGame4BorePercussionRifle"
       }
     ],
     "blocks": [],

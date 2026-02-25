@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "gunsmith_cognitis:colt_walker_1847"
+  },
+  "addition": {
+    "item": "gunsmith_cognitis:percussioncapgunkit"
+  },
+  "result": {
+    "item": "gunsmith_cognitis:colt_dragoon_1848"
+  }
+}

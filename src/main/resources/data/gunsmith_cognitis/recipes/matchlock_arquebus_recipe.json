@@ -1,13 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "0  ",
+    "01 ",
     "345",
     " 78"
   ],
   "key": {
     "0": {
       "item": "gunsmith_cognitis:crude_smoothborebarrel"
+    },
+    "1": {
+      "tag": "gunsmith_cognitis:blueprint_matchlock_intermediate"
     },
     "3": {
       "item": "minecraft:gunpowder"

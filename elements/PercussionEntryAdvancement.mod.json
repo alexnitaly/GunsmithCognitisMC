@@ -1,0 +1,32 @@
+{
+  "_fv": 39,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Smokeless Propellers.",
+    "achievementDescription": "Well it still makes smoke clouds actually, but now the rifled barrels are standardized and the reliable mechanism shrugs off the envirorment!",
+    "achievementIcon": {
+      "value": "CUSTOM:Pattern1851minierifle"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [
+      "PercussionnippleRecipe",
+      "PercussioncapMechanismRecipe",
+      "PercussioncapGunKitRecipe",
+      "MinieballRecipe",
+      "MiniePaperCartidgeRecipe",
+      "Pattern1851MinieRifleBayonetRecipe"
+    ],
+    "rewardFunction": "No function",
+    "rewardXP": 4,
+    "achievementType": "goal",
+    "parent": {
+      "value": "CUSTOM:FulminateAdvancement"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"item_in_inventory\" x=\"29\" y=\"10\"><value name=\"amount_l\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"amount_h\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:PercussioncapBlueprint</field></block></value><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+  }
+}

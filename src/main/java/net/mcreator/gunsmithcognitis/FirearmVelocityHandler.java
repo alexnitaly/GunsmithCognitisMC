@@ -21,6 +21,7 @@ public class FirearmVelocityHandler {
         TagKey<Item> PISTOL = TagKey.create(Registry.ITEM_REGISTRY, new ResourceLocation("gunsmith_cognitis", "pistol"));
         TagKey<Item> RIFLE = TagKey.create(Registry.ITEM_REGISTRY, new ResourceLocation("gunsmith_cognitis", "rifle"));
         TagKey<Item> LONG_RIFLE = TagKey.create(Registry.ITEM_REGISTRY, new ResourceLocation("gunsmith_cognitis", "long_rifle"));
+        TagKey<Item> RIFLED = TagKey.create(Registry.ITEM_REGISTRY, new ResourceLocation("gunsmith_cognitis", "rifled_firearm"));
 
         float multiplier = 1.0F; // Default multiplier
 
@@ -33,9 +34,13 @@ public class FirearmVelocityHandler {
             multiplier = 1.5F;
         }
 
-         if (stack.is(MATCHLOCK)) {
-            multiplier = 0.75F;
-         }
+        if (stack.is(RIFLED)) {
+            multiplier = 1.5F;
+        } 
+
+        if (stack.is(MATCHLOCK)) {
+           multiplier = 0.75F;
+        }
          
         return baseVelocity * multiplier;
     }

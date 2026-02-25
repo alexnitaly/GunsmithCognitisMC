@@ -1,0 +1,47 @@
+{
+  "display": {
+    "icon": {
+      "item": "gunsmith_cognitis:pattern_1851minierifle"
+    },
+    "title": {
+      "translate": "advancements.percussion_entry_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.percussion_entry_advancement.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "percussion_entry_advancement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "gunsmith_cognitis:percussioncap_blueprint"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 4,
+    "recipes": [
+      "gunsmith_cognitis:percussionnipple_recipe",
+      "gunsmith_cognitis:percussioncap_mechanism_recipe",
+      "gunsmith_cognitis:percussioncap_gun_kit_recipe",
+      "gunsmith_cognitis:minieball_recipe",
+      "gunsmith_cognitis:minie_paper_cartidge_recipe",
+      "gunsmith_cognitis:pattern_1851_minie_rifle_bayonet_recipe"
+    ]
+  },
+  "parent": "gunsmith_cognitis:fulminate_advancement"
+}

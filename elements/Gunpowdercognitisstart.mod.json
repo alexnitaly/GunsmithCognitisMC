@@ -3,28 +3,31 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "The persue of firepower",
-    "achievementDescription": "Gunpowder, something always used to make things blow up, but what if we use it to shoot things?",
+    "achievementDescription": "Gunpowder, something always used to make things blow up, but what if we use it to shoot something out of a tube instead?",
     "achievementIcon": {
       "value": "Items.GUNPOWDER"
     },
     "background": "Default",
     "disableDisplay": false,
     "showPopup": true,
-    "announceToChat": true,
+    "announceToChat": false,
     "hideIfNotCompleted": false,
     "rewardLoot": [],
     "rewardRecipes": [
-      "HandgunneRecipe",
       "MusketballRecipe",
-      "Ramrodrecipe",
-      "Matchlockgunkitrecipe",
-      "HandBombRecipe"
+      "HeavyMusketballRecipe",
+      "HandgunneRecipe",
+      "HandcannonRecipe",
+      "ResearchTableRecipe",
+      "ThreeEyeGunRecipe",
+      "LandsknechtHarkebusRecipe",
+      "Ramrodrecipe"
     ],
     "rewardFunction": "No function",
     "rewardXP": 0,
-    "achievementType": "goal",
+    "achievementType": "task",
     "parent": {
-      "value": "adventure/root"
+      "value": "CUSTOM:Gunpowdercognitisstart"
     },
     "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"item_in_inventory\" x=\"70\" y=\"112\"><value name=\"amount_l\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"amount_h\"><block type=\"math_number\"><field name=\"NUM\">64</field></block></value><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">Items.GUNPOWDER</field></block></value><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
   }

@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "0  ",
-    " 4 ",
+    " 45",
     " 78"
   ],
   "key": {
@@ -11,6 +11,9 @@
     },
     "4": {
       "item": "gunsmith_cognitis:flintlock_collier_revolver"
+    },
+    "5": {
+      "tag": "gunsmith_cognitis:blueprint_flintlock_mastery"
     },
     "7": {
       "item": "gunsmith_cognitis:flintlockgunkit"

@@ -3,7 +3,7 @@
   "pattern": [
     "0  ",
     "345",
-    " 78"
+    "678"
   ],
   "key": {
     "0": {
@@ -17,6 +17,9 @@
     },
     "5": {
       "item": "gunsmith_cognitis:flintlock_mechanism"
+    },
+    "6": {
+      "tag": "gunsmith_cognitis:blueprint_flintlock_entry"
     },
     "7": {
       "item": "gunsmith_cognitis:flintlockgunkit"

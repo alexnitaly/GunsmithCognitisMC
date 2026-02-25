@@ -58,7 +58,7 @@ public class DynamitePackItem extends Item {
 			double x = entity.getX();
 			double y = entity.getY();
 			double z = entity.getZ();
-			if (HandBombCanUseRangedItemProcedure.execute(entity, itemstack)) {
+			if (HandBombCanUseRangedItemProcedure.execute(entity)) {
 				ItemStack stack = ProjectileWeaponItem.getHeldProjectile(entity, e -> e.getItem() == GunsmithCognitisModItems.DYNAMITE_PACK.get());
 				if (stack == ItemStack.EMPTY) {
 					for (int i = 0; i < entity.getInventory().items.size(); i++) {
@@ -89,7 +89,7 @@ public class DynamitePackItem extends Item {
 						}
 					}
 
-					HandBombRangedItemUsedProcedure.execute(world, itemstack);
+					HandBombRangedItemUsedProcedure.execute(itemstack);
 				}
 			}
 		}

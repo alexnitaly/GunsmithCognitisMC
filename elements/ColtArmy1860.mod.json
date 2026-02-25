@@ -1,0 +1,48 @@
+{
+  "_fv": 39,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "colt_1860_army",
+    "customModelName": "Normal",
+    "name": "Colt Army 1860 Revolver",
+    "specialInfo": [
+      "Single Action: Requires small paper cartidges to Reload."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:GunsmithCognitisPercussioncapTab"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 799,
+    "actionSound": {
+      "value": "CUSTOM:gun_shot_heavy"
+    },
+    "hasGlow": false,
+    "animation": "none",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "ColtArmy1860ItemUsed"
+    },
+    "onEntitySwing": {
+      "name": "ColtArmy1860ItemSwung"
+    },
+    "useCondition": {
+      "name": "ColtArmy1860CanUseRanged"
+    },
+    "bulletPower": 3.2,
+    "bulletDamage": 1.2000000000000002,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:MusketBallProjectile"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": ""
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "display": {
+    "icon": {
+      "item": "gunsmith_cognitis:wheellock_pistol"
+    },
+    "title": {
+      "translate": "advancements.wheellock_entry_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.wheellock_entry_advancement.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "wheellock_entry_advancement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "gunsmith_cognitis:wheellock_blueprint"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 2,
+    "recipes": [
+      "gunsmith_cognitis:wheellock_petronel_recipe",
+      "gunsmith_cognitis:wheellock_pistol_recipe",
+      "gunsmith_cognitis:wheellockgunkitrecipe"
+    ]
+  },
+  "parent": "gunsmith_cognitis:gun_enthusiast_advancement"
+}

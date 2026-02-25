@@ -1,0 +1,23 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "CUSTOM:ColtWalker1847"
+    },
+    "smithingInputAdditionStack": {
+      "value": "CUSTOM:Percussioncapgunkit"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:ColtDragoon1848"
+    },
+    "name": "colt_dragoon_1848_upgrade",
+    "namespace": "mod"
+  }
+}

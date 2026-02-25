@@ -1,0 +1,38 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:writable_book"
+    },
+    "title": {
+      "translate": "advancements.gun_enthusiast_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.gun_enthusiast_advancement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "gun_enthusiast_advancement": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "item": {
+          "items": [
+            "gunsmith_cognitis:research_table"
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "gunsmith_cognitis:matchlockgunkitrecipe",
+      "gunsmith_cognitis:matchlock_pistol_recipe",
+      "gunsmith_cognitis:landsknecht_harkebus_recipe"
+    ]
+  },
+  "parent": "gunsmith_cognitis:gunpowdercognitisstart"
+}

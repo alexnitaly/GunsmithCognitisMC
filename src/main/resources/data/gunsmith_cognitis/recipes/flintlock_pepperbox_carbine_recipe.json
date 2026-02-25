@@ -3,7 +3,7 @@
   "pattern": [
     "01 ",
     "345",
-    "  8"
+    " 78"
   ],
   "key": {
     "0": {
@@ -20,6 +20,9 @@
     },
     "5": {
       "item": "minecraft:gunpowder"
+    },
+    "7": {
+      "tag": "gunsmith_cognitis:blueprint_flintlock_intermediate"
     },
     "8": {
       "item": "minecraft:oak_log"

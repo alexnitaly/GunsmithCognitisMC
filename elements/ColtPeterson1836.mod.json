@@ -34,8 +34,8 @@
     "useCondition": {
       "name": "ColtPeterson1836CanUseRanged"
     },
-    "bulletPower": 3.4,
-    "bulletDamage": 1.2,
+    "bulletPower": 3.0,
+    "bulletDamage": 1.0,
     "bulletKnockback": 0,
     "bulletParticles": false,
     "bulletIgnitesFire": false,

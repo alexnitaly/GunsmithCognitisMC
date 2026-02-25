@@ -36,7 +36,7 @@
       "name": "ColtWalker1847CanUseRanged"
     },
     "bulletPower": 3.5,
-    "bulletDamage": 2.5,
+    "bulletDamage": 2.0,
     "bulletKnockback": 0,
     "bulletParticles": false,
     "bulletIgnitesFire": false,

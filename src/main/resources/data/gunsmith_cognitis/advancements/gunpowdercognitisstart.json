@@ -9,9 +9,9 @@
     "description": {
       "translate": "advancements.gunpowdercognitisstart.descr"
     },
-    "frame": "goal",
+    "frame": "task",
     "show_toast": true,
-    "announce_to_chat": true,
+    "announce_to_chat": false,
     "hidden": false
   },
   "criteria": {
@@ -35,12 +35,15 @@
   "rewards": {
     "experience": 0,
     "recipes": [
-      "gunsmith_cognitis:handgunne_recipe",
       "gunsmith_cognitis:musketball_recipe",
-      "gunsmith_cognitis:ramrodrecipe",
-      "gunsmith_cognitis:matchlockgunkitrecipe",
-      "gunsmith_cognitis:hand_bomb_recipe"
+      "gunsmith_cognitis:heavy_musketball_recipe",
+      "gunsmith_cognitis:handgunne_recipe",
+      "gunsmith_cognitis:handcannon_recipe",
+      "gunsmith_cognitis:research_table_recipe",
+      "gunsmith_cognitis:three_eye_gun_recipe",
+      "gunsmith_cognitis:landsknecht_harkebus_recipe",
+      "gunsmith_cognitis:ramrodrecipe"
     ]
   },
-  "parent": "minecraft:adventure/root"
+  "parent": "gunsmith_cognitis:gunpowdercognitisstart"
 }

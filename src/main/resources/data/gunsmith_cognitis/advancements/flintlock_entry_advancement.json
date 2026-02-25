@@ -1,0 +1,49 @@
+{
+  "display": {
+    "icon": {
+      "item": "gunsmith_cognitis:wheellock_pistol"
+    },
+    "title": {
+      "translate": "advancements.flintlock_entry_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.flintlock_entry_advancement.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "flintlock_entry_advancement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "gunsmith_cognitis:flintlock_blueprint"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 3,
+    "recipes": [
+      "gunsmith_cognitis:flintlock_musket_recipe",
+      "gunsmith_cognitis:flintlock_pistol_recipe",
+      "gunsmith_cognitis:flintlock_blunderbuss_recipe",
+      "gunsmith_cognitis:flintlockgunkitrecipe",
+      "gunsmith_cognitis:paper_cartidge_ammo_recipe",
+      "gunsmith_cognitis:paper_cartidge_small_ammo_recipe",
+      "gunsmith_cognitis:flintlock_musket_bayonet_recipe",
+      "gunsmith_cognitis:flintlock_mechanism_recipe"
+    ]
+  },
+  "parent": "gunsmith_cognitis:gun_enthusiast_advancement"
+}

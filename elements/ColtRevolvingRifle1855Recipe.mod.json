@@ -1,0 +1,46 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Rifledbarrel"
+      },
+      {
+        "value": "CUSTOM:AdvancedRevolversBlueprint"
+      },
+      {
+        "value": "CUSTOM:PaperCartidgeAmmo"
+      },
+      {
+        "value": "CUSTOM:Rifledbarrel"
+      },
+      {
+        "value": "CUSTOM:RevolverDrum"
+      },
+      {
+        "value": "CUSTOM:PercussioncapMechanism"
+      },
+      {
+        "value": "CUSTOM:Ramrod"
+      },
+      {
+        "value": "CUSTOM:Percussioncapgunkit"
+      },
+      {
+        "value": "Blocks.LOG"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:ColtRevolvingRifle1855"
+    },
+    "name": "colt_revolving_rifle_1855_recipe",
+    "namespace": "mod"
+  }
+}

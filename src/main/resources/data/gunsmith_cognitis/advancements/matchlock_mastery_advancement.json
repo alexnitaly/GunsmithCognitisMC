@@ -1,0 +1,44 @@
+{
+  "display": {
+    "icon": {
+      "item": "gunsmith_cognitis:matchlock_snaphance_musket"
+    },
+    "title": {
+      "translate": "advancements.matchlock_mastery_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.matchlock_mastery_advancement.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "matchlock_mastery_advancement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "gunsmith_cognitis:matchlock_blueprint_mastery"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 5,
+    "recipes": [
+      "gunsmith_cognitis:matchlock_snaphance_musket_recipe",
+      "gunsmith_cognitis:matchlock_heavy_arquebus_recipe",
+      "gunsmith_cognitis:matchlock_axe_pistol_recipe"
+    ]
+  },
+  "parent": "gunsmith_cognitis:matchlock_intermediate_advancement"
+}

@@ -1,0 +1,42 @@
+{
+  "display": {
+    "icon": {
+      "item": "gunsmith_cognitis:fulminatepowder"
+    },
+    "title": {
+      "translate": "advancements.fulminate_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.fulminate_advancement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "fulminate_advancement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:blaze_powder"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "gunsmith_cognitis:fulminatepowder_recipe"
+    ]
+  },
+  "parent": "gunsmith_cognitis:gun_enthusiast_advancement"
+}

@@ -3,7 +3,7 @@
   "pattern": [
     " 1 ",
     "345",
-    " 7 "
+    " 78"
   ],
   "key": {
     "1": {
@@ -20,6 +20,9 @@
     },
     "7": {
       "item": "minecraft:gunpowder"
+    },
+    "8": {
+      "tag": "gunsmith_cognitis:blueprint_percussion_mastery"
     }
   },
   "result": {

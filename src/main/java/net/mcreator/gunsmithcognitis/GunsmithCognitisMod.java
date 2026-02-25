@@ -32,6 +32,7 @@ import net.mcreator.gunsmithcognitis.init.GunsmithCognitisModFeatures;
 import net.mcreator.gunsmithcognitis.init.GunsmithCognitisModEntities;
 import net.mcreator.gunsmithcognitis.init.GunsmithCognitisModEnchantments;
 import net.mcreator.gunsmithcognitis.init.GunsmithCognitisModBlocks;
+import net.mcreator.gunsmithcognitis.init.GunsmithCognitisModBlockEntities;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -51,7 +52,7 @@ public class GunsmithCognitisMod {
 		GunsmithCognitisModBlocks.REGISTRY.register(bus);
 		GunsmithCognitisModItems.REGISTRY.register(bus);
 		GunsmithCognitisModEntities.REGISTRY.register(bus);
-
+		GunsmithCognitisModBlockEntities.REGISTRY.register(bus);
 		GunsmithCognitisModFeatures.REGISTRY.register(bus);
 
 		GunsmithCognitisModEnchantments.REGISTRY.register(bus);

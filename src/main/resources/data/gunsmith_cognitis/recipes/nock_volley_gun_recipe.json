@@ -1,13 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "0  ",
+    "01 ",
     "345",
     " 78"
   ],
   "key": {
     "0": {
       "item": "gunsmith_cognitis:nock_volley_gun_front_component"
+    },
+    "1": {
+      "tag": "gunsmith_cognitis:blueprint_flintlock_mastery"
     },
     "3": {
       "item": "gunsmith_cognitis:flintlockgunkit"
