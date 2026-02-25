@@ -17,7 +17,7 @@ public class Fusil1866ChassepotOverlayProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.DREYSE_NEEDLE_GUN.get()
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.FUSIL_1866_CHASSEPOT.get()
 				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.FUSIL_1866_CHASSEPOT_BAYONET.get()) {
 			if (entity.isInWater()) {
 				if (entity instanceof Player _player && !_player.level.isClientSide())

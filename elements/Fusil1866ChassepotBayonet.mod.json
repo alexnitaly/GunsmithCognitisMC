@@ -24,12 +24,12 @@
     "hasGlow": false,
     "animation": "none",
     "enableMeleeDamage": true,
-    "damageVsEntity": 6.5,
+    "damageVsEntity": 7.0,
     "onRangedItemUsed": {
-      "name": "DreyseNeedleGunItemUsed"
+      "name": "Fusil1866ChassepotItemUsed"
     },
     "useCondition": {
-      "name": "DreyseneedlegunCanUseRanged"
+      "name": "Fusil1866ChassepotCanUseRanged"
     },
     "bulletPower": 5.0,
     "bulletDamage": 2.1,

@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "gunsmith_cognitis:smoothborebarrel"
+    },
+    "1": {
+      "item": "gunsmith_cognitis:advanced_revolvers_blueprint"
+    },
+    "2": {
+      "item": "gunsmith_cognitis:shotgun_shell"
+    },
+    "3": {
+      "item": "gunsmith_cognitis:smoothborebarrel"
+    },
+    "4": {
+      "item": "gunsmith_cognitis:revolver_drum"
+    },
+    "5": {
+      "item": "gunsmith_cognitis:percussioncap_mechanism"
+    },
+    "6": {
+      "item": "gunsmith_cognitis:ramrod"
+    },
+    "7": {
+      "item": "gunsmith_cognitis:percussioncapgunkit"
+    },
+    "8": {
+      "item": "minecraft:oak_log"
+    }
+  },
+  "result": {
+    "item": "gunsmith_cognitis:colt_revolving_shotgun_1855",
+    "count": 1
+  }
+}

@@ -16,8 +16,8 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.gunsmithcognitis.procedures.DreyseneedlegunCanUseRangedProcedure;
-import net.mcreator.gunsmithcognitis.procedures.DreyseNeedleGunItemUsedProcedure;
+import net.mcreator.gunsmithcognitis.procedures.Fusil1866ChassepotItemUsedProcedure;
+import net.mcreator.gunsmithcognitis.procedures.Fusil1866ChassepotCanUseRangedProcedure;
 import net.mcreator.gunsmithcognitis.init.GunsmithCognitisModTabs;
 import net.mcreator.gunsmithcognitis.entity.Fusil1866ChassepotEntity;
 
@@ -57,12 +57,12 @@ public class Fusil1866ChassepotItem extends Item {
 			double x = entity.getX();
 			double y = entity.getY();
 			double z = entity.getZ();
-			if (DreyseneedlegunCanUseRangedProcedure.execute(world, x, y, z, entity)) {
+			if (Fusil1866ChassepotCanUseRangedProcedure.execute(world, x, y, z, entity)) {
 				Fusil1866ChassepotEntity entityarrow = Fusil1866ChassepotEntity.shoot(world, entity, world.getRandom(), 5f, 1.7999999999999998, 0);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 
-				DreyseNeedleGunItemUsedProcedure.execute(world, x, y, z, entity);
+				Fusil1866ChassepotItemUsedProcedure.execute(world, x, y, z, entity);
 				entity.releaseUsingItem();
 			}
 		}

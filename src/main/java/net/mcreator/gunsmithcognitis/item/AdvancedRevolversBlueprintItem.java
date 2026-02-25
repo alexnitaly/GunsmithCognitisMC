@@ -9,7 +9,7 @@ import net.mcreator.gunsmithcognitis.init.GunsmithCognitisModTabs;
 
 public class AdvancedRevolversBlueprintItem extends Item {
 	public AdvancedRevolversBlueprintItem() {
-		super(new Item.Properties().tab(GunsmithCognitisModTabs.TAB_GUNSMITH_COGNITIS_MISC_TAB).stacksTo(1).rarity(Rarity.RARE));
+		super(new Item.Properties().tab(GunsmithCognitisModTabs.TAB_GUNSMITH_COGNITIS_RESEARCH_TAB).stacksTo(1).rarity(Rarity.RARE));
 	}
 
 	@Override

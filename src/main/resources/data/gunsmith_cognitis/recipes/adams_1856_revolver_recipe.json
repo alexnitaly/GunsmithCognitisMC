@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "gunsmith_cognitis:rifledbarrel"
+    },
+    "1": {
+      "item": "gunsmith_cognitis:advanced_revolvers_blueprint"
+    },
+    "2": {
+      "item": "minecraft:redstone"
+    },
+    "3": {
+      "item": "gunsmith_cognitis:ramrod"
+    },
+    "4": {
+      "item": "gunsmith_cognitis:revolver_drum"
+    },
+    "5": {
+      "item": "gunsmith_cognitis:percussioncap_mechanism"
+    },
+    "6": {
+      "item": "gunsmith_cognitis:paper_cartidge_small_ammo"
+    },
+    "7": {
+      "tag": "minecraft:coals"
+    },
+    "8": {
+      "item": "gunsmith_cognitis:percussioncapgunkit"
+    }
+  },
+  "result": {
+    "item": "gunsmith_cognitis:adams_1856_revolver",
+    "count": 1
+  }
+}

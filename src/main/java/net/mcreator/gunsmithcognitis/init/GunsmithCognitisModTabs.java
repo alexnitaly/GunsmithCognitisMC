@@ -57,7 +57,7 @@ public class GunsmithCognitisModTabs {
 		TAB_GUNSMITH_COGNITIS_FLINTLOCK_TAB = new CreativeModeTab("tabgunsmith_cognitis_flintlock_tab") {
 			@Override
 			public ItemStack makeIcon() {
-				return new ItemStack(GunsmithCognitisModItems.FLINTLOCK_BLUEPRINT.get());
+				return new ItemStack(GunsmithCognitisModItems.FLINTLOCKMUSKET.get());
 			}
 
 			@OnlyIn(Dist.CLIENT)
@@ -68,7 +68,7 @@ public class GunsmithCognitisModTabs {
 		TAB_GUNSMITH_COGNITIS_PERCUSSIONCAP_TAB = new CreativeModeTab("tabgunsmith_cognitis_percussioncap_tab") {
 			@Override
 			public ItemStack makeIcon() {
-				return new ItemStack(GunsmithCognitisModItems.PERCUSSIONCAP_BLUEPRINT.get());
+				return new ItemStack(GunsmithCognitisModItems.FUSIL_1866_CHASSEPOT.get());
 			}
 
 			@OnlyIn(Dist.CLIENT)

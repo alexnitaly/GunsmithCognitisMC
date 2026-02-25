@@ -1,0 +1,38 @@
+{
+  "_fv": 39,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Gotta Shoot Faster!",
+    "achievementDescription": "Time to apply the idea of a revolving drum, multiple barrels and different firing mechanisms to the Percussion caps!",
+    "achievementIcon": {
+      "value": "CUSTOM:DreyseNeedleGun"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [
+      "BoltMechanismRecipe",
+      "ColtPeterson1836Recipe",
+      "DynamiteRecipe",
+      "DynamitePackRecipe",
+      "DynamiteTNTConversion",
+      "DreyseNeedleGunRecipe",
+      "Fusil1866ChassepotBayonetRecipe",
+      "ChassepotBayonetRecipe",
+      "Fusil1866ChassepotRecipe",
+      "JosephEggPercussionPistolRecipe",
+      "BigGame4BorePercussionRifleRecipe",
+      "RevolverDrumRecipe"
+    ],
+    "rewardFunction": "No function",
+    "rewardXP": 6,
+    "achievementType": "goal",
+    "parent": {
+      "value": "CUSTOM:PercussionEntryAdvancement"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"item_in_inventory\" x=\"29\" y=\"10\"><value name=\"amount_l\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"amount_h\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:PercussioncapBlueprintIntermediate</field></block></value><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+  }
+}

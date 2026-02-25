@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01 ",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "gunsmith_cognitis:rifledbarrel"
+    },
+    "1": {
+      "tag": "gunsmith_cognitis:blueprint_percussion_intermediate"
+    },
+    "3": {
+      "item": "gunsmith_cognitis:rifledbarrel"
+    },
+    "4": {
+      "item": "minecraft:iron_ingot"
+    },
+    "5": {
+      "item": "gunsmith_cognitis:percussioncap_mechanism"
+    },
+    "6": {
+      "item": "gunsmith_cognitis:percussioncapgunkit"
+    },
+    "7": {
+      "tag": "minecraft:planks"
+    },
+    "8": {
+      "item": "gunsmith_cognitis:percussioncap_mechanism"
+    }
+  },
+  "result": {
+    "item": "gunsmith_cognitis:joseph_egg_pistol",
+    "count": 1
+  }
+}

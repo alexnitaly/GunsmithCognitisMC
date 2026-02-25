@@ -7,7 +7,8 @@
     "customModelName": "Normal",
     "name": "Colt Army 1860 Revolver",
     "specialInfo": [
-      "Single Action: Requires small paper cartidges to Reload."
+      "Single Action: Uses percussion cups from inventory",
+      "Requires small paper cartidges to Reload."
     ],
     "creativeTab": {
       "value": "CUSTOM:GunsmithCognitisPercussioncapTab"

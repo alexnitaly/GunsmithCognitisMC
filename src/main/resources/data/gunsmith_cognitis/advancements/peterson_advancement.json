@@ -1,0 +1,42 @@
+{
+  "display": {
+    "icon": {
+      "item": "gunsmith_cognitis:colt_peterson_1836"
+    },
+    "title": {
+      "translate": "advancements.peterson_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.peterson_advancement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "peterson_advancement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "gunsmith_cognitis:colt_peterson_1836"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "gunsmith_cognitis:advanced_revolvers_blueprint_recipe"
+    ]
+  },
+  "parent": "gunsmith_cognitis:percussion_intermediate_advancement"
+}

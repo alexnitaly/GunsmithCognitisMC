@@ -3,8 +3,10 @@
   "values": [
     "gunsmith_cognitis:flintlock_blunderbuss",
     "gunsmith_cognitis:sawn_off_double_barrel_shotgun",
+    "gunsmith_cognitis:sawn_colt_revolving_shotgun_1855",
     "gunsmith_cognitis:double_barrel_shotgun",
     "gunsmith_cognitis:matchlock_blunderbuss",
+    "gunsmith_cognitis:colt_revolving_shotgun_1855",
     "gunsmith_cognitis:flintlock_hand_mortar"
   ]
 }

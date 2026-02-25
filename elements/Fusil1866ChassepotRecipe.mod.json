@@ -1,0 +1,46 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Rifledbarrel"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.IRON_NUGGET"
+      },
+      {
+        "value": "CUSTOM:Rifledbarrel"
+      },
+      {
+        "value": "CUSTOM:BoltMechanism"
+      },
+      {
+        "value": "TAG:gunsmith_cognitis:blueprint_percussion_intermediate"
+      },
+      {
+        "value": "CUSTOM:Percussioncapgunkit"
+      },
+      {
+        "value": "Blocks.LOG"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Fusil1866Chassepot"
+    },
+    "name": "fusil_1866_chassepot_recipe",
+    "namespace": "mod"
+  }
+}

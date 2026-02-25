@@ -2,10 +2,10 @@
   "_fv": 39,
   "_type": "achievement",
   "definition": {
-    "achievementName": "A True Musketeer.",
+    "achievementName": "A True Musketeer",
     "achievementDescription": "With the Flintlock mechanism, the start of the firearms dominance begins.",
     "achievementIcon": {
-      "value": "CUSTOM:WheellockPistol"
+      "value": "CUSTOM:Flintlockmusket"
     },
     "background": "Default",
     "disableDisplay": false,

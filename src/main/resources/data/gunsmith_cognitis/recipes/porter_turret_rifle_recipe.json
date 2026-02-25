@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01 ",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "gunsmith_cognitis:rifledbarrel"
+    },
+    "1": {
+      "tag": "gunsmith_cognitis:blueprint_percussion_mastery"
+    },
+    "3": {
+      "item": "gunsmith_cognitis:rifledbarrel"
+    },
+    "4": {
+      "item": "minecraft:clock"
+    },
+    "5": {
+      "item": "gunsmith_cognitis:percussioncap_mechanism"
+    },
+    "6": {
+      "item": "minecraft:iron_ingot"
+    },
+    "7": {
+      "item": "gunsmith_cognitis:percussioncapgunkit"
+    },
+    "8": {
+      "item": "minecraft:oak_log"
+    }
+  },
+  "result": {
+    "item": "gunsmith_cognitis:porter_turret_rifle",
+    "count": 1
+  }
+}

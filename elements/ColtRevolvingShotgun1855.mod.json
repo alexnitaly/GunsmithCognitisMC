@@ -1,0 +1,49 @@
+{
+  "_fv": 39,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "colt_1855_revolving_shotgun",
+    "customModelName": "Normal",
+    "name": "Colt Revolving Shotgun 1855",
+    "specialInfo": [
+      "Single Action: Uses percussion cups",
+      "Requires Shotgun Shells to Reload."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:GunsmithCognitisPercussioncapTab"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 705,
+    "actionSound": {
+      "value": "CUSTOM:gun_shot_heavy"
+    },
+    "hasGlow": false,
+    "animation": "none",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "ColtRevolvingShotgunItemUsed"
+    },
+    "onEntitySwing": {
+      "name": "ColtRevolvingShotgunItemSwung"
+    },
+    "useCondition": {
+      "name": "ColtRevolvingShotgunCanBeUsed"
+    },
+    "bulletPower": 3.5,
+    "bulletDamage": 1.0,
+    "bulletKnockback": 1,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:MusketBallProjectile"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": ""
+  }
+}

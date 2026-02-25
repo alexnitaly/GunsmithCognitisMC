@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "gunsmith_cognitis:rifledbarrel"
+    },
+    "3": {
+      "item": "minecraft:iron_nugget"
+    },
+    "4": {
+      "item": "gunsmith_cognitis:rifledbarrel"
+    },
+    "5": {
+      "item": "gunsmith_cognitis:bolt_mechanism"
+    },
+    "6": {
+      "tag": "gunsmith_cognitis:blueprint_percussion_intermediate"
+    },
+    "7": {
+      "item": "gunsmith_cognitis:percussioncapgunkit"
+    },
+    "8": {
+      "item": "minecraft:oak_log"
+    }
+  },
+  "result": {
+    "item": "gunsmith_cognitis:fusil_1866_chassepot",
+    "count": 1
+  }
+}

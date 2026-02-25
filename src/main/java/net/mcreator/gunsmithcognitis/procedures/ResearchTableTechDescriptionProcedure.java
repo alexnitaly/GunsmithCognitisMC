@@ -32,7 +32,7 @@ public class ResearchTableTechDescriptionProcedure {
 		}
 		if (entity.getPersistentData().getDouble("gui_tech_page") == 2) {
 			if ((entity.getCapability(GunsmithCognitisModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GunsmithCognitisModVariables.PlayerVariables())).progression_flintlock <= 0) {
-				return "The next step of firearm technology.";
+				return "An evolution from old snaplocks to a reliable self-ignition.";
 			} else if ((entity.getCapability(GunsmithCognitisModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GunsmithCognitisModVariables.PlayerVariables())).progression_flintlock == 1) {
 				return "Start to experiment with multi-barrel system.";
 			} else if ((entity.getCapability(GunsmithCognitisModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GunsmithCognitisModVariables.PlayerVariables())).progression_flintlock == 2) {

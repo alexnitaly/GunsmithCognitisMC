@@ -45,7 +45,8 @@ public class ColtArmy1860Item extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("Single Action: Requires small paper cartidges to Reload."));
+		list.add(new TextComponent("Single Action: Uses percussion cups from inventory"));
+		list.add(new TextComponent("Requires small paper cartidges to Reload."));
 	}
 
 	@Override

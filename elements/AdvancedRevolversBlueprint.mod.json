@@ -8,7 +8,7 @@
     "name": "Advanced Revolvers Blueprint",
     "rarity": "RARE",
     "creativeTab": {
-      "value": "CUSTOM:GunsmithCognitisMiscTab"
+      "value": "CUSTOM:GunsmithCognitisResearchTab"
     },
     "stackSize": 1,
     "enchantability": 0,

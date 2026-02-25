@@ -13,10 +13,10 @@ public class Fusil1866ChassepotReloadProcedure {
 			return;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("ammo") < 1
 				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("cooldown") <= 0) {
-			if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(GunsmithCognitisModItems.PAPER_CARTIDGE_AMMO.get())) : false) {
+			if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(GunsmithCognitisModItems.MINIE_PAPER_CARTIDGE_AMMO.get())) : false) {
 				if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
 					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(GunsmithCognitisModItems.PAPER_CARTIDGE_AMMO.get());
+						ItemStack _stktoremove = new ItemStack(GunsmithCognitisModItems.MINIE_PAPER_CARTIDGE_AMMO.get());
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 					}
 				}

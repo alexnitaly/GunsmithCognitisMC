@@ -41,5 +41,5 @@
       "gunsmith_cognitis:riflingtool_recipe"
     ]
   },
-  "parent": "gunsmith_cognitis:gun_enthusiast_advancement"
+  "parent": "gunsmith_cognitis:wheellock_entry_advancement"
 }

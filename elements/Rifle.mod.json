@@ -87,6 +87,15 @@
       },
       {
         "value": "CUSTOM:Fusil1866ChassepotBayonet"
+      },
+      {
+        "value": "CUSTOM:Enfield1853MusketRifle"
+      },
+      {
+        "value": "CUSTOM:PorterTurretRifle"
+      },
+      {
+        "value": "CUSTOM:ColtRevolvingShotgun1855"
       }
     ],
     "blocks": [],

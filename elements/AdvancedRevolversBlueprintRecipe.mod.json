@@ -9,7 +9,7 @@
     "group": "",
     "recipeShapeless": false,
     "smithingInputStack": {
-      "value": "CUSTOM:PercussioncapBlueprintIntermediate"
+      "value": "TAG:gunsmith_cognitis:blueprint_percussion_intermediate"
     },
     "smithingInputAdditionStack": {
       "value": "CUSTOM:ColtPeterson1836"

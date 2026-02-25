@@ -1,0 +1,52 @@
+{
+  "display": {
+    "icon": {
+      "item": "gunsmith_cognitis:colt_army_1860"
+    },
+    "title": {
+      "translate": "advancements.revolvers_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.revolvers_advancement.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "revolvers_advancement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "gunsmith_cognitis:advanced_revolvers_blueprint"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 8,
+    "recipes": [
+      "gunsmith_cognitis:colt_peterson_1836_recipe",
+      "gunsmith_cognitis:colt_dragoon_1848_upgrade",
+      "gunsmith_cognitis:colt_walker_1847_recipe",
+      "gunsmith_cognitis:colt_army_1860_recipe",
+      "gunsmith_cognitis:colt_revolving_rifle_1855_recipe",
+      "gunsmith_cognitis:colt_revolving_shotgun_1855_recipe",
+      "gunsmith_cognitis:sawn_colt_revolver_1855_recipe",
+      "gunsmith_cognitis:sawn_colt_revolving_shotgun_1855_recipe",
+      "gunsmith_cognitis:adams_1856_revolver_recipe",
+      "gunsmith_cognitis:revolver_drum_recipe",
+      "gunsmith_cognitis:shotgun_shell_recipe"
+    ]
+  },
+  "parent": "gunsmith_cognitis:peterson_advancement"
+}

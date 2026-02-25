@@ -180,6 +180,24 @@
       },
       {
         "value": "CUSTOM:BigGame4BorePercussionRifle"
+      },
+      {
+        "value": "CUSTOM:Adams1856Revolver"
+      },
+      {
+        "value": "CUSTOM:Enfield1853MusketRifle"
+      },
+      {
+        "value": "CUSTOM:SawnOffColtRevolver1855"
+      },
+      {
+        "value": "CUSTOM:PorterTurretRifle"
+      },
+      {
+        "value": "CUSTOM:ColtRevolvingShotgun1855"
+      },
+      {
+        "value": "CUSTOM:SawnColtRevolvingShotgun1855"
       }
     ],
     "blocks": [],

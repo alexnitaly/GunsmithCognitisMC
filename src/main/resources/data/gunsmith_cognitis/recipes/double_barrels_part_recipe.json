@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:iron_nugget"
+    },
+    "1": {
+      "item": "gunsmith_cognitis:rifledbarrel"
+    },
+    "2": {
+      "item": "minecraft:lever"
+    },
+    "3": {
+      "item": "minecraft:iron_nugget"
+    },
+    "4": {
+      "item": "gunsmith_cognitis:rifledbarrel"
+    },
+    "5": {
+      "item": "minecraft:lever"
+    }
+  },
+  "result": {
+    "item": "gunsmith_cognitis:double_barrels_part",
+    "count": 1
+  }
+}

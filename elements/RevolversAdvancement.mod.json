@@ -1,0 +1,37 @@
+{
+  "_fv": 39,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Back in the West...",
+    "achievementDescription": "From Peterson's Prototype, a new world of firearms has opened... A Six-Shooting One!",
+    "achievementIcon": {
+      "value": "CUSTOM:ColtArmy1860"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [
+      "ColtPeterson1836Recipe",
+      "ColtDragoon1848Upgrade",
+      "ColtWalker1847Recipe",
+      "ColtArmy1860Recipe",
+      "ColtRevolvingRifle1855Recipe",
+      "ColtRevolvingShotgun1855Recipe",
+      "SawnColtRevolver1855Recipe",
+      "SawnColtRevolvingShotgun1855Recipe",
+      "Adams1856RevolverRecipe",
+      "RevolverDrumRecipe",
+      "ShotgunShellRecipe"
+    ],
+    "rewardFunction": "No function",
+    "rewardXP": 8,
+    "achievementType": "challenge",
+    "parent": {
+      "value": "CUSTOM:PetersonAdvancement"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"item_in_inventory\" x=\"29\" y=\"10\"><value name=\"amount_l\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"amount_h\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:AdvancedRevolversBlueprint</field></block></value><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+  }
+}

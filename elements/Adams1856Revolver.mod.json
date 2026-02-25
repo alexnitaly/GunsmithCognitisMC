@@ -1,0 +1,46 @@
+{
+  "_fv": 39,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "beaumont_adams_1856_revolver",
+    "customModelName": "Normal",
+    "name": "Beamount-Adams 1856 Revolver",
+    "specialInfo": [
+      "Single Action: Uses percussion cups from inventory",
+      "Requires small paper cartidges to Reload."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:GunsmithCognitisPercussioncapTab"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 799,
+    "actionSound": {
+      "value": "CUSTOM:gun_shot_heavy"
+    },
+    "hasGlow": false,
+    "animation": "none",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "Adams1856ItemUsed"
+    },
+    "useCondition": {
+      "name": "Adams1856RevolverCanUseRanged"
+    },
+    "bulletPower": 3.2,
+    "bulletDamage": 0.9,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:MusketBallProjectile"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": ""
+  }
+}

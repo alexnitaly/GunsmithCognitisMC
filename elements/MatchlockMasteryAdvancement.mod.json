@@ -2,7 +2,7 @@
   "_fv": 39,
   "_type": "achievement",
   "definition": {
-    "achievementName": "A Deadly Match.",
+    "achievementName": "A Deadly Match",
     "achievementDescription": "With a mastery of the Matchlock mechanism, you understand the concept of snapping a match, cutting down the fire delay.",
     "achievementIcon": {
       "value": "CUSTOM:MatchlockSnaphanceMusket"

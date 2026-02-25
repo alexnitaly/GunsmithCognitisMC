@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "gunsmith_cognitis:colt_revolving_rifle_1855"
+  },
+  "result": "gunsmith_cognitis:sawn_off_colt_revolver_1855"
+}

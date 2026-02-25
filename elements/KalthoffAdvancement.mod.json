@@ -2,7 +2,7 @@
   "_fv": 39,
   "_type": "achievement",
   "definition": {
-    "achievementName": "Kalthoff's Neverending Gun.",
+    "achievementName": "Kalthoff's Neverending Gun",
     "achievementDescription": "A Repeater with a big tube acting as a magazine for powder and bullets, you've got a masterclass medieval repeater in your hands!",
     "achievementIcon": {
       "value": "CUSTOM:WheellockKalthoffRepeater"

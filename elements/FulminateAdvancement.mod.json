@@ -2,7 +2,7 @@
   "_fv": 39,
   "_type": "achievement",
   "definition": {
-    "achievementName": "A Burning Idea.",
+    "achievementName": "A Burning Idea",
     "achievementDescription": "OH, We could make better gunpowder out of this...",
     "achievementIcon": {
       "value": "CUSTOM:Fulminatepowder"

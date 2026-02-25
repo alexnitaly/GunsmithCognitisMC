@@ -1,0 +1,49 @@
+{
+  "_fv": 39,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "porter_1851_turret_rifle",
+    "customModelName": "Normal",
+    "name": "Porter 1851 Turret Rifle",
+    "specialInfo": [
+      "Single Action: Uses percussion cups",
+      "Requires Paper Cartidges to Reload."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:GunsmithCognitisPercussioncapTab"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 875,
+    "actionSound": {
+      "value": "CUSTOM:gun_shot_heavy"
+    },
+    "hasGlow": false,
+    "animation": "none",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "PorterTurretRifleItemUsed"
+    },
+    "onEntitySwing": {
+      "name": "PorterTurretRifleItemSwung"
+    },
+    "useCondition": {
+      "name": "PorterTurretRifleCanBeUsedRanged"
+    },
+    "bulletPower": 3.5,
+    "bulletDamage": 2.0,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:MusketBallProjectile"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": ""
+  }
+}

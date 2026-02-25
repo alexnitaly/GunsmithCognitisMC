@@ -1,0 +1,49 @@
+{
+  "_fv": 39,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "cut_down_colt_1855_revolving_shotgun",
+    "customModelName": "Normal",
+    "name": "Sawn-Off Colt Revolver 1855",
+    "specialInfo": [
+      "Single Action: Uses percussion cups",
+      "Requires Paper Cartidges to Reload."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:GunsmithCognitisPercussioncapTab"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 655,
+    "actionSound": {
+      "value": "CUSTOM:gun_shot_heavy"
+    },
+    "hasGlow": false,
+    "animation": "none",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "ColtRevolvingRifle1855ItemUsed"
+    },
+    "onEntitySwing": {
+      "name": "SawnColtRevolver1855ItemSwung"
+    },
+    "useCondition": {
+      "name": "SawnColtRevolver1855CanUseRanged"
+    },
+    "bulletPower": 3.5,
+    "bulletDamage": 2.0,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:MusketBallProjectile"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": ""
+  }
+}

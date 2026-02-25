@@ -111,6 +111,12 @@
       },
       {
         "value": "CUSTOM:SawnOffDoubleBarrelShotgun"
+      },
+      {
+        "value": "CUSTOM:ColtRevolvingShotgun1855"
+      },
+      {
+        "value": "CUSTOM:SawnColtRevolvingShotgun1855"
       }
     ],
     "blocks": [],

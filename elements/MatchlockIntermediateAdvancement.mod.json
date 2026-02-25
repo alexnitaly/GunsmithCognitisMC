@@ -2,7 +2,7 @@
   "_fv": 39,
   "_type": "achievement",
   "definition": {
-    "achievementName": "First musket designs.",
+    "achievementName": "First musket designs",
     "achievementDescription": "Crude and Unreliable, but an important stepping stone nonetheless.",
     "achievementIcon": {
       "value": "CUSTOM:MatchlockArquebus"

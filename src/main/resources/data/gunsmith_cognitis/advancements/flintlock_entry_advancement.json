@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "gunsmith_cognitis:wheellock_pistol"
+      "item": "gunsmith_cognitis:flintlockmusket"
     },
     "title": {
       "translate": "advancements.flintlock_entry_advancement.title"

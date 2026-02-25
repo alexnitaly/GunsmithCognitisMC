@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01 ",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "gunsmith_cognitis:bigborebarrel"
+    },
+    "1": {
+      "item": "gunsmith_cognitis:riflingtool"
+    },
+    "3": {
+      "item": "minecraft:gunpowder"
+    },
+    "4": {
+      "item": "gunsmith_cognitis:bigborebarrel"
+    },
+    "5": {
+      "item": "gunsmith_cognitis:percussioncap_mechanism"
+    },
+    "6": {
+      "tag": "gunsmith_cognitis:blueprint_percussion_intermediate"
+    },
+    "7": {
+      "item": "gunsmith_cognitis:percussioncapgunkit"
+    },
+    "8": {
+      "item": "minecraft:oak_log"
+    }
+  },
+  "result": {
+    "item": "gunsmith_cognitis:big_game_4_bore_percussion_rifle",
+    "count": 1
+  }
+}

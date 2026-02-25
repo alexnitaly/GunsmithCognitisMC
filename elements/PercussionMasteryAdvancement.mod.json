@@ -1,0 +1,33 @@
+{
+  "_fv": 39,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Master Gunsmith",
+    "achievementDescription": "You've reached the peak of what you can achieve with paper cartidges and caps, experimenting with clips and revolving chambers, perhaps one day you could experiment with even better bullets...",
+    "achievementIcon": {
+      "value": "CUSTOM:BrowningHarmonicaRifle"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [
+      "BrowningHarmonicaRifleRecipe",
+      "BrowningHarmonicaClipRecipe",
+      "PorterTurretRifleRecipe",
+      "ShotgunShellRecipe",
+      "SawnOffDoubleBarrelShotgunRecipe",
+      "DoubleBarrelShotgunRecipe",
+      "DoubleBarrelsPartRecipe"
+    ],
+    "rewardFunction": "No function",
+    "rewardXP": 8,
+    "achievementType": "challenge",
+    "parent": {
+      "value": "CUSTOM:PercussionIntermediateAdvancement"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"item_in_inventory\" x=\"29\" y=\"10\"><value name=\"amount_l\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"amount_h\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:PercussioncapBlueprintMastery</field></block></value><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+  }
+}

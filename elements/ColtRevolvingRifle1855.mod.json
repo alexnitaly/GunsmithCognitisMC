@@ -7,7 +7,8 @@
     "customModelName": "Normal",
     "name": "Colt Revolving Rifle 1855",
     "specialInfo": [
-      "Single Action: Requires Paper Cartidges to Reload."
+      "Single Action: Uses percussion cups",
+      "Requires Paper Cartidges to Reload."
     ],
     "creativeTab": {
       "value": "CUSTOM:GunsmithCognitisPercussioncapTab"

@@ -140,6 +140,9 @@ public class AmmoReloadOnKeyPressedProcedure {
 				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.PATTERN_1851_MINIE_RIFLE_BAYONET.get()) {
 			Pattern1851MinieRifleReloadProcedure.execute(entity);
 		}
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.ENFIELD_1853_MUSKET_RIFLE.get()) {
+			Enfield1853MusketRifleReloadProcedure.execute(entity);
+		}
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.LORENZ_PISTOL.get()) {
 			LorenzPistolReloadProcedure.execute(entity);
 		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.LORENZ_PISTOL.get()) {
@@ -159,13 +162,17 @@ public class AmmoReloadOnKeyPressedProcedure {
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.DREYSE_NEEDLE_GUN.get()) {
 			DreyseNeedleGunReloadProcedure.execute(entity);
 		}
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.FUSIL_1866_CHASSEPOT.get()
+				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.FUSIL_1866_CHASSEPOT_BAYONET.get()) {
+			Fusil1866ChassepotReloadProcedure.execute(entity);
+		}
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.DOUBLE_BARREL_SHOTGUN.get()) {
 			DoubleBarrelShotgunReloadProcedure.execute(entity);
 		}
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.SAWN_OFF_DOUBLE_BARREL_SHOTGUN.get()) {
-			DoubleBarrelShotgunReloadProcedure.execute(entity);
+			SawnOffDoubleShotgunReloadProcedure.execute(entity);
 		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.SAWN_OFF_DOUBLE_BARREL_SHOTGUN.get()) {
-			SawnOffDoubleBarrelShotgunOffhandReloadProcedure.execute(entity);
+			SawnOffDoubleShotgunOffhandReloadProcedure.execute(entity);
 		}
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.COLT_DRAGOON_1848.get()) {
 			ColtDragoon1848ReloadProcedure.execute(entity);
@@ -178,10 +185,28 @@ public class AmmoReloadOnKeyPressedProcedure {
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.COLT_REVOLVING_RIFLE_1855.get()) {
 			ColtRevolvingRifle1855ReloadProcedure.execute(entity);
 		}
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.COLT_REVOLVING_SHOTGUN_1855.get()) {
+			ColtRevolvingShotgunReloadProcedure.execute(entity);
+		}
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.SAWN_OFF_COLT_REVOLVER_1855.get()) {
+			SawnColtRevolver1855ReloadProcedure.execute(entity);
+		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.SAWN_OFF_COLT_REVOLVER_1855.get()) {
+			SawnColtRevolver1855OffhandReloadProcedure.execute(entity);
+		}
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.SAWN_COLT_REVOLVING_SHOTGUN_1855.get()) {
+			SawnColtRevolvingShotgun1855ReloadProcedure.execute(entity);
+		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.SAWN_COLT_REVOLVING_SHOTGUN_1855.get()) {
+			SawnColtRevolvingShotgun1855OffhandReloadProcedure.execute(entity);
+		}
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.COLT_ARMY_1860.get()) {
 			ColtArmy1860ReloadProcedure.execute(entity);
 		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.COLT_ARMY_1860.get()) {
 			ColtArmy1860OffhandReloadProcedure.execute(entity);
+		}
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.ADAMS_1856_REVOLVER.get()) {
+			Adams1856RevolverReloadProcedure.execute(entity);
+		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.ADAMS_1856_REVOLVER.get()) {
+			Adams1856RevolverOffhandReloadProcedure.execute(entity);
 		}
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.JOSEPH_EGG_PISTOL.get()) {
 			JosephEggPistolReloadProcedure.execute(entity);
@@ -198,6 +223,9 @@ public class AmmoReloadOnKeyPressedProcedure {
 		}
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.BIG_GAME_4_BORE_PERCUSSION_RIFLE.get()) {
 			BigGame4BorePercussionRifleReloadProcedure.execute(entity);
+		}
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.PORTER_TURRET_RIFLE.get()) {
+			PorterTurretRifleReloadProcedure.execute(entity);
 		}
 	}
 }

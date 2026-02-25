@@ -78,5 +78,11 @@ public class GunsmithCognitisModEntityRenderers {
 		event.registerEntityRenderer(GunsmithCognitisModEntities.JOSEPH_EGG_PISTOL.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(GunsmithCognitisModEntities.BIG_GAME_4_BORE_PERCUSSION_RIFLE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(GunsmithCognitisModEntities.HAND_BOMB.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(GunsmithCognitisModEntities.ADAMS_1856_REVOLVER.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(GunsmithCognitisModEntities.ENFIELD_1853_MUSKET_RIFLE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(GunsmithCognitisModEntities.SAWN_OFF_COLT_REVOLVER_1855.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(GunsmithCognitisModEntities.PORTER_TURRET_RIFLE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(GunsmithCognitisModEntities.COLT_REVOLVING_SHOTGUN_1855.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(GunsmithCognitisModEntities.SAWN_COLT_REVOLVING_SHOTGUN_1855.get(), ThrownItemRenderer::new);
 	}
 }

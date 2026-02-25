@@ -20,8 +20,8 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.gunsmithcognitis.procedures.DreyseneedlegunCanUseRangedProcedure;
-import net.mcreator.gunsmithcognitis.procedures.DreyseNeedleGunItemUsedProcedure;
+import net.mcreator.gunsmithcognitis.procedures.Fusil1866ChassepotItemUsedProcedure;
+import net.mcreator.gunsmithcognitis.procedures.Fusil1866ChassepotCanUseRangedProcedure;
 import net.mcreator.gunsmithcognitis.init.GunsmithCognitisModTabs;
 import net.mcreator.gunsmithcognitis.entity.Fusil1866ChassepotBayonetEntity;
 
@@ -62,7 +62,7 @@ public class Fusil1866ChassepotBayonetItem extends Item {
 		if (slot == EquipmentSlot.MAINHAND) {
 			ImmutableMultimap.Builder<Attribute, AttributeModifier> builder = ImmutableMultimap.builder();
 			builder.putAll(super.getDefaultAttributeModifiers(slot));
-			builder.put(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_UUID, "Ranged item modifier", (double) 4.5, AttributeModifier.Operation.ADDITION));
+			builder.put(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_UUID, "Ranged item modifier", (double) 5, AttributeModifier.Operation.ADDITION));
 			builder.put(Attributes.ATTACK_SPEED, new AttributeModifier(BASE_ATTACK_SPEED_UUID, "Ranged item modifier", -2.4, AttributeModifier.Operation.ADDITION));
 			return builder.build();
 		}
@@ -76,12 +76,12 @@ public class Fusil1866ChassepotBayonetItem extends Item {
 			double x = entity.getX();
 			double y = entity.getY();
 			double z = entity.getZ();
-			if (DreyseneedlegunCanUseRangedProcedure.execute(world, x, y, z, entity)) {
+			if (Fusil1866ChassepotCanUseRangedProcedure.execute(world, x, y, z, entity)) {
 				Fusil1866ChassepotBayonetEntity entityarrow = Fusil1866ChassepotBayonetEntity.shoot(world, entity, world.getRandom(), 5f, 2.1, 0);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 
-				DreyseNeedleGunItemUsedProcedure.execute(world, x, y, z, entity);
+				Fusil1866ChassepotItemUsedProcedure.execute(world, x, y, z, entity);
 				entity.releaseUsingItem();
 			}
 		}

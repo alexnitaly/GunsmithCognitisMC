@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "name": "Colt Dragoon 1848 Revolver",
     "specialInfo": [
-      "Single Action: Uses Gunpowder from Inventory",
+      "Single Action: Uses percussion cups and gunpowder from Inventory",
       "Requires Heavy musket balls to Reload."
     ],
     "creativeTab": {

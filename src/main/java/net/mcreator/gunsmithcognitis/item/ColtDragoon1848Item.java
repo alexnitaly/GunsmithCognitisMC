@@ -45,7 +45,7 @@ public class ColtDragoon1848Item extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("Single Action: Uses Gunpowder from Inventory"));
+		list.add(new TextComponent("Single Action: Uses percussion cups and gunpowder from Inventory"));
 		list.add(new TextComponent("Requires Heavy musket balls to Reload."));
 	}
 

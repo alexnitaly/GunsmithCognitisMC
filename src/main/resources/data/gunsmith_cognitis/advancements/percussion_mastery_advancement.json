@@ -1,0 +1,48 @@
+{
+  "display": {
+    "icon": {
+      "item": "gunsmith_cognitis:browning_harmonica_rifle"
+    },
+    "title": {
+      "translate": "advancements.percussion_mastery_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.percussion_mastery_advancement.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "percussion_mastery_advancement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "gunsmith_cognitis:percussioncap_blueprint_mastery"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 8,
+    "recipes": [
+      "gunsmith_cognitis:browning_harmonica_rifle_recipe",
+      "gunsmith_cognitis:browning_harmonica_clip_recipe",
+      "gunsmith_cognitis:porter_turret_rifle_recipe",
+      "gunsmith_cognitis:shotgun_shell_recipe",
+      "gunsmith_cognitis:sawn_off_double_barrel_shotgun_recipe",
+      "gunsmith_cognitis:double_barrel_shotgun_recipe",
+      "gunsmith_cognitis:double_barrels_part_recipe"
+    ]
+  },
+  "parent": "gunsmith_cognitis:percussion_intermediate_advancement"
+}

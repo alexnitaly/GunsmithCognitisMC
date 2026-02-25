@@ -2,7 +2,7 @@
   "_fv": 39,
   "_type": "achievement",
   "definition": {
-    "achievementName": "Il Ferro di Firenze.",
+    "achievementName": "Il Ferro di Firenze",
     "achievementDescription": "A Rare Piece: The Lorenzoni's Repeater, a flintlock pistol capable of internal capacity for powder and bullets, so that you can make your point 7 times!",
     "achievementIcon": {
       "value": "CUSTOM:FlintlockLorenzoniRepeater"

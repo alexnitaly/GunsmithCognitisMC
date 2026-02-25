@@ -1,0 +1,53 @@
+{
+  "display": {
+    "icon": {
+      "item": "gunsmith_cognitis:dreyse_needle_gun"
+    },
+    "title": {
+      "translate": "advancements.percussion_intermediate_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.percussion_intermediate_advancement.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "percussion_intermediate_advancement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "gunsmith_cognitis:percussioncap_blueprint_intermediate"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 6,
+    "recipes": [
+      "gunsmith_cognitis:bolt_mechanism_recipe",
+      "gunsmith_cognitis:colt_peterson_1836_recipe",
+      "gunsmith_cognitis:dynamite_recipe",
+      "gunsmith_cognitis:dynamite_pack_recipe",
+      "gunsmith_cognitis:dynamite_tnt_conversion",
+      "gunsmith_cognitis:dreyse_needle_gun_recipe",
+      "gunsmith_cognitis:fusil_1866_chassepot_bayonet_recipe",
+      "gunsmith_cognitis:chassepot_bayonet_recipe",
+      "gunsmith_cognitis:fusil_1866_chassepot_recipe",
+      "gunsmith_cognitis:joseph_egg_percussion_pistol_recipe",
+      "gunsmith_cognitis:big_game_4_bore_percussion_rifle_recipe",
+      "gunsmith_cognitis:revolver_drum_recipe"
+    ]
+  },
+  "parent": "gunsmith_cognitis:percussion_entry_advancement"
+}

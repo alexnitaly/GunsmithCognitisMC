@@ -45,7 +45,8 @@ public class ColtRevolvingRifle1855Item extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("Single Action: Requires Paper Cartidges to Reload."));
+		list.add(new TextComponent("Single Action: Uses percussion cups"));
+		list.add(new TextComponent("Requires Paper Cartidges to Reload."));
 	}
 
 	@Override

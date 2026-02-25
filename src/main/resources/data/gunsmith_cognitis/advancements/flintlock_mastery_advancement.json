@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "gunsmith_cognitis:flintlock_pepperbox"
+      "item": "gunsmith_cognitis:ferguson_rifle"
     },
     "title": {
       "translate": "advancements.flintlock_mastery_advancement.title"
@@ -43,5 +43,5 @@
       "gunsmith_cognitis:flintlock_collier_revolving_carbine_recipe"
     ]
   },
-  "parent": "gunsmith_cognitis:flintlock_entry_advancement"
+  "parent": "gunsmith_cognitis:flintlock_intermediate_advancement"
 }

@@ -2,7 +2,7 @@
   "_fv": 39,
   "_type": "achievement",
   "definition": {
-    "achievementName": "A Spinning Spark.",
+    "achievementName": "A Spinning Spark",
     "achievementDescription": "Utilizing the clock's idea to create a friction-wheel mechanism will lead to the creation of the first self-igniting firearm!",
     "achievementIcon": {
       "value": "CUSTOM:WheellockPistol"

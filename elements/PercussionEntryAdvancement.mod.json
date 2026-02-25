@@ -2,7 +2,7 @@
   "_fv": 39,
   "_type": "achievement",
   "definition": {
-    "achievementName": "Smokeless Propellers.",
+    "achievementName": "Smokeless Propellers",
     "achievementDescription": "Well it still makes smoke clouds actually, but now the rifled barrels are standardized and the reliable mechanism shrugs off the envirorment!",
     "achievementIcon": {
       "value": "CUSTOM:Pattern1851minierifle"
@@ -19,7 +19,15 @@
       "PercussioncapGunKitRecipe",
       "MinieballRecipe",
       "MiniePaperCartidgeRecipe",
-      "Pattern1851MinieRifleBayonetRecipe"
+      "Pattern1851MinieRifleBayonetRecipe",
+      "Pattern1851MinieRifleRecipe",
+      "LorenzPistolRecipe",
+      "KentuckyPistolRecipe",
+      "SpringfieldModel1861BayonetRecipe",
+      "Springfield1861RifledMusketRecipe",
+      "Enfield1853RifledMusketRecipe",
+      "RifledbarrelRecipe",
+      "RiflingtoolRecipe"
     ],
     "rewardFunction": "No function",
     "rewardXP": 4,

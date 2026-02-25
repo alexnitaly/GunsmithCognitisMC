@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:gunpowder"
+    },
+    "1": {
+      "item": "gunsmith_cognitis:rifledbarrel"
+    },
+    "2": {
+      "item": "gunsmith_cognitis:percussioncap_mechanism"
+    },
+    "3": {
+      "tag": "gunsmith_cognitis:blueprint_percussion_entry"
+    },
+    "4": {
+      "item": "gunsmith_cognitis:percussioncapgunkit"
+    },
+    "5": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "result": {
+    "item": "gunsmith_cognitis:flintlock_pistol",
+    "count": 1
+  }
+}

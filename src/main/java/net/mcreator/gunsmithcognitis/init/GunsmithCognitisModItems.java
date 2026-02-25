@@ -33,11 +33,14 @@ import net.mcreator.gunsmithcognitis.item.SpringfieldModel1861RifledMusketBayone
 import net.mcreator.gunsmithcognitis.item.SmoothborebarrelItem;
 import net.mcreator.gunsmithcognitis.item.ShotgunShellItem;
 import net.mcreator.gunsmithcognitis.item.SawnOffDoubleBarrelShotgunItem;
+import net.mcreator.gunsmithcognitis.item.SawnOffColtRevolver1855Item;
+import net.mcreator.gunsmithcognitis.item.SawnColtRevolvingShotgun1855Item;
 import net.mcreator.gunsmithcognitis.item.RockItem;
 import net.mcreator.gunsmithcognitis.item.RiflingtoolItem;
 import net.mcreator.gunsmithcognitis.item.RifledbarrelItem;
 import net.mcreator.gunsmithcognitis.item.RevolverDrumItem;
 import net.mcreator.gunsmithcognitis.item.RamrodItem;
+import net.mcreator.gunsmithcognitis.item.PorterTurretRifleItem;
 import net.mcreator.gunsmithcognitis.item.PercussionnippleItem;
 import net.mcreator.gunsmithcognitis.item.PercussioncapgunkitItem;
 import net.mcreator.gunsmithcognitis.item.PercussioncapMechanismItem;
@@ -108,6 +111,7 @@ import net.mcreator.gunsmithcognitis.item.FlintlockBlueprintItem;
 import net.mcreator.gunsmithcognitis.item.FlintlockBlueprintIntermediateItem;
 import net.mcreator.gunsmithcognitis.item.FlintlockAsumetteRifledWallGunItem;
 import net.mcreator.gunsmithcognitis.item.FergusonRifleItem;
+import net.mcreator.gunsmithcognitis.item.Enfield1853MusketRifleItem;
 import net.mcreator.gunsmithcognitis.item.DynamitePackItem;
 import net.mcreator.gunsmithcognitis.item.DynamiteItem;
 import net.mcreator.gunsmithcognitis.item.DreyseNeedleGunItem;
@@ -120,6 +124,7 @@ import net.mcreator.gunsmithcognitis.item.CuirassItem;
 import net.mcreator.gunsmithcognitis.item.CrudeSmoothborebarrelItem;
 import net.mcreator.gunsmithcognitis.item.CrudeBigborebarrelItem;
 import net.mcreator.gunsmithcognitis.item.ColtWalker1847Item;
+import net.mcreator.gunsmithcognitis.item.ColtRevolvingShotgun1855Item;
 import net.mcreator.gunsmithcognitis.item.ColtRevolvingRifle1855Item;
 import net.mcreator.gunsmithcognitis.item.ColtPeterson1836Item;
 import net.mcreator.gunsmithcognitis.item.ColtDragoon1848Item;
@@ -132,6 +137,7 @@ import net.mcreator.gunsmithcognitis.item.BoltMechanismItem;
 import net.mcreator.gunsmithcognitis.item.BigborebarrelItem;
 import net.mcreator.gunsmithcognitis.item.BigGame4BorePercussionRifleItem;
 import net.mcreator.gunsmithcognitis.item.AdvancedRevolversBlueprintItem;
+import net.mcreator.gunsmithcognitis.item.Adams1856RevolverItem;
 import net.mcreator.gunsmithcognitis.GunsmithCognitisMod;
 
 public class GunsmithCognitisModItems {
@@ -256,6 +262,12 @@ public class GunsmithCognitisModItems {
 	public static final RegistryObject<Item> JOSEPH_EGG_PISTOL = REGISTRY.register("joseph_egg_pistol", () -> new JosephEggPistolItem());
 	public static final RegistryObject<Item> BIG_GAME_4_BORE_PERCUSSION_RIFLE = REGISTRY.register("big_game_4_bore_percussion_rifle", () -> new BigGame4BorePercussionRifleItem());
 	public static final RegistryObject<Item> HAND_BOMB = REGISTRY.register("hand_bomb", () -> new HandBombItem());
+	public static final RegistryObject<Item> ADAMS_1856_REVOLVER = REGISTRY.register("adams_1856_revolver", () -> new Adams1856RevolverItem());
+	public static final RegistryObject<Item> ENFIELD_1853_MUSKET_RIFLE = REGISTRY.register("enfield_1853_musket_rifle", () -> new Enfield1853MusketRifleItem());
+	public static final RegistryObject<Item> SAWN_OFF_COLT_REVOLVER_1855 = REGISTRY.register("sawn_off_colt_revolver_1855", () -> new SawnOffColtRevolver1855Item());
+	public static final RegistryObject<Item> PORTER_TURRET_RIFLE = REGISTRY.register("porter_turret_rifle", () -> new PorterTurretRifleItem());
+	public static final RegistryObject<Item> COLT_REVOLVING_SHOTGUN_1855 = REGISTRY.register("colt_revolving_shotgun_1855", () -> new ColtRevolvingShotgun1855Item());
+	public static final RegistryObject<Item> SAWN_COLT_REVOLVING_SHOTGUN_1855 = REGISTRY.register("sawn_colt_revolving_shotgun_1855", () -> new SawnColtRevolvingShotgun1855Item());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
