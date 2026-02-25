@@ -27,7 +27,7 @@ import java.util.List;
 
 public class DynamitePackItem extends Item {
 	public DynamitePackItem() {
-		super(new Item.Properties().tab(GunsmithCognitisModTabs.TAB_GUNSMITH_COGNITIS_PERCUSSIONCAP_TAB).stacksTo(8));
+		super(new Item.Properties().tab(GunsmithCognitisModTabs.TAB_GUNSMITH_COGNITIS_PERCUSSIONCAP_TAB).stacksTo(4));
 	}
 
 	@Override
@@ -70,7 +70,7 @@ public class DynamitePackItem extends Item {
 					}
 				}
 				if (entity.getAbilities().instabuild || stack != ItemStack.EMPTY) {
-					DynamitePackEntity entityarrow = DynamitePackEntity.shoot(world, entity, world.getRandom(), 1f, 8, 3);
+					DynamitePackEntity entityarrow = DynamitePackEntity.shoot(world, entity, world.getRandom(), 0.7f, 2, 1);
 					itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 					if (entity.getAbilities().instabuild) {
 						entityarrow.pickup = AbstractArrow.Pickup.CREATIVE_ONLY;

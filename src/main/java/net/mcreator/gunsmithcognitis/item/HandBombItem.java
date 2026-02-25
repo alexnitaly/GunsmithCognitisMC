@@ -59,23 +59,23 @@ public class HandBombItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (HandBombCanUseRangedItemProcedure.execute(entity)) {
-				ItemStack stack = ProjectileWeaponItem.getHeldProjectile(entity, e -> e.getItem() == GunsmithCognitisModItems.DYNAMITE.get());
+				ItemStack stack = ProjectileWeaponItem.getHeldProjectile(entity, e -> e.getItem() == GunsmithCognitisModItems.HAND_BOMB.get());
 				if (stack == ItemStack.EMPTY) {
 					for (int i = 0; i < entity.getInventory().items.size(); i++) {
 						ItemStack teststack = entity.getInventory().items.get(i);
-						if (teststack != null && teststack.getItem() == GunsmithCognitisModItems.DYNAMITE.get()) {
+						if (teststack != null && teststack.getItem() == GunsmithCognitisModItems.HAND_BOMB.get()) {
 							stack = teststack;
 							break;
 						}
 					}
 				}
 				if (entity.getAbilities().instabuild || stack != ItemStack.EMPTY) {
-					HandBombEntity entityarrow = HandBombEntity.shoot(world, entity, world.getRandom(), 1.2f, 2, 1);
+					HandBombEntity entityarrow = HandBombEntity.shoot(world, entity, world.getRandom(), 0.9f, 1, 1);
 					itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 					if (entity.getAbilities().instabuild) {
 						entityarrow.pickup = AbstractArrow.Pickup.CREATIVE_ONLY;
 					} else {
-						if (new ItemStack(GunsmithCognitisModItems.DYNAMITE.get()).isDamageableItem()) {
+						if (new ItemStack(GunsmithCognitisModItems.HAND_BOMB.get()).isDamageableItem()) {
 							if (stack.hurt(1, world.getRandom(), entity)) {
 								stack.shrink(1);
 								stack.setDamageValue(0);

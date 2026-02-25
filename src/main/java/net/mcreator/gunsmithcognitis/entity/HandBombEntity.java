@@ -54,7 +54,7 @@ public class HandBombEntity extends AbstractArrow implements ItemSupplier {
 
 	@Override
 	protected ItemStack getPickupItem() {
-		return new ItemStack(GunsmithCognitisModItems.DYNAMITE.get());
+		return new ItemStack(GunsmithCognitisModItems.HAND_BOMB.get());
 	}
 
 	@Override
@@ -67,8 +67,7 @@ public class HandBombEntity extends AbstractArrow implements ItemSupplier {
 	public void tick() {
 		super.tick();
 		HandBombWhileProjectileFlyingTickProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), this);
-		if (this.inGround)
-			this.discard();
+		this.inGround = false; 
 	}
 
 	public static HandBombEntity shoot(Level world, LivingEntity entity, Random random, float power, double damage, int knockback) {
@@ -88,13 +87,52 @@ public class HandBombEntity extends AbstractArrow implements ItemSupplier {
 		double dx = target.getX() - entity.getX();
 		double dy = target.getY() + target.getEyeHeight() - 1.1;
 		double dz = target.getZ() - entity.getZ();
-		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 1.2f * 2, 12.0F);
+		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 0.8f * 2, 12.0F);
 		entityarrow.setSilent(true);
-		entityarrow.setBaseDamage(2);
+		entityarrow.setBaseDamage(1);
 		entityarrow.setKnockback(1);
 		entityarrow.setCritArrow(true);
 		entity.level.addFreshEntity(entityarrow);
 		entity.level.playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.tnt.primed")), SoundSource.PLAYERS, 1, 1f / (new Random().nextFloat() * 0.5f + 1));
 		return entityarrow;
+	}
+
+	@Override
+	public void onHitBlock(net.minecraft.world.phys.BlockHitResult blockHitResult) {
+	    net.minecraft.core.Direction face = blockHitResult.getDirection();
+	    net.minecraft.world.phys.Vec3 motion = this.getDeltaMovement();
+	    
+	    double bounceFactor = 0.25D; 
+	    
+	    double motX = motion.x;
+	    double motY = motion.y;
+	    double motZ = motion.z;
+	    
+	    if (face.getAxis() == net.minecraft.core.Direction.Axis.X) {
+	        motX = -motX * bounceFactor;
+	    } else if (face.getAxis() == net.minecraft.core.Direction.Axis.Y) {
+	        motY = -motY * bounceFactor;
+	        motX *= 0.6D;
+	        motZ *= 0.6D;
+	    } else if (face.getAxis() == net.minecraft.core.Direction.Axis.Z) {
+	        motZ = -motZ * bounceFactor;
+	    }
+	    
+	    if (Math.abs(motY) < 0.05D) {
+	        motY = 0.0D;
+	    } else {
+	        this.playSound(net.minecraft.sounds.SoundEvents.STONE_HIT, 0.5F, 1.2F);
+	    }
+	    
+	    this.setDeltaMovement(motX, motY, motZ);
+	}
+		
+	@Override
+	public void onHitEntity(net.minecraft.world.phys.EntityHitResult entityHitResult) {
+	    
+	    net.minecraft.world.phys.Vec3 motion = this.getDeltaMovement();
+	    this.setDeltaMovement(motion.x * -0.3D, motion.y * -0.3D, motion.z * -0.3D);
+	    
+	    this.playSound(net.minecraft.sounds.SoundEvents.STONE_HIT, 1.0F, 1.2F);
 	}
 }

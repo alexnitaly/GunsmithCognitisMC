@@ -1,15 +1,23 @@
 package net.mcreator.gunsmithcognitis.procedures;
 
+import net.minecraftforge.registries.ForgeRegistries;
+
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.Explosion;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.Projectile;
 import net.minecraft.world.entity.projectile.AbstractArrow;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.util.Mth;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.core.BlockPos;
 
+import net.mcreator.gunsmithcognitis.init.GunsmithCognitisModItems;
 import net.mcreator.gunsmithcognitis.init.GunsmithCognitisModEntities;
 import net.mcreator.gunsmithcognitis.entity.DynamiteEntity;
 
@@ -25,32 +33,58 @@ public class DynamitePackWhileProjectileFlyingTickProcedure {
 				_level.sendParticles(ParticleTypes.SMOKE, x, y, z, 1, 0, 0, 0, 0);
 		} else {
 			if (world instanceof ServerLevel _level)
-				_level.sendParticles(ParticleTypes.LARGE_SMOKE, x, y, z, 2, 0, 0, 0, 0);
+				_level.sendParticles(ParticleTypes.SMOKE, x, y, z, 2, 0, 0, 0, 0);
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles(ParticleTypes.SMALL_FLAME, x, y, z, 1, 0, 0, 0, 0);
 		}
 		if (immediatesourceentity.getPersistentData().getDouble("fuse_timer") >= 180) {
-			if (world instanceof Level _level && !_level.isClientSide())
-				_level.explode(null, x, y, z, 5, Explosion.BlockInteraction.BREAK);
-			for (int index0 = 0; index0 < (int) (3); index0++) {
-				if (world instanceof ServerLevel projectileLevel) {
-					Projectile _entityToSpawn = new Object() {
-						public Projectile getArrow(Level level, Entity shooter, float damage, int knockback) {
-							AbstractArrow entityToSpawn = new DynamiteEntity(GunsmithCognitisModEntities.DYNAMITE.get(), level);
-							entityToSpawn.setOwner(shooter);
-							entityToSpawn.setBaseDamage(damage);
-							entityToSpawn.setKnockback(knockback);
-							entityToSpawn.setSilent(true);
-							return entityToSpawn;
-						}
-					}.getArrow(projectileLevel, immediatesourceentity, 1, 1);
-					_entityToSpawn.setPos(x, y, z);
-					_entityToSpawn.shoot((Mth.nextInt(new Random(), -1, 1)), (Mth.nextInt(new Random(), -1, 1)), (Mth.nextInt(new Random(), -1, 1)), Mth.nextInt(new Random(), 1, 2), 10);
-					projectileLevel.addFreshEntity(_entityToSpawn);
+			if (immediatesourceentity.isInWaterRainOrBubble()) {
+				if (world instanceof ServerLevel _level)
+					_level.sendParticles(ParticleTypes.LARGE_SMOKE, x, y, z, 3, 0, 0, 0, 0.001);
+				if (world instanceof ServerLevel _level)
+					_level.sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE, x, y, z, 1, 0, 0, 0, 0.001);
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.extinguish_fire")), SoundSource.NEUTRAL, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.extinguish_fire")), SoundSource.NEUTRAL, 1, 1, false);
+					}
 				}
+				if (world instanceof Level _level && !_level.isClientSide()) {
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(GunsmithCognitisModItems.DYNAMITE_PACK.get()));
+					entityToSpawn.setPickUpDelay(10);
+					_level.addFreshEntity(entityToSpawn);
+				}
+				if (!immediatesourceentity.level.isClientSide())
+					immediatesourceentity.discard();
+			} else {
+				if (world instanceof Level _level && !_level.isClientSide())
+					_level.explode(null, x, y, z, 5, Explosion.BlockInteraction.BREAK);
+				for (int index0 = 0; index0 < (int) (5); index0++) {
+					if (Math.random() < 0.75) {
+						if (world instanceof ServerLevel projectileLevel) {
+							Projectile _entityToSpawn = new Object() {
+								public Projectile getArrow(Level level, Entity shooter, float damage, int knockback) {
+									AbstractArrow entityToSpawn = new DynamiteEntity(GunsmithCognitisModEntities.DYNAMITE.get(), level);
+									entityToSpawn.setOwner(shooter);
+									entityToSpawn.setBaseDamage(damage);
+									entityToSpawn.setKnockback(knockback);
+									entityToSpawn.setSilent(true);
+									return entityToSpawn;
+								}
+							}.getArrow(projectileLevel, immediatesourceentity, 1, 1);
+							_entityToSpawn.setPos(x, y, z);
+							_entityToSpawn.shoot((Mth.nextInt(new Random(), -1, 1)), (Mth.nextInt(new Random(), -1, 1)), (Mth.nextInt(new Random(), -1, 1)), Mth.nextInt(new Random(), 1, 2), 10);
+							projectileLevel.addFreshEntity(_entityToSpawn);
+						}
+					} else {
+						if (world instanceof Level _level && !_level.isClientSide())
+							_level.explode(null, x, y, z, 3, Explosion.BlockInteraction.BREAK);
+					}
+				}
+				if (!immediatesourceentity.level.isClientSide())
+					immediatesourceentity.discard();
 			}
-			if (!immediatesourceentity.level.isClientSide())
-				immediatesourceentity.discard();
 		}
 	}
 }

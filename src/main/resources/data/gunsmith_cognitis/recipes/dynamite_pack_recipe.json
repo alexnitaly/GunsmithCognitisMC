@@ -3,7 +3,7 @@
   "pattern": [
     " 1 ",
     "345",
-    " 7 "
+    "678"
   ],
   "key": {
     "1": {
@@ -18,8 +18,14 @@
     "5": {
       "item": "gunsmith_cognitis:dynamite"
     },
+    "6": {
+      "item": "gunsmith_cognitis:dynamite"
+    },
     "7": {
-      "item": "minecraft:string"
+      "item": "gunsmith_cognitis:dynamite"
+    },
+    "8": {
+      "item": "gunsmith_cognitis:dynamite"
     }
   },
   "result": {

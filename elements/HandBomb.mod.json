@@ -14,7 +14,7 @@
     },
     "stackSize": 8,
     "ammoItem": {
-      "value": "CUSTOM:Dynamite"
+      "value": "CUSTOM:HandBomb"
     },
     "shootConstantly": false,
     "usageCount": 0,
@@ -31,8 +31,8 @@
     "useCondition": {
       "name": "HandBombCanUseRangedItem"
     },
-    "bulletPower": 1.2,
-    "bulletDamage": 2.0,
+    "bulletPower": 0.8,
+    "bulletDamage": 1.0,
     "bulletKnockback": 1,
     "bulletParticles": true,
     "bulletIgnitesFire": false,

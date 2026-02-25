@@ -7,8 +7,6 @@ import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.world.phys.EntityHitResult;
-import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.ItemSupplier;
@@ -66,23 +64,10 @@ public class DynamiteEntity extends AbstractArrow implements ItemSupplier {
 	}
 
 	@Override
-	public void onHitEntity(EntityHitResult entityHitResult) {
-		super.onHitEntity(entityHitResult);
-		DynamiteWhileProjectileFlyingTickProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), this);
-	}
-
-	@Override
-	public void onHitBlock(BlockHitResult blockHitResult) {
-		super.onHitBlock(blockHitResult);
-		DynamiteWhileProjectileFlyingTickProcedure.execute(this.level, blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ(), this);
-	}
-
-	@Override
 	public void tick() {
 		super.tick();
 		DynamiteWhileProjectileFlyingTickProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), this);
-		if (this.inGround)
-			this.discard();
+		this.inGround = false; 
 	}
 
 	public static DynamiteEntity shoot(Level world, LivingEntity entity, Random random, float power, double damage, int knockback) {
@@ -102,13 +87,52 @@ public class DynamiteEntity extends AbstractArrow implements ItemSupplier {
 		double dx = target.getX() - entity.getX();
 		double dy = target.getY() + target.getEyeHeight() - 1.1;
 		double dz = target.getZ() - entity.getZ();
-		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 1.2f * 2, 12.0F);
+		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 1.1f * 2, 12.0F);
 		entityarrow.setSilent(true);
-		entityarrow.setBaseDamage(4);
-		entityarrow.setKnockback(3);
+		entityarrow.setBaseDamage(1);
+		entityarrow.setKnockback(0);
 		entityarrow.setCritArrow(true);
 		entity.level.addFreshEntity(entityarrow);
 		entity.level.playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.tnt.primed")), SoundSource.PLAYERS, 1, 1f / (new Random().nextFloat() * 0.5f + 1));
 		return entityarrow;
+	}
+
+	@Override
+	public void onHitBlock(net.minecraft.world.phys.BlockHitResult blockHitResult) {
+	    net.minecraft.core.Direction face = blockHitResult.getDirection();
+	    net.minecraft.world.phys.Vec3 motion = this.getDeltaMovement();
+	    
+	    double bounceFactor = 0.3D; 
+	    
+	    double motX = motion.x;
+	    double motY = motion.y;
+	    double motZ = motion.z;
+	    
+	    if (face.getAxis() == net.minecraft.core.Direction.Axis.X) {
+	        motX = -motX * bounceFactor;
+	    } else if (face.getAxis() == net.minecraft.core.Direction.Axis.Y) {
+	        motY = -motY * bounceFactor;
+	        motX *= 0.6D;
+	        motZ *= 0.6D;
+	    } else if (face.getAxis() == net.minecraft.core.Direction.Axis.Z) {
+	        motZ = -motZ * bounceFactor;
+	    }
+	    
+	    if (Math.abs(motY) < 0.05D) {
+	        motY = 0.0D;
+	    } else {
+	        this.playSound(net.minecraft.sounds.SoundEvents.STONE_HIT, 0.5F, 1.2F);
+	    }
+	    
+	    this.setDeltaMovement(motX, motY, motZ);
+	}
+		
+	@Override
+	public void onHitEntity(net.minecraft.world.phys.EntityHitResult entityHitResult) {
+	    
+	    net.minecraft.world.phys.Vec3 motion = this.getDeltaMovement();
+	    this.setDeltaMovement(motion.x * -0.3D, motion.y * -0.3D, motion.z * -0.3D);
+	    
+	    this.playSound(net.minecraft.sounds.SoundEvents.STONE_HIT, 1.0F, 1.2F);
 	}
 }

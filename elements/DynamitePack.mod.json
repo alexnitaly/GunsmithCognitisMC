@@ -12,7 +12,7 @@
     "creativeTab": {
       "value": "CUSTOM:GunsmithCognitisPercussioncapTab"
     },
-    "stackSize": 8,
+    "stackSize": 4,
     "ammoItem": {
       "value": "CUSTOM:DynamitePack"
     },
@@ -31,9 +31,9 @@
     "useCondition": {
       "name": "HandBombCanUseRangedItem"
     },
-    "bulletPower": 1.0,
-    "bulletDamage": 8.0,
-    "bulletKnockback": 3,
+    "bulletPower": 0.7,
+    "bulletDamage": 2.0,
+    "bulletKnockback": 1,
     "bulletParticles": true,
     "bulletIgnitesFire": false,
     "bulletItemTexture": {
@@ -41,12 +41,6 @@
     },
     "bulletModel": "Default",
     "customBulletModelTexture": "",
-    "onBulletHitsBlock": {
-      "name": "DynamitePackProjectileHitsBlock"
-    },
-    "onBulletHitsEntity": {
-      "name": "DynamitePackProjectileHitsBlock"
-    },
     "onBulletFlyingTick": {
       "name": "DynamitePackWhileProjectileFlyingTick"
     }
