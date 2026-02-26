@@ -37,7 +37,8 @@
     "recipes": [
       "gunsmith_cognitis:matchlock_snaphance_musket_recipe",
       "gunsmith_cognitis:matchlock_heavy_arquebus_recipe",
-      "gunsmith_cognitis:matchlock_axe_pistol_recipe"
+      "gunsmith_cognitis:matchlock_axe_pistol_recipe",
+      "gunsmith_cognitis:tanegashima_recipe"
     ]
   },
   "parent": "gunsmith_cognitis:matchlock_intermediate_advancement"

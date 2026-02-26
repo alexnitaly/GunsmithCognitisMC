@@ -60,6 +60,11 @@ public class LootInjectionHandler {
             event.getTable().addPool(LootPool.lootPool().setRolls(UniformGenerator.between(1, 1))
                 .add(TagEntry.expandTag(MATCHLOCKS).setWeight(1))
                 .add(LootItem.lootTableItem(Items.AIR).setWeight(9)).build());
+                
+            // Matchlock Intermediate Blueprint
+            event.getTable().addPool(LootPool.lootPool().setRolls(UniformGenerator.between(1, 1))
+                .add(LootItem.lootTableItem(GunsmithCognitisModItems.MATCHLOCK_BLUEPRINT_INTERMEDIATE.get()).setWeight(1))
+                .add(LootItem.lootTableItem(Items.AIR).setWeight(11)).build());
 
             // Gunpowder
             event.getTable().addPool(LootPool.lootPool().setRolls(UniformGenerator.between(1, 1))
@@ -84,10 +89,15 @@ public class LootInjectionHandler {
                 .add(TagEntry.expandTag(WHEELLOCKS).setWeight(2))
                 .add(LootItem.lootTableItem(Items.AIR).setWeight(7)).build());
 
-            // Flintlock Blueprint
+            // Flintlock Entry Blueprint
             event.getTable().addPool(LootPool.lootPool().setRolls(UniformGenerator.between(1, 1))
                 .add(LootItem.lootTableItem(GunsmithCognitisModItems.FLINTLOCK_BLUEPRINT.get()).setWeight(1))
-                .add(LootItem.lootTableItem(Items.AIR).setWeight(11)).build());
+                .add(LootItem.lootTableItem(Items.AIR).setWeight(13)).build());
+
+            // Wheellock Mastery Blueprint
+            event.getTable().addPool(LootPool.lootPool().setRolls(UniformGenerator.between(1, 1))
+                .add(LootItem.lootTableItem(GunsmithCognitisModItems.WHEELLOCK_BLUEPRINT_MASTERY.get()).setWeight(1))
+                .add(LootItem.lootTableItem(Items.AIR).setWeight(9)).build());
         }
 
 		//STRONGHOLD
@@ -135,9 +145,9 @@ public class LootInjectionHandler {
                 .add(LootItem.lootTableItem(GunsmithCognitisModItems.JEZAILMUSKET.get()).setWeight(1))
                 .add(LootItem.lootTableItem(Items.AIR).setWeight(2)).build());
 
-            // Blueprint
+            // Flintlock Intermediate Blueprint
             event.getTable().addPool(LootPool.lootPool().setRolls(UniformGenerator.between(1, 1))
-                .add(LootItem.lootTableItem(GunsmithCognitisModItems.FLINTLOCK_BLUEPRINT.get()).setWeight(1))
+                .add(LootItem.lootTableItem(GunsmithCognitisModItems.FLINTLOCK_BLUEPRINT_INTERMEDIATE.get()).setWeight(1))
                 .add(LootItem.lootTableItem(Items.AIR).setWeight(7)).build());
         }
 
@@ -183,7 +193,7 @@ public class LootInjectionHandler {
                 .add(LootItem.lootTableItem(Items.AIR).setWeight(4)) 
                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 8))).build());
 
-            // Flintlock Blueprint
+            // Flintlock Entry Blueprint
             event.getTable().addPool(LootPool.lootPool().setRolls(UniformGenerator.between(1, 1))
                 .add(LootItem.lootTableItem(GunsmithCognitisModItems.FLINTLOCK_BLUEPRINT.get()).setWeight(1))
                 .add(LootItem.lootTableItem(Items.AIR).setWeight(5)).build());
@@ -211,9 +221,9 @@ public class LootInjectionHandler {
                 .add(LootItem.lootTableItem(GunsmithCognitisModItems.GOLDHALBERD.get()).setWeight(1))
                 .add(LootItem.lootTableItem(Items.AIR).setWeight(3)).build());
             
-            // Flintlock Blueprint
+            // Flintlock Mastery Blueprint
             event.getTable().addPool(LootPool.lootPool().setRolls(UniformGenerator.between(1, 1))
-                .add(LootItem.lootTableItem(GunsmithCognitisModItems.FLINTLOCK_BLUEPRINT.get()).setWeight(1))
+                .add(LootItem.lootTableItem(GunsmithCognitisModItems.FLINTLOCK_BLUEPRINT_MASTERY.get()).setWeight(1))
                 .add(LootItem.lootTableItem(Items.AIR).setWeight(3)).build());
         }
     }

@@ -13133,6 +13133,19 @@
         ]
       },
       "path": "~/Flintlock"
+    },
+    {
+      "name": "MatchlockFireDelaySafetyHandler",
+      "type": "code",
+      "sortid": 625,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "matchlock_fire_delay_safety_handler",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/MatchlockFireDelaySafetyHandler.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -13259,10 +13272,10 @@
       "item.gunsmith_cognitis.wheellock_carbine": "Wheellock Carbine",
       "item.gunsmith_cognitis.handcannon": "Handgunne",
       "item.gunsmith_cognitis.goldhalberd": "Gold halberd",
-      "item.gunsmith_cognitis.colt_walker_1847": "Colt Walker 1847 Revolver",
       "item.gunsmith_cognitis.flintlockgunkit": "Flintlock Gun Kit",
-      "item.gunsmith_cognitis.flintlock_heavy_dragoon_pistol": "Flintlock Heavy Dragoon Pistol",
+      "item.gunsmith_cognitis.colt_walker_1847": "Colt Walker 1847 Revolver",
       "item.gunsmith_cognitis.shotgun_shell": "Shotgun Shell",
+      "item.gunsmith_cognitis.flintlock_heavy_dragoon_pistol": "Flintlock Heavy Dragoon Pistol",
       "advancements.wheellock_intermediate_advancement.descr": "Instead of being limited to cavalry pistols, the Wheellock could be used to make infantry muskets as well!",
       "item.gunsmith_cognitis.wheellock_blueprint_intermediate": "Wheellock Blueprint (Intermediate)",
       "item.gunsmith_cognitis.threeeyegun": "Three Eye Gun",
@@ -13473,10 +13486,10 @@
       "item.gunsmith_cognitis.wheellock_carbine": "Short-Clock Snapper",
       "item.gunsmith_cognitis.handcannon": "Handgunne",
       "item.gunsmith_cognitis.goldhalberd": "Glided Guard-Pole",
-      "item.gunsmith_cognitis.colt_walker_1847": "Colt Dragoon 1848 Revolver",
       "item.gunsmith_cognitis.flintlockgunkit": "Flint-Knapper Fixin\u0027 Bag",
-      "item.gunsmith_cognitis.flintlock_heavy_dragoon_pistol": "Great Sea-Dog Pistol",
+      "item.gunsmith_cognitis.colt_walker_1847": "Colt Dragoon 1848 Revolver",
       "item.gunsmith_cognitis.shotgun_shell": "Paper cartidge ammo",
+      "item.gunsmith_cognitis.flintlock_heavy_dragoon_pistol": "Great Sea-Dog Pistol",
       "advancements.wheellock_intermediate_advancement.descr": "Utilizing the clock\u0027s idea to create a friction-wheel mechanism will lead to the creation of the first self-igniting firearm!",
       "item.gunsmith_cognitis.wheellock_blueprint_intermediate": "Wheellock Blueprint (Entry)",
       "item.gunsmith_cognitis.threeeyegun": "Three-Pipe Barker",
@@ -13672,11 +13685,11 @@
     "version": "2.0.0",
     "description": "Gunsmith Cognitis is a mod who tries to add realistic old firearms to minecraft",
     "author": "Alex n\u0027 Italy",
-    "websiteURL": "https://mcreator.net",
+    "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/gunsmith-cognitis",
     "license": "MIT License",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
-    "modPicture": "gunsmith_book_icon",
+    "modPicture": "gunsmith_cognitis_new_logo",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
