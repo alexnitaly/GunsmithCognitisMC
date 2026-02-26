@@ -30,8 +30,11 @@ public class HandgunneammooverlayProcedure {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
 					_player.displayClientMessage(new TextComponent(("Handgunne: " + "Unfit Envirorment! Can't Fire!")), (true));
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("cooldown") <= 0
-					&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getBoolean("ramrod loaded") == true
-					&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getBoolean("jammed") == false) {
+					&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("ammo") > 0
+					&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("gunpowder") >= 3
+					&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getBoolean("ramrod loaded")
+					&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getBoolean("hasString")
+					&& !((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getBoolean("jammed"))) {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
 					_player.displayClientMessage(new TextComponent(("Handgunne: " + "Loaded")), (true));
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getBoolean("jammed")) {
@@ -69,7 +72,7 @@ public class HandgunneammooverlayProcedure {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
 					_player.displayClientMessage(new TextComponent(("Handgunne: " + "Needs to be loaded with Ramrod")), (true));
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("gunpowder") > 0) {
-				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("gunpowder") == 3) {
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("gunpowder") >= 3) {
 					if (entity instanceof Player _player && !_player.level.isClientSide())
 						_player.displayClientMessage(new TextComponent(("Handgunne: " + "Needs ammo")), (true));
 				} else {

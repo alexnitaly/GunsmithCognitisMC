@@ -65,7 +65,7 @@ public class FlintlockCollierRevolvingCarbineItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (FlintlockCollierRevolvingCarbineCanUseRangedItemProcedure.execute(world, x, y, z, entity)) {
-				FlintlockCollierRevolvingCarbineEntity entityarrow = FlintlockCollierRevolvingCarbineEntity.shoot(world, entity, world.getRandom(), 3f, 2.8, 0);
+				FlintlockCollierRevolvingCarbineEntity entityarrow = FlintlockCollierRevolvingCarbineEntity.shoot(world, entity, world.getRandom(), 3f, 2, 0);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 

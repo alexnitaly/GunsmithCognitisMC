@@ -27,10 +27,14 @@ public class FlintlockLorenzoniRepeaterOverlayProcedure {
 					_player.displayClientMessage(new TextComponent(("Lorenzoni Repeater: " + "Unfit Envirorment! Can't fire.")), (true));
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getOrCreateTag().getBoolean("cocked") == true
 					&& (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("ammo") > 0
+					&& (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("gunpowder") > 0
 					&& (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getOrCreateTag().getBoolean("jammed") == false
 					&& (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("cooldown") <= 0) {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
 					_player.displayClientMessage(new TextComponent(("Lorenzoni Repeater: " + "Loaded ( " + ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("ammo")) + " )")), (true));
+			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("cooldown") > 0) {
+				if (entity instanceof Player _player && !_player.level.isClientSide())
+					_player.displayClientMessage(new TextComponent(("Lorenzoni Repeater: " + "On Cooldown!")), (true));
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getOrCreateTag().getBoolean("jammed")) {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
 					_player.displayClientMessage(new TextComponent(("Lorenzoni Repeater: " + "Jammed! Fix Cooldown...")), (true));
@@ -59,14 +63,11 @@ public class FlintlockLorenzoniRepeaterOverlayProcedure {
 						MinecraftForge.EVENT_BUS.unregister(this);
 					}
 				}.start(world, 76);
-			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("cooldown") > 0) {
-				if (entity instanceof Player _player && !_player.level.isClientSide())
-					_player.displayClientMessage(new TextComponent(("Lorenzoni Repeater: " + "On Cooldown!")), (true));
-			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("ammo") > 0) {
+			} else if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getOrCreateTag().getBoolean("cocked"))) {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
 					_player.displayClientMessage(new TextComponent(("Lorenzoni Repeater: " + "Needs to be cocked.")), (true));
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("gunpowder") > 0) {
-				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("gunpowder") == 6) {
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("gunpowder") >= 1) {
 					if (entity instanceof Player _player && !_player.level.isClientSide())
 						_player.displayClientMessage(new TextComponent(("Lorenzoni Repeater: " + "Needs ammo")), (true));
 				} else {
@@ -87,6 +88,7 @@ public class FlintlockLorenzoniRepeaterOverlayProcedure {
 					_player.displayClientMessage(new TextComponent(("Lorenzoni Repeater: " + "Unfit Envirorment! Can't fire.")), (true));
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getBoolean("cocked") == true
 					&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("ammo") > 0
+					&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("gunpowder") > 0
 					&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getBoolean("jammed") == false
 					&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("cooldown") <= 0) {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
@@ -122,11 +124,11 @@ public class FlintlockLorenzoniRepeaterOverlayProcedure {
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("cooldown") > 0) {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
 					_player.displayClientMessage(new TextComponent(("Lorenzoni Repeater: " + "On Cooldown!")), (true));
-			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("ammo") > 0) {
+			} else if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getBoolean("cocked"))) {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
 					_player.displayClientMessage(new TextComponent(("Lorenzoni Repeater: " + "Needs to be cocked.")), (true));
-			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("gunpowder") > 0) {
-				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("gunpowder") == 6) {
+			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("gunpowder") >= 0) {
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("gunpowder") >= 1) {
 					if (entity instanceof Player _player && !_player.level.isClientSide())
 						_player.displayClientMessage(new TextComponent(("Lorenzoni Repeater: " + "Needs ammo")), (true));
 				} else {

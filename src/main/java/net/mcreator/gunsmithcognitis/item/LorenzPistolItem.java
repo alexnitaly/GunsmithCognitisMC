@@ -58,7 +58,7 @@ public class LorenzPistolItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (LorenzPistolCanUseRangedItemProcedure.execute(world, x, y, z, entity)) {
-				LorenzPistolEntity entityarrow = LorenzPistolEntity.shoot(world, entity, world.getRandom(), 3.5f, 2.5, 0);
+				LorenzPistolEntity entityarrow = LorenzPistolEntity.shoot(world, entity, world.getRandom(), 4f, 2, 0);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 

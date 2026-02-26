@@ -57,7 +57,7 @@ public class FergusonRifleItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (FergusonRifleCanUseRangedItemProcedure.execute(world, x, y, z, entity)) {
-				FergusonRifleEntity entityarrow = FergusonRifleEntity.shoot(world, entity, world.getRandom(), 4f, 3, 0);
+				FergusonRifleEntity entityarrow = FergusonRifleEntity.shoot(world, entity, world.getRandom(), 4f, 2.5, 0);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 

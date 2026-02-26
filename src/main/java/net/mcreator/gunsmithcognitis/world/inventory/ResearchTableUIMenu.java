@@ -12,6 +12,7 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.gunsmithcognitis.procedures.ResearchTableUIThisGUIIsOpenedCheckProcedure;
 import net.mcreator.gunsmithcognitis.init.GunsmithCognitisModMenus;
 
 import java.util.function.Supplier;
@@ -39,6 +40,8 @@ public class ResearchTableUIMenu extends AbstractContainerMenu implements Suppli
 			this.y = pos.getY();
 			this.z = pos.getZ();
 		}
+
+		ResearchTableUIThisGUIIsOpenedCheckProcedure.execute(entity);
 	}
 
 	@Override

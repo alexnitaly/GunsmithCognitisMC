@@ -37,7 +37,7 @@ public class Fusil1866ChassepotItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("Breech Loading Rifle: Uses Paper Cartidge Rifle Ammo."));
+		list.add(new TextComponent("Breech Loading Rifle: Uses Paper Cartidge Rifle Ammo and Percussion Cap from Inventory."));
 	}
 
 	@Override
@@ -58,11 +58,11 @@ public class Fusil1866ChassepotItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (Fusil1866ChassepotCanUseRangedProcedure.execute(world, x, y, z, entity)) {
-				Fusil1866ChassepotEntity entityarrow = Fusil1866ChassepotEntity.shoot(world, entity, world.getRandom(), 5f, 1.7999999999999998, 0);
+				Fusil1866ChassepotEntity entityarrow = Fusil1866ChassepotEntity.shoot(world, entity, world.getRandom(), 5.199999999999999f, 1.8, 0);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 
-				Fusil1866ChassepotItemUsedProcedure.execute(world, x, y, z, entity);
+				Fusil1866ChassepotItemUsedProcedure.execute(world, x, y, z, entity, itemstack);
 				entity.releaseUsingItem();
 			}
 		}

@@ -57,7 +57,7 @@ public class MatchlockSnaphanceMusketItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (MatchlockSnaphanceMusketCanUseRangedItemProcedure.execute(world, x, y, z, entity)) {
-				MatchlockSnaphanceMusketEntity entityarrow = MatchlockSnaphanceMusketEntity.shoot(world, entity, world.getRandom(), 3.1999999999999997f, 2.8000000000000003, 1);
+				MatchlockSnaphanceMusketEntity entityarrow = MatchlockSnaphanceMusketEntity.shoot(world, entity, world.getRandom(), 3.1999999999999997f, 2.4, 1);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 

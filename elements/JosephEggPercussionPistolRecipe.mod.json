@@ -10,7 +10,7 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:Rifledbarrel"
+        "value": "CUSTOM:Riflingtool"
       },
       {
         "value": "TAG:gunsmith_cognitis:blueprint_percussion_intermediate"
@@ -19,7 +19,7 @@
         "value": ""
       },
       {
-        "value": "CUSTOM:Rifledbarrel"
+        "value": "CUSTOM:DoubleBarrelsPart"
       },
       {
         "value": "Items.IRON_INGOT"

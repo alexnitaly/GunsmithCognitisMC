@@ -66,7 +66,7 @@ public class ColtRevolvingRifle1855Item extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (ColtRevolvingRifle1855CanUseRangedProcedure.execute(world, x, y, z, entity)) {
-				ColtRevolvingRifle1855Entity entityarrow = ColtRevolvingRifle1855Entity.shoot(world, entity, world.getRandom(), 3.5f, 2, 0);
+				ColtRevolvingRifle1855Entity entityarrow = ColtRevolvingRifle1855Entity.shoot(world, entity, world.getRandom(), 4f, 2, 0);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 

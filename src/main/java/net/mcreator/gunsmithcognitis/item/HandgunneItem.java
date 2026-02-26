@@ -58,7 +58,7 @@ public class HandgunneItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (HandgunneCanUseRangedItemProcedure.execute(world, x, y, z, entity)) {
-				HandgunneEntity entityarrow = HandgunneEntity.shoot(world, entity, world.getRandom(), 2.75f, 4.5, 1);
+				HandgunneEntity entityarrow = HandgunneEntity.shoot(world, entity, world.getRandom(), 2f, 3, 0);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 

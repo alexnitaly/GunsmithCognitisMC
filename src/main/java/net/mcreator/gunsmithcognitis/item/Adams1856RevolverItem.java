@@ -58,7 +58,7 @@ public class Adams1856RevolverItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (Adams1856RevolverCanUseRangedProcedure.execute(world, x, y, z, entity)) {
-				Adams1856RevolverEntity entityarrow = Adams1856RevolverEntity.shoot(world, entity, world.getRandom(), 3.2f, 0.9, 0);
+				Adams1856RevolverEntity entityarrow = Adams1856RevolverEntity.shoot(world, entity, world.getRandom(), 3.6f, 0.7999999999999999, 0);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 

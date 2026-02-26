@@ -35,7 +35,7 @@
     "useCondition": {
       "name": "ColtRevolvingShotgunCanBeUsed"
     },
-    "bulletPower": 3.5,
+    "bulletPower": 4.0,
     "bulletDamage": 1.0,
     "bulletKnockback": 1,
     "bulletParticles": false,

@@ -68,13 +68,13 @@ public class HandcannonEntity extends AbstractArrow implements ItemSupplier {
 	@Override
 	public void onHitEntity(EntityHitResult entityHitResult) {
 		super.onHitEntity(entityHitResult);
-		FlintlockHandMortarProjectileHitsBlockProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), entityHitResult.getEntity());
+		FlintlockHandMortarProjectileHitsBlockProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), this);
 	}
 
 	@Override
 	public void onHitBlock(BlockHitResult blockHitResult) {
 		super.onHitBlock(blockHitResult);
-		FlintlockHandMortarProjectileHitsBlockProcedure.execute(this.level, blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ(), this.getOwner());
+		FlintlockHandMortarProjectileHitsBlockProcedure.execute(this.level, blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ(), this);
 	}
 
 	@Override
@@ -101,10 +101,10 @@ public class HandcannonEntity extends AbstractArrow implements ItemSupplier {
 		double dx = target.getX() - entity.getX();
 		double dy = target.getY() + target.getEyeHeight() - 1.1;
 		double dz = target.getZ() - entity.getZ();
-		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 3f * 2, 12.0F);
+		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 2.5f * 2, 12.0F);
 		entityarrow.setSilent(true);
-		entityarrow.setBaseDamage(5);
-		entityarrow.setKnockback(2);
+		entityarrow.setBaseDamage(4);
+		entityarrow.setKnockback(1);
 		entityarrow.setCritArrow(false);
 		entity.level.addFreshEntity(entityarrow);
 		entity.level.playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.explode")), SoundSource.PLAYERS, 1, 1f / (new Random().nextFloat() * 0.5f + 1));

@@ -32,8 +32,8 @@
     "useCondition": {
       "name": "KentuckyPistolCanUseRangedItem"
     },
-    "bulletPower": 4.0,
-    "bulletDamage": 3.0,
+    "bulletPower": 4.199999999999999,
+    "bulletDamage": 2.6,
     "bulletKnockback": 0,
     "bulletParticles": false,
     "bulletIgnitesFire": false,

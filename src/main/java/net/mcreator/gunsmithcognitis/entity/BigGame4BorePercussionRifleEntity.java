@@ -88,7 +88,7 @@ public class BigGame4BorePercussionRifleEntity extends AbstractArrow implements 
 		double dz = target.getZ() - entity.getZ();
 		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 6f * 2, 12.0F);
 		entityarrow.setSilent(true);
-		entityarrow.setBaseDamage(3.5);
+		entityarrow.setBaseDamage(3);
 		entityarrow.setKnockback(1);
 		entityarrow.setCritArrow(false);
 		entity.level.addFreshEntity(entityarrow);

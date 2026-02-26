@@ -32,8 +32,8 @@
     "useCondition": {
       "name": "JosephEggPistolCanUseRanged"
     },
-    "bulletPower": 3.0,
-    "bulletDamage": 1.8,
+    "bulletPower": 3.6,
+    "bulletDamage": 2.0,
     "bulletKnockback": 0,
     "bulletParticles": false,
     "bulletIgnitesFire": false,

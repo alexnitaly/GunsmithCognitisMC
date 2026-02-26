@@ -24,9 +24,12 @@ public class WheellockmusketammooverlayProcedure {
 			} else if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == (ItemStack.EMPTY).getItem())) {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
 					_player.displayClientMessage(new TextComponent(("Wheellock Musket: " + "Off-hand must be empty!")), (true));
-			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getBoolean("ramrod loaded") == true
-					&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getBoolean("jammed") == false
-					&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("cooldown") <= 0) {
+			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getBoolean("ramrod loaded")
+					&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getBoolean("IsWound")
+					&& !((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getBoolean("jammed"))
+					&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("cooldown") <= 0
+					&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("ammo") > 0
+					&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("gunpowder") >= 2) {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
 					_player.displayClientMessage(new TextComponent(("Wheellock Musket: " + "Loaded")), (true));
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getBoolean("jammed")) {
@@ -60,11 +63,8 @@ public class WheellockmusketammooverlayProcedure {
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("cooldown") > 0) {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
 					_player.displayClientMessage(new TextComponent(("Wheellock Musket: " + "On Cooldown...")), (true));
-			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("ammo") > 0) {
-				if (entity instanceof Player _player && !_player.level.isClientSide())
-					_player.displayClientMessage(new TextComponent(("Wheellock Musket: " + "Needs to be loaded with Ramrod")), (true));
-			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("gunpowder") > 0) {
-				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("gunpowder") == 2) {
+			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("gunpowder") >= 0) {
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("gunpowder") >= 2) {
 					if (entity instanceof Player _player && !_player.level.isClientSide())
 						_player.displayClientMessage(new TextComponent(("Wheellock Musket: " + "Needs ammo")), (true));
 				} else {
@@ -74,6 +74,9 @@ public class WheellockmusketammooverlayProcedure {
 			} else if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getBoolean("IsWound"))) {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
 					_player.displayClientMessage(new TextComponent(("Wheellock Musket: " + "Mechanism not Wound")), (true));
+			} else if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getBoolean("ramrod loaded"))) {
+				if (entity instanceof Player _player && !_player.level.isClientSide())
+					_player.displayClientMessage(new TextComponent(("Wheellock Musket: " + "Needs to be loaded with Ramrod")), (true));
 			} else {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
 					_player.displayClientMessage(new TextComponent(("Wheellock Musket: " + "Empty")), (true));

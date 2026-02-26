@@ -30,13 +30,13 @@
       "name": "WheellockMusketRangedItemUsed"
     },
     "onEntitySwing": {
-      "name": "WheellockCarbineEntitySwingsItem"
+      "name": "WheellockPetronelItemSwung"
     },
     "useCondition": {
       "name": "WheellockPetronelCanUseRanged"
     },
-    "bulletPower": 2.5,
-    "bulletDamage": 4.0,
+    "bulletPower": 3.0,
+    "bulletDamage": 3.0,
     "bulletKnockback": 1,
     "bulletParticles": false,
     "bulletIgnitesFire": false,

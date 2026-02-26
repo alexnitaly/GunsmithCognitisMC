@@ -35,7 +35,7 @@
     "useCondition": {
       "name": "PorterTurretRifleCanBeUsedRanged"
     },
-    "bulletPower": 3.5,
+    "bulletPower": 4.5,
     "bulletDamage": 2.0,
     "bulletKnockback": 0,
     "bulletParticles": false,

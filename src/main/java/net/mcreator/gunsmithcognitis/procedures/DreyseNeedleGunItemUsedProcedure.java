@@ -13,7 +13,7 @@ import net.minecraft.core.particles.ParticleTypes;
 import java.util.Random;
 
 public class DreyseNeedleGunItemUsedProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
 		if (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.INFINITY_ARROWS, (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0) {
@@ -36,6 +36,7 @@ public class DreyseNeedleGunItemUsedProcedure {
 				(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putDouble("ammo",
 						((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("ammo") - 1));
 				(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putDouble("cooldown", 20);
+				itemstack.getOrCreateTag().putBoolean("percussioncap", (false));
 			}
 		}
 	}

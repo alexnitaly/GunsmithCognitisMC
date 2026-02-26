@@ -29,7 +29,9 @@ public class MatchlockammooverlayProcedure {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
 					_player.displayClientMessage(new TextComponent(("Matchlock Arquebus: " + "Unfit Envirorment! Can't Fire!")), (true));
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("cooldown") <= 0
-					&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getBoolean("ramrod loaded") == true
+					&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("ammo") > 0
+					&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("gunpowder") >= 2
+					&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getBoolean("ramrod loaded")
 					&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getBoolean("jammed") == false) {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
 					_player.displayClientMessage(new TextComponent(("Matchlock Arquebus: " + "Loaded")), (true));
@@ -64,11 +66,11 @@ public class MatchlockammooverlayProcedure {
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("cooldown") > 0) {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
 					_player.displayClientMessage(new TextComponent(("Matchlock Arquebus: " + "On Cooldown!")), (true));
-			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("ammo") > 0) {
+			} else if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getBoolean("ramrod loaded"))) {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
 					_player.displayClientMessage(new TextComponent(("Matchlock Arquebus: " + "Needs to be loaded with Ramrod")), (true));
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("gunpowder") > 0) {
-				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("gunpowder") == 2) {
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("gunpowder") >= 2) {
 					if (entity instanceof Player _player && !_player.level.isClientSide())
 						_player.displayClientMessage(new TextComponent(("Matchlock Arquebus: " + "Needs ammo")), (true));
 				} else {

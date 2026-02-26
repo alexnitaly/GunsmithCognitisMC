@@ -32,7 +32,7 @@
     "useCondition": {
       "name": "DivineFiveThunderMachineCanUseRangedItem"
     },
-    "bulletPower": 2.8000000000000003,
+    "bulletPower": 2.5,
     "bulletDamage": 3.0,
     "bulletKnockback": 0,
     "bulletParticles": false,

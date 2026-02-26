@@ -37,7 +37,7 @@
     },
     "bulletPower": 2.5,
     "bulletDamage": 4.0,
-    "bulletKnockback": 2,
+    "bulletKnockback": 1,
     "bulletParticles": false,
     "bulletIgnitesFire": false,
     "bulletItemTexture": {
@@ -48,7 +48,7 @@
     "onBulletHitsBlock": {
       "name": "FlintlockHandMortarProjectileHitsBlock"
     },
-    "onBulletHitsPlayer": {
+    "onBulletHitsEntity": {
       "name": "FlintlockHandMortarProjectileHitsBlock"
     }
   }

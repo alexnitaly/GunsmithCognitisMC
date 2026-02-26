@@ -33,9 +33,9 @@
     "useCondition": {
       "name": "LandsknechtHarkebusCanBeUsed"
     },
-    "bulletPower": 2.3,
-    "bulletDamage": 4.0,
-    "bulletKnockback": 1,
+    "bulletPower": 2.5,
+    "bulletDamage": 2.5,
+    "bulletKnockback": 0,
     "bulletParticles": false,
     "bulletIgnitesFire": false,
     "bulletItemTexture": {

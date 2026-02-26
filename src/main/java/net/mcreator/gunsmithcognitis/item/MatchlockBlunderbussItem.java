@@ -58,7 +58,7 @@ public class MatchlockBlunderbussItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (MatchlockBlunderbussCanUseRangedItemProcedure.execute(world, x, y, z, entity)) {
-				MatchlockBlunderbussEntity entityarrow = MatchlockBlunderbussEntity.shoot(world, entity, world.getRandom(), 2f, 3, 1);
+				MatchlockBlunderbussEntity entityarrow = MatchlockBlunderbussEntity.shoot(world, entity, world.getRandom(), 2f, 2, 1);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 

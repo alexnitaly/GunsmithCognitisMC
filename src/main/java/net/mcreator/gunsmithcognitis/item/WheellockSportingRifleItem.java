@@ -66,7 +66,7 @@ public class WheellockSportingRifleItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (WheellockSportingRifleCanUseRangedItemProcedure.execute(world, x, y, z, entity)) {
-				WheellockSportingRifleEntity entityarrow = WheellockSportingRifleEntity.shoot(world, entity, world.getRandom(), 3f, 3, 0);
+				WheellockSportingRifleEntity entityarrow = WheellockSportingRifleEntity.shoot(world, entity, world.getRandom(), 4f, 3, 0);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 

@@ -16,9 +16,9 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
+import net.mcreator.gunsmithcognitis.procedures.WheellockPetronelItemSwungProcedure;
 import net.mcreator.gunsmithcognitis.procedures.WheellockPetronelCanUseRangedProcedure;
 import net.mcreator.gunsmithcognitis.procedures.WheellockMusketRangedItemUsedProcedure;
-import net.mcreator.gunsmithcognitis.procedures.WheellockCarbineEntitySwingsItemProcedure;
 import net.mcreator.gunsmithcognitis.init.GunsmithCognitisModTabs;
 import net.mcreator.gunsmithcognitis.entity.WheellockPetronelEntity;
 
@@ -38,7 +38,7 @@ public class WheellockPetronelItem extends Item {
 	@Override
 	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity) {
 		boolean retval = super.onEntitySwing(itemstack, entity);
-		WheellockCarbineEntitySwingsItemProcedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
+		WheellockPetronelItemSwungProcedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
 		return retval;
 	}
 
@@ -66,7 +66,7 @@ public class WheellockPetronelItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (WheellockPetronelCanUseRangedProcedure.execute(world, x, y, z, entity)) {
-				WheellockPetronelEntity entityarrow = WheellockPetronelEntity.shoot(world, entity, world.getRandom(), 2.5f, 4, 1);
+				WheellockPetronelEntity entityarrow = WheellockPetronelEntity.shoot(world, entity, world.getRandom(), 3f, 3, 1);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 

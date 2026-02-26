@@ -86,9 +86,9 @@ public class MatchlockHeavyArquebusEntity extends AbstractArrow implements ItemS
 		double dx = target.getX() - entity.getX();
 		double dy = target.getY() + target.getEyeHeight() - 1.1;
 		double dz = target.getZ() - entity.getZ();
-		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 3.5f * 2, 12.0F);
+		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 3f * 2, 12.0F);
 		entityarrow.setSilent(true);
-		entityarrow.setBaseDamage(4);
+		entityarrow.setBaseDamage(3.5);
 		entityarrow.setKnockback(1);
 		entityarrow.setCritArrow(false);
 		entity.level.addFreshEntity(entityarrow);

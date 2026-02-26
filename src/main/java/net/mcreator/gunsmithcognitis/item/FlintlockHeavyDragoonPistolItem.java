@@ -76,7 +76,7 @@ public class FlintlockHeavyDragoonPistolItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (FlintlockHeavyDragoonPistolCanUseRangedItemProcedure.execute(world, x, y, z, entity)) {
-				FlintlockHeavyDragoonPistolEntity entityarrow = FlintlockHeavyDragoonPistolEntity.shoot(world, entity, world.getRandom(), 2.5f, 3.9999999999999996, 0);
+				FlintlockHeavyDragoonPistolEntity entityarrow = FlintlockHeavyDragoonPistolEntity.shoot(world, entity, world.getRandom(), 3.2f, 2.4, 0);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 

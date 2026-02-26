@@ -66,7 +66,7 @@ public class WheellockPistolItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (WheellockPistolCanUseRangedItemProcedure.execute(world, x, y, z, entity)) {
-				WheellockPistolEntity entityarrow = WheellockPistolEntity.shoot(world, entity, world.getRandom(), 2.1f, 3, 0);
+				WheellockPistolEntity entityarrow = WheellockPistolEntity.shoot(world, entity, world.getRandom(), 2.5f, 2.5, 0);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 

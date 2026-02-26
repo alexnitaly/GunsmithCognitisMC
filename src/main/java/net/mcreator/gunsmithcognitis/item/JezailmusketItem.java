@@ -57,7 +57,7 @@ public class JezailmusketItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (JezailmusketCanUseRangedItemProcedure.execute(world, x, y, z, entity)) {
-				JezailmusketEntity entityarrow = JezailmusketEntity.shoot(world, entity, world.getRandom(), 3.8000000000000003f, 2.9499999999999997, 0);
+				JezailmusketEntity entityarrow = JezailmusketEntity.shoot(world, entity, world.getRandom(), 3.8000000000000003f, 2.5, 0);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 

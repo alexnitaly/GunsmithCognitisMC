@@ -58,7 +58,7 @@ public class KentuckyPistolItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (KentuckyPistolCanUseRangedItemProcedure.execute(world, x, y, z, entity)) {
-				KentuckyPistolEntity entityarrow = KentuckyPistolEntity.shoot(world, entity, world.getRandom(), 4f, 3, 0);
+				KentuckyPistolEntity entityarrow = KentuckyPistolEntity.shoot(world, entity, world.getRandom(), 4.199999999999999f, 2.6, 0);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 

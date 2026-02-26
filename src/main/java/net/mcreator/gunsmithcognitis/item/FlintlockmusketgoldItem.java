@@ -57,7 +57,7 @@ public class FlintlockmusketgoldItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (FlintlockmusketCanUseRangedItemProcedure.execute(world, x, y, z, entity)) {
-				FlintlockmusketgoldEntity entityarrow = FlintlockmusketgoldEntity.shoot(world, entity, world.getRandom(), 3.5f, 3.5, 0);
+				FlintlockmusketgoldEntity entityarrow = FlintlockmusketgoldEntity.shoot(world, entity, world.getRandom(), 3.5f, 2.8000000000000003, 0);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 

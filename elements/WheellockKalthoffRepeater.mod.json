@@ -35,8 +35,8 @@
     "useCondition": {
       "name": "WheellockKalthoffRepeaterCanUseRangedItem"
     },
-    "bulletPower": 2.8,
-    "bulletDamage": 2.5,
+    "bulletPower": 3.0,
+    "bulletDamage": 2.4,
     "bulletKnockback": 0,
     "bulletParticles": false,
     "bulletIgnitesFire": false,

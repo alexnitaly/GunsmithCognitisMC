@@ -59,7 +59,7 @@ public class TanegashimaItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (TanegashimaCanUseRangedItemProcedure.execute(world, x, y, z, entity)) {
-				TanegashimaEntity entityarrow = TanegashimaEntity.shoot(world, entity, world.getRandom(), 4f, 2.1999999999999997, 0);
+				TanegashimaEntity entityarrow = TanegashimaEntity.shoot(world, entity, world.getRandom(), 3.5f, 2.5, 0);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 

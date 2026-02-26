@@ -32,7 +32,7 @@
       "name": "MatchlockSnaphanceMusketCanUseRangedItem"
     },
     "bulletPower": 3.1999999999999997,
-    "bulletDamage": 2.8000000000000003,
+    "bulletDamage": 2.4,
     "bulletKnockback": 1,
     "bulletParticles": false,
     "bulletIgnitesFire": false,

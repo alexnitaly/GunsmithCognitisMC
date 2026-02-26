@@ -59,7 +59,7 @@ public class LandsknechtHarkebusItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (LandsknechtHarkebusCanBeUsedProcedure.execute(world, x, y, z, entity)) {
-				LandsknechtHarkebusEntity entityarrow = LandsknechtHarkebusEntity.shoot(world, entity, world.getRandom(), 2.3f, 4, 1);
+				LandsknechtHarkebusEntity entityarrow = LandsknechtHarkebusEntity.shoot(world, entity, world.getRandom(), 2.5f, 2.5, 0);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 

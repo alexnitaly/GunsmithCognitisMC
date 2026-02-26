@@ -37,7 +37,7 @@ public class ThreeeyegunItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("Matchlock Tier: Requires gunpowder and musket balls to load"));
+		list.add(new TextComponent("Matchlock Tier: Requires gunpowder and heavy musket balls to load"));
 		list.add(new TextComponent("requires flint n' steel to fire."));
 	}
 
@@ -58,7 +58,7 @@ public class ThreeeyegunItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (ThreeeyegunCanUseRangedItemProcedure.execute(world, x, y, z, entity)) {
-				ThreeeyegunEntity entityarrow = ThreeeyegunEntity.shoot(world, entity, world.getRandom(), 2.5f, 4, 0);
+				ThreeeyegunEntity entityarrow = ThreeeyegunEntity.shoot(world, entity, world.getRandom(), 2f, 3, 0);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 

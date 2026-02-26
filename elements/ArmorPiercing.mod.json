@@ -1,0 +1,69 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:MatchlockWallGun"
+      },
+      {
+        "value": "CUSTOM:FlintlockAsumetteRifledWallGun"
+      },
+      {
+        "value": "CUSTOM:WheellockSportingRifle"
+      },
+      {
+        "value": "CUSTOM:Pattern1851minierifle"
+      },
+      {
+        "value": "CUSTOM:KentuckyPistol"
+      },
+      {
+        "value": "CUSTOM:Handcannon"
+      },
+      {
+        "value": "CUSTOM:WheellockPetronel"
+      },
+      {
+        "value": "CUSTOM:MatchlockHeavyArquebus"
+      },
+      {
+        "value": "CUSTOM:LandsknechtHarkebus"
+      },
+      {
+        "value": "CUSTOM:DreyseNeedleGun"
+      },
+      {
+        "value": "CUSTOM:Pattern1851MinieRifleBayonet"
+      },
+      {
+        "value": "CUSTOM:ColtWalker1847"
+      },
+      {
+        "value": "CUSTOM:SpringfieldModel1861RifledMusket"
+      },
+      {
+        "value": "CUSTOM:SpringfieldModel1861RifledMusketBayonet"
+      },
+      {
+        "value": "CUSTOM:Fusil1866Chassepot"
+      },
+      {
+        "value": "CUSTOM:Fusil1866ChassepotBayonet"
+      },
+      {
+        "value": "CUSTOM:BigGame4BorePercussionRifle"
+      },
+      {
+        "value": "CUSTOM:Enfield1853MusketRifle"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "armor_piercing",
+    "namespace": "mod"
+  }
+}

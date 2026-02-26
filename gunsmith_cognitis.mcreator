@@ -5764,7 +5764,7 @@
         ],
         "dependencies": [
           {
-            "name": "entity",
+            "name": "immediatesourceentity",
             "type": "entity"
           },
           {
@@ -8922,6 +8922,10 @@
             "type": "entity"
           },
           {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -11376,6 +11380,10 @@
             "type": "entity"
           },
           {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -13002,6 +13010,129 @@
         ]
       },
       "path": "~/Achievements"
+    },
+    {
+      "name": "ResearchTableUIThisGUIIsOpenedCheck",
+      "type": "procedure",
+      "sortid": 618,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "research_table_ui_this_gui_is_opened_check",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/ResearchTableUIThisGUIIsOpenedCheckProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Research"
+    },
+    {
+      "name": "ArmorPiercing",
+      "type": "tag",
+      "sortid": 619,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "armor_piercing",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gunsmith_cognitis/tags/items/armor_piercing.json"
+        ]
+      }
+    },
+    {
+      "name": "BulletproofStandard",
+      "type": "tag",
+      "sortid": 620,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bulletproof_standard",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gunsmith_cognitis/tags/items/bulletproof_standard.json"
+        ]
+      }
+    },
+    {
+      "name": "FirearmBallisticsHandler",
+      "type": "code",
+      "sortid": 621,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "firearm_ballistics_handler",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/FirearmBallisticsHandler.java"
+        ]
+      }
+    },
+    {
+      "name": "WheellockPetronelItemSwung",
+      "type": "procedure",
+      "sortid": 622,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wheellock_petronel_item_swung",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/procedures/WheellockPetronelItemSwungProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Wheellock"
+    },
+    {
+      "name": "FlintlockDoubleBarrelMusketRecipe",
+      "type": "recipe",
+      "sortid": 623,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock_double_barrel_musket_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gunsmith_cognitis/recipes/flintlock_double_barrel_musket_recipe.json"
+        ]
+      },
+      "path": "~/Flintlock"
+    },
+    {
+      "name": "FlintlockDoubleBarrelPistolRecipeAlt",
+      "type": "recipe",
+      "sortid": 624,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock_double_barrel_pistol_recipe_alt",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gunsmith_cognitis/recipes/flintlock_double_barrel_pistol_recipe_alt.json"
+        ]
+      },
+      "path": "~/Flintlock"
     }
   ],
   "variable_elements": [
@@ -13538,7 +13669,7 @@
   "workspaceSettings": {
     "modid": "gunsmith_cognitis",
     "modName": "Gunsmith_Cognitis",
-    "version": "2.0.0_Pre3",
+    "version": "2.0.0",
     "description": "Gunsmith Cognitis is a mod who tries to add realistic old firearms to minecraft",
     "author": "Alex n\u0027 Italy",
     "websiteURL": "https://mcreator.net",

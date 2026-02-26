@@ -32,7 +32,7 @@
       "name": "FlintlockAsumetteRifledWallGunCanUseRangedItem"
     },
     "bulletPower": 5.0,
-    "bulletDamage": 3.25,
+    "bulletDamage": 3.0,
     "bulletKnockback": 1,
     "bulletParticles": false,
     "bulletIgnitesFire": false,

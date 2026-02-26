@@ -58,7 +58,7 @@ public class JosephEggPistolItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (JosephEggPistolCanUseRangedProcedure.execute(world, x, y, z, entity)) {
-				JosephEggPistolEntity entityarrow = JosephEggPistolEntity.shoot(world, entity, world.getRandom(), 3f, 1.8, 0);
+				JosephEggPistolEntity entityarrow = JosephEggPistolEntity.shoot(world, entity, world.getRandom(), 3.6f, 2, 0);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 

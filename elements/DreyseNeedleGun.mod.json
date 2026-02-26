@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "name": "Dreyse needle gun",
     "specialInfo": [
-      "Breech Loading Rifle: Uses Paper Cartidge Rifle Ammo."
+      "Breech Loading Rifle: Uses Paper Cartidge Rifle Ammo and Percussion Cap from Inventory."
     ],
     "creativeTab": {
       "value": "CUSTOM:GunsmithCognitisPercussioncapTab"

@@ -138,7 +138,7 @@ public class GunnerSkeletonHandler {
     private static void applyRareMeleeWeapon(LivingEntity entity, Difficulty difficulty) {
         if (difficulty == Difficulty.PEACEFUL || difficulty == Difficulty.EASY) return;
 
-        double meleeChance = (difficulty == Difficulty.HARD) ? 0.15 : 0.05;
+        double meleeChance = (difficulty == Difficulty.HARD) ? 0.1 : 0.025;
 
         if (RANDOM.nextDouble() < meleeChance) {
             double weaponRoll = RANDOM.nextDouble();

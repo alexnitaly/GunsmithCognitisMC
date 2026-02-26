@@ -31,8 +31,8 @@
     "useCondition": {
       "name": "MiquoletMusketCanUseRanged"
     },
-    "bulletPower": 4.0,
-    "bulletDamage": 3.0,
+    "bulletPower": 3.5,
+    "bulletDamage": 2.5,
     "bulletKnockback": 0,
     "bulletParticles": false,
     "bulletIgnitesFire": false,

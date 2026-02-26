@@ -32,9 +32,9 @@
     "useCondition": {
       "name": "HandgunneCanUseRangedItem"
     },
-    "bulletPower": 2.75,
-    "bulletDamage": 4.5,
-    "bulletKnockback": 1,
+    "bulletPower": 2.0,
+    "bulletDamage": 3.0,
+    "bulletKnockback": 0,
     "bulletParticles": false,
     "bulletIgnitesFire": false,
     "bulletItemTexture": {

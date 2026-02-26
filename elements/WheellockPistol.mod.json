@@ -35,8 +35,8 @@
     "useCondition": {
       "name": "WheellockPistolCanUseRangedItem"
     },
-    "bulletPower": 2.1,
-    "bulletDamage": 3.0,
+    "bulletPower": 2.5,
+    "bulletDamage": 2.5,
     "bulletKnockback": 0,
     "bulletParticles": false,
     "bulletIgnitesFire": false,

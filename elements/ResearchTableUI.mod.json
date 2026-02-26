@@ -176,6 +176,9 @@
         }
       }
     ],
+    "onOpen": {
+      "name": "ResearchTableUIThisGUIIsOpenedCheck"
+    },
     "gridSettings": {
       "sx": 16,
       "sy": 18,

@@ -86,9 +86,9 @@ public class KentuckyPistolEntity extends AbstractArrow implements ItemSupplier 
 		double dx = target.getX() - entity.getX();
 		double dy = target.getY() + target.getEyeHeight() - 1.1;
 		double dz = target.getZ() - entity.getZ();
-		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 4f * 2, 12.0F);
+		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 4.199999999999999f * 2, 12.0F);
 		entityarrow.setSilent(true);
-		entityarrow.setBaseDamage(3);
+		entityarrow.setBaseDamage(2.6);
 		entityarrow.setKnockback(0);
 		entityarrow.setCritArrow(false);
 		entity.level.addFreshEntity(entityarrow);

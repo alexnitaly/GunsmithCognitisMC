@@ -35,7 +35,7 @@
     "useCondition": {
       "name": "ColtRevolvingRifle1855CanUseRanged"
     },
-    "bulletPower": 3.5,
+    "bulletPower": 4.0,
     "bulletDamage": 2.0,
     "bulletKnockback": 0,
     "bulletParticles": false,

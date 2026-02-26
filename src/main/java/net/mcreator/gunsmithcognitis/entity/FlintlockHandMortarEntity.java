@@ -7,12 +7,12 @@ import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.ItemSupplier;
 import net.minecraft.world.entity.projectile.AbstractArrow;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.sounds.SoundSource;
@@ -66,15 +66,15 @@ public class FlintlockHandMortarEntity extends AbstractArrow implements ItemSupp
 	}
 
 	@Override
-	public void playerTouch(Player entity) {
-		super.playerTouch(entity);
-		FlintlockHandMortarProjectileHitsBlockProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), entity);
+	public void onHitEntity(EntityHitResult entityHitResult) {
+		super.onHitEntity(entityHitResult);
+		FlintlockHandMortarProjectileHitsBlockProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), this);
 	}
 
 	@Override
 	public void onHitBlock(BlockHitResult blockHitResult) {
 		super.onHitBlock(blockHitResult);
-		FlintlockHandMortarProjectileHitsBlockProcedure.execute(this.level, blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ(), this.getOwner());
+		FlintlockHandMortarProjectileHitsBlockProcedure.execute(this.level, blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ(), this);
 	}
 
 	@Override
@@ -104,7 +104,7 @@ public class FlintlockHandMortarEntity extends AbstractArrow implements ItemSupp
 		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 2.5f * 2, 12.0F);
 		entityarrow.setSilent(true);
 		entityarrow.setBaseDamage(4);
-		entityarrow.setKnockback(2);
+		entityarrow.setKnockback(1);
 		entityarrow.setCritArrow(false);
 		entity.level.addFreshEntity(entityarrow);
 		entity.level.playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("gunsmith_cognitis:musket_shot")), SoundSource.PLAYERS, 1, 1f / (new Random().nextFloat() * 0.5f + 1));

@@ -66,7 +66,7 @@ public class WheellockKalthoffRepeaterItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (WheellockKalthoffRepeaterCanUseRangedItemProcedure.execute(world, x, y, z, entity)) {
-				WheellockKalthoffRepeaterEntity entityarrow = WheellockKalthoffRepeaterEntity.shoot(world, entity, world.getRandom(), 2.8f, 2.5, 0);
+				WheellockKalthoffRepeaterEntity entityarrow = WheellockKalthoffRepeaterEntity.shoot(world, entity, world.getRandom(), 3f, 2.4, 0);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 

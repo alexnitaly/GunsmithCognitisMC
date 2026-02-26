@@ -58,7 +58,7 @@ public class BigGame4BorePercussionRifleItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (BigGame4BorePercussionRifleCanUseRangedProcedure.execute(world, x, y, z, entity)) {
-				BigGame4BorePercussionRifleEntity entityarrow = BigGame4BorePercussionRifleEntity.shoot(world, entity, world.getRandom(), 6f, 3.5, 1);
+				BigGame4BorePercussionRifleEntity entityarrow = BigGame4BorePercussionRifleEntity.shoot(world, entity, world.getRandom(), 6f, 3, 1);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 

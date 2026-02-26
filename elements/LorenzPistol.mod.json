@@ -32,8 +32,8 @@
     "useCondition": {
       "name": "LorenzPistolCanUseRangedItem"
     },
-    "bulletPower": 3.5,
-    "bulletDamage": 2.5,
+    "bulletPower": 4.0,
+    "bulletDamage": 2.0,
     "bulletKnockback": 0,
     "bulletParticles": false,
     "bulletIgnitesFire": false,

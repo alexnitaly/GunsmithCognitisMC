@@ -66,7 +66,7 @@ public class ColtDragoon1848Item extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (ColtDragoon1848CanUseRangedProcedure.execute(world, x, y, z, entity)) {
-				ColtDragoon1848Entity entityarrow = ColtDragoon1848Entity.shoot(world, entity, world.getRandom(), 3f, 1.7000000000000002, 0);
+				ColtDragoon1848Entity entityarrow = ColtDragoon1848Entity.shoot(world, entity, world.getRandom(), 3.6f, 1.8, 0);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 

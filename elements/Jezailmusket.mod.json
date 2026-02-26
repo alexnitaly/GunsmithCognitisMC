@@ -32,7 +32,7 @@
       "name": "JezailmusketCanUseRangedItem"
     },
     "bulletPower": 3.8000000000000003,
-    "bulletDamage": 2.9499999999999997,
+    "bulletDamage": 2.5,
     "bulletKnockback": 0,
     "bulletParticles": false,
     "bulletIgnitesFire": false,

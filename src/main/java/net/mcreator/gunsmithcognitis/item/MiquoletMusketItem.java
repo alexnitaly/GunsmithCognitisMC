@@ -57,7 +57,7 @@ public class MiquoletMusketItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (MiquoletMusketCanUseRangedProcedure.execute(world, x, y, z, entity)) {
-				MiquoletMusketEntity entityarrow = MiquoletMusketEntity.shoot(world, entity, world.getRandom(), 4f, 3, 0);
+				MiquoletMusketEntity entityarrow = MiquoletMusketEntity.shoot(world, entity, world.getRandom(), 3.5f, 2.5, 0);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 

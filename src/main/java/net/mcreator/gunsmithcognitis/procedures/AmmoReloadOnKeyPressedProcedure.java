@@ -54,6 +54,9 @@ public class AmmoReloadOnKeyPressedProcedure {
 		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.WHEELLOCK_PISTOL.get()) {
 			WheellockPistolOffhandReloadProcedure.execute(entity);
 		}
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.WHEELLOCK_PETRONEL.get()) {
+			WheellockPetronelReloadProcedure.execute(entity);
+		}
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GunsmithCognitisModItems.WHEELLOCK_CARBINE.get()) {
 			WheellockCarbineReloadProcedure.execute(entity);
 		}

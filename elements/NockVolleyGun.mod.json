@@ -32,7 +32,7 @@
       "name": "NockVolleyGunCanUseRangedItem"
     },
     "bulletPower": 3.1999999999999997,
-    "bulletDamage": 2.8,
+    "bulletDamage": 2.4,
     "bulletKnockback": 0,
     "bulletParticles": false,
     "bulletIgnitesFire": false,

@@ -86,10 +86,10 @@ public class LandsknechtHarkebusEntity extends AbstractArrow implements ItemSupp
 		double dx = target.getX() - entity.getX();
 		double dy = target.getY() + target.getEyeHeight() - 1.1;
 		double dz = target.getZ() - entity.getZ();
-		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 2.3f * 2, 12.0F);
+		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 2.5f * 2, 12.0F);
 		entityarrow.setSilent(true);
-		entityarrow.setBaseDamage(4);
-		entityarrow.setKnockback(1);
+		entityarrow.setBaseDamage(2.5);
+		entityarrow.setKnockback(0);
 		entityarrow.setCritArrow(false);
 		entity.level.addFreshEntity(entityarrow);
 		entity.level.playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("gunsmith_cognitis:musket_shot")), SoundSource.PLAYERS, 1, 1f / (new Random().nextFloat() * 0.5f + 1));

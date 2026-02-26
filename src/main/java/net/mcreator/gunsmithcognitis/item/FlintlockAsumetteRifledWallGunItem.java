@@ -57,7 +57,7 @@ public class FlintlockAsumetteRifledWallGunItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (FlintlockAsumetteRifledWallGunCanUseRangedItemProcedure.execute(world, x, y, z, entity)) {
-				FlintlockAsumetteRifledWallGunEntity entityarrow = FlintlockAsumetteRifledWallGunEntity.shoot(world, entity, world.getRandom(), 5f, 3.25, 1);
+				FlintlockAsumetteRifledWallGunEntity entityarrow = FlintlockAsumetteRifledWallGunEntity.shoot(world, entity, world.getRandom(), 5f, 3, 1);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 

@@ -59,7 +59,7 @@ public class MatchlockHeavyArquebusItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (MatchlockHeavyArquebusCanBeUsedProcedure.execute(world, x, y, z, entity)) {
-				MatchlockHeavyArquebusEntity entityarrow = MatchlockHeavyArquebusEntity.shoot(world, entity, world.getRandom(), 3.5f, 4, 1);
+				MatchlockHeavyArquebusEntity entityarrow = MatchlockHeavyArquebusEntity.shoot(world, entity, world.getRandom(), 3f, 3.5, 1);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 

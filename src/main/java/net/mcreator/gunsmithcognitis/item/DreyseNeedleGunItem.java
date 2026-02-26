@@ -37,7 +37,7 @@ public class DreyseNeedleGunItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("Breech Loading Rifle: Uses Paper Cartidge Rifle Ammo."));
+		list.add(new TextComponent("Breech Loading Rifle: Uses Paper Cartidge Rifle Ammo and Percussion Cap from Inventory."));
 	}
 
 	@Override
@@ -62,7 +62,7 @@ public class DreyseNeedleGunItem extends Item {
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 
-				DreyseNeedleGunItemUsedProcedure.execute(world, x, y, z, entity);
+				DreyseNeedleGunItemUsedProcedure.execute(world, x, y, z, entity, itemstack);
 				entity.releaseUsingItem();
 			}
 		}

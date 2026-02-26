@@ -66,7 +66,7 @@ public class PorterTurretRifleItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (PorterTurretRifleCanBeUsedRangedProcedure.execute(world, x, y, z, entity)) {
-				PorterTurretRifleEntity entityarrow = PorterTurretRifleEntity.shoot(world, entity, world.getRandom(), 3.5f, 2, 0);
+				PorterTurretRifleEntity entityarrow = PorterTurretRifleEntity.shoot(world, entity, world.getRandom(), 4.5f, 2, 0);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 

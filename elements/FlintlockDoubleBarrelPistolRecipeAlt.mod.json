@@ -1,0 +1,46 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Flintlockgunkit"
+      },
+      {
+        "value": "CUSTOM:DoubleBarrelsPart"
+      },
+      {
+        "value": "CUSTOM:FlintlockMechanism"
+      },
+      {
+        "value": "TAG:gunsmith_cognitis:blueprint_flintlock_intermediate"
+      },
+      {
+        "value": "CUSTOM:FlintlockMechanism"
+      },
+      {
+        "value": "Blocks.PLANKS"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:FlintlockDoubleBarrelPistol"
+    },
+    "name": "flintlock_double_barrel_pistol_recipe_alt",
+    "namespace": "mod"
+  }
+}

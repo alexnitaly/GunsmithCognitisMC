@@ -35,8 +35,8 @@
     "useCondition": {
       "name": "ColtDragoon1848CanUseRanged"
     },
-    "bulletPower": 3.0,
-    "bulletDamage": 1.7000000000000002,
+    "bulletPower": 3.6,
+    "bulletDamage": 1.8,
     "bulletKnockback": 0,
     "bulletParticles": false,
     "bulletIgnitesFire": false,

@@ -35,7 +35,7 @@
       "name": "FlintlockCollierRevolverCanUseRangedItem"
     },
     "bulletPower": 2.5,
-    "bulletDamage": 2.8000000000000003,
+    "bulletDamage": 2.0,
     "bulletKnockback": 0,
     "bulletParticles": false,
     "bulletIgnitesFire": false,

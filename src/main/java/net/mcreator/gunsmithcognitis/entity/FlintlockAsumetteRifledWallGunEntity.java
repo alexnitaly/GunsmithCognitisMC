@@ -88,7 +88,7 @@ public class FlintlockAsumetteRifledWallGunEntity extends AbstractArrow implemen
 		double dz = target.getZ() - entity.getZ();
 		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 5f * 2, 12.0F);
 		entityarrow.setSilent(true);
-		entityarrow.setBaseDamage(3.25);
+		entityarrow.setBaseDamage(3);
 		entityarrow.setKnockback(1);
 		entityarrow.setCritArrow(false);
 		entity.level.addFreshEntity(entityarrow);

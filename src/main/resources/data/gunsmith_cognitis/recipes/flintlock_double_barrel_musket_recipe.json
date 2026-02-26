@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "gunsmith_cognitis:double_barrels_part"
+    },
+    "3": {
+      "item": "gunsmith_cognitis:flintlockgunkit"
+    },
+    "4": {
+      "item": "gunsmith_cognitis:double_barrels_part"
+    },
+    "5": {
+      "item": "gunsmith_cognitis:flintlock_mechanism"
+    },
+    "6": {
+      "tag": "gunsmith_cognitis:blueprint_flintlock_intermediate"
+    },
+    "7": {
+      "item": "gunsmith_cognitis:flintlock_mechanism"
+    },
+    "8": {
+      "item": "minecraft:oak_log"
+    }
+  },
+  "result": {
+    "item": "gunsmith_cognitis:flintlock_double_barrel_musket",
+    "count": 1
+  }
+}

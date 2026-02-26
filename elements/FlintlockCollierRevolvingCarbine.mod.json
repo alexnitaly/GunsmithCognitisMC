@@ -35,7 +35,7 @@
       "name": "FlintlockCollierRevolvingCarbineCanUseRangedItem"
     },
     "bulletPower": 3.0,
-    "bulletDamage": 2.8,
+    "bulletDamage": 2.0,
     "bulletKnockback": 0,
     "bulletParticles": false,
     "bulletIgnitesFire": false,

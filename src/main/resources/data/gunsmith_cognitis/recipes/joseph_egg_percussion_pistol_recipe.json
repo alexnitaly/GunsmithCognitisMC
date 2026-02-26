@@ -7,13 +7,13 @@
   ],
   "key": {
     "0": {
-      "item": "gunsmith_cognitis:rifledbarrel"
+      "item": "gunsmith_cognitis:riflingtool"
     },
     "1": {
       "tag": "gunsmith_cognitis:blueprint_percussion_intermediate"
     },
     "3": {
-      "item": "gunsmith_cognitis:rifledbarrel"
+      "item": "gunsmith_cognitis:double_barrels_part"
     },
     "4": {
       "item": "minecraft:iron_ingot"

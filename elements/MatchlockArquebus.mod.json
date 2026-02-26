@@ -33,8 +33,8 @@
     "useCondition": {
       "name": "MatchlockArquebusCanUseRangedItem"
     },
-    "bulletPower": 3.0,
-    "bulletDamage": 3.5,
+    "bulletPower": 2.5,
+    "bulletDamage": 3.0,
     "bulletKnockback": 0,
     "bulletParticles": false,
     "bulletIgnitesFire": false,

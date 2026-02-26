@@ -32,8 +32,8 @@
     "useCondition": {
       "name": "Adams1856RevolverCanUseRanged"
     },
-    "bulletPower": 3.2,
-    "bulletDamage": 0.9,
+    "bulletPower": 3.6,
+    "bulletDamage": 0.7999999999999999,
     "bulletKnockback": 0,
     "bulletParticles": false,
     "bulletIgnitesFire": false,

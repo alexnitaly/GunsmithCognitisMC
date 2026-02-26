@@ -29,6 +29,7 @@ public class NockVolleyGunRangedItemUsedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
+		itemstack.getOrCreateTag().putDouble("nockwait", 2);
 		if (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.INFINITY_ARROWS, itemstack) != 0) {
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE, x, (y + 1.5), z, 32, 0, 0, 0, 0.025);
@@ -42,6 +43,7 @@ public class NockVolleyGunRangedItemUsedProcedure {
 				}
 			}
 			for (int index0 = 0; index0 < (int) (8); index0++) {
+				itemstack.getOrCreateTag().putDouble("nockwait", (itemstack.getOrCreateTag().getDouble("nockwait") + 4));
 				new Object() {
 					private int ticks = 0;
 					private float waitTicks;
@@ -70,27 +72,31 @@ public class NockVolleyGunRangedItemUsedProcedure {
 								_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("gunsmith_cognitis:musket_shot")), SoundSource.NEUTRAL, 1, 1, false);
 							}
 						}
-						if (world instanceof ServerLevel projectileLevel) {
-							Projectile _entityToSpawn = new Object() {
-								public Projectile getArrow(Level level, Entity shooter, float damage, int knockback, byte piercing) {
-									AbstractArrow entityToSpawn = new NockVolleyGunEntity(GunsmithCognitisModEntities.NOCK_VOLLEY_GUN.get(), level);
-									entityToSpawn.setOwner(shooter);
-									entityToSpawn.setBaseDamage(damage);
-									entityToSpawn.setKnockback(knockback);
-									entityToSpawn.setSilent(true);
-									entityToSpawn.setPierceLevel(piercing);
-									return entityToSpawn;
-								}
-							}.getArrow(projectileLevel, entity, 2, 0, (byte) 3);
-							_entityToSpawn.setPos(x, y, z);
-							_entityToSpawn.shoot(0, 0, 0, 5, 3);
-							projectileLevel.addFreshEntity(_entityToSpawn);
+						{
+							Entity _shootFrom = entity;
+							Level projectileLevel = _shootFrom.level;
+							if (!projectileLevel.isClientSide()) {
+								Projectile _entityToSpawn = new Object() {
+									public Projectile getArrow(Level level, Entity shooter, float damage, int knockback, byte piercing) {
+										AbstractArrow entityToSpawn = new NockVolleyGunEntity(GunsmithCognitisModEntities.NOCK_VOLLEY_GUN.get(), level);
+										entityToSpawn.setOwner(shooter);
+										entityToSpawn.setBaseDamage(damage);
+										entityToSpawn.setKnockback(knockback);
+										entityToSpawn.setSilent(true);
+										entityToSpawn.setPierceLevel(piercing);
+										return entityToSpawn;
+									}
+								}.getArrow(projectileLevel, entity, 2, 0, (byte) 3);
+								_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
+								_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 5, (float) 2.5);
+								projectileLevel.addFreshEntity(_entityToSpawn);
+							}
 						}
 						if (world instanceof ServerLevel _level)
 							_level.sendParticles(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE, x, (y + 1.5), z, 24, 0, 0, 0, 0.004);
 						MinecraftForge.EVENT_BUS.unregister(this);
 					}
-				}.start(world, 4);
+				}.start(world, (int) itemstack.getOrCreateTag().getDouble("nockwait"));
 			}
 			itemstack.getOrCreateTag().putDouble("cooldown", 72);
 		} else {
@@ -99,6 +105,7 @@ public class NockVolleyGunRangedItemUsedProcedure {
 					if (itemstack.getOrCreateTag().getDouble("ammo") >= 1 && itemstack.getOrCreateTag().getDouble("gunpowder") >= 2) {
 						itemstack.getOrCreateTag().putDouble("gunpowder", (itemstack.getOrCreateTag().getDouble("gunpowder") - 2));
 						itemstack.getOrCreateTag().putDouble("ammo", (itemstack.getOrCreateTag().getDouble("ammo") - 1));
+						itemstack.getOrCreateTag().putDouble("nockwait", (itemstack.getOrCreateTag().getDouble("nockwait") + 2));
 						new Object() {
 							private int ticks = 0;
 							private float waitTicks;
@@ -127,27 +134,31 @@ public class NockVolleyGunRangedItemUsedProcedure {
 										_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("gunsmith_cognitis:musket_shot")), SoundSource.NEUTRAL, 1, 1, false);
 									}
 								}
-								if (world instanceof ServerLevel projectileLevel) {
-									Projectile _entityToSpawn = new Object() {
-										public Projectile getArrow(Level level, Entity shooter, float damage, int knockback, byte piercing) {
-											AbstractArrow entityToSpawn = new NockVolleyGunEntity(GunsmithCognitisModEntities.NOCK_VOLLEY_GUN.get(), level);
-											entityToSpawn.setOwner(shooter);
-											entityToSpawn.setBaseDamage(damage);
-											entityToSpawn.setKnockback(knockback);
-											entityToSpawn.setSilent(true);
-											entityToSpawn.setPierceLevel(piercing);
-											return entityToSpawn;
-										}
-									}.getArrow(projectileLevel, entity, 2, 0, (byte) 3);
-									_entityToSpawn.setPos(x, y, z);
-									_entityToSpawn.shoot(0, 0, 0, 5, 3);
-									projectileLevel.addFreshEntity(_entityToSpawn);
+								{
+									Entity _shootFrom = entity;
+									Level projectileLevel = _shootFrom.level;
+									if (!projectileLevel.isClientSide()) {
+										Projectile _entityToSpawn = new Object() {
+											public Projectile getArrow(Level level, Entity shooter, float damage, int knockback, byte piercing) {
+												AbstractArrow entityToSpawn = new NockVolleyGunEntity(GunsmithCognitisModEntities.NOCK_VOLLEY_GUN.get(), level);
+												entityToSpawn.setOwner(shooter);
+												entityToSpawn.setBaseDamage(damage);
+												entityToSpawn.setKnockback(knockback);
+												entityToSpawn.setSilent(true);
+												entityToSpawn.setPierceLevel(piercing);
+												return entityToSpawn;
+											}
+										}.getArrow(projectileLevel, entity, 2, 0, (byte) 3);
+										_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
+										_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 5, (float) 2.5);
+										projectileLevel.addFreshEntity(_entityToSpawn);
+									}
 								}
 								if (world instanceof ServerLevel _level)
 									_level.sendParticles(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE, x, (y + 1.5), z, 24, 0, 0, 0, 0.004);
 								MinecraftForge.EVENT_BUS.unregister(this);
 							}
-						}.start(world, 4);
+						}.start(world, (int) itemstack.getOrCreateTag().getDouble("nockwait"));
 					} else {
 						itemstack.getOrCreateTag().putDouble("gunpowder", 0);
 						itemstack.getOrCreateTag().putDouble("cooldown", 24);

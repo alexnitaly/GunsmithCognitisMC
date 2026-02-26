@@ -35,7 +35,7 @@
     "useCondition": {
       "name": "WheellockSportingRifleCanUseRangedItem"
     },
-    "bulletPower": 3.0,
+    "bulletPower": 4.0,
     "bulletDamage": 3.0,
     "bulletKnockback": 0,
     "bulletParticles": false,

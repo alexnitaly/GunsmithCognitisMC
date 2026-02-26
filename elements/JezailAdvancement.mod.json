@@ -5,7 +5,7 @@
     "achievementName": "Desert Sniper",
     "achievementDescription": "An ancient tale says that this gun alone has stopped an invasion by an empire, leading to its graveyard being dug in the desert.",
     "achievementIcon": {
-      "value": "CUSTOM:FlintlockLorenzoniRepeater"
+      "value": "CUSTOM:Jezailmusket"
     },
     "background": "Default",
     "disableDisplay": false,

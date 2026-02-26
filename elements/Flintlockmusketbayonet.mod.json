@@ -32,7 +32,7 @@
       "name": "FlintlockmusketCanUseRangedItem"
     },
     "bulletPower": 3.5,
-    "bulletDamage": 3.0,
+    "bulletDamage": 2.5,
     "bulletKnockback": 0,
     "bulletParticles": false,
     "bulletIgnitesFire": false,

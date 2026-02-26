@@ -19,7 +19,9 @@
       "RiflingtoolRecipe",
       "FlintlockRifledCarbineRecipe",
       "FlintlockPepperboxRecipe",
-      "FlintlockPepperboxCarbineRecipe"
+      "FlintlockPepperboxCarbineRecipe",
+      "FlintlockDoubleBarrelMusketRecipe",
+      "FlintlockDoubleBarrelPistolRecipeAlt"
     ],
     "rewardFunction": "No function",
     "rewardXP": 5,

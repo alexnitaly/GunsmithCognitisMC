@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "gunsmith_cognitis:matchlock_wall_gun",
+    "gunsmith_cognitis:kentucky_pistol",
+    "gunsmith_cognitis:pattern_1851_minie_rifle_bayonet",
+    "gunsmith_cognitis:flintlock_asumette_rifled_wall_gun",
+    "gunsmith_cognitis:fusil_1866_chassepot",
+    "gunsmith_cognitis:matchlock_heavy_arquebus",
+    "gunsmith_cognitis:handcannon",
+    "gunsmith_cognitis:landsknecht_harkebus",
+    "gunsmith_cognitis:wheellock_petronel",
+    "gunsmith_cognitis:big_game_4_bore_percussion_rifle",
+    "gunsmith_cognitis:pattern_1851minierifle",
+    "gunsmith_cognitis:colt_walker_1847",
+    "gunsmith_cognitis:dreyse_needle_gun",
+    "gunsmith_cognitis:springfield_model_1861_rifled_musket_bayonet",
+    "gunsmith_cognitis:wheellock_sporting_rifle",
+    "gunsmith_cognitis:springfield_model_1861_rifled_musket",
+    "gunsmith_cognitis:fusil_1866_chassepot_bayonet",
+    "gunsmith_cognitis:enfield_1853_musket_rifle"
+  ]
+}

@@ -32,7 +32,7 @@
       "name": "FlintlockRifledCarbineCanUseRangedItem"
     },
     "bulletPower": 4.0,
-    "bulletDamage": 2.5,
+    "bulletDamage": 2.0,
     "bulletKnockback": 0,
     "bulletParticles": false,
     "bulletIgnitesFire": false,
