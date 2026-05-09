@@ -48,7 +48,7 @@ public class HandgunneEntity extends AbstractArrow implements ItemSupplier {
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public ItemStack getItem() {
-		return new ItemStack(GunsmithCognitisModItems.MUSKET_BALL_PROJECTILE.get());
+		return new ItemStack(GunsmithCognitisModItems.HEAVY_MUSKET_BALL_PROJECTILE.get());
 	}
 
 	@Override

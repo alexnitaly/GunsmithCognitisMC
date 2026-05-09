@@ -34,7 +34,7 @@ public class BrowningHarmonicaRifleRangedItemUsedProcedure {
 				if (world instanceof ServerLevel _level)
 					_level.sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE, x, (y + 1.5), z, 18, 0, 0, 0, 0.0025);
 				itemstack.getOrCreateTag().putDouble("ammo", (itemstack.getOrCreateTag().getDouble("ammo") - 1));
-				itemstack.getOrCreateTag().putDouble("gunpowder", (itemstack.getOrCreateTag().getDouble("gunpowder") - 1));
+				itemstack.getOrCreateTag().putDouble("gunpowder", (itemstack.getOrCreateTag().getDouble("gunpowder") - 2));
 				itemstack.getOrCreateTag().putBoolean("percussion cap", (false));
 				itemstack.getOrCreateTag().putDouble("cooldown", 16);
 				if (itemstack.getOrCreateTag().getDouble("ammo") <= 0) {

@@ -80,6 +80,7 @@ import net.mcreator.gunsmithcognitis.item.JezailmusketItem;
 import net.mcreator.gunsmithcognitis.item.IronpikeItem;
 import net.mcreator.gunsmithcognitis.item.IronhalberdItem;
 import net.mcreator.gunsmithcognitis.item.HeavyMusketballItem;
+import net.mcreator.gunsmithcognitis.item.HeavyMusketBallProjectileItem;
 import net.mcreator.gunsmithcognitis.item.HandgunneItem;
 import net.mcreator.gunsmithcognitis.item.HandcannonItem;
 import net.mcreator.gunsmithcognitis.item.HandBombItem;
@@ -268,6 +269,7 @@ public class GunsmithCognitisModItems {
 	public static final RegistryObject<Item> PORTER_TURRET_RIFLE = REGISTRY.register("porter_turret_rifle", () -> new PorterTurretRifleItem());
 	public static final RegistryObject<Item> COLT_REVOLVING_SHOTGUN_1855 = REGISTRY.register("colt_revolving_shotgun_1855", () -> new ColtRevolvingShotgun1855Item());
 	public static final RegistryObject<Item> SAWN_COLT_REVOLVING_SHOTGUN_1855 = REGISTRY.register("sawn_colt_revolving_shotgun_1855", () -> new SawnColtRevolvingShotgun1855Item());
+	public static final RegistryObject<Item> HEAVY_MUSKET_BALL_PROJECTILE = REGISTRY.register("heavy_musket_ball_projectile", () -> new HeavyMusketBallProjectileItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

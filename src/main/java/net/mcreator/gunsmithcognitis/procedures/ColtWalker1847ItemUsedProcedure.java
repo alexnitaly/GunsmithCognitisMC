@@ -20,6 +20,7 @@ public class ColtWalker1847ItemUsedProcedure {
 					_level.sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE, x, (y + 1.5), z, 9, 0, 0, 0, 0.0025);
 				itemstack.getOrCreateTag().putDouble("ammo", (itemstack.getOrCreateTag().getDouble("ammo") - 1));
 				itemstack.getOrCreateTag().putDouble("gunpowder", (itemstack.getOrCreateTag().getDouble("gunpowder") - 1));
+				itemstack.getOrCreateTag().putDouble("percussioncaps", (itemstack.getOrCreateTag().getDouble("percussioncaps") - 1));
 				itemstack.getOrCreateTag().putDouble("cooldown", 15);
 				itemstack.getOrCreateTag().putBoolean("cocked", (false));
 			}

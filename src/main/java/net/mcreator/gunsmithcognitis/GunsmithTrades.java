@@ -48,23 +48,23 @@ public class GunsmithTrades {
             level3.add(new BasicItemListing(new ItemStack(Items.EMERALD, 5), new ItemStack(GunsmithCognitisModItems.RIFLEDBARREL.get(), 2), 10, 10, 0.08f));
             level3.add(new BasicItemListing(new ItemStack(Items.EMERALD, 2), new ItemStack(GunsmithCognitisModItems.RIFLINGTOOL.get(), 1), 15, 5, 0.05f));
             level3.add(new BasicItemListing(new ItemStack(Items.EMERALD, 6), new ItemStack(GunsmithCognitisModItems.WHEELLOCK_PISTOL.get(), 1), 9, 15, 0.08f));
-            level3.add(new BasicItemListing(new ItemStack(Items.EMERALD, 9), new ItemStack(GunsmithCognitisModItems.WHEELLOCK_CARBINE.get(), 1), 9, 20, 0.08f));
+            level3.add(new BasicItemListing(new ItemStack(Items.EMERALD, 7), new ItemStack(GunsmithCognitisModItems.WHEELLOCK_CARBINE.get(), 1), 9, 20, 0.08f));
             level3.add(new BasicItemListing(new ItemStack(Items.EMERALD, 9), new ItemStack(GunsmithCognitisModItems.FLINTLOCK_PISTOL.get(), 1), 9, 20, 0.08f));
             level3.add(new BasicItemListing(new ItemStack(Items.EMERALD, 2), new ItemStack(GunsmithCognitisModItems.PAPER_CARTIDGE_AMMO.get(), 5), 16, 5, 0.06f));
 
             // LEVEL 4: Expert (Flintlock/Early Percussion, Blueprints)
             List<VillagerTrades.ItemListing> level4 = event.getTrades().get(4);
-            level4.add(new BasicItemListing(new ItemStack(Items.EMERALD, 21), new ItemStack(GunsmithCognitisModItems.WHEELLOCKGUNKIT.get(), 4), new ItemStack(GunsmithCognitisModItems.WHEELLOCK_KALTHOFF_REPEATER.get(), 1), 3, 30, 0.25f));
+            level4.add(new BasicItemListing(new ItemStack(Items.EMERALD, 11), new ItemStack(GunsmithCognitisModItems.FLINTLOCKGUNKIT.get(), 2), new ItemStack(GunsmithCognitisModItems.WHEELLOCK_KALTHOFF_REPEATER.get(), 1), 3, 30, 0.25f));
             level4.add(new BasicItemListing(new ItemStack(Items.EMERALD, 14), new ItemStack(GunsmithCognitisModItems.FLINTLOCK_RIFLED_CARBINE.get(), 1), 9, 24, 0.08f));
             level4.add(new BasicItemListing(new ItemStack(Items.EMERALD, 12), new ItemStack(GunsmithCognitisModItems.FLINTLOCKMUSKET.get(), 1), 9, 16, 0.08f));
             level4.add(new BasicItemListing(new ItemStack(Items.EMERALD, 12), new ItemStack(GunsmithCognitisModItems.FLINTLOCK_BLUNDERBUSS.get(), 1), 7, 16, 0.08f));
             level4.add(new BasicItemListing(new ItemStack(Items.EMERALD, 24), new ItemStack(GunsmithCognitisModItems.FLINTLOCK_BLUEPRINT.get(), 1), 2, 30, 0.5f));
             level4.add(new BasicItemListing(new ItemStack(GunsmithCognitisModItems.FLINTLOCK_MECHANISM.get(), 4), new ItemStack(Items.EMERALD, 1), 9, 8, 0.05f));
-            level4.add(new BasicItemListing(new ItemStack(GunsmithCognitisModItems.FULMINATEPOWDER.get(), 9), new ItemStack(Items.EMERALD, 1), 10, 5, 0.06f));
 
             // LEVEL 5: Master (High-end components)
             List<VillagerTrades.ItemListing> level5 = event.getTrades().get(5);
-            level5.add(new BasicItemListing(new ItemStack(Items.EMERALD, 32), new ItemStack(GunsmithCognitisModItems.PERCUSSIONCAP_BLUEPRINT.get(), 1), 2, 40, 0.5f));
+            level5.add(new BasicItemListing(new ItemStack(GunsmithCognitisModItems.FULMINATEPOWDER.get(), 9), new ItemStack(Items.EMERALD, 1), 10, 5, 0.06f));
+            level5.add(new BasicItemListing(new ItemStack(Items.EMERALD, 10), new ItemStack(GunsmithCognitisModItems.PERCUSSIONCAP_BLUEPRINT.get(), 1), 2, 40, 0.5f));
             level5.add(new BasicItemListing(new ItemStack(Items.EMERALD, 4), new ItemStack(GunsmithCognitisModItems.PERCUSSIONNIPPLE.get(), 16), 16, 15, 0.05f));
             level5.add(new BasicItemListing(new ItemStack(Items.EMERALD, 7), new ItemStack(GunsmithCognitisModItems.REVOLVER_DRUM.get(), 3), 8, 30, 0.1f));
             level5.add(new BasicItemListing(new ItemStack(Items.EMERALD, 5), new ItemStack(GunsmithCognitisModItems.SHOTGUN_SHELL.get(), 8), 20, 15, 0.05f));

@@ -179,7 +179,7 @@ public class GunnerSkeletonHandler {
         if (target == null) return;
 
         double dist = skeleton.distanceTo(target);
-        TagKey<Item> BAYONET = TagKey.create(Registry.ITEM_REGISTRY, new ResourceLocation("gunsmith_cognitis", "has_bayonet"));
+        TagKey<Item> BAYONET = TagKey.create(Registry.ITEM_REGISTRY, new ResourceLocation("forge", "has_bayonet"));
         TagKey<Item> PISTOL = TagKey.create(Registry.ITEM_REGISTRY, new ResourceLocation("gunsmith_cognitis", "pistol"));
         boolean isMeleeCapable = (gun.getItem() instanceof MatchlockAxePistolItem || gun.is(BAYONET));
 

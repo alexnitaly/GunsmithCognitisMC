@@ -21,7 +21,8 @@
       "FlintlockPepperboxRecipe",
       "FlintlockPepperboxCarbineRecipe",
       "FlintlockDoubleBarrelMusketRecipe",
-      "FlintlockDoubleBarrelPistolRecipeAlt"
+      "FlintlockDoubleBarrelPistolRecipeAlt",
+      "FlintlockAsumetteWallGunRecipe"
     ],
     "rewardFunction": "No function",
     "rewardXP": 5,

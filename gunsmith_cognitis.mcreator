@@ -13146,6 +13146,20 @@
           "src/main/java/net/mcreator/gunsmithcognitis/MatchlockFireDelaySafetyHandler.java"
         ]
       }
+    },
+    {
+      "name": "HeavyMusketBallProjectile",
+      "type": "item",
+      "sortid": 626,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heavy_musket_ball_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gunsmithcognitis/item/HeavyMusketBallProjectileItem.java",
+          "src/main/resources/assets/gunsmith_cognitis/models/item/heavy_musket_ball_projectile.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -13256,6 +13270,7 @@
       "item.gunsmith_cognitis.nock_volley_gun": "Nock Volley Gun",
       "advancements.fulminate_advancement.descr": "OH, We could make better gunpowder out of this...",
       "item.gunsmith_cognitis.pattern_1851minierifle": "Pattern 1851 Minié Rifle",
+      "item.gunsmith_cognitis.heavy_musket_ball_projectile": "Heavy Musket ball",
       "item.gunsmith_cognitis.flintlock_pepperbox": "Flintlock Pepperbox",
       "advancements.jezail_advancement.title": "Desert Sniper",
       "advancements.percussion_intermediate_advancement.title": "Gotta Shoot Faster!",
@@ -13272,10 +13287,10 @@
       "item.gunsmith_cognitis.wheellock_carbine": "Wheellock Carbine",
       "item.gunsmith_cognitis.handcannon": "Handgunne",
       "item.gunsmith_cognitis.goldhalberd": "Gold halberd",
-      "item.gunsmith_cognitis.colt_walker_1847": "Colt Walker 1847 Revolver",
       "item.gunsmith_cognitis.flintlockgunkit": "Flintlock Gun Kit",
-      "item.gunsmith_cognitis.flintlock_heavy_dragoon_pistol": "Flintlock Heavy Dragoon Pistol",
+      "item.gunsmith_cognitis.colt_walker_1847": "Colt Walker 1847 Revolver",
       "item.gunsmith_cognitis.shotgun_shell": "Shotgun Shell",
+      "item.gunsmith_cognitis.flintlock_heavy_dragoon_pistol": "Flintlock Heavy Dragoon Pistol",
       "advancements.wheellock_intermediate_advancement.descr": "Instead of being limited to cavalry pistols, the Wheellock could be used to make infantry muskets as well!",
       "item.gunsmith_cognitis.wheellock_blueprint_intermediate": "Wheellock Blueprint (Intermediate)",
       "item.gunsmith_cognitis.threeeyegun": "Three Eye Gun",
@@ -13470,6 +13485,7 @@
       "item.gunsmith_cognitis.nock_volley_gun": "Seven Sisters",
       "advancements.fulminate_advancement.descr": "OH, We could make better gunpowder out of this...",
       "item.gunsmith_cognitis.pattern_1851minierifle": "Groove-Bore Long-Iron",
+      "item.gunsmith_cognitis.heavy_musket_ball_projectile": "Musket ball",
       "item.gunsmith_cognitis.flintlock_pepperbox": "Bundle o\u0027 Barrels",
       "advancements.jezail_advancement.title": "Il Ferro di Firenze.",
       "advancements.percussion_intermediate_advancement.title": "Smokeless Propellers.",
@@ -13486,10 +13502,10 @@
       "item.gunsmith_cognitis.wheellock_carbine": "Short-Clock Snapper",
       "item.gunsmith_cognitis.handcannon": "Handgunne",
       "item.gunsmith_cognitis.goldhalberd": "Glided Guard-Pole",
-      "item.gunsmith_cognitis.colt_walker_1847": "Colt Dragoon 1848 Revolver",
       "item.gunsmith_cognitis.flintlockgunkit": "Flint-Knapper Fixin\u0027 Bag",
-      "item.gunsmith_cognitis.flintlock_heavy_dragoon_pistol": "Great Sea-Dog Pistol",
+      "item.gunsmith_cognitis.colt_walker_1847": "Colt Dragoon 1848 Revolver",
       "item.gunsmith_cognitis.shotgun_shell": "Paper cartidge ammo",
+      "item.gunsmith_cognitis.flintlock_heavy_dragoon_pistol": "Great Sea-Dog Pistol",
       "advancements.wheellock_intermediate_advancement.descr": "Utilizing the clock\u0027s idea to create a friction-wheel mechanism will lead to the creation of the first self-igniting firearm!",
       "item.gunsmith_cognitis.wheellock_blueprint_intermediate": "Wheellock Blueprint (Entry)",
       "item.gunsmith_cognitis.threeeyegun": "Three-Pipe Barker",
@@ -13682,7 +13698,7 @@
   "workspaceSettings": {
     "modid": "gunsmith_cognitis",
     "modName": "Gunsmith_Cognitis",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "description": "Gunsmith Cognitis is a mod who tries to add realistic old firearms to minecraft",
     "author": "Alex n\u0027 Italy",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/gunsmith-cognitis",
